@@ -1,0 +1,3 @@
+# Project exclude paths
+/languages/ROSML/classes_gen/
+/languages/ROSML/generator/classes_gen/
