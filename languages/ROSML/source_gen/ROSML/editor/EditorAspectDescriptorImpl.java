@@ -24,7 +24,7 @@ public class EditorAspectDescriptorImpl extends EditorAspectDescriptorBase imple
     SAbstractConcept cncpt = ((SAbstractConcept) concept);
     switch (conceptIndex.index(cncpt)) {
       case 0:
-        return Collections.<ConceptEditor>singletonList(new Conexion_Grafica_Editor());
+        return Collections.<ConceptEditor>singletonList(new ConexionDirecta_Grafica_Editor());
       case 1:
         return Collections.<ConceptEditor>singletonList(new ConexionPuerto_Editor());
       case 2:

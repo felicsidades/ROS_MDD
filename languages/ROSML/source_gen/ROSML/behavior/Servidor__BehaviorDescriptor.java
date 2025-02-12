@@ -25,15 +25,29 @@ import org.jetbrains.mps.openapi.language.SProperty;
 public final class Servidor__BehaviorDescriptor extends BaseBHDescriptor {
   private static final SAbstractConcept CONCEPT = MetaAdapterFactory.getConcept(0xf7db56d1b41e4c13L, 0x9756a014feb108beL, 0x2126fce3999aabd2L, "ROSML.structure.Servidor");
 
-  public static final SMethod<SNode> getPuerto_id5Yvlr8xnW3d = new SMethodBuilder<SNode>(new SJavaCompoundTypeImpl((Class<SNode>) ((Class) Object.class))).name("getPuerto").modifiers(0, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(6890320178452611277L).languageId(0x9756a014feb108beL, 0xf7db56d1b41e4c13L).build2(SMethodBuilder.createJavaParameter(String.class, ""));
+  public static final SMethod<SNode> getServicio_id5Yvlr8xnW3d = new SMethodBuilder<SNode>(new SJavaCompoundTypeImpl((Class<SNode>) ((Class) Object.class))).name("getServicio").modifiers(0, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(6890320178452611277L).languageId(0x9756a014feb108beL, 0xf7db56d1b41e4c13L).build2(SMethodBuilder.createJavaParameter(String.class, ""));
+  public static final SMethod<SNode> getAccion_id585zzjDKAoB = new SMethodBuilder<SNode>(new SJavaCompoundTypeImpl((Class<SNode>) ((Class) Object.class))).name("getAccion").modifiers(0, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(5910286443904919079L).languageId(0x9756a014feb108beL, 0xf7db56d1b41e4c13L).build2(SMethodBuilder.createJavaParameter(String.class, ""));
+  public static final SMethod<String> getTipo_id585zzjDKKmp = new SMethodBuilder<String>(new SJavaCompoundTypeImpl(String.class)).name("getTipo").modifiers(0, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(5910286443904959897L).languageId(0x9756a014feb108beL, 0xf7db56d1b41e4c13L).build2(SMethodBuilder.createJavaParameter(String.class, ""));
 
-  private static final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(getPuerto_id5Yvlr8xnW3d);
+  private static final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(getServicio_id5Yvlr8xnW3d, getAccion_id585zzjDKAoB, getTipo_id585zzjDKKmp);
 
   private static void ___init___(@NotNull SNode __thisNode__) {
   }
 
-  /*package*/ static SNode getPuerto_id5Yvlr8xnW3d(@NotNull SNode __thisNode__, final String nombre) {
+  /*package*/ static SNode getServicio_id5Yvlr8xnW3d(@NotNull SNode __thisNode__, final String nombre) {
     return ListSequence.fromList(SLinkOperations.getChildren(__thisNode__, LINKS.servicios$zPXp)).findFirst((it) -> SPropertyOperations.getString(it, PROPS.name$MnvL).equals(nombre));
+  }
+  /*package*/ static SNode getAccion_id585zzjDKAoB(@NotNull SNode __thisNode__, final String nombre) {
+    return ListSequence.fromList(SLinkOperations.getChildren(__thisNode__, LINKS.acciones$vnCn)).findFirst((it) -> SPropertyOperations.getString(it, PROPS.name$MnvL).equals(nombre));
+  }
+  /*package*/ static String getTipo_id585zzjDKKmp(@NotNull SNode __thisNode__, final String nombre) {
+    if (ListSequence.fromList(SLinkOperations.getChildren(__thisNode__, LINKS.acciones$vnCn)).findFirst((it) -> SPropertyOperations.getString(it, PROPS.name$MnvL).equals(nombre)) != null) {
+      return "accion";
+    } else if (ListSequence.fromList(SLinkOperations.getChildren(__thisNode__, LINKS.servicios$zPXp)).findFirst((it) -> SPropertyOperations.getString(it, PROPS.name$MnvL).equals(nombre)) != null) {
+      return "servicio";
+    } else {
+      return null;
+    }
   }
 
   /*package*/ Servidor__BehaviorDescriptor() {
@@ -52,7 +66,11 @@ public final class Servidor__BehaviorDescriptor extends BaseBHDescriptor {
     }
     switch (methodIndex) {
       case 0:
-        return (T) ((SNode) getPuerto_id5Yvlr8xnW3d(node, (String) parameters[0]));
+        return (T) ((SNode) getServicio_id5Yvlr8xnW3d(node, (String) parameters[0]));
+      case 1:
+        return (T) ((SNode) getAccion_id585zzjDKAoB(node, (String) parameters[0]));
+      case 2:
+        return (T) ((String) getTipo_id585zzjDKKmp(node, (String) parameters[0]));
       default:
         throw new BHMethodNotFoundException(this, method);
     }
@@ -84,6 +102,7 @@ public final class Servidor__BehaviorDescriptor extends BaseBHDescriptor {
 
   private static final class LINKS {
     /*package*/ static final SContainmentLink servicios$zPXp = MetaAdapterFactory.getContainmentLink(0xf7db56d1b41e4c13L, 0x9756a014feb108beL, 0x2126fce3999aabd2L, 0x5f9f55b2215b96faL, "servicios");
+    /*package*/ static final SContainmentLink acciones$vnCn = MetaAdapterFactory.getContainmentLink(0xf7db56d1b41e4c13L, 0x9756a014feb108beL, 0x2126fce3999aabd2L, 0x5f9f55b2215f05fbL, "acciones");
   }
 
   private static final class PROPS {

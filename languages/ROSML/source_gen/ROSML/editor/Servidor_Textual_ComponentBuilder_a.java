@@ -218,7 +218,7 @@ import org.jetbrains.mps.openapi.language.SConcept;
       return LINKS.acciones$vnCn;
     }
     public SAbstractConcept getChildSConcept() {
-      return CONCEPTS.Acciones$bx;
+      return CONCEPTS.Accion$bx;
     }
 
     public EditorCell createNodeCell(SNode elementNode) {
@@ -276,7 +276,7 @@ import org.jetbrains.mps.openapi.language.SConcept;
   private static final class CONCEPTS {
     /*package*/ static final SConcept PropertyAttribute$Gb = MetaAdapterFactory.getConcept(0xceab519525ea4f22L, 0x9b92103b95ca8c0cL, 0x2eb1ad060897da56L, "jetbrains.mps.lang.core.structure.PropertyAttribute");
     /*package*/ static final SConcept Servicio$P0 = MetaAdapterFactory.getConcept(0xf7db56d1b41e4c13L, 0x9756a014feb108beL, 0x5f9f55b2215b96f8L, "ROSML.structure.Servicio");
-    /*package*/ static final SConcept Acciones$bx = MetaAdapterFactory.getConcept(0xf7db56d1b41e4c13L, 0x9756a014feb108beL, 0x5f9f55b2215f05faL, "ROSML.structure.Acciones");
+    /*package*/ static final SConcept Accion$bx = MetaAdapterFactory.getConcept(0xf7db56d1b41e4c13L, 0x9756a014feb108beL, 0x5f9f55b2215f05faL, "ROSML.structure.Accion");
   }
 
   private static final class LINKS {

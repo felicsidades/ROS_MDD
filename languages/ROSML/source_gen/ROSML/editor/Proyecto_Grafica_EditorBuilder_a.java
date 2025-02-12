@@ -41,7 +41,6 @@ import de.itemis.mps.editor.diagram.runtime.jgraph.RootDiagramECell;
 import de.itemis.mps.editor.diagram.runtime.jgraph.RootDCell;
 import org.jetbrains.mps.openapi.language.SContainmentLink;
 import org.jetbrains.mps.openapi.language.SReferenceLink;
-import org.jetbrains.mps.openapi.language.SInterfaceConcept;
 import org.jetbrains.mps.openapi.language.SConcept;
 import org.jetbrains.mps.openapi.language.SProperty;
 
@@ -81,9 +80,6 @@ import org.jetbrains.mps.openapi.language.SProperty;
                 for (SNode e : ListSequence.fromList(SLinkOperations.getChildren(node, LINKS.conexiones$Xf$k))) {
                   elements.addAll(accessorFactory.fromSNode(e));
                 }
-                for (SNode e : ListSequence.fromList(SLinkOperations.getChildren(node, LINKS.conexiones_puerto$zB2s))) {
-                  elements.addAll(accessorFactory.fromSNode(e));
-                }
                 return elements;
               }
               @Override
@@ -95,22 +91,22 @@ import org.jetbrains.mps.openapi.language.SProperty;
                   }
                   @Override
                   public void create(final IConnectionEndpoint from, final IConnectionEndpoint to) {
-                    final SNode fromNode = SNodeOperations.cast(from.getSNode(), CONCEPTS.INodo$mE);
+                    final SNode fromNode = SNodeOperations.cast(from.getSNode(), CONCEPTS.Nodo$iX);
                     final SNode toNode = SNodeOperations.cast(to.getSNode(), CONCEPTS.Topico$lR);
                     final String fromPort = from.getPortName();
                     final String toPort = to.getPortName();
 
                     {
-                      SNode conexion = SConceptOperations.createNewNode(MetaAdapterFactory.getConcept(0xf7db56d1b41e4c13L, 0x9756a014feb108beL, 0x5d8e854cb6b9f03L, "ROSML.structure.Conexion"));
+                      SNode conexion = SConceptOperations.createNewNode(MetaAdapterFactory.getConcept(0xf7db56d1b41e4c13L, 0x9756a014feb108beL, 0x5d8e854cb6b9f03L, "ROSML.structure.ConexionDirecta"));
                       SPropertyOperations.assign(conexion, PROPS.etiqueta$Kcok, "publicador");
-                      SLinkOperations.setTarget(conexion, LINKS.productor$IXJD, fromNode);
-                      SLinkOperations.setTarget(conexion, LINKS.consumidor$IYsG, toNode);
+                      SLinkOperations.setTarget(conexion, LINKS.nodo$IXJD, fromNode);
+                      SLinkOperations.setTarget(conexion, LINKS.topico$IYsG, toNode);
                       ListSequence.fromList(SLinkOperations.getChildren(((SNode) _variablesContext.getValue("thisNode")), LINKS.conexiones$Xf$k)).addElement(conexion);
                     }
                   }
                   @Override
                   public boolean isValidStart(IConnectionEndpoint from) {
-                    final SNode fromNode = SNodeOperations.as(from.getSNode(), CONCEPTS.INodo$mE);
+                    final SNode fromNode = SNodeOperations.as(from.getSNode(), CONCEPTS.Nodo$iX);
                     if (fromNode == null) {
                       return false;
                     }
@@ -133,22 +129,22 @@ import org.jetbrains.mps.openapi.language.SProperty;
                   }
                   @Override
                   public void create(final IConnectionEndpoint from, final IConnectionEndpoint to) {
-                    final SNode fromNode = SNodeOperations.cast(from.getSNode(), CONCEPTS.INodo$mE);
+                    final SNode fromNode = SNodeOperations.cast(from.getSNode(), CONCEPTS.Nodo$iX);
                     final SNode toNode = SNodeOperations.cast(to.getSNode(), CONCEPTS.Topico$lR);
                     final String fromPort = from.getPortName();
                     final String toPort = to.getPortName();
 
                     {
-                      SNode conexion = SConceptOperations.createNewNode(MetaAdapterFactory.getConcept(0xf7db56d1b41e4c13L, 0x9756a014feb108beL, 0x5d8e854cb6b9f03L, "ROSML.structure.Conexion"));
+                      SNode conexion = SConceptOperations.createNewNode(MetaAdapterFactory.getConcept(0xf7db56d1b41e4c13L, 0x9756a014feb108beL, 0x5d8e854cb6b9f03L, "ROSML.structure.ConexionDirecta"));
                       SPropertyOperations.assign(conexion, PROPS.etiqueta$Kcok, "suscriptor");
-                      SLinkOperations.setTarget(conexion, LINKS.productor$IXJD, fromNode);
-                      SLinkOperations.setTarget(conexion, LINKS.consumidor$IYsG, toNode);
+                      SLinkOperations.setTarget(conexion, LINKS.nodo$IXJD, fromNode);
+                      SLinkOperations.setTarget(conexion, LINKS.topico$IYsG, toNode);
                       ListSequence.fromList(SLinkOperations.getChildren(((SNode) _variablesContext.getValue("thisNode")), LINKS.conexiones$Xf$k)).addElement(conexion);
                     }
                   }
                   @Override
                   public boolean isValidStart(IConnectionEndpoint from) {
-                    final SNode fromNode = SNodeOperations.as(from.getSNode(), CONCEPTS.INodo$mE);
+                    final SNode fromNode = SNodeOperations.as(from.getSNode(), CONCEPTS.Nodo$iX);
                     if (fromNode == null) {
                       return false;
                     }
@@ -167,7 +163,7 @@ import org.jetbrains.mps.openapi.language.SProperty;
                 }));
                 connectionTypes.addAll(Collections.singletonList(new GeneratedConnectionType() {
                   public String getName() {
-                    return "peticion";
+                    return "request";
                   }
                   @Override
                   public void create(final IConnectionEndpoint from, final IConnectionEndpoint to) {
@@ -178,14 +174,21 @@ import org.jetbrains.mps.openapi.language.SProperty;
 
                     {
                       SNode conexion_puerto = SConceptOperations.createNewNode(MetaAdapterFactory.getConcept(0xf7db56d1b41e4c13L, 0x9756a014feb108beL, 0x52ae22b433653219L, "ROSML.structure.ConexionPuerto"));
-                      SPropertyOperations.assign(conexion_puerto, PROPS.etiqueta$AAcS, "peticion_servicio");
                       SLinkOperations.setTarget(conexion_puerto, LINKS.nodo$WQmF, fromNode);
                       SLinkOperations.setTarget(conexion_puerto, LINKS.servidor$WQOH, toNode);
                       SPropertyOperations.assign(conexion_puerto, PROPS.nombre_puerto$u3X4, toPort);
 
-                      SNode puerto = Servidor__BehaviorDescriptor.getPuerto_id5Yvlr8xnW3d.invoke(toNode, toPort);
-                      SLinkOperations.setTarget(puerto, LINKS.conexion$WFQD, conexion_puerto);
-                      ListSequence.fromList(SLinkOperations.getChildren(((SNode) _variablesContext.getValue("thisNode")), LINKS.conexiones_puerto$zB2s)).addElement(conexion_puerto);
+                      if (Servidor__BehaviorDescriptor.getTipo_id585zzjDKKmp.invoke(toNode, toPort) == "accion") {
+                        SNode accion = Servidor__BehaviorDescriptor.getAccion_id585zzjDKAoB.invoke(toNode, toPort);
+                        SLinkOperations.setTarget(accion, LINKS.conexion$WFQD, conexion_puerto);
+                        SPropertyOperations.assign(conexion_puerto, PROPS.etiqueta$AAcS, "peticion servicio");
+                      } else if (Servidor__BehaviorDescriptor.getTipo_id585zzjDKKmp.invoke(toNode, toPort) == "servicio") {
+                        SNode servicio = Servidor__BehaviorDescriptor.getServicio_id5Yvlr8xnW3d.invoke(toNode, toPort);
+                        SLinkOperations.setTarget(servicio, LINKS.conexion$WFQD, conexion_puerto);
+                        SPropertyOperations.assign(conexion_puerto, PROPS.etiqueta$AAcS, "peticion accion");
+
+                      }
+                      ListSequence.fromList(SLinkOperations.getChildren(((SNode) _variablesContext.getValue("thisNode")), LINKS.conexiones$Xf$k)).addElement(conexion_puerto);
                     }
                   }
                   @Override
@@ -262,24 +265,22 @@ import org.jetbrains.mps.openapi.language.SProperty;
   private static final class LINKS {
     /*package*/ static final SContainmentLink nodos_red$xOcS = MetaAdapterFactory.getContainmentLink(0xf7db56d1b41e4c13L, 0x9756a014feb108beL, 0x5d8e854cb6b6ef9L, 0x45d1f7827d32707fL, "nodos_red");
     /*package*/ static final SContainmentLink conexiones$Xf$k = MetaAdapterFactory.getContainmentLink(0xf7db56d1b41e4c13L, 0x9756a014feb108beL, 0x5d8e854cb6b6ef9L, 0x45d1f7827d4196edL, "conexiones");
-    /*package*/ static final SContainmentLink conexiones_puerto$zB2s = MetaAdapterFactory.getContainmentLink(0xf7db56d1b41e4c13L, 0x9756a014feb108beL, 0x5d8e854cb6b6ef9L, 0x52ae22b4336a28aaL, "conexiones_puerto");
-    /*package*/ static final SReferenceLink productor$IXJD = MetaAdapterFactory.getReferenceLink(0xf7db56d1b41e4c13L, 0x9756a014feb108beL, 0x5d8e854cb6b9f03L, 0x5d8e854cb6b9f04L, "productor");
-    /*package*/ static final SReferenceLink consumidor$IYsG = MetaAdapterFactory.getReferenceLink(0xf7db56d1b41e4c13L, 0x9756a014feb108beL, 0x5d8e854cb6b9f03L, 0x5d8e854cb6b9f07L, "consumidor");
+    /*package*/ static final SReferenceLink nodo$IXJD = MetaAdapterFactory.getReferenceLink(0xf7db56d1b41e4c13L, 0x9756a014feb108beL, 0x5d8e854cb6b9f03L, 0x5d8e854cb6b9f04L, "nodo");
+    /*package*/ static final SReferenceLink topico$IYsG = MetaAdapterFactory.getReferenceLink(0xf7db56d1b41e4c13L, 0x9756a014feb108beL, 0x5d8e854cb6b9f03L, 0x5d8e854cb6b9f07L, "topico");
     /*package*/ static final SReferenceLink nodo$WQmF = MetaAdapterFactory.getReferenceLink(0xf7db56d1b41e4c13L, 0x9756a014feb108beL, 0x52ae22b433653219L, 0x52ae22b43365321cL, "nodo");
     /*package*/ static final SReferenceLink servidor$WQOH = MetaAdapterFactory.getReferenceLink(0xf7db56d1b41e4c13L, 0x9756a014feb108beL, 0x52ae22b433653219L, 0x52ae22b43365321eL, "servidor");
     /*package*/ static final SReferenceLink conexion$WFQD = MetaAdapterFactory.getReferenceLink(0xf7db56d1b41e4c13L, 0x9756a014feb108beL, 0x52ae22b4336975deL, 0x24577e76ac2158acL, "conexion");
   }
 
   private static final class CONCEPTS {
-    /*package*/ static final SInterfaceConcept INodo$mE = MetaAdapterFactory.getInterfaceConcept(0xf7db56d1b41e4c13L, 0x9756a014feb108beL, 0x6e04103ea7fd6c7aL, "ROSML.structure.INodo");
-    /*package*/ static final SConcept Topico$lR = MetaAdapterFactory.getConcept(0xf7db56d1b41e4c13L, 0x9756a014feb108beL, 0x5d8e854cb6b6f01L, "ROSML.structure.Topico");
     /*package*/ static final SConcept Nodo$iX = MetaAdapterFactory.getConcept(0xf7db56d1b41e4c13L, 0x9756a014feb108beL, 0x5d8e854cb6b6efbL, "ROSML.structure.Nodo");
+    /*package*/ static final SConcept Topico$lR = MetaAdapterFactory.getConcept(0xf7db56d1b41e4c13L, 0x9756a014feb108beL, 0x5d8e854cb6b6f01L, "ROSML.structure.Topico");
     /*package*/ static final SConcept Servidor$I$ = MetaAdapterFactory.getConcept(0xf7db56d1b41e4c13L, 0x9756a014feb108beL, 0x2126fce3999aabd2L, "ROSML.structure.Servidor");
   }
 
   private static final class PROPS {
     /*package*/ static final SProperty etiqueta$Kcok = MetaAdapterFactory.getProperty(0xf7db56d1b41e4c13L, 0x9756a014feb108beL, 0x5d8e854cb6b9f03L, 0x45d1f7827d438f77L, "etiqueta");
-    /*package*/ static final SProperty etiqueta$AAcS = MetaAdapterFactory.getProperty(0xf7db56d1b41e4c13L, 0x9756a014feb108beL, 0x52ae22b433653219L, 0x52ae22b4336a4e17L, "etiqueta");
     /*package*/ static final SProperty nombre_puerto$u3X4 = MetaAdapterFactory.getProperty(0xf7db56d1b41e4c13L, 0x9756a014feb108beL, 0x52ae22b433653219L, 0x6865cec0cd1aeed0L, "nombre_puerto");
+    /*package*/ static final SProperty etiqueta$AAcS = MetaAdapterFactory.getProperty(0xf7db56d1b41e4c13L, 0x9756a014feb108beL, 0x52ae22b433653219L, 0x52ae22b4336a4e17L, "etiqueta");
   }
 }

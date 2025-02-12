@@ -9,11 +9,11 @@ import org.jetbrains.mps.openapi.language.SAbstractConcept;
 import jetbrains.mps.smodel.runtime.ConceptPresentationBuilder;
 
 public class ConceptPresentationAspectImpl extends ConceptPresentationAspectBase {
-  private ConceptPresentation props_Acciones;
-  private ConceptPresentation props_Conexion;
+  private ConceptPresentation props_Accion;
+  private ConceptPresentation props_ConexionDirecta;
   private ConceptPresentation props_ConexionPuerto;
+  private ConceptPresentation props_IConexiones;
   private ConceptPresentation props_IElementoRed;
-  private ConceptPresentation props_INodo;
   private ConceptPresentation props_IPuerto;
   private ConceptPresentation props_Mensaje;
   private ConceptPresentation props_Nodo;
@@ -27,20 +27,20 @@ public class ConceptPresentationAspectImpl extends ConceptPresentationAspectBase
   public ConceptPresentation getDescriptor(SAbstractConcept c) {
     StructureAspectDescriptor structureDescriptor = (StructureAspectDescriptor) myLanguageRuntime.getAspect(jetbrains.mps.smodel.runtime.StructureAspectDescriptor.class);
     switch (structureDescriptor.internalIndex(c)) {
-      case LanguageConceptSwitch.Acciones:
-        if (props_Acciones == null) {
+      case LanguageConceptSwitch.Accion:
+        if (props_Accion == null) {
           ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
           cpb.presentationByName();
-          props_Acciones = cpb.create();
+          props_Accion = cpb.create();
         }
-        return props_Acciones;
-      case LanguageConceptSwitch.Conexion:
-        if (props_Conexion == null) {
+        return props_Accion;
+      case LanguageConceptSwitch.ConexionDirecta:
+        if (props_ConexionDirecta == null) {
           ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
-          cpb.rawPresentation("Conexion");
-          props_Conexion = cpb.create();
+          cpb.presentationByName();
+          props_ConexionDirecta = cpb.create();
         }
-        return props_Conexion;
+        return props_ConexionDirecta;
       case LanguageConceptSwitch.ConexionPuerto:
         if (props_ConexionPuerto == null) {
           ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
@@ -48,18 +48,18 @@ public class ConceptPresentationAspectImpl extends ConceptPresentationAspectBase
           props_ConexionPuerto = cpb.create();
         }
         return props_ConexionPuerto;
+      case LanguageConceptSwitch.IConexiones:
+        if (props_IConexiones == null) {
+          ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
+          props_IConexiones = cpb.create();
+        }
+        return props_IConexiones;
       case LanguageConceptSwitch.IElementoRed:
         if (props_IElementoRed == null) {
           ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
           props_IElementoRed = cpb.create();
         }
         return props_IElementoRed;
-      case LanguageConceptSwitch.INodo:
-        if (props_INodo == null) {
-          ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
-          props_INodo = cpb.create();
-        }
-        return props_INodo;
       case LanguageConceptSwitch.IPuerto:
         if (props_IPuerto == null) {
           ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();

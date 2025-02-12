@@ -9,11 +9,11 @@ import org.jetbrains.mps.openapi.language.SAbstractConcept;
 
 public final class LanguageConceptSwitch {
   private final LanguageConceptIndex myIndex;
-  public static final int Acciones = 0;
-  public static final int Conexion = 1;
+  public static final int Accion = 0;
+  public static final int ConexionDirecta = 1;
   public static final int ConexionPuerto = 2;
-  public static final int IElementoRed = 3;
-  public static final int INodo = 4;
+  public static final int IConexiones = 3;
+  public static final int IElementoRed = 4;
   public static final int IPuerto = 5;
   public static final int Mensaje = 6;
   public static final int Nodo = 7;
@@ -24,11 +24,11 @@ public final class LanguageConceptSwitch {
 
   public LanguageConceptSwitch() {
     LanguageConceptIndexBuilder builder = new LanguageConceptIndexBuilder(0xf7db56d1b41e4c13L, 0x9756a014feb108beL);
-    builder.put(0x5f9f55b2215f05faL, Acciones);
-    builder.put(0x5d8e854cb6b9f03L, Conexion);
+    builder.put(0x5f9f55b2215f05faL, Accion);
+    builder.put(0x5d8e854cb6b9f03L, ConexionDirecta);
     builder.put(0x52ae22b433653219L, ConexionPuerto);
+    builder.put(0x52058e34e9d2bfcdL, IConexiones);
     builder.put(0x45d1f7827d3faed1L, IElementoRed);
-    builder.put(0x6e04103ea7fd6c7aL, INodo);
     builder.put(0x52ae22b4336975deL, IPuerto);
     builder.put(0x2126fce3999aa945L, Mensaje);
     builder.put(0x5d8e854cb6b6efbL, Nodo);
