@@ -19,11 +19,19 @@
       <concept id="1137021947720" name="jetbrains.mps.baseLanguage.structure.ConceptFunction" flags="in" index="2VMwT0">
         <child id="1137022507850" name="body" index="2VODD2" />
       </concept>
+      <concept id="1070475926800" name="jetbrains.mps.baseLanguage.structure.StringLiteral" flags="nn" index="Xl_RD">
+        <property id="1070475926801" name="value" index="Xl_RC" />
+      </concept>
       <concept id="1068580123155" name="jetbrains.mps.baseLanguage.structure.ExpressionStatement" flags="nn" index="3clFbF">
         <child id="1068580123156" name="expression" index="3clFbG" />
       </concept>
       <concept id="1068580123136" name="jetbrains.mps.baseLanguage.structure.StatementList" flags="sn" stub="5293379017992965193" index="3clFbS">
         <child id="1068581517665" name="statement" index="3cqZAp" />
+      </concept>
+      <concept id="1068581242875" name="jetbrains.mps.baseLanguage.structure.PlusExpression" flags="nn" index="3cpWs3" />
+      <concept id="1081773326031" name="jetbrains.mps.baseLanguage.structure.BinaryOperation" flags="nn" index="3uHJSO">
+        <child id="1081773367579" name="rightExpression" index="3uHU7w" />
+        <child id="1081773367580" name="leftExpression" index="3uHU7B" />
       </concept>
     </language>
     <language id="b401a680-8325-4110-8fd3-84331ff25bef" name="jetbrains.mps.lang.generator">
@@ -66,6 +74,16 @@
       </concept>
     </language>
     <language id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel">
+      <concept id="1177026924588" name="jetbrains.mps.lang.smodel.structure.RefConcept_Reference" flags="nn" index="chp4Y">
+        <reference id="1177026940964" name="conceptDeclaration" index="cht4Q" />
+      </concept>
+      <concept id="1138411891628" name="jetbrains.mps.lang.smodel.structure.SNodeOperation" flags="nn" index="eCIE_">
+        <child id="1144104376918" name="parameter" index="1xVPHs" />
+      </concept>
+      <concept id="1171407110247" name="jetbrains.mps.lang.smodel.structure.Node_GetAncestorOperation" flags="nn" index="2Xjw5R" />
+      <concept id="1144101972840" name="jetbrains.mps.lang.smodel.structure.OperationParm_Concept" flags="ng" index="1xMEDy">
+        <child id="1207343664468" name="conceptArgument" index="ri$Ld" />
+      </concept>
       <concept id="1138056022639" name="jetbrains.mps.lang.smodel.structure.SPropertyAccess" flags="nn" index="3TrcHB">
         <reference id="1138056395725" name="property" index="3TsBF5" />
       </concept>
@@ -98,9 +116,13 @@
       <ref role="30HIoZ" to="9g35:noU5jbqQVV" resolve="Nodo" />
       <ref role="3lhOvi" node="xuK2hhEiTr" resolve="Nodo" />
     </node>
+    <node concept="3lhOvk" id="5rgSauRoi_I" role="3lj3bC">
+      <ref role="30HIoZ" to="9g35:noU5jbqQVV" resolve="Nodo" />
+      <ref role="3lhOvi" node="5rgSauRo0gk" resolve="prueba" />
+    </node>
   </node>
   <node concept="356sEV" id="xuK2hhEiTr">
-    <property role="TrG5h" value="Nodo" />
+    <property role="TrG5h" value="Package/src/Nodo" />
     <property role="3Le9LX" value=".cpp" />
     <node concept="356WMU" id="xuK2hhEiTv" role="356KY_">
       <node concept="356sEK" id="xuK2hhEiTw" role="383Ya9">
@@ -111,19 +133,19 @@
       </node>
       <node concept="356sEK" id="xuK2hhEiT$" role="383Ya9">
         <node concept="356sEF" id="xuK2hhEiT_" role="356sEH">
-          <property role="TrG5h" value="#include &lt;std_msgs/msg/string.hpp&gt; // Example message type (replace as needed)" />
+          <property role="TrG5h" value="#include &lt;package/msg/datatypeT.hpp&gt;" />
         </node>
         <node concept="2EixSi" id="xuK2hhEiTB" role="2EinRH" />
       </node>
       <node concept="356sEK" id="xuK2hhEiTC" role="383Ya9">
         <node concept="356sEF" id="xuK2hhEiTD" role="356sEH">
-          <property role="TrG5h" value="#include &lt;packageT/srv/serviceT.hpp&gt; // Replace with your service type" />
+          <property role="TrG5h" value="#include &lt;packageT/srv/serviceT.hpp&gt;" />
         </node>
         <node concept="2EixSi" id="xuK2hhEiTF" role="2EinRH" />
       </node>
       <node concept="356sEK" id="xuK2hhEiTG" role="383Ya9">
         <node concept="356sEF" id="xuK2hhEiTH" role="356sEH">
-          <property role="TrG5h" value="#include &lt;packageT/action/actionT.hpp&gt; // Replace with your action type" />
+          <property role="TrG5h" value="#include &lt;packageT/action/actionT.hpp&gt;" />
         </node>
         <node concept="2EixSi" id="xuK2hhEiTJ" role="2EinRH" />
       </node>
@@ -1082,16 +1104,38 @@
     <node concept="n94m4" id="xuK2hhEiTt" role="lGtFl">
       <ref role="n9lRv" to="9g35:noU5jbqQVV" resolve="Nodo" />
     </node>
-    <node concept="17Uvod" id="xuK2hhF2cQ" role="lGtFl">
+    <node concept="17Uvod" id="3VEyS1gjFI6" role="lGtFl">
       <property role="2qtEX9" value="name" />
       <property role="P4ACc" value="ceab5195-25ea-4f22-9b92-103b95ca8c0c/1169194658468/1169194664001" />
-      <node concept="3zFVjK" id="xuK2hhF2cR" role="3zH0cK">
-        <node concept="3clFbS" id="xuK2hhF2cS" role="2VODD2">
-          <node concept="3clFbF" id="xuK2hhF2t6" role="3cqZAp">
-            <node concept="2OqwBi" id="xuK2hhF2U0" role="3clFbG">
-              <node concept="30H73N" id="xuK2hhF2t5" role="2Oq$k0" />
-              <node concept="3TrcHB" id="xuK2hhF59l" role="2OqNvi">
-                <ref role="3TsBF5" to="tpck:h0TrG11" resolve="name" />
+      <node concept="3zFVjK" id="3VEyS1gjFI7" role="3zH0cK">
+        <node concept="3clFbS" id="3VEyS1gjFI8" role="2VODD2">
+          <node concept="3clFbF" id="3VEyS1gjFYH" role="3cqZAp">
+            <node concept="3cpWs3" id="3VEyS1gjP5d" role="3clFbG">
+              <node concept="2OqwBi" id="3VEyS1gjQf1" role="3uHU7w">
+                <node concept="30H73N" id="3VEyS1gjPPJ" role="2Oq$k0" />
+                <node concept="3TrcHB" id="3VEyS1gjQ_G" role="2OqNvi">
+                  <ref role="3TsBF5" to="tpck:h0TrG11" resolve="name" />
+                </node>
+              </node>
+              <node concept="3cpWs3" id="3VEyS1gjM3i" role="3uHU7B">
+                <node concept="2OqwBi" id="3VEyS1gjJHh" role="3uHU7B">
+                  <node concept="2OqwBi" id="3VEyS1gjHsr" role="2Oq$k0">
+                    <node concept="30H73N" id="3VEyS1gjFYG" role="2Oq$k0" />
+                    <node concept="2Xjw5R" id="3VEyS1gjJtI" role="2OqNvi">
+                      <node concept="1xMEDy" id="3VEyS1gjJtK" role="1xVPHs">
+                        <node concept="chp4Y" id="3VEyS1gjJwo" role="ri$Ld">
+                          <ref role="cht4Q" to="9g35:noU5jbqQVT" resolve="Proyecto" />
+                        </node>
+                      </node>
+                    </node>
+                  </node>
+                  <node concept="3TrcHB" id="3VEyS1gjKwJ" role="2OqNvi">
+                    <ref role="3TsBF5" to="tpck:h0TrG11" resolve="name" />
+                  </node>
+                </node>
+                <node concept="Xl_RD" id="3VEyS1gjM4C" role="3uHU7w">
+                  <property role="Xl_RC" value="src" />
+                </node>
               </node>
             </node>
           </node>
@@ -1477,6 +1521,988 @@
       </node>
     </node>
     <node concept="n94m4" id="xuK2hhGylh" role="lGtFl" />
+  </node>
+  <node concept="356sEV" id="5rgSauRo0gk">
+    <property role="TrG5h" value="prueba" />
+    <property role="3Le9LX" value=".cpp" />
+    <node concept="356WMU" id="5rgSauRo0go" role="356KY_">
+      <node concept="356sEK" id="5rgSauRo0gp" role="383Ya9">
+        <node concept="356sEF" id="5rgSauRo0gq" role="356sEH">
+          <property role="TrG5h" value="#include &lt;rclcpp/rclcpp.hpp&gt;" />
+        </node>
+        <node concept="2EixSi" id="5rgSauRo0gs" role="2EinRH" />
+      </node>
+      <node concept="356sEK" id="5rgSauRo0gt" role="383Ya9">
+        <node concept="356sEF" id="5rgSauRo0gu" role="356sEH">
+          <property role="TrG5h" value="#include &lt;std_msgs/msg/string.hpp&gt; // Example message type (replace as needed)" />
+        </node>
+        <node concept="2EixSi" id="5rgSauRo0gw" role="2EinRH" />
+      </node>
+      <node concept="356sEK" id="5rgSauRo0gx" role="383Ya9">
+        <node concept="356sEF" id="5rgSauRo0gy" role="356sEH">
+          <property role="TrG5h" value="#include &lt;packageT/srv/serviceT.hpp&gt; // Replace with your service type" />
+        </node>
+        <node concept="2EixSi" id="5rgSauRo0g$" role="2EinRH" />
+      </node>
+      <node concept="356sEK" id="5rgSauRo0g_" role="383Ya9">
+        <node concept="356sEF" id="5rgSauRo0gA" role="356sEH">
+          <property role="TrG5h" value="#include &lt;packageT/action/actionT.hpp&gt; // Replace with your action type" />
+        </node>
+        <node concept="2EixSi" id="5rgSauRo0gC" role="2EinRH" />
+      </node>
+      <node concept="356sEK" id="5rgSauRo0gD" role="383Ya9">
+        <node concept="356sEF" id="5rgSauRo0gE" role="356sEH">
+          <property role="TrG5h" value="#include &lt;rclcpp_action/rclcpp_action.hpp&gt;" />
+        </node>
+        <node concept="2EixSi" id="5rgSauRo0gG" role="2EinRH" />
+      </node>
+      <node concept="356sEK" id="5rgSauRo_8j" role="383Ya9">
+        <node concept="2EixSi" id="5rgSauRo_8l" role="2EinRH" />
+      </node>
+      <node concept="356sEK" id="5rgSauRo0gL" role="383Ya9">
+        <node concept="356sEF" id="5rgSauRo0gM" role="356sEH">
+          <property role="TrG5h" value="using namespace std::chrono_literals;" />
+        </node>
+        <node concept="2EixSi" id="5rgSauRo0gO" role="2EinRH" />
+      </node>
+      <node concept="356sEK" id="5rgSauRo0gP" role="383Ya9">
+        <node concept="2EixSi" id="5rgSauRo0gS" role="2EinRH" />
+      </node>
+      <node concept="356sEK" id="5rgSauRo0gT" role="383Ya9">
+        <node concept="356sEF" id="5rgSauRo0gU" role="356sEH">
+          <property role="TrG5h" value="class GenericNode : public rclcpp::Node" />
+        </node>
+        <node concept="2EixSi" id="5rgSauRo0gW" role="2EinRH" />
+      </node>
+      <node concept="356sEK" id="5rgSauRo0gX" role="383Ya9">
+        <node concept="356sEF" id="5rgSauRo0gY" role="356sEH">
+          <property role="TrG5h" value="{" />
+        </node>
+        <node concept="2EixSi" id="5rgSauRo0h0" role="2EinRH" />
+      </node>
+      <node concept="356sEK" id="5rgSauRo0h1" role="383Ya9">
+        <node concept="356sEF" id="5rgSauRo0h2" role="356sEH">
+          <property role="TrG5h" value="public:" />
+        </node>
+        <node concept="2EixSi" id="5rgSauRo0h4" role="2EinRH" />
+      </node>
+      <node concept="356sEQ" id="5rgSauRo0h9" role="383Ya9">
+        <property role="333NGx" value="  " />
+        <node concept="356sEK" id="5rgSauRo0h5" role="383Ya9">
+          <node concept="356sEF" id="5rgSauRo0h6" role="356sEH">
+            <property role="TrG5h" value="GenericNode(const std::string&amp; node_name) : Node(node_name)" />
+          </node>
+          <node concept="2EixSi" id="5rgSauRo0h8" role="2EinRH" />
+        </node>
+        <node concept="356sEK" id="5rgSauRo0ha" role="383Ya9">
+          <node concept="356sEF" id="5rgSauRo0hb" role="356sEH">
+            <property role="TrG5h" value="{" />
+          </node>
+          <node concept="2EixSi" id="5rgSauRo0hd" role="2EinRH" />
+        </node>
+        <node concept="356sEQ" id="5rgSauRo0hi" role="383Ya9">
+          <property role="333NGx" value="  " />
+          <node concept="356sEK" id="5rgSauRo0he" role="383Ya9">
+            <node concept="356sEF" id="5rgSauRo0hf" role="356sEH">
+              <property role="TrG5h" value="// Publishers" />
+            </node>
+            <node concept="2EixSi" id="5rgSauRo0hh" role="2EinRH" />
+          </node>
+          <node concept="356sEK" id="5rgSauRo0hj" role="383Ya9">
+            <node concept="356sEF" id="5rgSauRo0hk" role="356sEH">
+              <property role="TrG5h" value="publisherT_ = this-&gt;create_publisher&lt;packageT::msg::messageT&gt;(&quot;topicT&quot;, 10);" />
+            </node>
+            <node concept="2EixSi" id="5rgSauRo0hm" role="2EinRH" />
+          </node>
+          <node concept="356sEK" id="5rgSauRo0hn" role="383Ya9">
+            <node concept="356sEF" id="5rgSauRo0ho" role="356sEH">
+              <property role="TrG5h" value="timer = this-&gt;create_wall_timer(" />
+            </node>
+            <node concept="2EixSi" id="5rgSauRo0hq" role="2EinRH" />
+          </node>
+          <node concept="356sEQ" id="5rgSauRo0hv" role="383Ya9">
+            <property role="333NGx" value="    " />
+            <node concept="356sEK" id="5rgSauRo0hr" role="383Ya9">
+              <node concept="356sEF" id="5rgSauRo0hs" role="356sEH">
+                <property role="TrG5h" value="500ms," />
+              </node>
+              <node concept="2EixSi" id="5rgSauRo0hu" role="2EinRH" />
+            </node>
+            <node concept="356sEK" id="5rgSauRo0hw" role="383Ya9">
+              <node concept="356sEF" id="5rgSauRo0hx" role="356sEH">
+                <property role="TrG5h" value="std::bind(&amp;GenericNode::publisher_functionT, this));" />
+              </node>
+              <node concept="2EixSi" id="5rgSauRo0hz" role="2EinRH" />
+            </node>
+            <node concept="356sEK" id="5rgSauRo0h$" role="383Ya9">
+              <node concept="2EixSi" id="5rgSauRo0hB" role="2EinRH" />
+            </node>
+          </node>
+          <node concept="356sEK" id="5rgSauRo0hC" role="383Ya9">
+            <node concept="356sEF" id="5rgSauRo0hD" role="356sEH">
+              <property role="TrG5h" value="// Subscribers" />
+            </node>
+            <node concept="2EixSi" id="5rgSauRo0hF" role="2EinRH" />
+          </node>
+          <node concept="356sEK" id="5rgSauRo0hG" role="383Ya9">
+            <node concept="356sEF" id="5rgSauRo0hH" role="356sEH">
+              <property role="TrG5h" value="subscriptionT_ = this-&gt;create_subscription&lt;packageT::msg::messageT&gt;(" />
+            </node>
+            <node concept="2EixSi" id="5rgSauRo0hJ" role="2EinRH" />
+          </node>
+          <node concept="356sEQ" id="5rgSauRo0hO" role="383Ya9">
+            <property role="333NGx" value="    " />
+            <node concept="356sEK" id="5rgSauRo0hK" role="383Ya9">
+              <node concept="356sEF" id="5rgSauRo0hL" role="356sEH">
+                <property role="TrG5h" value="&quot;topicT&quot;, 10, std::bind(&amp;GenericNode::subscribe_message, this));" />
+              </node>
+              <node concept="2EixSi" id="5rgSauRo0hN" role="2EinRH" />
+            </node>
+            <node concept="356sEK" id="5rgSauRo0hP" role="383Ya9">
+              <node concept="2EixSi" id="5rgSauRo0hS" role="2EinRH" />
+            </node>
+          </node>
+          <node concept="356sEK" id="5rgSauRo0hT" role="383Ya9">
+            <node concept="356sEF" id="5rgSauRo0hU" role="356sEH">
+              <property role="TrG5h" value="// Service Client" />
+            </node>
+            <node concept="2EixSi" id="5rgSauRo0hW" role="2EinRH" />
+          </node>
+          <node concept="356sEK" id="5rgSauRo0hX" role="383Ya9">
+            <node concept="356sEF" id="5rgSauRo0hY" role="356sEH">
+              <property role="TrG5h" value="service_client_T = this-&gt;create_client&lt;packageT::srv::serviceT&gt;(&quot;serviceT&quot;);" />
+            </node>
+            <node concept="2EixSi" id="5rgSauRo0i0" role="2EinRH" />
+          </node>
+          <node concept="356sEK" id="5rgSauRo0i1" role="383Ya9">
+            <node concept="2EixSi" id="5rgSauRo0i4" role="2EinRH" />
+          </node>
+          <node concept="356sEK" id="5rgSauRo0i5" role="383Ya9">
+            <node concept="356sEF" id="5rgSauRo0i6" role="356sEH">
+              <property role="TrG5h" value="// Action Client" />
+            </node>
+            <node concept="2EixSi" id="5rgSauRo0i8" role="2EinRH" />
+          </node>
+          <node concept="356sEK" id="5rgSauRo0i9" role="383Ya9">
+            <node concept="356sEF" id="5rgSauRo0ia" role="356sEH">
+              <property role="TrG5h" value="action_client_ = rclcpp_action::create_client&lt;packageT::action::actionT&gt;(this, &quot;actionT&quot;);" />
+            </node>
+            <node concept="2EixSi" id="5rgSauRo0ic" role="2EinRH" />
+          </node>
+          <node concept="356sEK" id="5rgSauRo0id" role="383Ya9">
+            <node concept="2EixSi" id="5rgSauRo0ig" role="2EinRH" />
+          </node>
+          <node concept="356sEK" id="5rgSauRo0ih" role="383Ya9">
+            <node concept="356sEF" id="5rgSauRo0ii" role="356sEH">
+              <property role="TrG5h" value="// Call service and send action goal" />
+            </node>
+            <node concept="2EixSi" id="5rgSauRo0ik" role="2EinRH" />
+          </node>
+          <node concept="356sEK" id="5rgSauRo0il" role="383Ya9">
+            <node concept="356sEF" id="5rgSauRo0im" role="356sEH">
+              <property role="TrG5h" value="callService();" />
+            </node>
+            <node concept="2EixSi" id="5rgSauRo0io" role="2EinRH" />
+          </node>
+          <node concept="356sEK" id="5rgSauRo0ip" role="383Ya9">
+            <node concept="356sEF" id="5rgSauRo0iq" role="356sEH">
+              <property role="TrG5h" value="sendActionGoal();" />
+            </node>
+            <node concept="2EixSi" id="5rgSauRo0is" role="2EinRH" />
+          </node>
+        </node>
+        <node concept="356sEK" id="5rgSauRo0it" role="383Ya9">
+          <node concept="356sEF" id="5rgSauRo0iu" role="356sEH">
+            <property role="TrG5h" value="}" />
+          </node>
+          <node concept="2EixSi" id="5rgSauRo0iw" role="2EinRH" />
+        </node>
+        <node concept="356sEK" id="5rgSauRo0ix" role="383Ya9">
+          <node concept="2EixSi" id="5rgSauRo0i$" role="2EinRH" />
+        </node>
+      </node>
+      <node concept="356sEK" id="5rgSauRo0i_" role="383Ya9">
+        <node concept="356sEF" id="5rgSauRo0iA" role="356sEH">
+          <property role="TrG5h" value="private:" />
+        </node>
+        <node concept="2EixSi" id="5rgSauRo0iC" role="2EinRH" />
+      </node>
+      <node concept="356sEQ" id="5rgSauRo0iH" role="383Ya9">
+        <property role="333NGx" value="  " />
+        <node concept="356sEK" id="5rgSauRo0iD" role="383Ya9">
+          <node concept="356sEF" id="5rgSauRo0iE" role="356sEH">
+            <property role="TrG5h" value="void publisher_functionT()" />
+          </node>
+          <node concept="2EixSi" id="5rgSauRo0iG" role="2EinRH" />
+        </node>
+        <node concept="356sEK" id="5rgSauRo0iI" role="383Ya9">
+          <node concept="356sEF" id="5rgSauRo0iJ" role="356sEH">
+            <property role="TrG5h" value="{" />
+          </node>
+          <node concept="2EixSi" id="5rgSauRo0iL" role="2EinRH" />
+        </node>
+        <node concept="356sEQ" id="5rgSauRo0iQ" role="383Ya9">
+          <property role="333NGx" value="  " />
+          <node concept="356sEK" id="5rgSauRo0iM" role="383Ya9">
+            <node concept="356sEF" id="5rgSauRo0iN" role="356sEH">
+              <property role="TrG5h" value="auto message = packageT::msg::messageT();" />
+            </node>
+            <node concept="2EixSi" id="5rgSauRo0iP" role="2EinRH" />
+          </node>
+          <node concept="356sEK" id="5rgSauRo0iR" role="383Ya9">
+            <node concept="356sEF" id="5rgSauRo0iS" role="356sEH">
+              <property role="TrG5h" value="message.data =  // Add your info here" />
+            </node>
+            <node concept="2EixSi" id="5rgSauRo0iU" role="2EinRH" />
+          </node>
+          <node concept="356sEK" id="5rgSauRo0iV" role="383Ya9">
+            <node concept="356sEF" id="5rgSauRo0iW" role="356sEH">
+              <property role="TrG5h" value="publisherT_-&gt;publish(message);" />
+            </node>
+            <node concept="2EixSi" id="5rgSauRo0iY" role="2EinRH" />
+          </node>
+          <node concept="356sEK" id="5rgSauRo0iZ" role="383Ya9">
+            <node concept="356sEF" id="5rgSauRo0j0" role="356sEH">
+              <property role="TrG5h" value="RCLCPP_INFO(this-&gt;get_logger(), &quot;Published: '%s'&quot;, message.data.c_str());" />
+            </node>
+            <node concept="2EixSi" id="5rgSauRo0j2" role="2EinRH" />
+          </node>
+        </node>
+        <node concept="356sEK" id="5rgSauRo0j3" role="383Ya9">
+          <node concept="356sEF" id="5rgSauRo0j4" role="356sEH">
+            <property role="TrG5h" value="}" />
+          </node>
+          <node concept="2EixSi" id="5rgSauRo0j6" role="2EinRH" />
+        </node>
+        <node concept="356sEK" id="5rgSauRo0j7" role="383Ya9">
+          <node concept="2EixSi" id="5rgSauRo0ja" role="2EinRH" />
+        </node>
+        <node concept="356sEK" id="5rgSauRo0jb" role="383Ya9">
+          <node concept="356sEF" id="5rgSauRo0jc" role="356sEH">
+            <property role="TrG5h" value="void subscribe_message(const packageT::messageT::SharedPtr msg)" />
+          </node>
+          <node concept="2EixSi" id="5rgSauRo0je" role="2EinRH" />
+        </node>
+        <node concept="356sEK" id="5rgSauRo0jf" role="383Ya9">
+          <node concept="356sEF" id="5rgSauRo0jg" role="356sEH">
+            <property role="TrG5h" value="{" />
+          </node>
+          <node concept="2EixSi" id="5rgSauRo0ji" role="2EinRH" />
+        </node>
+        <node concept="356sEQ" id="5rgSauRo0jn" role="383Ya9">
+          <property role="333NGx" value="  " />
+          <node concept="356sEK" id="5rgSauRo0jj" role="383Ya9">
+            <node concept="356sEF" id="5rgSauRo0jk" role="356sEH">
+              <property role="TrG5h" value="RCLCPP_INFO(this-&gt;get_logger(), &quot;Received: '%s'&quot;, msg-&gt;data.c_str());" />
+            </node>
+            <node concept="2EixSi" id="5rgSauRo0jm" role="2EinRH" />
+          </node>
+        </node>
+        <node concept="356sEK" id="5rgSauRo0jo" role="383Ya9">
+          <node concept="356sEF" id="5rgSauRo0jp" role="356sEH">
+            <property role="TrG5h" value="}" />
+          </node>
+          <node concept="2EixSi" id="5rgSauRo0jr" role="2EinRH" />
+        </node>
+        <node concept="356sEK" id="5rgSauRo0js" role="383Ya9">
+          <node concept="2EixSi" id="5rgSauRo0jv" role="2EinRH" />
+        </node>
+        <node concept="356sEK" id="5rgSauRo0jw" role="383Ya9">
+          <node concept="356sEF" id="5rgSauRo0jx" role="356sEH">
+            <property role="TrG5h" value="// Call a service" />
+          </node>
+          <node concept="2EixSi" id="5rgSauRo0jz" role="2EinRH" />
+        </node>
+        <node concept="356sEK" id="5rgSauRo0j$" role="383Ya9">
+          <node concept="356sEF" id="5rgSauRo0j_" role="356sEH">
+            <property role="TrG5h" value="void callService()" />
+          </node>
+          <node concept="2EixSi" id="5rgSauRo0jB" role="2EinRH" />
+        </node>
+        <node concept="356sEK" id="5rgSauRo0jC" role="383Ya9">
+          <node concept="356sEF" id="5rgSauRo0jD" role="356sEH">
+            <property role="TrG5h" value="{" />
+          </node>
+          <node concept="2EixSi" id="5rgSauRo0jF" role="2EinRH" />
+        </node>
+        <node concept="356sEQ" id="5rgSauRo0jK" role="383Ya9">
+          <property role="333NGx" value="  " />
+          <node concept="356sEK" id="5rgSauRo0jG" role="383Ya9">
+            <node concept="356sEF" id="5rgSauRo0jH" role="356sEH">
+              <property role="TrG5h" value="auto request = std::make_shared&lt;packageT::srv::serviceT::Request&gt;();" />
+            </node>
+            <node concept="2EixSi" id="5rgSauRo0jJ" role="2EinRH" />
+          </node>
+          <node concept="356sEK" id="5rgSauRo0jL" role="383Ya9">
+            <node concept="356sEF" id="5rgSauRo0jM" role="356sEH">
+              <property role="TrG5h" value="request-&gt;data = // Replace with your service request field" />
+            </node>
+            <node concept="2EixSi" id="5rgSauRo0jO" role="2EinRH" />
+          </node>
+          <node concept="356sEK" id="5rgSauRo0jP" role="383Ya9">
+            <node concept="2EixSi" id="5rgSauRo0jS" role="2EinRH" />
+          </node>
+          <node concept="356sEK" id="5rgSauRo0jT" role="383Ya9">
+            <node concept="356sEF" id="5rgSauRo0jU" role="356sEH">
+              <property role="TrG5h" value="if (!service_client_T-&gt;wait_for_service(1s)) {" />
+            </node>
+            <node concept="2EixSi" id="5rgSauRo0jW" role="2EinRH" />
+          </node>
+          <node concept="356sEQ" id="5rgSauRo0k1" role="383Ya9">
+            <property role="333NGx" value="  " />
+            <node concept="356sEK" id="5rgSauRo0jX" role="383Ya9">
+              <node concept="356sEF" id="5rgSauRo0jY" role="356sEH">
+                <property role="TrG5h" value="RCLCPP_ERROR(this-&gt;get_logger(), &quot;Service not available.&quot;);" />
+              </node>
+              <node concept="2EixSi" id="5rgSauRo0k0" role="2EinRH" />
+            </node>
+            <node concept="356sEK" id="5rgSauRo0k2" role="383Ya9">
+              <node concept="356sEF" id="5rgSauRo0k3" role="356sEH">
+                <property role="TrG5h" value="return;" />
+              </node>
+              <node concept="2EixSi" id="5rgSauRo0k5" role="2EinRH" />
+            </node>
+          </node>
+          <node concept="356sEK" id="5rgSauRo0k6" role="383Ya9">
+            <node concept="356sEF" id="5rgSauRo0k7" role="356sEH">
+              <property role="TrG5h" value="}" />
+            </node>
+            <node concept="2EixSi" id="5rgSauRo0k9" role="2EinRH" />
+          </node>
+          <node concept="356sEK" id="5rgSauRo0ka" role="383Ya9">
+            <node concept="2EixSi" id="5rgSauRo0kd" role="2EinRH" />
+          </node>
+          <node concept="356sEK" id="5rgSauRo0ke" role="383Ya9">
+            <node concept="2EixSi" id="5rgSauRo0kh" role="2EinRH" />
+          </node>
+          <node concept="356sEK" id="5rgSauRo0ki" role="383Ya9">
+            <node concept="356sEF" id="5rgSauRo0kj" role="356sEH">
+              <property role="TrG5h" value="auto future = service_client_T-&gt;async_send_request(request);" />
+            </node>
+            <node concept="2EixSi" id="5rgSauRo0kl" role="2EinRH" />
+          </node>
+          <node concept="356sEK" id="5rgSauRo0km" role="383Ya9">
+            <node concept="356sEF" id="5rgSauRo0kn" role="356sEH">
+              <property role="TrG5h" value="if (rclcpp::spin_until_future_complete(this-&gt;get_node_base_interface(), future) ==" />
+            </node>
+            <node concept="2EixSi" id="5rgSauRo0kp" role="2EinRH" />
+          </node>
+          <node concept="356sEQ" id="5rgSauRo0kz" role="383Ya9">
+            <property role="333NGx" value="  " />
+            <node concept="356sEQ" id="5rgSauRo0ku" role="383Ya9">
+              <property role="333NGx" value="  " />
+              <node concept="356sEK" id="5rgSauRo0kq" role="383Ya9">
+                <node concept="356sEF" id="5rgSauRo0kr" role="356sEH">
+                  <property role="TrG5h" value="rclcpp::FutureReturnCode::SUCCESS) {" />
+                </node>
+                <node concept="2EixSi" id="5rgSauRo0kt" role="2EinRH" />
+              </node>
+            </node>
+            <node concept="356sEK" id="5rgSauRo0kv" role="383Ya9">
+              <node concept="356sEF" id="5rgSauRo0kw" role="356sEH">
+                <property role="TrG5h" value="auto response = future.get();" />
+              </node>
+              <node concept="2EixSi" id="5rgSauRo0ky" role="2EinRH" />
+            </node>
+            <node concept="356sEK" id="5rgSauRo0k$" role="383Ya9">
+              <node concept="356sEF" id="5rgSauRo0k_" role="356sEH">
+                <property role="TrG5h" value="RCLCPP_INFO(this-&gt;get_logger(), &quot;Service response: %s&quot;, response-&gt;message.c_str()); // Replace with your service response field" />
+              </node>
+              <node concept="2EixSi" id="5rgSauRo0kB" role="2EinRH" />
+            </node>
+          </node>
+          <node concept="356sEK" id="5rgSauRo0kC" role="383Ya9">
+            <node concept="356sEF" id="5rgSauRo0kD" role="356sEH">
+              <property role="TrG5h" value="} else {" />
+            </node>
+            <node concept="2EixSi" id="5rgSauRo0kF" role="2EinRH" />
+          </node>
+          <node concept="356sEQ" id="5rgSauRo0kK" role="383Ya9">
+            <property role="333NGx" value="  " />
+            <node concept="356sEK" id="5rgSauRo0kG" role="383Ya9">
+              <node concept="356sEF" id="5rgSauRo0kH" role="356sEH">
+                <property role="TrG5h" value="RCLCPP_ERROR(this-&gt;get_logger(), &quot;Failed to call service.&quot;);" />
+              </node>
+              <node concept="2EixSi" id="5rgSauRo0kJ" role="2EinRH" />
+            </node>
+          </node>
+          <node concept="356sEK" id="5rgSauRo0kL" role="383Ya9">
+            <node concept="356sEF" id="5rgSauRo0kM" role="356sEH">
+              <property role="TrG5h" value="}" />
+            </node>
+            <node concept="2EixSi" id="5rgSauRo0kO" role="2EinRH" />
+          </node>
+          <node concept="356sEK" id="5rgSauRo0kP" role="383Ya9">
+            <node concept="2EixSi" id="5rgSauRo0kS" role="2EinRH" />
+          </node>
+        </node>
+        <node concept="356sEK" id="5rgSauRo0kT" role="383Ya9">
+          <node concept="356sEF" id="5rgSauRo0kU" role="356sEH">
+            <property role="TrG5h" value="}" />
+          </node>
+          <node concept="2EixSi" id="5rgSauRo0kW" role="2EinRH" />
+        </node>
+        <node concept="356sEK" id="5rgSauRo0kX" role="383Ya9">
+          <node concept="2EixSi" id="5rgSauRo0l0" role="2EinRH" />
+        </node>
+        <node concept="356sEK" id="5rgSauRo0l1" role="383Ya9">
+          <node concept="356sEF" id="5rgSauRo0l2" role="356sEH">
+            <property role="TrG5h" value="// Send an action goal" />
+          </node>
+          <node concept="2EixSi" id="5rgSauRo0l4" role="2EinRH" />
+        </node>
+        <node concept="356sEK" id="5rgSauRo0l5" role="383Ya9">
+          <node concept="356sEF" id="5rgSauRo0l6" role="356sEH">
+            <property role="TrG5h" value="void sendActionGoal()" />
+          </node>
+          <node concept="2EixSi" id="5rgSauRo0l8" role="2EinRH" />
+        </node>
+        <node concept="356sEK" id="5rgSauRo0l9" role="383Ya9">
+          <node concept="356sEF" id="5rgSauRo0la" role="356sEH">
+            <property role="TrG5h" value="{" />
+          </node>
+          <node concept="2EixSi" id="5rgSauRo0lc" role="2EinRH" />
+        </node>
+        <node concept="356sEQ" id="5rgSauRo0lh" role="383Ya9">
+          <property role="333NGx" value="  " />
+          <node concept="356sEK" id="5rgSauRo0ld" role="383Ya9">
+            <node concept="356sEF" id="5rgSauRo0le" role="356sEH">
+              <property role="TrG5h" value="if (!action_client_-&gt;wait_for_action_server(1s)) {" />
+            </node>
+            <node concept="2EixSi" id="5rgSauRo0lg" role="2EinRH" />
+          </node>
+          <node concept="356sEQ" id="5rgSauRo0lm" role="383Ya9">
+            <property role="333NGx" value="  " />
+            <node concept="356sEK" id="5rgSauRo0li" role="383Ya9">
+              <node concept="356sEF" id="5rgSauRo0lj" role="356sEH">
+                <property role="TrG5h" value="RCLCPP_ERROR(this-&gt;get_logger(), &quot;Action server not available.&quot;);" />
+              </node>
+              <node concept="2EixSi" id="5rgSauRo0ll" role="2EinRH" />
+            </node>
+            <node concept="356sEK" id="5rgSauRo0ln" role="383Ya9">
+              <node concept="356sEF" id="5rgSauRo0lo" role="356sEH">
+                <property role="TrG5h" value="return;" />
+              </node>
+              <node concept="2EixSi" id="5rgSauRo0lq" role="2EinRH" />
+            </node>
+          </node>
+          <node concept="356sEK" id="5rgSauRo0lr" role="383Ya9">
+            <node concept="356sEF" id="5rgSauRo0ls" role="356sEH">
+              <property role="TrG5h" value="}" />
+            </node>
+            <node concept="2EixSi" id="5rgSauRo0lu" role="2EinRH" />
+          </node>
+          <node concept="356sEK" id="5rgSauRo0lv" role="383Ya9">
+            <node concept="2EixSi" id="5rgSauRo0ly" role="2EinRH" />
+          </node>
+          <node concept="356sEK" id="5rgSauRo0lz" role="383Ya9">
+            <node concept="356sEF" id="5rgSauRo0l$" role="356sEH">
+              <property role="TrG5h" value="auto goal = packageT::action::actionT::Goal();" />
+            </node>
+            <node concept="2EixSi" id="5rgSauRo0lA" role="2EinRH" />
+          </node>
+          <node concept="356sEK" id="5rgSauRo0lB" role="383Ya9">
+            <node concept="356sEF" id="5rgSauRo0lC" role="356sEH">
+              <property role="TrG5h" value="goal.target = // Replace with your goal field" />
+            </node>
+            <node concept="2EixSi" id="5rgSauRo0lE" role="2EinRH" />
+          </node>
+          <node concept="356sEK" id="5rgSauRo0lF" role="383Ya9">
+            <node concept="2EixSi" id="5rgSauRo0lI" role="2EinRH" />
+          </node>
+          <node concept="356sEK" id="5rgSauRo0lJ" role="383Ya9">
+            <node concept="356sEF" id="5rgSauRo0lK" role="356sEH">
+              <property role="TrG5h" value="RCLCPP_INFO(this-&gt;get_logger(), &quot;Sending action goal...&quot;);" />
+            </node>
+            <node concept="2EixSi" id="5rgSauRo0lM" role="2EinRH" />
+          </node>
+          <node concept="356sEK" id="5rgSauRo0lN" role="383Ya9">
+            <node concept="356sEF" id="5rgSauRo0lO" role="356sEH">
+              <property role="TrG5h" value="auto send_goal_options = rclcpp_action::Client&lt;packageT::action::actionT&gt;::SendGoalOptions();" />
+            </node>
+            <node concept="2EixSi" id="5rgSauRo0lQ" role="2EinRH" />
+          </node>
+          <node concept="356sEK" id="5rgSauRo0lR" role="383Ya9">
+            <node concept="356sEF" id="5rgSauRo0lS" role="356sEH">
+              <property role="TrG5h" value="send_goal_options.goal_response_callback =" />
+            </node>
+            <node concept="2EixSi" id="5rgSauRo0lU" role="2EinRH" />
+          </node>
+          <node concept="356sEQ" id="5rgSauRo0lZ" role="383Ya9">
+            <property role="333NGx" value="    " />
+            <node concept="356sEK" id="5rgSauRo0lV" role="383Ya9">
+              <node concept="356sEF" id="5rgSauRo0lW" role="356sEH">
+                <property role="TrG5h" value="std::bind(&amp;GenericNode::actionGoalResponse, this);" />
+              </node>
+              <node concept="2EixSi" id="5rgSauRo0lY" role="2EinRH" />
+            </node>
+          </node>
+          <node concept="356sEK" id="5rgSauRo0m0" role="383Ya9">
+            <node concept="356sEF" id="5rgSauRo0m1" role="356sEH">
+              <property role="TrG5h" value="send_goal_options.feedback_callback =" />
+            </node>
+            <node concept="2EixSi" id="5rgSauRo0m3" role="2EinRH" />
+          </node>
+          <node concept="356sEQ" id="5rgSauRo0m8" role="383Ya9">
+            <property role="333NGx" value="    " />
+            <node concept="356sEK" id="5rgSauRo0m4" role="383Ya9">
+              <node concept="356sEF" id="5rgSauRo0m5" role="356sEH">
+                <property role="TrG5h" value="std::bind(&amp;GenericNode::actionFeedback, this);" />
+              </node>
+              <node concept="2EixSi" id="5rgSauRo0m7" role="2EinRH" />
+            </node>
+          </node>
+          <node concept="356sEK" id="5rgSauRo0m9" role="383Ya9">
+            <node concept="356sEF" id="5rgSauRo0ma" role="356sEH">
+              <property role="TrG5h" value="send_goal_options.result_callback =" />
+            </node>
+            <node concept="2EixSi" id="5rgSauRo0mc" role="2EinRH" />
+          </node>
+          <node concept="356sEQ" id="5rgSauRo0mh" role="383Ya9">
+            <property role="333NGx" value="    " />
+            <node concept="356sEK" id="5rgSauRo0md" role="383Ya9">
+              <node concept="356sEF" id="5rgSauRo0me" role="356sEH">
+                <property role="TrG5h" value="std::bind(&amp;GenericNode::actionResult, this);" />
+              </node>
+              <node concept="2EixSi" id="5rgSauRo0mg" role="2EinRH" />
+            </node>
+          </node>
+          <node concept="356sEK" id="5rgSauRo0mi" role="383Ya9">
+            <node concept="356sEF" id="5rgSauRo0mj" role="356sEH">
+              <property role="TrG5h" value="action_client_-&gt;async_send_goal(goal, send_goal_options);" />
+            </node>
+            <node concept="2EixSi" id="5rgSauRo0ml" role="2EinRH" />
+          </node>
+        </node>
+        <node concept="356sEK" id="5rgSauRo0mm" role="383Ya9">
+          <node concept="356sEF" id="5rgSauRo0mn" role="356sEH">
+            <property role="TrG5h" value="}" />
+          </node>
+          <node concept="2EixSi" id="5rgSauRo0mp" role="2EinRH" />
+        </node>
+        <node concept="356sEK" id="5rgSauRo0mq" role="383Ya9">
+          <node concept="2EixSi" id="5rgSauRo0mt" role="2EinRH" />
+        </node>
+        <node concept="356sEK" id="5rgSauRo0mu" role="383Ya9">
+          <node concept="356sEF" id="5rgSauRo0mv" role="356sEH">
+            <property role="TrG5h" value="// Action goal response callback" />
+          </node>
+          <node concept="2EixSi" id="5rgSauRo0mx" role="2EinRH" />
+        </node>
+        <node concept="356sEK" id="5rgSauRo0my" role="383Ya9">
+          <node concept="356sEF" id="5rgSauRo0mz" role="356sEH">
+            <property role="TrG5h" value="void actionGoalResponse(" />
+          </node>
+          <node concept="2EixSi" id="5rgSauRo0m_" role="2EinRH" />
+        </node>
+        <node concept="356sEQ" id="5rgSauRo0mE" role="383Ya9">
+          <property role="333NGx" value="    " />
+          <node concept="356sEK" id="5rgSauRo0mA" role="383Ya9">
+            <node concept="356sEF" id="5rgSauRo0mB" role="356sEH">
+              <property role="TrG5h" value="const rclcpp_action::ClientGoalHandle&lt;packageT::action::actionT&gt;::SharedPtr &amp;goal_handle)" />
+            </node>
+            <node concept="2EixSi" id="5rgSauRo0mD" role="2EinRH" />
+          </node>
+        </node>
+        <node concept="356sEK" id="5rgSauRo0mF" role="383Ya9">
+          <node concept="356sEF" id="5rgSauRo0mG" role="356sEH">
+            <property role="TrG5h" value="{" />
+          </node>
+          <node concept="2EixSi" id="5rgSauRo0mI" role="2EinRH" />
+        </node>
+        <node concept="356sEQ" id="5rgSauRo0mN" role="383Ya9">
+          <property role="333NGx" value="  " />
+          <node concept="356sEK" id="5rgSauRo0mJ" role="383Ya9">
+            <node concept="356sEF" id="5rgSauRo0mK" role="356sEH">
+              <property role="TrG5h" value="if (!goal_handle) {" />
+            </node>
+            <node concept="2EixSi" id="5rgSauRo0mM" role="2EinRH" />
+          </node>
+          <node concept="356sEQ" id="5rgSauRo0mS" role="383Ya9">
+            <property role="333NGx" value="  " />
+            <node concept="356sEK" id="5rgSauRo0mO" role="383Ya9">
+              <node concept="356sEF" id="5rgSauRo0mP" role="356sEH">
+                <property role="TrG5h" value="RCLCPP_ERROR(this-&gt;get_logger(), &quot;Goal was rejected by the server.&quot;);" />
+              </node>
+              <node concept="2EixSi" id="5rgSauRo0mR" role="2EinRH" />
+            </node>
+          </node>
+          <node concept="356sEK" id="5rgSauRo0mT" role="383Ya9">
+            <node concept="356sEF" id="5rgSauRo0mU" role="356sEH">
+              <property role="TrG5h" value="} else {" />
+            </node>
+            <node concept="2EixSi" id="5rgSauRo0mW" role="2EinRH" />
+          </node>
+          <node concept="356sEQ" id="5rgSauRo0n1" role="383Ya9">
+            <property role="333NGx" value="  " />
+            <node concept="356sEK" id="5rgSauRo0mX" role="383Ya9">
+              <node concept="356sEF" id="5rgSauRo0mY" role="356sEH">
+                <property role="TrG5h" value="RCLCPP_INFO(this-&gt;get_logger(), &quot;Goal accepted by the server.&quot;);" />
+              </node>
+              <node concept="2EixSi" id="5rgSauRo0n0" role="2EinRH" />
+            </node>
+          </node>
+          <node concept="356sEK" id="5rgSauRo0n2" role="383Ya9">
+            <node concept="356sEF" id="5rgSauRo0n3" role="356sEH">
+              <property role="TrG5h" value="}" />
+            </node>
+            <node concept="2EixSi" id="5rgSauRo0n5" role="2EinRH" />
+          </node>
+        </node>
+        <node concept="356sEK" id="5rgSauRo0n6" role="383Ya9">
+          <node concept="356sEF" id="5rgSauRo0n7" role="356sEH">
+            <property role="TrG5h" value="}" />
+          </node>
+          <node concept="2EixSi" id="5rgSauRo0n9" role="2EinRH" />
+        </node>
+        <node concept="356sEK" id="5rgSauRo0na" role="383Ya9">
+          <node concept="2EixSi" id="5rgSauRo0nd" role="2EinRH" />
+        </node>
+        <node concept="356sEK" id="5rgSauRo0ne" role="383Ya9">
+          <node concept="356sEF" id="5rgSauRo0nf" role="356sEH">
+            <property role="TrG5h" value="// Action feedback callback" />
+          </node>
+          <node concept="2EixSi" id="5rgSauRo0nh" role="2EinRH" />
+        </node>
+        <node concept="356sEK" id="5rgSauRo0ni" role="383Ya9">
+          <node concept="356sEF" id="5rgSauRo0nj" role="356sEH">
+            <property role="TrG5h" value="void actionFeedback(" />
+          </node>
+          <node concept="2EixSi" id="5rgSauRo0nl" role="2EinRH" />
+        </node>
+        <node concept="356sEQ" id="5rgSauRo0nq" role="383Ya9">
+          <property role="333NGx" value="    " />
+          <node concept="356sEK" id="5rgSauRo0nm" role="383Ya9">
+            <node concept="356sEF" id="5rgSauRo0nn" role="356sEH">
+              <property role="TrG5h" value="rclcpp_action::ClientGoalHandle&lt;packageT::action::actionT&gt;::SharedPtr," />
+            </node>
+            <node concept="2EixSi" id="5rgSauRo0np" role="2EinRH" />
+          </node>
+          <node concept="356sEK" id="5rgSauRo0nr" role="383Ya9">
+            <node concept="356sEF" id="5rgSauRo0ns" role="356sEH">
+              <property role="TrG5h" value="const std::shared_ptr&lt;const packageT::actionT::Feedback&gt; feedback)" />
+            </node>
+            <node concept="2EixSi" id="5rgSauRo0nu" role="2EinRH" />
+          </node>
+        </node>
+        <node concept="356sEK" id="5rgSauRo0nv" role="383Ya9">
+          <node concept="356sEF" id="5rgSauRo0nw" role="356sEH">
+            <property role="TrG5h" value="{" />
+          </node>
+          <node concept="2EixSi" id="5rgSauRo0ny" role="2EinRH" />
+        </node>
+        <node concept="356sEQ" id="5rgSauRo0nB" role="383Ya9">
+          <property role="333NGx" value="  " />
+          <node concept="356sEK" id="5rgSauRo0nz" role="383Ya9">
+            <node concept="356sEF" id="5rgSauRo0n$" role="356sEH">
+              <property role="TrG5h" value="RCLCPP_INFO(this-&gt;get_logger(), &quot;Feedback: %d&quot;, feedback-&gt;progress); // Replace with your feedback field" />
+            </node>
+            <node concept="2EixSi" id="5rgSauRo0nA" role="2EinRH" />
+          </node>
+        </node>
+        <node concept="356sEK" id="5rgSauRo0nC" role="383Ya9">
+          <node concept="356sEF" id="5rgSauRo0nD" role="356sEH">
+            <property role="TrG5h" value="}" />
+          </node>
+          <node concept="2EixSi" id="5rgSauRo0nF" role="2EinRH" />
+        </node>
+        <node concept="356sEK" id="5rgSauRo0nG" role="383Ya9">
+          <node concept="2EixSi" id="5rgSauRo0nJ" role="2EinRH" />
+        </node>
+        <node concept="356sEK" id="5rgSauRo0nK" role="383Ya9">
+          <node concept="356sEF" id="5rgSauRo0nL" role="356sEH">
+            <property role="TrG5h" value="// Action result callback" />
+          </node>
+          <node concept="2EixSi" id="5rgSauRo0nN" role="2EinRH" />
+        </node>
+        <node concept="356sEK" id="5rgSauRo0nO" role="383Ya9">
+          <node concept="356sEF" id="5rgSauRo0nP" role="356sEH">
+            <property role="TrG5h" value="void actionResult(" />
+          </node>
+          <node concept="2EixSi" id="5rgSauRo0nR" role="2EinRH" />
+        </node>
+        <node concept="356sEQ" id="5rgSauRo0nW" role="383Ya9">
+          <property role="333NGx" value="    " />
+          <node concept="356sEK" id="5rgSauRo0nS" role="383Ya9">
+            <node concept="356sEF" id="5rgSauRo0nT" role="356sEH">
+              <property role="TrG5h" value="const rclcpp_action::ClientGoalHandle&lt;packageT::action::actionT&gt;::WrappedResult &amp;result)" />
+            </node>
+            <node concept="2EixSi" id="5rgSauRo0nV" role="2EinRH" />
+          </node>
+        </node>
+        <node concept="356sEK" id="5rgSauRo0nX" role="383Ya9">
+          <node concept="356sEF" id="5rgSauRo0nY" role="356sEH">
+            <property role="TrG5h" value="{" />
+          </node>
+          <node concept="2EixSi" id="5rgSauRo0o0" role="2EinRH" />
+        </node>
+        <node concept="356sEQ" id="5rgSauRo0o5" role="383Ya9">
+          <property role="333NGx" value="  " />
+          <node concept="356sEK" id="5rgSauRo0o1" role="383Ya9">
+            <node concept="356sEF" id="5rgSauRo0o2" role="356sEH">
+              <property role="TrG5h" value="switch (result.code) {" />
+            </node>
+            <node concept="2EixSi" id="5rgSauRo0o4" role="2EinRH" />
+          </node>
+          <node concept="356sEQ" id="5rgSauRo0oa" role="383Ya9">
+            <property role="333NGx" value="  " />
+            <node concept="356sEK" id="5rgSauRo0o6" role="383Ya9">
+              <node concept="356sEF" id="5rgSauRo0o7" role="356sEH">
+                <property role="TrG5h" value="case rclcpp_action::ResultCode::SUCCEEDED:" />
+              </node>
+              <node concept="2EixSi" id="5rgSauRo0o9" role="2EinRH" />
+            </node>
+            <node concept="356sEQ" id="5rgSauRo0of" role="383Ya9">
+              <property role="333NGx" value="  " />
+              <node concept="356sEK" id="5rgSauRo0ob" role="383Ya9">
+                <node concept="356sEF" id="5rgSauRo0oc" role="356sEH">
+                  <property role="TrG5h" value="RCLCPP_INFO(this-&gt;get_logger(), &quot;Action succeeded!&quot;);" />
+                </node>
+                <node concept="2EixSi" id="5rgSauRo0oe" role="2EinRH" />
+              </node>
+              <node concept="356sEK" id="5rgSauRo0og" role="383Ya9">
+                <node concept="356sEF" id="5rgSauRo0oh" role="356sEH">
+                  <property role="TrG5h" value="break;" />
+                </node>
+                <node concept="2EixSi" id="5rgSauRo0oj" role="2EinRH" />
+              </node>
+            </node>
+            <node concept="356sEK" id="5rgSauRo0ok" role="383Ya9">
+              <node concept="356sEF" id="5rgSauRo0ol" role="356sEH">
+                <property role="TrG5h" value="case rclcpp_action::ResultCode::ABORTED:" />
+              </node>
+              <node concept="2EixSi" id="5rgSauRo0on" role="2EinRH" />
+            </node>
+            <node concept="356sEQ" id="5rgSauRo0os" role="383Ya9">
+              <property role="333NGx" value="  " />
+              <node concept="356sEK" id="5rgSauRo0oo" role="383Ya9">
+                <node concept="356sEF" id="5rgSauRo0op" role="356sEH">
+                  <property role="TrG5h" value="RCLCPP_ERROR(this-&gt;get_logger(), &quot;Action aborted.&quot;);" />
+                </node>
+                <node concept="2EixSi" id="5rgSauRo0or" role="2EinRH" />
+              </node>
+              <node concept="356sEK" id="5rgSauRo0ot" role="383Ya9">
+                <node concept="356sEF" id="5rgSauRo0ou" role="356sEH">
+                  <property role="TrG5h" value="break;" />
+                </node>
+                <node concept="2EixSi" id="5rgSauRo0ow" role="2EinRH" />
+              </node>
+            </node>
+            <node concept="356sEK" id="5rgSauRo0ox" role="383Ya9">
+              <node concept="356sEF" id="5rgSauRo0oy" role="356sEH">
+                <property role="TrG5h" value="case rclcpp_action::ResultCode::CANCELED:" />
+              </node>
+              <node concept="2EixSi" id="5rgSauRo0o$" role="2EinRH" />
+            </node>
+            <node concept="356sEQ" id="5rgSauRo0oD" role="383Ya9">
+              <property role="333NGx" value="  " />
+              <node concept="356sEK" id="5rgSauRo0o_" role="383Ya9">
+                <node concept="356sEF" id="5rgSauRo0oA" role="356sEH">
+                  <property role="TrG5h" value="RCLCPP_ERROR(this-&gt;get_logger(), &quot;Action canceled.&quot;);" />
+                </node>
+                <node concept="2EixSi" id="5rgSauRo0oC" role="2EinRH" />
+              </node>
+              <node concept="356sEK" id="5rgSauRo0oE" role="383Ya9">
+                <node concept="356sEF" id="5rgSauRo0oF" role="356sEH">
+                  <property role="TrG5h" value="break;" />
+                </node>
+                <node concept="2EixSi" id="5rgSauRo0oH" role="2EinRH" />
+              </node>
+            </node>
+            <node concept="356sEK" id="5rgSauRo0oI" role="383Ya9">
+              <node concept="356sEF" id="5rgSauRo0oJ" role="356sEH">
+                <property role="TrG5h" value="default:" />
+              </node>
+              <node concept="2EixSi" id="5rgSauRo0oL" role="2EinRH" />
+            </node>
+            <node concept="356sEQ" id="5rgSauRo0oQ" role="383Ya9">
+              <property role="333NGx" value="  " />
+              <node concept="356sEK" id="5rgSauRo0oM" role="383Ya9">
+                <node concept="356sEF" id="5rgSauRo0oN" role="356sEH">
+                  <property role="TrG5h" value="RCLCPP_ERROR(this-&gt;get_logger(), &quot;Action failed.&quot;);" />
+                </node>
+                <node concept="2EixSi" id="5rgSauRo0oP" role="2EinRH" />
+              </node>
+              <node concept="356sEK" id="5rgSauRo0oR" role="383Ya9">
+                <node concept="356sEF" id="5rgSauRo0oS" role="356sEH">
+                  <property role="TrG5h" value="break;" />
+                </node>
+                <node concept="2EixSi" id="5rgSauRo0oU" role="2EinRH" />
+              </node>
+            </node>
+          </node>
+          <node concept="356sEK" id="5rgSauRo0oV" role="383Ya9">
+            <node concept="356sEF" id="5rgSauRo0oW" role="356sEH">
+              <property role="TrG5h" value="}" />
+            </node>
+            <node concept="2EixSi" id="5rgSauRo0oY" role="2EinRH" />
+          </node>
+          <node concept="356sEK" id="5rgSauRo0oZ" role="383Ya9">
+            <node concept="356sEF" id="5rgSauRo0p0" role="356sEH">
+              <property role="TrG5h" value="RCLCPP_INFO(this-&gt;get_logger(), &quot;Result: %d&quot;, result.result-&gt;result); // Replace with your result field" />
+            </node>
+            <node concept="2EixSi" id="5rgSauRo0p2" role="2EinRH" />
+          </node>
+        </node>
+        <node concept="356sEK" id="5rgSauRo0p3" role="383Ya9">
+          <node concept="356sEF" id="5rgSauRo0p4" role="356sEH">
+            <property role="TrG5h" value="}" />
+          </node>
+          <node concept="2EixSi" id="5rgSauRo0p6" role="2EinRH" />
+        </node>
+        <node concept="356sEK" id="5rgSauRo0p7" role="383Ya9">
+          <node concept="2EixSi" id="5rgSauRo0pa" role="2EinRH" />
+        </node>
+        <node concept="356sEK" id="5rgSauRo0pb" role="383Ya9">
+          <node concept="356sEF" id="5rgSauRo0pc" role="356sEH">
+            <property role="TrG5h" value="// Members" />
+          </node>
+          <node concept="2EixSi" id="5rgSauRo0pe" role="2EinRH" />
+        </node>
+        <node concept="356sEK" id="5rgSauRo0pf" role="383Ya9">
+          <node concept="356sEF" id="5rgSauRo0pg" role="356sEH">
+            <property role="TrG5h" value="rclcpp::TimerBase::SharedPtr timer;" />
+          </node>
+          <node concept="2EixSi" id="5rgSauRo0pi" role="2EinRH" />
+        </node>
+        <node concept="356sEK" id="5rgSauRo0pj" role="383Ya9">
+          <node concept="356sEF" id="5rgSauRo0pk" role="356sEH">
+            <property role="TrG5h" value="rclcpp::Publisher&lt;packageT::msg::messageT&gt;::SharedPtr publisherT_;" />
+          </node>
+          <node concept="2EixSi" id="5rgSauRo0pm" role="2EinRH" />
+        </node>
+        <node concept="356sEK" id="5rgSauRo0pn" role="383Ya9">
+          <node concept="356sEF" id="5rgSauRo0po" role="356sEH">
+            <property role="TrG5h" value="rclcpp::Subscription&lt;packageT::msg::messageT&gt;::SharedPtr subscriptionT_;" />
+          </node>
+          <node concept="2EixSi" id="5rgSauRo0pq" role="2EinRH" />
+        </node>
+        <node concept="356sEK" id="5rgSauRo0pr" role="383Ya9">
+          <node concept="356sEF" id="5rgSauRo0ps" role="356sEH">
+            <property role="TrG5h" value="rclcpp::Client&lt;packageT::srv::serviceT&gt;::SharedPtr service_client_T;" />
+          </node>
+          <node concept="2EixSi" id="5rgSauRo0pu" role="2EinRH" />
+        </node>
+        <node concept="356sEK" id="5rgSauRo0pv" role="383Ya9">
+          <node concept="356sEF" id="5rgSauRo0pw" role="356sEH">
+            <property role="TrG5h" value="rclcpp_action::Client&lt;packageT::action::actionT&gt;::SharedPtr action_client_;" />
+          </node>
+          <node concept="2EixSi" id="5rgSauRo0py" role="2EinRH" />
+        </node>
+      </node>
+      <node concept="356sEK" id="5rgSauRo0pz" role="383Ya9">
+        <node concept="356sEF" id="5rgSauRo0p$" role="356sEH">
+          <property role="TrG5h" value="};" />
+        </node>
+        <node concept="2EixSi" id="5rgSauRo0pA" role="2EinRH" />
+      </node>
+      <node concept="356sEK" id="5rgSauRo0pB" role="383Ya9">
+        <node concept="2EixSi" id="5rgSauRo0pE" role="2EinRH" />
+      </node>
+      <node concept="356sEK" id="5rgSauRo0pF" role="383Ya9">
+        <node concept="356sEF" id="5rgSauRo0pG" role="356sEH">
+          <property role="TrG5h" value="int main(int argc, char * argv[])" />
+        </node>
+        <node concept="2EixSi" id="5rgSauRo0pI" role="2EinRH" />
+      </node>
+      <node concept="356sEK" id="5rgSauRo0pJ" role="383Ya9">
+        <node concept="356sEF" id="5rgSauRo0pK" role="356sEH">
+          <property role="TrG5h" value="{" />
+        </node>
+        <node concept="2EixSi" id="5rgSauRo0pM" role="2EinRH" />
+      </node>
+      <node concept="356sEQ" id="5rgSauRo0pR" role="383Ya9">
+        <property role="333NGx" value="  " />
+        <node concept="356sEK" id="5rgSauRo0pN" role="383Ya9">
+          <node concept="356sEF" id="5rgSauRo0pO" role="356sEH">
+            <property role="TrG5h" value="rclcpp::init(argc, argv);" />
+          </node>
+          <node concept="2EixSi" id="5rgSauRo0pQ" role="2EinRH" />
+        </node>
+        <node concept="356sEK" id="5rgSauRo0pS" role="383Ya9">
+          <node concept="2EixSi" id="5rgSauRo0pV" role="2EinRH" />
+        </node>
+        <node concept="356sEK" id="5rgSauRo0pW" role="383Ya9">
+          <node concept="356sEF" id="5rgSauRo0pX" role="356sEH">
+            <property role="TrG5h" value="// Get node name from command line (optional but recommended)" />
+          </node>
+          <node concept="2EixSi" id="5rgSauRo0pZ" role="2EinRH" />
+        </node>
+        <node concept="356sEK" id="5rgSauRo0q0" role="383Ya9">
+          <node concept="356sEF" id="5rgSauRo0q1" role="356sEH">
+            <property role="TrG5h" value="std::string node_name = &quot;generic_node&quot;;" />
+          </node>
+          <node concept="2EixSi" id="5rgSauRo0q3" role="2EinRH" />
+        </node>
+        <node concept="356sEK" id="5rgSauRo0q4" role="383Ya9">
+          <node concept="356sEF" id="5rgSauRo0q5" role="356sEH">
+            <property role="TrG5h" value="if (argc &gt; 1) {" />
+          </node>
+          <node concept="2EixSi" id="5rgSauRo0q7" role="2EinRH" />
+        </node>
+        <node concept="356sEQ" id="5rgSauRo0qc" role="383Ya9">
+          <property role="333NGx" value="  " />
+          <node concept="356sEK" id="5rgSauRo0q8" role="383Ya9">
+            <node concept="356sEF" id="5rgSauRo0q9" role="356sEH">
+              <property role="TrG5h" value="node_name = argv[1];" />
+            </node>
+            <node concept="2EixSi" id="5rgSauRo0qb" role="2EinRH" />
+          </node>
+        </node>
+        <node concept="356sEK" id="5rgSauRo0qd" role="383Ya9">
+          <node concept="356sEF" id="5rgSauRo0qe" role="356sEH">
+            <property role="TrG5h" value="}" />
+          </node>
+          <node concept="2EixSi" id="5rgSauRo0qg" role="2EinRH" />
+        </node>
+        <node concept="356sEK" id="5rgSauRo0qh" role="383Ya9">
+          <node concept="2EixSi" id="5rgSauRo0qk" role="2EinRH" />
+        </node>
+        <node concept="356sEK" id="5rgSauRo0ql" role="383Ya9">
+          <node concept="356sEF" id="5rgSauRo0qm" role="356sEH">
+            <property role="TrG5h" value="auto node = std::make_shared&lt;GenericNode&gt;(node_name);" />
+          </node>
+          <node concept="2EixSi" id="5rgSauRo0qo" role="2EinRH" />
+        </node>
+        <node concept="356sEK" id="5rgSauRo0qp" role="383Ya9">
+          <node concept="2EixSi" id="5rgSauRo0qs" role="2EinRH" />
+        </node>
+        <node concept="356sEK" id="5rgSauRo0qt" role="383Ya9">
+          <node concept="356sEF" id="5rgSauRo0qu" role="356sEH">
+            <property role="TrG5h" value="RCLCPP_INFO(node-&gt;get_logger(), &quot;Node '%s' started.&quot;, node-&gt;get_name());" />
+          </node>
+          <node concept="2EixSi" id="5rgSauRo0qw" role="2EinRH" />
+        </node>
+        <node concept="356sEK" id="5rgSauRo0qx" role="383Ya9">
+          <node concept="2EixSi" id="5rgSauRo0q$" role="2EinRH" />
+        </node>
+        <node concept="356sEK" id="5rgSauRo0q_" role="383Ya9">
+          <node concept="356sEF" id="5rgSauRo0qA" role="356sEH">
+            <property role="TrG5h" value="rclcpp::spin(node);" />
+          </node>
+          <node concept="2EixSi" id="5rgSauRo0qC" role="2EinRH" />
+        </node>
+        <node concept="356sEK" id="5rgSauRo0qD" role="383Ya9">
+          <node concept="356sEF" id="5rgSauRo0qE" role="356sEH">
+            <property role="TrG5h" value="rclcpp::shutdown();" />
+          </node>
+          <node concept="2EixSi" id="5rgSauRo0qG" role="2EinRH" />
+        </node>
+        <node concept="356sEK" id="5rgSauRo0qH" role="383Ya9">
+          <node concept="356sEF" id="5rgSauRo0qI" role="356sEH">
+            <property role="TrG5h" value="return 0;" />
+          </node>
+          <node concept="2EixSi" id="5rgSauRo0qK" role="2EinRH" />
+        </node>
+      </node>
+      <node concept="356sEK" id="5rgSauRo0qL" role="383Ya9">
+        <node concept="356sEF" id="5rgSauRo0qM" role="356sEH">
+          <property role="TrG5h" value="}" />
+        </node>
+        <node concept="2EixSi" id="5rgSauRo0qO" role="2EinRH" />
+      </node>
+    </node>
+    <node concept="n94m4" id="5rgSauRo0gm" role="lGtFl" />
   </node>
 </model>
 
