@@ -106,20 +106,20 @@ import org.jetbrains.mps.openapi.language.SConcept;
     return editorCell;
   }
   private EditorCell createRefNodeList_0() {
-    AbstractCellListHandler handler = new serviciosListHandler_ynmpw4_d0(myNode, getEditorContext());
+    AbstractCellListHandler handler = new servicesListHandler_ynmpw4_d0(myNode, getEditorContext());
     EditorCell_Collection editorCell = handler.createCells(new CellLayout_Vertical(), false);
-    editorCell.setCellId("ST_refNodeList_servicios");
+    editorCell.setCellId("ST_refNodeList_services");
     Style style = new StyleImpl();
     style.set(StyleAttributes.SELECTABLE, false);
     editorCell.getStyle().putAll(style);
     editorCell.setSRole(handler.getElementSRole());
     return editorCell;
   }
-  private static class serviciosListHandler_ynmpw4_d0 extends RefNodeListHandler {
+  private static class servicesListHandler_ynmpw4_d0 extends RefNodeListHandler {
     @NotNull
     private SNode myNode;
 
-    public serviciosListHandler_ynmpw4_d0(SNode ownerNode, EditorContext context) {
+    public servicesListHandler_ynmpw4_d0(SNode ownerNode, EditorContext context) {
       super(context, false);
       myNode = ownerNode;
     }
@@ -129,10 +129,10 @@ import org.jetbrains.mps.openapi.language.SConcept;
       return myNode;
     }
     public SContainmentLink getSLink() {
-      return LINKS.servicios$zPXp;
+      return LINKS.services$zPXp;
     }
     public SAbstractConcept getChildSConcept() {
-      return CONCEPTS.Servicio$P0;
+      return CONCEPTS.Service$P0;
     }
 
     public EditorCell createNodeCell(SNode elementNode) {
@@ -142,7 +142,7 @@ import org.jetbrains.mps.openapi.language.SConcept;
     }
     public EditorCell createEmptyCell() {
       getCellFactory().pushCellContext();
-      getCellFactory().setNodeLocation(new SNodeLocation.FromParentAndLink(serviciosListHandler_ynmpw4_d0.this.getNode(), LINKS.servicios$zPXp));
+      getCellFactory().setNodeLocation(new SNodeLocation.FromParentAndLink(servicesListHandler_ynmpw4_d0.this.getNode(), LINKS.services$zPXp));
       try {
         EditorCell emptyCell = null;
         emptyCell = super.createEmptyCell();
@@ -192,20 +192,20 @@ import org.jetbrains.mps.openapi.language.SConcept;
     return editorCell;
   }
   private EditorCell createRefNodeList_1() {
-    AbstractCellListHandler handler = new accionesListHandler_ynmpw4_f0(myNode, getEditorContext());
+    AbstractCellListHandler handler = new actionsListHandler_ynmpw4_f0(myNode, getEditorContext());
     EditorCell_Collection editorCell = handler.createCells(new CellLayout_Vertical(), false);
-    editorCell.setCellId("ST_refNodeList_acciones");
+    editorCell.setCellId("ST_refNodeList_actions");
     Style style = new StyleImpl();
     style.set(StyleAttributes.SELECTABLE, false);
     editorCell.getStyle().putAll(style);
     editorCell.setSRole(handler.getElementSRole());
     return editorCell;
   }
-  private static class accionesListHandler_ynmpw4_f0 extends RefNodeListHandler {
+  private static class actionsListHandler_ynmpw4_f0 extends RefNodeListHandler {
     @NotNull
     private SNode myNode;
 
-    public accionesListHandler_ynmpw4_f0(SNode ownerNode, EditorContext context) {
+    public actionsListHandler_ynmpw4_f0(SNode ownerNode, EditorContext context) {
       super(context, false);
       myNode = ownerNode;
     }
@@ -215,10 +215,10 @@ import org.jetbrains.mps.openapi.language.SConcept;
       return myNode;
     }
     public SContainmentLink getSLink() {
-      return LINKS.acciones$vnCn;
+      return LINKS.actions$vnCn;
     }
     public SAbstractConcept getChildSConcept() {
-      return CONCEPTS.Accion$bx;
+      return CONCEPTS.Action$bx;
     }
 
     public EditorCell createNodeCell(SNode elementNode) {
@@ -228,7 +228,7 @@ import org.jetbrains.mps.openapi.language.SConcept;
     }
     public EditorCell createEmptyCell() {
       getCellFactory().pushCellContext();
-      getCellFactory().setNodeLocation(new SNodeLocation.FromParentAndLink(accionesListHandler_ynmpw4_f0.this.getNode(), LINKS.acciones$vnCn));
+      getCellFactory().setNodeLocation(new SNodeLocation.FromParentAndLink(actionsListHandler_ynmpw4_f0.this.getNode(), LINKS.actions$vnCn));
       try {
         EditorCell emptyCell = null;
         emptyCell = super.createEmptyCell();
@@ -275,12 +275,12 @@ import org.jetbrains.mps.openapi.language.SConcept;
 
   private static final class CONCEPTS {
     /*package*/ static final SConcept PropertyAttribute$Gb = MetaAdapterFactory.getConcept(0xceab519525ea4f22L, 0x9b92103b95ca8c0cL, 0x2eb1ad060897da56L, "jetbrains.mps.lang.core.structure.PropertyAttribute");
-    /*package*/ static final SConcept Servicio$P0 = MetaAdapterFactory.getConcept(0xf7db56d1b41e4c13L, 0x9756a014feb108beL, 0x5f9f55b2215b96f8L, "ROSML.structure.Servicio");
-    /*package*/ static final SConcept Accion$bx = MetaAdapterFactory.getConcept(0xf7db56d1b41e4c13L, 0x9756a014feb108beL, 0x5f9f55b2215f05faL, "ROSML.structure.Accion");
+    /*package*/ static final SConcept Service$P0 = MetaAdapterFactory.getConcept(0xf7db56d1b41e4c13L, 0x9756a014feb108beL, 0x5f9f55b2215b96f8L, "ROSML.structure.Service");
+    /*package*/ static final SConcept Action$bx = MetaAdapterFactory.getConcept(0xf7db56d1b41e4c13L, 0x9756a014feb108beL, 0x5f9f55b2215f05faL, "ROSML.structure.Action");
   }
 
   private static final class LINKS {
-    /*package*/ static final SContainmentLink servicios$zPXp = MetaAdapterFactory.getContainmentLink(0xf7db56d1b41e4c13L, 0x9756a014feb108beL, 0x2126fce3999aabd2L, 0x5f9f55b2215b96faL, "servicios");
-    /*package*/ static final SContainmentLink acciones$vnCn = MetaAdapterFactory.getContainmentLink(0xf7db56d1b41e4c13L, 0x9756a014feb108beL, 0x2126fce3999aabd2L, 0x5f9f55b2215f05fbL, "acciones");
+    /*package*/ static final SContainmentLink services$zPXp = MetaAdapterFactory.getContainmentLink(0xf7db56d1b41e4c13L, 0x9756a014feb108beL, 0x2126fce3999aabd2L, 0x5f9f55b2215b96faL, "services");
+    /*package*/ static final SContainmentLink actions$vnCn = MetaAdapterFactory.getContainmentLink(0xf7db56d1b41e4c13L, 0x9756a014feb108beL, 0x2126fce3999aabd2L, 0x5f9f55b2215f05fbL, "actions");
   }
 }

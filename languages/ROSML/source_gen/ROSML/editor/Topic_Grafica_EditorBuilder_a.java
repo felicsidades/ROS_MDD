@@ -32,11 +32,11 @@ import jetbrains.mps.openapi.editor.update.AttributeKind;
 import jetbrains.mps.smodel.adapter.structure.MetaAdapterFactory;
 import org.jetbrains.mps.openapi.language.SConcept;
 
-/*package*/ class Nodo_Grafica_EditorBuilder_a extends AbstractEditorBuilder {
+/*package*/ class Topic_Grafica_EditorBuilder_a extends AbstractEditorBuilder {
   @NotNull
   private SNode myNode;
 
-  public Nodo_Grafica_EditorBuilder_a(@NotNull EditorContext context, @NotNull SNode node) {
+  public Topic_Grafica_EditorBuilder_a(@NotNull EditorContext context, @NotNull SNode node) {
     super(context);
     myNode = node;
   }
@@ -90,7 +90,7 @@ import org.jetbrains.mps.openapi.language.SConcept;
       };
 
       editorCell.value = new EditorCell_DiagramElement(editorContext, node, accessor);
-      editorCell.value.setCellId("DiagramNode_nceiz8_a");
+      editorCell.value.setCellId("DiagramNode_xhklwy_a");
       editorCell.value.setBig(true);
       setCellContext(editorCell.value);
 

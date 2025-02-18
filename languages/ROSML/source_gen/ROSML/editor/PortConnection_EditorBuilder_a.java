@@ -40,11 +40,11 @@ import org.jetbrains.mps.openapi.language.SReferenceLink;
 import jetbrains.mps.smodel.adapter.structure.MetaAdapterFactory;
 import org.jetbrains.mps.openapi.language.SConcept;
 
-/*package*/ class ConexionPuerto_EditorBuilder_a extends AbstractEditorBuilder {
+/*package*/ class PortConnection_EditorBuilder_a extends AbstractEditorBuilder {
   @NotNull
   private SNode myNode;
 
-  public ConexionPuerto_EditorBuilder_a(@NotNull EditorContext context, @NotNull SNode node) {
+  public PortConnection_EditorBuilder_a(@NotNull EditorContext context, @NotNull SNode node) {
     super(context);
     myNode = node;
   }
@@ -71,27 +71,27 @@ import org.jetbrains.mps.openapi.language.SConcept;
         private IShape endShape = null;
         private IShape startShape = null;
 
-        private IConnectionEndpointReference endpointFrom = EndpointUtil.createEndpointReferenceForNodeSafe(SLinkOperations.getTarget(((SNode) _variablesContext.getValue("thisNode")), LINKS.nodo$WQmF));
-        private IConnectionEndpointReference endpointTo = EndpointUtil.createEndpointReferenceForPortSafe(EndpointUtil.createEndpointReferenceForNodeSafe(SLinkOperations.getTarget(((SNode) _variablesContext.getValue("thisNode")), LINKS.servidor$WQOH)), SPropertyOperations.getString(((SNode) _variablesContext.getValue("thisNode")), PROPS.nombre_puerto$u3X4));
+        private IConnectionEndpointReference endpointFrom = EndpointUtil.createEndpointReferenceForNodeSafe(SLinkOperations.getTarget(((SNode) _variablesContext.getValue("thisNode")), LINKS.node$WQmF));
+        private IConnectionEndpointReference endpointTo = EndpointUtil.createEndpointReferenceForPortSafe(EndpointUtil.createEndpointReferenceForNodeSafe(SLinkOperations.getTarget(((SNode) _variablesContext.getValue("thisNode")), LINKS.server$WQOH)), SPropertyOperations.getString(((SNode) _variablesContext.getValue("thisNode")), PROPS.port_name$u3X4));
 
         {
           boolean reverse = false;
           if (reverse) {
 
             {
-              Tuples._2<IConnectionEndpointReference, IConnectionEndpointReference> _tmp_6b1954_b0b0i0a0a1a2a3a8 = MultiTuple.<IConnectionEndpointReference,IConnectionEndpointReference>from(endpointTo, endpointFrom);
-              endpointFrom = _tmp_6b1954_b0b0i0a0a1a2a3a8._0();
-              endpointTo = _tmp_6b1954_b0b0i0a0a1a2a3a8._1();
+              Tuples._2<IConnectionEndpointReference, IConnectionEndpointReference> _tmp_e89v54_b0b0i0a0a1a2a3a8 = MultiTuple.<IConnectionEndpointReference,IConnectionEndpointReference>from(endpointTo, endpointFrom);
+              endpointFrom = _tmp_e89v54_b0b0i0a0a1a2a3a8._0();
+              endpointTo = _tmp_e89v54_b0b0i0a0a1a2a3a8._1();
             }
             {
-              Tuples._2<EditorCell, EditorCell> _tmp_6b1954_c0b0i0a0a1a2a3a8 = MultiTuple.<EditorCell,EditorCell>from(endRoleCell, startRoleCell);
-              startRoleCell = _tmp_6b1954_c0b0i0a0a1a2a3a8._0();
-              endRoleCell = _tmp_6b1954_c0b0i0a0a1a2a3a8._1();
+              Tuples._2<EditorCell, EditorCell> _tmp_e89v54_c0b0i0a0a1a2a3a8 = MultiTuple.<EditorCell,EditorCell>from(endRoleCell, startRoleCell);
+              startRoleCell = _tmp_e89v54_c0b0i0a0a1a2a3a8._0();
+              endRoleCell = _tmp_e89v54_c0b0i0a0a1a2a3a8._1();
             }
             {
-              Tuples._2<IShape, IShape> _tmp_6b1954_d0b0i0a0a1a2a3a8 = MultiTuple.<IShape,IShape>from(endShape, startShape);
-              startShape = _tmp_6b1954_d0b0i0a0a1a2a3a8._0();
-              endShape = _tmp_6b1954_d0b0i0a0a1a2a3a8._1();
+              Tuples._2<IShape, IShape> _tmp_e89v54_d0b0i0a0a1a2a3a8 = MultiTuple.<IShape,IShape>from(endShape, startShape);
+              startShape = _tmp_e89v54_d0b0i0a0a1a2a3a8._0();
+              endShape = _tmp_e89v54_d0b0i0a0a1a2a3a8._1();
             }
           }
         }
@@ -139,12 +139,12 @@ import org.jetbrains.mps.openapi.language.SConcept;
 
       };
 
-      EditorCell label = DiagramUtil.getCellIfNotEmpty(new Inline_Builder_wixlza_a0(editorContext, node).createCell());
+      EditorCell label = DiagramUtil.getCellIfNotEmpty(new Inline_Builder_djuy7q_a0(editorContext, node).createCell());
 
       accessor.setLabelCell(label);
 
       editorCell.value = new EditorCell_DiagramElement(editorContext, node, accessor);
-      editorCell.value.setCellId("DiagramConnector_wixlza_a");
+      editorCell.value.setCellId("DiagramConnector_djuy7q_a");
       editorCell.value.setBig(true);
       setCellContext(editorCell.value);
 
@@ -164,11 +164,11 @@ import org.jetbrains.mps.openapi.language.SConcept;
   private EditorCell createDiagramConnector_1() {
     return createDiagramConnector_0(getEditorContext(), myNode);
   }
-  /*package*/ static class Inline_Builder_wixlza_a0 extends AbstractEditorBuilder {
+  /*package*/ static class Inline_Builder_djuy7q_a0 extends AbstractEditorBuilder {
     @NotNull
     private SNode myNode;
 
-    /*package*/ Inline_Builder_wixlza_a0(@NotNull EditorContext context, @NotNull SNode node) {
+    /*package*/ Inline_Builder_djuy7q_a0(@NotNull EditorContext context, @NotNull SNode node) {
       super(context);
       myNode = node;
     }
@@ -186,11 +186,11 @@ import org.jetbrains.mps.openapi.language.SConcept;
     private EditorCell createProperty_0() {
       getCellFactory().pushCellContext();
       try {
-        final SProperty property = PROPS.etiqueta$AAcS;
+        final SProperty property = PROPS.label$AAcS;
         getCellFactory().setPropertyInfo(new SPropertyInfo(myNode, property));
         EditorCell_Property editorCell = EditorCell_Property.create(getEditorContext(), new SPropertyAccessor(myNode, property, false, false), myNode);
-        editorCell.setDefaultText("<no etiqueta>");
-        editorCell.setCellId("property_etiqueta");
+        editorCell.setDefaultText("<no label>");
+        editorCell.setCellId("property_label");
         editorCell.setSubstituteInfo(new SPropertySubstituteInfo(editorCell, property));
         setCellContext(editorCell);
         Iterable<SNode> propertyAttributes = SNodeOperations.ofConcept(new IAttributeDescriptor.AllAttributes().list(myNode), CONCEPTS.PropertyAttribute$Gb);
@@ -207,13 +207,13 @@ import org.jetbrains.mps.openapi.language.SConcept;
   }
 
   private static final class LINKS {
-    /*package*/ static final SReferenceLink nodo$WQmF = MetaAdapterFactory.getReferenceLink(0xf7db56d1b41e4c13L, 0x9756a014feb108beL, 0x52ae22b433653219L, 0x52ae22b43365321cL, "nodo");
-    /*package*/ static final SReferenceLink servidor$WQOH = MetaAdapterFactory.getReferenceLink(0xf7db56d1b41e4c13L, 0x9756a014feb108beL, 0x52ae22b433653219L, 0x52ae22b43365321eL, "servidor");
+    /*package*/ static final SReferenceLink node$WQmF = MetaAdapterFactory.getReferenceLink(0xf7db56d1b41e4c13L, 0x9756a014feb108beL, 0x52ae22b433653219L, 0x52ae22b43365321cL, "node");
+    /*package*/ static final SReferenceLink server$WQOH = MetaAdapterFactory.getReferenceLink(0xf7db56d1b41e4c13L, 0x9756a014feb108beL, 0x52ae22b433653219L, 0x52ae22b43365321eL, "server");
   }
 
   private static final class PROPS {
-    /*package*/ static final SProperty nombre_puerto$u3X4 = MetaAdapterFactory.getProperty(0xf7db56d1b41e4c13L, 0x9756a014feb108beL, 0x52ae22b433653219L, 0x6865cec0cd1aeed0L, "nombre_puerto");
-    /*package*/ static final SProperty etiqueta$AAcS = MetaAdapterFactory.getProperty(0xf7db56d1b41e4c13L, 0x9756a014feb108beL, 0x52ae22b433653219L, 0x52ae22b4336a4e17L, "etiqueta");
+    /*package*/ static final SProperty port_name$u3X4 = MetaAdapterFactory.getProperty(0xf7db56d1b41e4c13L, 0x9756a014feb108beL, 0x52ae22b433653219L, 0x6865cec0cd1aeed0L, "port_name");
+    /*package*/ static final SProperty label$AAcS = MetaAdapterFactory.getProperty(0xf7db56d1b41e4c13L, 0x9756a014feb108beL, 0x52ae22b433653219L, 0x52ae22b4336a4e17L, "label");
   }
 
   private static final class CONCEPTS {

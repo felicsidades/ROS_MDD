@@ -22,8 +22,8 @@ import jetbrains.mps.core.aspects.behaviour.api.BHMethodNotFoundException;
 import org.jetbrains.mps.openapi.language.SContainmentLink;
 import org.jetbrains.mps.openapi.language.SProperty;
 
-public final class Servidor__BehaviorDescriptor extends BaseBHDescriptor {
-  private static final SAbstractConcept CONCEPT = MetaAdapterFactory.getConcept(0xf7db56d1b41e4c13L, 0x9756a014feb108beL, 0x2126fce3999aabd2L, "ROSML.structure.Servidor");
+public final class Server__BehaviorDescriptor extends BaseBHDescriptor {
+  private static final SAbstractConcept CONCEPT = MetaAdapterFactory.getConcept(0xf7db56d1b41e4c13L, 0x9756a014feb108beL, 0x2126fce3999aabd2L, "ROSML.structure.Server");
 
   public static final SMethod<SNode> getServicio_id5Yvlr8xnW3d = new SMethodBuilder<SNode>(new SJavaCompoundTypeImpl((Class<SNode>) ((Class) Object.class))).name("getServicio").modifiers(0, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(6890320178452611277L).languageId(0x9756a014feb108beL, 0xf7db56d1b41e4c13L).build2(SMethodBuilder.createJavaParameter(String.class, ""));
   public static final SMethod<SNode> getAccion_id585zzjDKAoB = new SMethodBuilder<SNode>(new SJavaCompoundTypeImpl((Class<SNode>) ((Class) Object.class))).name("getAccion").modifiers(0, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(5910286443904919079L).languageId(0x9756a014feb108beL, 0xf7db56d1b41e4c13L).build2(SMethodBuilder.createJavaParameter(String.class, ""));
@@ -35,22 +35,22 @@ public final class Servidor__BehaviorDescriptor extends BaseBHDescriptor {
   }
 
   /*package*/ static SNode getServicio_id5Yvlr8xnW3d(@NotNull SNode __thisNode__, final String nombre) {
-    return ListSequence.fromList(SLinkOperations.getChildren(__thisNode__, LINKS.servicios$zPXp)).findFirst((it) -> SPropertyOperations.getString(it, PROPS.name$MnvL).equals(nombre));
+    return ListSequence.fromList(SLinkOperations.getChildren(__thisNode__, LINKS.services$zPXp)).findFirst((it) -> SPropertyOperations.getString(it, PROPS.name$MnvL).equals(nombre));
   }
   /*package*/ static SNode getAccion_id585zzjDKAoB(@NotNull SNode __thisNode__, final String nombre) {
-    return ListSequence.fromList(SLinkOperations.getChildren(__thisNode__, LINKS.acciones$vnCn)).findFirst((it) -> SPropertyOperations.getString(it, PROPS.name$MnvL).equals(nombre));
+    return ListSequence.fromList(SLinkOperations.getChildren(__thisNode__, LINKS.actions$vnCn)).findFirst((it) -> SPropertyOperations.getString(it, PROPS.name$MnvL).equals(nombre));
   }
   /*package*/ static String getTipo_id585zzjDKKmp(@NotNull SNode __thisNode__, final String nombre) {
-    if (ListSequence.fromList(SLinkOperations.getChildren(__thisNode__, LINKS.acciones$vnCn)).findFirst((it) -> SPropertyOperations.getString(it, PROPS.name$MnvL).equals(nombre)) != null) {
-      return "accion";
-    } else if (ListSequence.fromList(SLinkOperations.getChildren(__thisNode__, LINKS.servicios$zPXp)).findFirst((it) -> SPropertyOperations.getString(it, PROPS.name$MnvL).equals(nombre)) != null) {
-      return "servicio";
+    if (ListSequence.fromList(SLinkOperations.getChildren(__thisNode__, LINKS.actions$vnCn)).findFirst((it) -> SPropertyOperations.getString(it, PROPS.name$MnvL).equals(nombre)) != null) {
+      return "action";
+    } else if (ListSequence.fromList(SLinkOperations.getChildren(__thisNode__, LINKS.services$zPXp)).findFirst((it) -> SPropertyOperations.getString(it, PROPS.name$MnvL).equals(nombre)) != null) {
+      return "service";
     } else {
       return null;
     }
   }
 
-  /*package*/ Servidor__BehaviorDescriptor() {
+  /*package*/ Server__BehaviorDescriptor() {
   }
 
   @Override
@@ -101,8 +101,8 @@ public final class Servidor__BehaviorDescriptor extends BaseBHDescriptor {
   }
 
   private static final class LINKS {
-    /*package*/ static final SContainmentLink servicios$zPXp = MetaAdapterFactory.getContainmentLink(0xf7db56d1b41e4c13L, 0x9756a014feb108beL, 0x2126fce3999aabd2L, 0x5f9f55b2215b96faL, "servicios");
-    /*package*/ static final SContainmentLink acciones$vnCn = MetaAdapterFactory.getContainmentLink(0xf7db56d1b41e4c13L, 0x9756a014feb108beL, 0x2126fce3999aabd2L, 0x5f9f55b2215f05fbL, "acciones");
+    /*package*/ static final SContainmentLink services$zPXp = MetaAdapterFactory.getContainmentLink(0xf7db56d1b41e4c13L, 0x9756a014feb108beL, 0x2126fce3999aabd2L, 0x5f9f55b2215b96faL, "services");
+    /*package*/ static final SContainmentLink actions$vnCn = MetaAdapterFactory.getContainmentLink(0xf7db56d1b41e4c13L, 0x9756a014feb108beL, 0x2126fce3999aabd2L, 0x5f9f55b2215f05fbL, "actions");
   }
 
   private static final class PROPS {

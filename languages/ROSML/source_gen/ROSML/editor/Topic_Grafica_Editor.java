@@ -10,7 +10,7 @@ import jetbrains.mps.openapi.editor.cells.EditorCell;
 import jetbrains.mps.openapi.editor.EditorContext;
 import org.jetbrains.mps.openapi.model.SNode;
 
-public class Nodo_Grafica_Editor extends DefaultNodeEditor {
+public class Topic_Grafica_Editor extends DefaultNodeEditor {
   private Collection<String> myContextHints = Arrays.asList(new String[]{"ROSML.editor.Visualizacion.Grafica"});
   @Override
   @NotNull
@@ -18,6 +18,6 @@ public class Nodo_Grafica_Editor extends DefaultNodeEditor {
     return myContextHints;
   }
   public EditorCell createEditorCell(EditorContext editorContext, SNode node) {
-    return new Nodo_Grafica_EditorBuilder_a(editorContext, node).createCell();
+    return new Topic_Grafica_EditorBuilder_a(editorContext, node).createCell();
   }
 }

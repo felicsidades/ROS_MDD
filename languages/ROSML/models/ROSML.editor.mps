@@ -210,33 +210,33 @@
     </language>
   </registry>
   <node concept="24kQdi" id="4nhXS9XcB21">
-    <ref role="1XX52x" to="9g35:noU5jbqQVT" resolve="Proyecto" />
+    <ref role="1XX52x" to="9g35:noU5jbqQVT" resolve="Project" />
     <node concept="27vDVx" id="4nhXS9XcB23" role="2wV5jI">
       <node concept="1RuTs0" id="4nhXS9Xf8W4" role="1RuSHk">
-        <ref role="1RuSHD" to="9g35:4nhXS9XcB1Z" resolve="nodos_red" />
+        <ref role="1RuSHD" to="9g35:4nhXS9XcB1Z" resolve="network_nodes" />
       </node>
       <node concept="aDKH9" id="4nhXS9Xg32_" role="aCds2">
-        <ref role="aDKIf" to="9g35:4nhXS9XcB1Z" resolve="nodos_red" />
+        <ref role="aDKIf" to="9g35:4nhXS9XcB1Z" resolve="network_nodes" />
       </node>
       <node concept="aDKH9" id="4nhXS9XgEX2" role="aCds2">
-        <ref role="aDKIf" to="9g35:4nhXS9XgprH" resolve="conexiones" />
+        <ref role="aDKIf" to="9g35:4nhXS9XgprH" resolve="connections" />
       </node>
       <node concept="3mAFYk" id="4nhXS9Xgp0y" role="1xLlFP">
-        <property role="3m_KjL" value="publicador" />
-        <ref role="3m_WZM" to="9g35:noU5jbqQVV" resolve="Nodo" />
-        <ref role="3m_MR0" to="9g35:noU5jbqQW1" resolve="Topico" />
+        <property role="3m_KjL" value="publisher" />
+        <ref role="3m_WZM" to="9g35:noU5jbqQVV" resolve="Node" />
+        <ref role="3m_MR0" to="9g35:noU5jbqQW1" resolve="Topic" />
         <node concept="3mAF$r" id="4nhXS9Xgp0z" role="3m_MS9">
           <node concept="3clFbS" id="4nhXS9Xgp0$" role="2VODD2">
             <node concept="3cpWs8" id="4nhXS9XgpqR" role="3cqZAp">
               <node concept="3cpWsn" id="4nhXS9XgpqU" role="3cpWs9">
                 <property role="TrG5h" value="conexion" />
                 <node concept="3Tqbb2" id="4nhXS9XgpqQ" role="1tU5fm">
-                  <ref role="ehGHo" to="9g35:noU5jbqTW3" resolve="ConexionDirecta" />
+                  <ref role="ehGHo" to="9g35:noU5jbqTW3" resolve="DirectConnection" />
                 </node>
                 <node concept="2ShNRf" id="4nhXS9Xgprm" role="33vP2m">
                   <node concept="3zrR0B" id="4nhXS9Xgprk" role="2ShVmc">
                     <node concept="3Tqbb2" id="4nhXS9Xgprl" role="3zrR0E">
-                      <ref role="ehGHo" to="9g35:noU5jbqTW3" resolve="ConexionDirecta" />
+                      <ref role="ehGHo" to="9g35:noU5jbqTW3" resolve="DirectConnection" />
                     </node>
                   </node>
                 </node>
@@ -245,14 +245,14 @@
             <node concept="3clFbF" id="4nhXS9XgTj_" role="3cqZAp">
               <node concept="37vLTI" id="4nhXS9XgV_v" role="3clFbG">
                 <node concept="Xl_RD" id="4nhXS9XgWRw" role="37vLTx">
-                  <property role="Xl_RC" value="publicador" />
+                  <property role="Xl_RC" value="publisher" />
                 </node>
                 <node concept="2OqwBi" id="4nhXS9XgTsj" role="37vLTJ">
                   <node concept="37vLTw" id="4nhXS9XgTjz" role="2Oq$k0">
                     <ref role="3cqZAo" node="4nhXS9XgpqU" resolve="conexion" />
                   </node>
                   <node concept="3TrcHB" id="4nhXS9XgT_B" role="2OqNvi">
-                    <ref role="3TsBF5" to="9g35:4nhXS9XgSXR" resolve="etiqueta" />
+                    <ref role="3TsBF5" to="9g35:4nhXS9XgSXR" resolve="label" />
                   </node>
                 </node>
               </node>
@@ -265,7 +265,7 @@
                     <ref role="3cqZAo" node="4nhXS9XgpqU" resolve="conexion" />
                   </node>
                   <node concept="3TrEf2" id="4nhXS9Xguep" role="2OqNvi">
-                    <ref role="3Tt5mk" to="9g35:noU5jbqTW4" resolve="nodo" />
+                    <ref role="3Tt5mk" to="9g35:noU5jbqTW4" resolve="node" />
                   </node>
                 </node>
               </node>
@@ -278,7 +278,7 @@
                     <ref role="3cqZAo" node="4nhXS9XgpqU" resolve="conexion" />
                   </node>
                   <node concept="3TrEf2" id="4nhXS9Xguvv" role="2OqNvi">
-                    <ref role="3Tt5mk" to="9g35:noU5jbqTW7" resolve="topico" />
+                    <ref role="3Tt5mk" to="9g35:noU5jbqTW7" resolve="topic" />
                   </node>
                 </node>
               </node>
@@ -288,7 +288,7 @@
                 <node concept="2OqwBi" id="4nhXS9Xgp_w" role="2Oq$k0">
                   <node concept="1Pxb5l" id="4nhXS9XgprU" role="2Oq$k0" />
                   <node concept="3Tsc0h" id="4nhXS9XgpIL" role="2OqNvi">
-                    <ref role="3TtcxE" to="9g35:4nhXS9XgprH" resolve="conexiones" />
+                    <ref role="3TtcxE" to="9g35:4nhXS9XgprH" resolve="connections" />
                   </node>
                 </node>
                 <node concept="TSZUe" id="4nhXS9XgtOJ" role="2OqNvi">
@@ -302,21 +302,21 @@
         </node>
       </node>
       <node concept="3mAFYk" id="6S443UBXKUR" role="1xLlFP">
-        <property role="3m_KjL" value="suscriptor" />
-        <ref role="3m_WZM" to="9g35:noU5jbqQVV" resolve="Nodo" />
-        <ref role="3m_MR0" to="9g35:noU5jbqQW1" resolve="Topico" />
+        <property role="3m_KjL" value="subscriber" />
+        <ref role="3m_WZM" to="9g35:noU5jbqQVV" resolve="Node" />
+        <ref role="3m_MR0" to="9g35:noU5jbqQW1" resolve="Topic" />
         <node concept="3mAF$r" id="6S443UBXKUS" role="3m_MS9">
           <node concept="3clFbS" id="6S443UBXKUT" role="2VODD2">
             <node concept="3cpWs8" id="6S443UBXKUU" role="3cqZAp">
               <node concept="3cpWsn" id="6S443UBXKUV" role="3cpWs9">
                 <property role="TrG5h" value="conexion" />
                 <node concept="3Tqbb2" id="6S443UBXKUW" role="1tU5fm">
-                  <ref role="ehGHo" to="9g35:noU5jbqTW3" resolve="ConexionDirecta" />
+                  <ref role="ehGHo" to="9g35:noU5jbqTW3" resolve="DirectConnection" />
                 </node>
                 <node concept="2ShNRf" id="6S443UBXKUX" role="33vP2m">
                   <node concept="3zrR0B" id="6S443UBXKUY" role="2ShVmc">
                     <node concept="3Tqbb2" id="6S443UBXKUZ" role="3zrR0E">
-                      <ref role="ehGHo" to="9g35:noU5jbqTW3" resolve="ConexionDirecta" />
+                      <ref role="ehGHo" to="9g35:noU5jbqTW3" resolve="DirectConnection" />
                     </node>
                   </node>
                 </node>
@@ -325,14 +325,14 @@
             <node concept="3clFbF" id="6S443UBXKV0" role="3cqZAp">
               <node concept="37vLTI" id="6S443UBXKV1" role="3clFbG">
                 <node concept="Xl_RD" id="6S443UBXKV2" role="37vLTx">
-                  <property role="Xl_RC" value="suscriptor" />
+                  <property role="Xl_RC" value="subscriber" />
                 </node>
                 <node concept="2OqwBi" id="6S443UBXKV3" role="37vLTJ">
                   <node concept="37vLTw" id="6S443UBXKV4" role="2Oq$k0">
                     <ref role="3cqZAo" node="6S443UBXKUV" resolve="conexion" />
                   </node>
                   <node concept="3TrcHB" id="6S443UBXKV5" role="2OqNvi">
-                    <ref role="3TsBF5" to="9g35:4nhXS9XgSXR" resolve="etiqueta" />
+                    <ref role="3TsBF5" to="9g35:4nhXS9XgSXR" resolve="label" />
                   </node>
                 </node>
               </node>
@@ -345,7 +345,7 @@
                     <ref role="3cqZAo" node="6S443UBXKUV" resolve="conexion" />
                   </node>
                   <node concept="3TrEf2" id="6S443UBXKVb" role="2OqNvi">
-                    <ref role="3Tt5mk" to="9g35:noU5jbqTW4" resolve="nodo" />
+                    <ref role="3Tt5mk" to="9g35:noU5jbqTW4" resolve="node" />
                   </node>
                 </node>
               </node>
@@ -358,7 +358,7 @@
                     <ref role="3cqZAo" node="6S443UBXKUV" resolve="conexion" />
                   </node>
                   <node concept="3TrEf2" id="6S443UBXKVh" role="2OqNvi">
-                    <ref role="3Tt5mk" to="9g35:noU5jbqTW7" resolve="topico" />
+                    <ref role="3Tt5mk" to="9g35:noU5jbqTW7" resolve="topic" />
                   </node>
                 </node>
               </node>
@@ -368,7 +368,7 @@
                 <node concept="2OqwBi" id="6S443UBXKVk" role="2Oq$k0">
                   <node concept="1Pxb5l" id="6S443UBXKVl" role="2Oq$k0" />
                   <node concept="3Tsc0h" id="6S443UBXKVm" role="2OqNvi">
-                    <ref role="3TtcxE" to="9g35:4nhXS9XgprH" resolve="conexiones" />
+                    <ref role="3TtcxE" to="9g35:4nhXS9XgprH" resolve="connections" />
                   </node>
                 </node>
                 <node concept="TSZUe" id="6S443UBXKVn" role="2OqNvi">
@@ -383,20 +383,20 @@
       </node>
       <node concept="3mAFYk" id="5aI8FgNnCUP" role="1xLlFP">
         <property role="3m_KjL" value="request" />
-        <ref role="3m_WZM" to="9g35:noU5jbqQVV" resolve="Nodo" />
-        <ref role="3m_MR0" to="9g35:24AZeepAEJi" resolve="Servidor" />
+        <ref role="3m_WZM" to="9g35:noU5jbqQVV" resolve="Node" />
+        <ref role="3m_MR0" to="9g35:24AZeepAEJi" resolve="Server" />
         <node concept="3mAF$r" id="5aI8FgNnCUR" role="3m_MS9">
           <node concept="3clFbS" id="5aI8FgNnCUT" role="2VODD2">
             <node concept="3cpWs8" id="5aI8FgNo41m" role="3cqZAp">
               <node concept="3cpWsn" id="5aI8FgNo41n" role="3cpWs9">
                 <property role="TrG5h" value="conexion_puerto" />
                 <node concept="3Tqbb2" id="5aI8FgNo41o" role="1tU5fm">
-                  <ref role="ehGHo" to="9g35:5aI8FgNpj8p" resolve="ConexionPuerto" />
+                  <ref role="ehGHo" to="9g35:5aI8FgNpj8p" resolve="PortConnection" />
                 </node>
                 <node concept="2ShNRf" id="5aI8FgNo41p" role="33vP2m">
                   <node concept="3zrR0B" id="5aI8FgNo41q" role="2ShVmc">
                     <node concept="3Tqbb2" id="5aI8FgNo41r" role="3zrR0E">
-                      <ref role="ehGHo" to="9g35:5aI8FgNpj8p" resolve="ConexionPuerto" />
+                      <ref role="ehGHo" to="9g35:5aI8FgNpj8p" resolve="PortConnection" />
                     </node>
                   </node>
                 </node>
@@ -410,7 +410,7 @@
                     <ref role="3cqZAo" node="5aI8FgNo41n" resolve="conexion_puerto" />
                   </node>
                   <node concept="3TrEf2" id="5aI8FgNq_J1" role="2OqNvi">
-                    <ref role="3Tt5mk" to="9g35:5aI8FgNpj8s" resolve="nodo" />
+                    <ref role="3Tt5mk" to="9g35:5aI8FgNpj8s" resolve="node" />
                   </node>
                 </node>
               </node>
@@ -423,7 +423,7 @@
                     <ref role="3cqZAo" node="5aI8FgNo41n" resolve="conexion_puerto" />
                   </node>
                   <node concept="3TrEf2" id="5aI8FgNqAqr" role="2OqNvi">
-                    <ref role="3Tt5mk" to="9g35:5aI8FgNpj8u" resolve="servidor" />
+                    <ref role="3Tt5mk" to="9g35:5aI8FgNpj8u" resolve="server" />
                   </node>
                 </node>
               </node>
@@ -436,7 +436,7 @@
                     <ref role="3cqZAo" node="5aI8FgNo41n" resolve="conexion_puerto" />
                   </node>
                   <node concept="3TrcHB" id="6x_NG3d7k61" role="2OqNvi">
-                    <ref role="3TsBF5" to="9g35:6x_NG3d6IVg" resolve="nombre_puerto" />
+                    <ref role="3TsBF5" to="9g35:6x_NG3d6IVg" resolve="port_name" />
                   </node>
                 </node>
               </node>
@@ -448,7 +448,7 @@
                   <node concept="3cpWsn" id="585zzjDMEEy" role="3cpWs9">
                     <property role="TrG5h" value="accion" />
                     <node concept="3Tqbb2" id="585zzjDMEEt" role="1tU5fm">
-                      <ref role="ehGHo" to="9g35:5Yvlr8xnKnU" resolve="Accion" />
+                      <ref role="ehGHo" to="9g35:5Yvlr8xnKnU" resolve="Action" />
                     </node>
                     <node concept="2OqwBi" id="585zzjDMFzQ" role="33vP2m">
                       <node concept="3m_Ry6" id="585zzjDMFp8" role="2Oq$k0" />
@@ -469,7 +469,7 @@
                         <ref role="3cqZAo" node="585zzjDMEEy" resolve="accion" />
                       </node>
                       <node concept="3TrEf2" id="585zzjDMF0X" role="2OqNvi">
-                        <ref role="3Tt5mk" to="9g35:2hnvBqG8lyG" resolve="conexion" />
+                        <ref role="3Tt5mk" to="9g35:2hnvBqG8lyG" resolve="connection" />
                       </node>
                     </node>
                   </node>
@@ -477,14 +477,34 @@
                 <node concept="3clFbF" id="585zzjDNt0x" role="3cqZAp">
                   <node concept="37vLTI" id="585zzjDNvw8" role="3clFbG">
                     <node concept="Xl_RD" id="585zzjDNw1X" role="37vLTx">
-                      <property role="Xl_RC" value="peticion servicio" />
+                      <property role="Xl_RC" value="srv request" />
                     </node>
                     <node concept="2OqwBi" id="585zzjDNt7S" role="37vLTJ">
                       <node concept="37vLTw" id="585zzjDNt0v" role="2Oq$k0">
                         <ref role="3cqZAo" node="5aI8FgNo41n" resolve="conexion_puerto" />
                       </node>
                       <node concept="3TrcHB" id="585zzjDNtui" role="2OqNvi">
-                        <ref role="3TsBF5" to="9g35:5aI8FgNq$Sn" resolve="etiqueta" />
+                        <ref role="3TsBF5" to="9g35:5aI8FgNq$Sn" resolve="label" />
+                      </node>
+                    </node>
+                  </node>
+                </node>
+                <node concept="3clFbF" id="1zrXPLZqyNX" role="3cqZAp">
+                  <node concept="37vLTI" id="1zrXPLZq$2$" role="3clFbG">
+                    <node concept="2OqwBi" id="1zrXPLZqz6O" role="37vLTJ">
+                      <node concept="37vLTw" id="1zrXPLZqyNV" role="2Oq$k0">
+                        <ref role="3cqZAo" node="5aI8FgNo41n" resolve="conexion_puerto" />
+                      </node>
+                      <node concept="3TrEf2" id="1zrXPLZqzyC" role="2OqNvi">
+                        <ref role="3Tt5mk" to="9g35:1zrXPLZq8zn" resolve="message" />
+                      </node>
+                    </node>
+                    <node concept="2OqwBi" id="1zrXPLZqAmS" role="37vLTx">
+                      <node concept="37vLTw" id="1zrXPLZqA9z" role="2Oq$k0">
+                        <ref role="3cqZAo" node="585zzjDMEEy" resolve="accion" />
+                      </node>
+                      <node concept="3TrEf2" id="1zrXPLZqAAQ" role="2OqNvi">
+                        <ref role="3Tt5mk" to="9g35:1zrXPLZlHUs" resolve="message" />
                       </node>
                     </node>
                   </node>
@@ -492,7 +512,7 @@
               </node>
               <node concept="3clFbC" id="585zzjDMD4w" role="3clFbw">
                 <node concept="Xl_RD" id="585zzjDMDO6" role="3uHU7w">
-                  <property role="Xl_RC" value="accion" />
+                  <property role="Xl_RC" value="action" />
                 </node>
                 <node concept="2OqwBi" id="585zzjDM_tW" role="3uHU7B">
                   <node concept="3m_Ry6" id="585zzjDM_jx" role="2Oq$k0" />
@@ -508,7 +528,7 @@
                     <node concept="3cpWsn" id="585zzjDMHde" role="3cpWs9">
                       <property role="TrG5h" value="servicio" />
                       <node concept="3Tqbb2" id="585zzjDMHda" role="1tU5fm">
-                        <ref role="ehGHo" to="9g35:5Yvlr8xmTrS" resolve="Servicio" />
+                        <ref role="ehGHo" to="9g35:5Yvlr8xmTrS" resolve="Service" />
                       </node>
                       <node concept="2OqwBi" id="585zzjDMHob" role="33vP2m">
                         <node concept="3m_Ry6" id="585zzjDMHdE" role="2Oq$k0" />
@@ -529,7 +549,7 @@
                           <ref role="3cqZAo" node="585zzjDMHde" resolve="servicio" />
                         </node>
                         <node concept="3TrEf2" id="585zzjDMIeV" role="2OqNvi">
-                          <ref role="3Tt5mk" to="9g35:2hnvBqG8lyG" resolve="conexion" />
+                          <ref role="3Tt5mk" to="9g35:2hnvBqG8lyG" resolve="connection" />
                         </node>
                       </node>
                     </node>
@@ -537,23 +557,42 @@
                   <node concept="3clFbF" id="585zzjDNwuU" role="3cqZAp">
                     <node concept="37vLTI" id="585zzjDNwuV" role="3clFbG">
                       <node concept="Xl_RD" id="585zzjDNwuW" role="37vLTx">
-                        <property role="Xl_RC" value="peticion accion" />
+                        <property role="Xl_RC" value="act request" />
                       </node>
                       <node concept="2OqwBi" id="585zzjDNwuX" role="37vLTJ">
                         <node concept="37vLTw" id="585zzjDNwuY" role="2Oq$k0">
                           <ref role="3cqZAo" node="5aI8FgNo41n" resolve="conexion_puerto" />
                         </node>
                         <node concept="3TrcHB" id="585zzjDNwuZ" role="2OqNvi">
-                          <ref role="3TsBF5" to="9g35:5aI8FgNq$Sn" resolve="etiqueta" />
+                          <ref role="3TsBF5" to="9g35:5aI8FgNq$Sn" resolve="label" />
                         </node>
                       </node>
                     </node>
                   </node>
-                  <node concept="3clFbH" id="585zzjDNwlC" role="3cqZAp" />
+                  <node concept="3clFbF" id="1zrXPLZqBiK" role="3cqZAp">
+                    <node concept="37vLTI" id="1zrXPLZqBiL" role="3clFbG">
+                      <node concept="2OqwBi" id="1zrXPLZqBiM" role="37vLTJ">
+                        <node concept="37vLTw" id="1zrXPLZqBiN" role="2Oq$k0">
+                          <ref role="3cqZAo" node="5aI8FgNo41n" resolve="conexion_puerto" />
+                        </node>
+                        <node concept="3TrEf2" id="1zrXPLZqBiO" role="2OqNvi">
+                          <ref role="3Tt5mk" to="9g35:1zrXPLZq8zn" resolve="message" />
+                        </node>
+                      </node>
+                      <node concept="2OqwBi" id="1zrXPLZqBiP" role="37vLTx">
+                        <node concept="37vLTw" id="1zrXPLZqB$j" role="2Oq$k0">
+                          <ref role="3cqZAo" node="585zzjDMHde" resolve="servicio" />
+                        </node>
+                        <node concept="3TrEf2" id="1zrXPLZqC7p" role="2OqNvi">
+                          <ref role="3Tt5mk" to="9g35:1zrXPLZlHUp" resolve="message" />
+                        </node>
+                      </node>
+                    </node>
+                  </node>
                 </node>
                 <node concept="3clFbC" id="585zzjDMGUf" role="3eO9$A">
                   <node concept="Xl_RD" id="585zzjDMGUg" role="3uHU7w">
-                    <property role="Xl_RC" value="servicio" />
+                    <property role="Xl_RC" value="service" />
                   </node>
                   <node concept="2OqwBi" id="585zzjDMGUh" role="3uHU7B">
                     <node concept="3m_Ry6" id="585zzjDMGUi" role="2Oq$k0" />
@@ -570,7 +609,7 @@
                 <node concept="2OqwBi" id="585zzjDMKdj" role="2Oq$k0">
                   <node concept="1Pxb5l" id="585zzjDMJcC" role="2Oq$k0" />
                   <node concept="3Tsc0h" id="585zzjDMKqD" role="2OqNvi">
-                    <ref role="3TtcxE" to="9g35:4nhXS9XgprH" resolve="conexiones" />
+                    <ref role="3TtcxE" to="9g35:4nhXS9XgprH" resolve="connections" />
                   </node>
                 </node>
                 <node concept="TSZUe" id="585zzjDMQqg" role="2OqNvi">
@@ -589,7 +628,7 @@
     </node>
   </node>
   <node concept="24kQdi" id="4nhXS9XcVnr">
-    <ref role="1XX52x" to="9g35:noU5jbqQVV" resolve="Nodo" />
+    <ref role="1XX52x" to="9g35:noU5jbqQVV" resolve="Node" />
     <node concept="2ZK4vF" id="4nhXS9XcVnt" role="2wV5jI">
       <node concept="3F0A7n" id="4nhXS9XcVnD" role="1ytjkN">
         <ref role="1NtTu8" to="tpck:h0TrG11" resolve="name" />
@@ -600,7 +639,7 @@
     </node>
   </node>
   <node concept="24kQdi" id="4nhXS9XcVnM">
-    <ref role="1XX52x" to="9g35:noU5jbqQW1" resolve="Topico" />
+    <ref role="1XX52x" to="9g35:noU5jbqQW1" resolve="Topic" />
     <node concept="2ZK4vF" id="4nhXS9XcVnO" role="2wV5jI">
       <node concept="3F0A7n" id="4nhXS9XcVo0" role="1ytjkN">
         <ref role="1NtTu8" to="tpck:h0TrG11" resolve="name" />
@@ -611,14 +650,14 @@
     </node>
   </node>
   <node concept="24kQdi" id="4nhXS9XgL0n">
-    <ref role="1XX52x" to="9g35:noU5jbqTW3" resolve="ConexionDirecta" />
+    <ref role="1XX52x" to="9g35:noU5jbqTW3" resolve="DirectConnection" />
     <node concept="2ZMJ7s" id="4nhXS9XgL0p" role="2wV5jI">
       <node concept="1PNbMa" id="4nhXS9XgL0r" role="1PN8q7">
         <node concept="23hSZX" id="4nhXS9XgL0G" role="ljJml">
           <node concept="2OqwBi" id="4nhXS9XgL8P" role="23hSWE">
             <node concept="1Pxb5l" id="4nhXS9XgL0T" role="2Oq$k0" />
             <node concept="3TrEf2" id="4nhXS9XgLi9" role="2OqNvi">
-              <ref role="3Tt5mk" to="9g35:noU5jbqTW4" resolve="nodo" />
+              <ref role="3Tt5mk" to="9g35:noU5jbqTW4" resolve="node" />
             </node>
           </node>
         </node>
@@ -628,14 +667,14 @@
           <node concept="2OqwBi" id="4nhXS9XgLo9" role="23hSWE">
             <node concept="1Pxb5l" id="4nhXS9XgLmM" role="2Oq$k0" />
             <node concept="3TrEf2" id="4nhXS9XgLp5" role="2OqNvi">
-              <ref role="3Tt5mk" to="9g35:noU5jbqTW7" resolve="topico" />
+              <ref role="3Tt5mk" to="9g35:noU5jbqTW7" resolve="topic" />
             </node>
           </node>
         </node>
       </node>
       <node concept="238au4" id="4nhXS9XgX_W" role="3kqczz">
         <node concept="3F0A7n" id="4nhXS9XgXA2" role="2wV5jI">
-          <ref role="1NtTu8" to="9g35:4nhXS9XgSXR" resolve="etiqueta" />
+          <ref role="1NtTu8" to="9g35:4nhXS9XgSXR" resolve="label" />
         </node>
       </node>
     </node>
@@ -644,7 +683,7 @@
     </node>
   </node>
   <node concept="24kQdi" id="5Yvlr8xmTrW">
-    <ref role="1XX52x" to="9g35:24AZeepAEJi" resolve="Servidor" />
+    <ref role="1XX52x" to="9g35:24AZeepAEJi" resolve="Server" />
     <node concept="2ZK4vF" id="5Yvlr8xmTrY" role="2wV5jI">
       <node concept="3F0A7n" id="5Yvlr8xn7u_" role="1ytjkN">
         <ref role="1NtTu8" to="tpck:h0TrG11" resolve="name" />
@@ -653,7 +692,7 @@
         <node concept="2OqwBi" id="5Yvlr8xmXpM" role="230Hdr">
           <node concept="1Pxb5l" id="5Yvlr8xmWC_" role="2Oq$k0" />
           <node concept="3Tsc0h" id="5Yvlr8xmZc$" role="2OqNvi">
-            <ref role="3TtcxE" to="9g35:5Yvlr8xmTrU" resolve="servicios" />
+            <ref role="3TtcxE" to="9g35:5Yvlr8xmTrU" resolve="services" />
           </node>
         </node>
         <node concept="2316IU" id="5Yvlr8xmTsE" role="230Hdp">
@@ -672,7 +711,7 @@
         <node concept="2OqwBi" id="5Yvlr8xnKCb" role="230Hdr">
           <node concept="1Pxb5l" id="5Yvlr8xnKwm" role="2Oq$k0" />
           <node concept="3Tsc0h" id="5Yvlr8xnKOH" role="2OqNvi">
-            <ref role="3TtcxE" to="9g35:5Yvlr8xnKnV" resolve="acciones" />
+            <ref role="3TtcxE" to="9g35:5Yvlr8xnKnV" resolve="actions" />
           </node>
         </node>
         <node concept="2316IU" id="5Yvlr8xnKvk" role="230Hdp">
@@ -701,7 +740,7 @@
   </node>
   <node concept="PKFIW" id="5aI8FgNqNBH">
     <property role="TrG5h" value="Servidor_Textual" />
-    <ref role="1XX52x" to="9g35:24AZeepAEJi" resolve="Servidor" />
+    <ref role="1XX52x" to="9g35:24AZeepAEJi" resolve="Server" />
     <node concept="3EZMnI" id="5aI8FgNqNBK" role="2wV5jI">
       <node concept="3F0ifn" id="5aI8FgNqNBU" role="3EZMnx">
         <property role="3F0ifm" value="Nombre:" />
@@ -716,7 +755,7 @@
         </node>
       </node>
       <node concept="3F2HdR" id="5aI8FgNqNCo" role="3EZMnx">
-        <ref role="1NtTu8" to="9g35:5Yvlr8xmTrU" resolve="servicios" />
+        <ref role="1NtTu8" to="9g35:5Yvlr8xmTrU" resolve="services" />
         <node concept="2iRkQZ" id="5aI8FgNqNCr" role="2czzBx" />
         <node concept="VPM3Z" id="5aI8FgNqNCs" role="3F10Kt" />
       </node>
@@ -727,7 +766,7 @@
         </node>
       </node>
       <node concept="3F2HdR" id="5aI8FgNqNDj" role="3EZMnx">
-        <ref role="1NtTu8" to="9g35:5Yvlr8xnKnV" resolve="acciones" />
+        <ref role="1NtTu8" to="9g35:5Yvlr8xnKnV" resolve="actions" />
         <node concept="2iRkQZ" id="5aI8FgNqNDm" role="2czzBx" />
         <node concept="VPM3Z" id="5aI8FgNqNDn" role="3F10Kt" />
       </node>
@@ -736,7 +775,7 @@
   </node>
   <node concept="PKFIW" id="5aI8FgNr0ro">
     <property role="TrG5h" value="Nodo_Textual" />
-    <ref role="1XX52x" to="9g35:noU5jbqQVV" resolve="Nodo" />
+    <ref role="1XX52x" to="9g35:noU5jbqQVV" resolve="Node" />
     <node concept="3EZMnI" id="5aI8FgNr0rq" role="2wV5jI">
       <node concept="3F0ifn" id="5aI8FgNr0rr" role="3EZMnx">
         <property role="3F0ifm" value="Nombre nodo:" />
@@ -751,7 +790,7 @@
         </node>
       </node>
       <node concept="3F2HdR" id="5aI8FgNr0rv" role="3EZMnx">
-        <ref role="1NtTu8" to="9g35:noU5jbqUhd" resolve="suscripciones" />
+        <ref role="1NtTu8" to="9g35:noU5jbqUhd" resolve="subscriptions" />
         <node concept="2iRkQZ" id="5aI8FgNr0rw" role="2czzBx" />
         <node concept="VPM3Z" id="5aI8FgNr0rx" role="3F10Kt" />
       </node>
@@ -762,7 +801,7 @@
         </node>
       </node>
       <node concept="3F2HdR" id="5aI8FgNr0r$" role="3EZMnx">
-        <ref role="1NtTu8" to="9g35:noU5jbqUhb" resolve="publicaciones" />
+        <ref role="1NtTu8" to="9g35:noU5jbqUhb" resolve="publications" />
         <node concept="2iRkQZ" id="5aI8FgNr0r_" role="2czzBx" />
         <node concept="VPM3Z" id="5aI8FgNr0rA" role="3F10Kt" />
       </node>
@@ -771,7 +810,7 @@
   </node>
   <node concept="PKFIW" id="3J18Qb3P5Dy">
     <property role="TrG5h" value="Proyecto_Textual" />
-    <ref role="1XX52x" to="9g35:noU5jbqQVT" resolve="Proyecto" />
+    <ref role="1XX52x" to="9g35:noU5jbqQVT" resolve="Project" />
     <node concept="3EZMnI" id="3J18Qb3P5D_" role="2wV5jI">
       <node concept="3F0ifn" id="3J18Qb3PaYk" role="3EZMnx">
         <property role="3F0ifm" value="Proyecto:" />
@@ -789,7 +828,7 @@
         </node>
       </node>
       <node concept="3F2HdR" id="3J18Qb3PaYW" role="3EZMnx">
-        <ref role="1NtTu8" to="9g35:4nhXS9XcB1Z" resolve="nodos_red" />
+        <ref role="1NtTu8" to="9g35:4nhXS9XcB1Z" resolve="network_nodes" />
         <node concept="2iRkQZ" id="3J18Qb3PaYZ" role="2czzBx" />
         <node concept="VPM3Z" id="3J18Qb3PaZ0" role="3F10Kt" />
       </node>
@@ -803,7 +842,7 @@
         </node>
       </node>
       <node concept="3F2HdR" id="3J18Qb3Pb2$" role="3EZMnx">
-        <ref role="1NtTu8" to="9g35:4nhXS9XgprH" resolve="conexiones" />
+        <ref role="1NtTu8" to="9g35:4nhXS9XgprH" resolve="connections" />
         <node concept="2iRkQZ" id="3J18Qb3Pb2B" role="2czzBx" />
         <node concept="VPM3Z" id="3J18Qb3Pb2C" role="3F10Kt" />
       </node>
@@ -811,14 +850,14 @@
     </node>
   </node>
   <node concept="24kQdi" id="3J18Qb3QWT8">
-    <ref role="1XX52x" to="9g35:5aI8FgNpj8p" resolve="ConexionPuerto" />
+    <ref role="1XX52x" to="9g35:5aI8FgNpj8p" resolve="PortConnection" />
     <node concept="2ZMJ7s" id="3J18Qb3QWTa" role="2wV5jI">
       <node concept="1PNbMa" id="3J18Qb3QWTc" role="1PN8q7">
         <node concept="23hSZX" id="3J18Qb3QWTt" role="ljJml">
           <node concept="2OqwBi" id="3J18Qb3QX2o" role="23hSWE">
             <node concept="1Pxb5l" id="3J18Qb3QWTE" role="2Oq$k0" />
             <node concept="3TrEf2" id="3J18Qb3QXdl" role="2OqNvi">
-              <ref role="3Tt5mk" to="9g35:5aI8FgNpj8s" resolve="nodo" />
+              <ref role="3Tt5mk" to="9g35:5aI8FgNpj8s" resolve="node" />
             </node>
           </node>
         </node>
@@ -829,21 +868,21 @@
             <node concept="2OqwBi" id="6x_NG3d6N5p" role="23hSWE">
               <node concept="1Pxb5l" id="6x_NG3d6N3U" role="2Oq$k0" />
               <node concept="3TrEf2" id="6x_NG3d6N6l" role="2OqNvi">
-                <ref role="3Tt5mk" to="9g35:5aI8FgNpj8u" resolve="servidor" />
+                <ref role="3Tt5mk" to="9g35:5aI8FgNpj8u" resolve="server" />
               </node>
             </node>
           </node>
           <node concept="2OqwBi" id="6x_NG3d6MQ$" role="23hSXU">
             <node concept="1Pxb5l" id="6x_NG3d6MIi" role="2Oq$k0" />
             <node concept="3TrcHB" id="6x_NG3d6N1y" role="2OqNvi">
-              <ref role="3TsBF5" to="9g35:6x_NG3d6IVg" resolve="nombre_puerto" />
+              <ref role="3TsBF5" to="9g35:6x_NG3d6IVg" resolve="port_name" />
             </node>
           </node>
         </node>
       </node>
       <node concept="238au4" id="11WetbuCnMB" role="3kqczz">
         <node concept="3F0A7n" id="11WetbuCnMH" role="2wV5jI">
-          <ref role="1NtTu8" to="9g35:5aI8FgNq$Sn" resolve="etiqueta" />
+          <ref role="1NtTu8" to="9g35:5aI8FgNq$Sn" resolve="label" />
         </node>
       </node>
     </node>

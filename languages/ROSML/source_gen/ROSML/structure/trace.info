@@ -1,449 +1,578 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <debug-info version="2">
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123140:jetbrains.mps.baseLanguage.structure.ConstructorDeclaration" />
   <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123155:jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
   <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068390468200:jetbrains.mps.baseLanguage.structure.FieldDeclaration" />
   <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123159:jetbrains.mps.baseLanguage.structure.IfStatement" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123165:jetbrains.mps.baseLanguage.structure.InstanceMethodDeclaration" />
   <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068581242864:jetbrains.mps.baseLanguage.structure.LocalVariableDeclarationStatement" />
   <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068581242878:jetbrains.mps.baseLanguage.structure.ReturnStatement" />
   <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/6329021646629104954:jetbrains.mps.baseLanguage.structure.SingleLineComment" />
   <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1070462154015:jetbrains.mps.baseLanguage.structure.StaticFieldDeclaration" />
   <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1081236700938:jetbrains.mps.baseLanguage.structure.StaticMethodDeclaration" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1070475587102:jetbrains.mps.baseLanguage.structure.SuperConstructorInvocation" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1163670490218:jetbrains.mps.baseLanguage.structure.SwitchStatement" />
   <root>
     <file name="ConceptPresentationAspectImpl.java">
-      <unit at="11,0,115,0" name="ROSML.structure.ConceptPresentationAspectImpl" />
+      <unit at="11,0,130,0" name="ROSML.structure.ConceptPresentationAspectImpl" />
     </file>
     <file name="LanguageConceptSwitch.java">
-      <unit at="10,0,50,0" name="ROSML.structure.LanguageConceptSwitch" />
+      <unit at="10,0,54,0" name="ROSML.structure.LanguageConceptSwitch" />
     </file>
     <file name="StructureAspectDescriptor.java">
-      <unit at="15,0,202,0" name="ROSML.structure.StructureAspectDescriptor" />
+      <unit at="18,0,237,0" name="ROSML.structure.StructureAspectDescriptor" />
+    </file>
+  </root>
+  <root nodeRef="r:d670596f-f26c-43d2-8e17-a7b3e68888bf(ROSML.structure)/1791297253455354486">
+    <file name="EnumerationDescriptor_EInterfaces.java">
+      <node id="1791297253455354486" at="14,46,15,167" concept="10" />
+      <node id="1791297253455354487" at="18,0,19,0" concept="2" trace="myMember_msg_0" />
+      <node id="1791297253455354488" at="19,0,20,0" concept="2" trace="myMember_srv_0" />
+      <node id="1791297253455354491" at="20,0,21,0" concept="2" trace="myMember_action_0" />
+      <node id="1791297253455354486" at="22,0,23,0" concept="2" trace="myIndex" />
+      <node id="1791297253455354486" at="23,0,24,0" concept="2" trace="myMembers" />
+      <node id="1791297253455354486" at="27,62,28,16" concept="6" />
+      <node id="1791297253455354486" at="33,68,34,21" concept="6" />
+      <node id="1791297253455354486" at="40,29,41,18" concept="6" />
+      <node id="1791297253455354487" at="44,17,45,30" concept="6" />
+      <node id="1791297253455354488" at="46,17,47,30" concept="6" />
+      <node id="1791297253455354491" at="48,20,49,33" concept="6" />
+      <node id="1791297253455354486" at="50,5,51,16" concept="6" />
+      <node id="1791297253455354486" at="56,73,57,39" concept="5" />
+      <node id="1791297253455354486" at="58,22,59,18" concept="6" />
+      <node id="1791297253455354486" at="60,5,61,32" concept="6" />
+      <node id="1791297253455354486" at="14,0,17,0" concept="0" trace="EnumerationDescriptor_EInterfaces#()V" />
+      <node id="1791297253455354486" at="39,88,42,5" concept="3" />
+      <node id="1791297253455354486" at="57,39,60,5" concept="3" />
+      <node id="1791297253455354486" at="25,0,30,0" concept="4" trace="getDefault#()Ljetbrains/mps/smodel/runtime/EnumerationDescriptor/MemberDescriptor;" />
+      <node id="1791297253455354486" at="31,0,36,0" concept="4" trace="getMembers#()Ljava/util/List;" />
+      <node id="1791297253455354486" at="42,5,50,5" concept="11" />
+      <node id="1791297253455354486" at="54,0,63,0" concept="4" trace="getMember#(J)Ljetbrains/mps/smodel/runtime/EnumerationDescriptor/MemberDescriptor;" />
+      <node id="1791297253455354486" at="37,0,53,0" concept="4" trace="getMember#(Ljava/lang/String;)Ljetbrains/mps/smodel/runtime/EnumerationDescriptor/MemberDescriptor;" />
+      <scope id="1791297253455354486" at="14,46,15,167" />
+      <scope id="1791297253455354486" at="27,62,28,16" />
+      <scope id="1791297253455354486" at="33,68,34,21" />
+      <scope id="1791297253455354486" at="40,29,41,18" />
+      <scope id="1791297253455354487" at="44,17,45,30" />
+      <scope id="1791297253455354488" at="46,17,47,30" />
+      <scope id="1791297253455354491" at="48,20,49,33" />
+      <scope id="1791297253455354486" at="58,22,59,18" />
+      <scope id="1791297253455354486" at="14,0,17,0" />
+      <scope id="1791297253455354486" at="25,0,30,0" />
+      <scope id="1791297253455354486" at="31,0,36,0" />
+      <scope id="1791297253455354486" at="56,73,61,32">
+        <var name="index" id="1791297253455354486" />
+      </scope>
+      <scope id="1791297253455354486" at="54,0,63,0">
+        <var name="idValue" id="1791297253455354486" />
+      </scope>
+      <scope id="1791297253455354486" at="39,88,51,16" />
+      <scope id="1791297253455354486" at="37,0,53,0">
+        <var name="memberName" id="1791297253455354486" />
+      </scope>
+      <unit id="1791297253455354486" at="12,0,64,0" name="ROSML.structure.EnumerationDescriptor_EInterfaces" />
+    </file>
+    <file name="StructureAspectDescriptor.java">
+      <node id="1791297253455354486" at="33,0,34,0" concept="2" trace="myEnumerationEInterfaces" />
+    </file>
+  </root>
+  <root nodeRef="r:d670596f-f26c-43d2-8e17-a7b3e68888bf(ROSML.structure)/1791297253455354504">
+    <file name="ConceptPresentationAspectImpl.java">
+      <node id="1791297253455354504" at="13,0,14,0" concept="2" trace="props_CustomInterface" />
+      <node id="1791297253455354504" at="40,44,41,76" concept="5" />
+      <node id="1791297253455354504" at="41,76,42,49" concept="1" />
+      <node id="1791297253455354504" at="42,49,43,47" concept="1" />
+      <node id="1791297253455354504" at="44,9,45,37" concept="6" />
+      <node id="1791297253455354504" at="39,49,44,9" concept="3" />
+      <scope id="1791297253455354504" at="40,44,43,47">
+        <var name="cpb" id="1791297253455354504" />
+      </scope>
+      <scope id="1791297253455354504" at="39,49,45,37" />
+    </file>
+    <file name="LanguageConceptSwitch.java">
+      <node id="1791297253455354504" at="13,0,14,0" concept="8" trace="CustomInterface" />
+      <node id="1791297253455354504" at="29,45,30,54" concept="1" />
+    </file>
+    <file name="StructureAspectDescriptor.java">
+      <node id="1791297253455354504" at="20,0,21,0" concept="2" trace="myConceptCustomInterface" />
+      <node id="1791297253455354504" at="57,49,58,40" concept="6" />
+      <node id="1791297253455354504" at="106,73,107,155" concept="5" />
+      <node id="1791297253455354504" at="107,155,108,34" concept="1" />
+      <node id="1791297253455354504" at="109,76,110,92" concept="1" />
+      <node id="1791297253455354504" at="110,92,111,17" concept="1" />
+      <node id="1791297253455354505" at="111,17,112,203" concept="1" />
+      <node id="1791297253455354504" at="112,203,113,22" concept="6" />
+      <node id="1791297253455354504" at="106,0,115,0" concept="9" trace="createDescriptorForCustomInterface#()Ljetbrains/mps/smodel/runtime/ConceptDescriptor;" />
+      <scope id="1791297253455354504" at="57,49,58,40" />
+      <scope id="1791297253455354504" at="106,73,113,22">
+        <var name="b" id="1791297253455354504" />
+      </scope>
+      <scope id="1791297253455354504" at="106,0,115,0" />
+    </file>
+  </root>
+  <root nodeRef="r:d670596f-f26c-43d2-8e17-a7b3e68888bf(ROSML.structure)/1791297253455354509">
+    <file name="ConceptPresentationAspectImpl.java">
+      <node id="1791297253455354509" at="16,0,17,0" concept="2" trace="props_IInterface" />
+      <node id="1791297253455354509" at="60,39,61,76" concept="5" />
+      <node id="1791297253455354509" at="61,76,62,42" concept="1" />
+      <node id="1791297253455354509" at="63,9,64,32" concept="6" />
+      <node id="1791297253455354509" at="59,44,63,9" concept="3" />
+      <scope id="1791297253455354509" at="60,39,62,42">
+        <var name="cpb" id="1791297253455354509" />
+      </scope>
+      <scope id="1791297253455354509" at="59,44,64,32" />
+    </file>
+    <file name="LanguageConceptSwitch.java">
+      <node id="1791297253455354509" at="16,0,17,0" concept="8" trace="IInterface" />
+      <node id="1791297253455354509" at="32,49,33,49" concept="1" />
+    </file>
+    <file name="StructureAspectDescriptor.java">
+      <node id="1791297253455354509" at="23,0,24,0" concept="2" trace="myConceptIInterface" />
+      <node id="1791297253455354509" at="63,44,64,35" concept="6" />
+      <node id="1791297253455354509" at="108,34,109,76" concept="1" />
+      <node id="1791297253455354509" at="134,68,135,150" concept="5" />
+      <node id="1791297253455354509" at="135,150,136,19" concept="1" />
+      <node id="1791297253455354509" at="136,19,137,92" concept="1" />
+      <node id="1791297253455354509" at="137,92,138,17" concept="1" />
+      <node id="7114368925594269676" at="138,17,139,113" concept="1" />
+      <node id="1791297253455354483" at="139,113,140,183" concept="1" />
+      <node id="1791297253455794286" at="140,183,141,110" concept="1" />
+      <node id="1791297253455354509" at="141,110,142,22" concept="6" />
+      <node id="1791297253455354509" at="163,34,164,76" concept="1" />
+      <node id="1791297253455354509" at="134,0,144,0" concept="9" trace="createDescriptorForIInterface#()Ljetbrains/mps/smodel/runtime/ConceptDescriptor;" />
+      <scope id="1791297253455354509" at="63,44,64,35" />
+      <scope id="1791297253455354509" at="134,68,142,22">
+        <var name="b" id="1791297253455354509" />
+      </scope>
+      <scope id="1791297253455354509" at="134,0,144,0" />
     </file>
   </root>
   <root nodeRef="r:d670596f-f26c-43d2-8e17-a7b3e68888bf(ROSML.structure)/2388874706831452485">
     <file name="ConceptPresentationAspectImpl.java">
-      <node id="2388874706831452485" at="18,0,19,0" concept="1" trace="props_Mensaje" />
-      <node id="2388874706831452485" at="70,36,71,76" concept="3" />
-      <node id="2388874706831452485" at="71,76,72,41" concept="0" />
-      <node id="2388874706831452485" at="72,41,73,39" concept="0" />
-      <node id="2388874706831452485" at="74,9,75,29" concept="4" />
-      <node id="2388874706831452485" at="69,41,74,9" concept="2" />
-      <scope id="2388874706831452485" at="70,36,73,39">
+      <node id="2388874706831452485" at="19,0,20,0" concept="2" trace="props_Interface" />
+      <node id="2388874706831452485" at="78,38,79,76" concept="5" />
+      <node id="2388874706831452485" at="79,76,80,43" concept="1" />
+      <node id="2388874706831452485" at="80,43,81,41" concept="1" />
+      <node id="2388874706831452485" at="82,9,83,31" concept="6" />
+      <node id="2388874706831452485" at="77,43,82,9" concept="3" />
+      <scope id="2388874706831452485" at="78,38,81,41">
         <var name="cpb" id="2388874706831452485" />
       </scope>
-      <scope id="2388874706831452485" at="69,41,75,29" />
+      <scope id="2388874706831452485" at="77,43,83,31" />
     </file>
     <file name="LanguageConceptSwitch.java">
-      <node id="2388874706831452485" at="18,0,19,0" concept="6" trace="Mensaje" />
-      <node id="2388874706831452485" at="32,46,33,46" concept="0" />
+      <node id="2388874706831452485" at="19,0,20,0" concept="8" trace="Interface" />
+      <node id="2388874706831452485" at="35,44,36,48" concept="1" />
     </file>
     <file name="StructureAspectDescriptor.java">
-      <node id="2388874706831452485" at="22,0,23,0" concept="1" trace="myConceptMensaje" />
-      <node id="2388874706831452485" at="61,41,62,32" concept="4" />
-      <node id="2388874706831452485" at="139,65,140,147" concept="3" />
-      <node id="2388874706831452485" at="140,147,141,34" concept="0" />
-      <node id="2388874706831452485" at="141,34,142,92" concept="0" />
-      <node id="2388874706831452485" at="142,92,143,17" concept="0" />
-      <node id="4534965232672437787" at="143,17,144,110" concept="0" />
-      <node id="7114368925594269676" at="144,110,145,114" concept="0" />
-      <node id="2388874706831452485" at="145,114,146,22" concept="4" />
-      <node id="2388874706831452485" at="139,0,148,0" concept="7" trace="createDescriptorForMensaje#()Ljetbrains/mps/smodel/runtime/ConceptDescriptor;" />
-      <scope id="2388874706831452485" at="61,41,62,32" />
-      <scope id="2388874706831452485" at="139,65,146,22">
+      <node id="2388874706831452485" at="26,0,27,0" concept="2" trace="myConceptInterface" />
+      <node id="2388874706831452485" at="69,43,70,34" concept="6" />
+      <node id="2388874706831452485" at="161,67,162,149" concept="5" />
+      <node id="2388874706831452485" at="162,149,163,34" concept="1" />
+      <node id="2388874706831452485" at="164,76,165,92" concept="1" />
+      <node id="2388874706831452485" at="165,92,166,17" concept="1" />
+      <node id="2388874706831452485" at="166,17,167,22" concept="6" />
+      <node id="2388874706831452485" at="161,0,169,0" concept="9" trace="createDescriptorForInterface#()Ljetbrains/mps/smodel/runtime/ConceptDescriptor;" />
+      <scope id="2388874706831452485" at="69,43,70,34" />
+      <scope id="2388874706831452485" at="161,67,167,22">
         <var name="b" id="2388874706831452485" />
       </scope>
-      <scope id="2388874706831452485" at="139,0,148,0" />
+      <scope id="2388874706831452485" at="161,0,169,0" />
     </file>
   </root>
   <root nodeRef="r:d670596f-f26c-43d2-8e17-a7b3e68888bf(ROSML.structure)/2388874706831453138">
     <file name="ConceptPresentationAspectImpl.java">
-      <node id="2388874706831453138" at="22,0,23,0" concept="1" trace="props_Servidor" />
-      <node id="2388874706831453138" at="98,37,99,76" concept="3" />
-      <node id="2388874706831453138" at="99,76,100,35" concept="0" />
-      <node id="2388874706831453138" at="100,35,101,40" concept="0" />
-      <node id="2388874706831453138" at="102,9,103,30" concept="4" />
-      <node id="2388874706831453138" at="97,42,102,9" concept="2" />
-      <scope id="2388874706831453138" at="98,37,101,40">
+      <node id="2388874706831453138" at="23,0,24,0" concept="2" trace="props_Server" />
+      <node id="2388874706831453138" at="106,35,107,76" concept="5" />
+      <node id="2388874706831453138" at="107,76,108,35" concept="1" />
+      <node id="2388874706831453138" at="108,35,109,38" concept="1" />
+      <node id="2388874706831453138" at="110,9,111,28" concept="6" />
+      <node id="2388874706831453138" at="105,40,110,9" concept="3" />
+      <scope id="2388874706831453138" at="106,35,109,38">
         <var name="cpb" id="2388874706831453138" />
       </scope>
-      <scope id="2388874706831453138" at="97,42,103,30" />
+      <scope id="2388874706831453138" at="105,40,111,28" />
     </file>
     <file name="LanguageConceptSwitch.java">
-      <node id="2388874706831453138" at="22,0,23,0" concept="6" trace="Servidor" />
-      <node id="2388874706831453138" at="36,47,37,47" concept="0" />
+      <node id="2388874706831453138" at="23,0,24,0" concept="8" trace="Server" />
+      <node id="2388874706831453138" at="39,45,40,45" concept="1" />
     </file>
     <file name="StructureAspectDescriptor.java">
-      <node id="2388874706831453138" at="26,0,27,0" concept="1" trace="myConceptServidor" />
-      <node id="2388874706831453138" at="69,42,70,33" concept="4" />
-      <node id="2388874706831453138" at="179,66,180,148" concept="3" />
-      <node id="2388874706831453138" at="180,148,181,34" concept="0" />
-      <node id="2388874706831453138" at="181,34,182,36" concept="5" />
-      <node id="2388874706831453138" at="182,36,183,75" concept="0" />
-      <node id="2388874706831453138" at="184,76,185,92" concept="0" />
-      <node id="2388874706831453138" at="185,92,186,17" concept="0" />
-      <node id="6890320178452338426" at="186,17,187,201" concept="0" />
-      <node id="6890320178452563451" at="187,201,188,200" concept="0" />
-      <node id="2388874706831453138" at="188,200,189,24" concept="0" />
-      <node id="2388874706831453138" at="189,24,190,22" concept="4" />
-      <node id="2388874706831453138" at="179,0,192,0" concept="7" trace="createDescriptorForServidor#()Ljetbrains/mps/smodel/runtime/ConceptDescriptor;" />
-      <scope id="2388874706831453138" at="69,42,70,33" />
-      <scope id="2388874706831453138" at="179,66,190,22">
+      <node id="2388874706831453138" at="30,0,31,0" concept="2" trace="myConceptServer" />
+      <node id="2388874706831453138" at="77,40,78,31" concept="6" />
+      <node id="2388874706831453138" at="204,64,205,146" concept="5" />
+      <node id="2388874706831453138" at="205,146,206,34" concept="1" />
+      <node id="2388874706831453138" at="206,34,207,36" concept="7" />
+      <node id="2388874706831453138" at="207,36,208,75" concept="1" />
+      <node id="2388874706831453138" at="209,76,210,92" concept="1" />
+      <node id="2388874706831453138" at="210,92,211,17" concept="1" />
+      <node id="6890320178452338426" at="211,17,212,200" concept="1" />
+      <node id="6890320178452563451" at="212,200,213,199" concept="1" />
+      <node id="2388874706831453138" at="213,199,214,24" concept="1" />
+      <node id="2388874706831453138" at="214,24,215,22" concept="6" />
+      <node id="2388874706831453138" at="204,0,217,0" concept="9" trace="createDescriptorForServer#()Ljetbrains/mps/smodel/runtime/ConceptDescriptor;" />
+      <scope id="2388874706831453138" at="77,40,78,31" />
+      <scope id="2388874706831453138" at="204,64,215,22">
         <var name="b" id="2388874706831453138" />
       </scope>
-      <scope id="2388874706831453138" at="179,0,192,0" />
+      <scope id="2388874706831453138" at="204,0,217,0" />
     </file>
   </root>
   <root nodeRef="r:d670596f-f26c-43d2-8e17-a7b3e68888bf(ROSML.structure)/421342016046853881">
     <file name="ConceptPresentationAspectImpl.java">
-      <node id="421342016046853881" at="20,0,21,0" concept="1" trace="props_Proyecto" />
-      <node id="421342016046853881" at="84,37,85,76" concept="3" />
-      <node id="421342016046853881" at="85,76,86,35" concept="0" />
-      <node id="421342016046853881" at="86,35,87,40" concept="0" />
-      <node id="421342016046853881" at="88,9,89,30" concept="4" />
-      <node id="421342016046853881" at="83,42,88,9" concept="2" />
-      <scope id="421342016046853881" at="84,37,87,40">
+      <node id="421342016046853881" at="22,0,23,0" concept="2" trace="props_Project" />
+      <node id="421342016046853881" at="99,36,100,76" concept="5" />
+      <node id="421342016046853881" at="100,76,101,35" concept="1" />
+      <node id="421342016046853881" at="101,35,102,39" concept="1" />
+      <node id="421342016046853881" at="103,9,104,29" concept="6" />
+      <node id="421342016046853881" at="98,41,103,9" concept="3" />
+      <scope id="421342016046853881" at="99,36,102,39">
         <var name="cpb" id="421342016046853881" />
       </scope>
-      <scope id="421342016046853881" at="83,42,89,30" />
+      <scope id="421342016046853881" at="98,41,104,29" />
     </file>
     <file name="LanguageConceptSwitch.java">
-      <node id="421342016046853881" at="20,0,21,0" concept="6" trace="Proyecto" />
-      <node id="421342016046853881" at="34,42,35,46" concept="0" />
+      <node id="421342016046853881" at="22,0,23,0" concept="8" trace="Project" />
+      <node id="421342016046853881" at="38,53,39,45" concept="1" />
     </file>
     <file name="StructureAspectDescriptor.java">
-      <node id="421342016046853881" at="24,0,25,0" concept="1" trace="myConceptProyecto" />
-      <node id="421342016046853881" at="65,42,66,33" concept="4" />
-      <node id="421342016046853881" at="160,66,161,147" concept="3" />
-      <node id="421342016046853881" at="161,147,162,33" concept="0" />
-      <node id="421342016046853881" at="162,33,163,71" concept="0" />
-      <node id="421342016046853881" at="163,71,164,91" concept="0" />
-      <node id="421342016046853881" at="164,91,165,17" concept="0" />
-      <node id="5031074398567821439" at="165,17,166,201" concept="0" />
-      <node id="5031074398568814317" at="166,201,167,202" concept="0" />
-      <node id="421342016046853881" at="167,202,168,22" concept="4" />
-      <node id="421342016046853881" at="160,0,170,0" concept="7" trace="createDescriptorForProyecto#()Ljetbrains/mps/smodel/runtime/ConceptDescriptor;" />
-      <scope id="421342016046853881" at="65,42,66,33" />
-      <scope id="421342016046853881" at="160,66,168,22">
+      <node id="421342016046853881" at="29,0,30,0" concept="2" trace="myConceptProject" />
+      <node id="421342016046853881" at="75,41,76,32" concept="6" />
+      <node id="421342016046853881" at="194,65,195,146" concept="5" />
+      <node id="421342016046853881" at="195,146,196,33" concept="1" />
+      <node id="421342016046853881" at="196,33,197,71" concept="1" />
+      <node id="421342016046853881" at="197,71,198,91" concept="1" />
+      <node id="421342016046853881" at="198,91,199,17" concept="1" />
+      <node id="5031074398567821439" at="199,17,200,205" concept="1" />
+      <node id="5031074398568814317" at="200,205,201,203" concept="1" />
+      <node id="421342016046853881" at="201,203,202,22" concept="6" />
+      <node id="421342016046853881" at="194,0,204,0" concept="9" trace="createDescriptorForProject#()Ljetbrains/mps/smodel/runtime/ConceptDescriptor;" />
+      <scope id="421342016046853881" at="75,41,76,32" />
+      <scope id="421342016046853881" at="194,65,202,22">
         <var name="b" id="421342016046853881" />
       </scope>
-      <scope id="421342016046853881" at="160,0,170,0" />
+      <scope id="421342016046853881" at="194,0,204,0" />
     </file>
   </root>
   <root nodeRef="r:d670596f-f26c-43d2-8e17-a7b3e68888bf(ROSML.structure)/421342016046853883">
     <file name="ConceptPresentationAspectImpl.java">
-      <node id="421342016046853883" at="19,0,20,0" concept="1" trace="props_Nodo" />
-      <node id="421342016046853883" at="77,33,78,76" concept="3" />
-      <node id="421342016046853883" at="78,76,79,35" concept="0" />
-      <node id="421342016046853883" at="79,35,80,36" concept="0" />
-      <node id="421342016046853883" at="81,9,82,26" concept="4" />
-      <node id="421342016046853883" at="76,38,81,9" concept="2" />
-      <scope id="421342016046853883" at="77,33,80,36">
+      <node id="421342016046853883" at="20,0,21,0" concept="2" trace="props_Node" />
+      <node id="421342016046853883" at="85,33,86,76" concept="5" />
+      <node id="421342016046853883" at="86,76,87,35" concept="1" />
+      <node id="421342016046853883" at="87,35,88,36" concept="1" />
+      <node id="421342016046853883" at="89,9,90,26" concept="6" />
+      <node id="421342016046853883" at="84,38,89,9" concept="3" />
+      <scope id="421342016046853883" at="85,33,88,36">
         <var name="cpb" id="421342016046853883" />
       </scope>
-      <scope id="421342016046853883" at="76,38,82,26" />
+      <scope id="421342016046853883" at="84,38,90,26" />
     </file>
     <file name="LanguageConceptSwitch.java">
-      <node id="421342016046853883" at="19,0,20,0" concept="6" trace="Nodo" />
-      <node id="421342016046853883" at="33,46,34,42" concept="0" />
+      <node id="421342016046853883" at="20,0,21,0" concept="8" trace="Node" />
+      <node id="421342016046853883" at="36,48,37,42" concept="1" />
     </file>
     <file name="StructureAspectDescriptor.java">
-      <node id="421342016046853883" at="23,0,24,0" concept="1" trace="myConceptNodo" />
-      <node id="421342016046853883" at="63,38,64,29" concept="4" />
-      <node id="421342016046853883" at="148,62,149,143" concept="3" />
-      <node id="421342016046853883" at="149,143,150,33" concept="0" />
-      <node id="421342016046853883" at="151,76,152,91" concept="0" />
-      <node id="421342016046853883" at="152,91,153,17" concept="0" />
-      <node id="421342016046867531" at="153,17,154,202" concept="0" />
-      <node id="421342016046867533" at="154,202,155,202" concept="0" />
-      <node id="6283511899403442472" at="155,202,156,209" concept="0" />
-      <node id="6283511899403442476" at="156,209,157,211" concept="0" />
-      <node id="421342016046853883" at="157,211,158,22" concept="4" />
-      <node id="421342016046853883" at="148,0,160,0" concept="7" trace="createDescriptorForNodo#()Ljetbrains/mps/smodel/runtime/ConceptDescriptor;" />
-      <scope id="421342016046853883" at="63,38,64,29" />
-      <scope id="421342016046853883" at="148,62,158,22">
+      <node id="421342016046853883" at="27,0,28,0" concept="2" trace="myConceptNode" />
+      <node id="421342016046853883" at="71,38,72,29" concept="6" />
+      <node id="421342016046853883" at="169,62,170,143" concept="5" />
+      <node id="421342016046853883" at="170,143,171,33" concept="1" />
+      <node id="421342016046853883" at="172,76,173,91" concept="1" />
+      <node id="421342016046853883" at="173,91,174,17" concept="1" />
+      <node id="421342016046867531" at="174,17,175,201" concept="1" />
+      <node id="421342016046867533" at="175,201,176,202" concept="1" />
+      <node id="6283511899403442472" at="176,202,177,207" concept="1" />
+      <node id="6283511899403442476" at="177,207,178,208" concept="1" />
+      <node id="421342016046853883" at="178,208,179,22" concept="6" />
+      <node id="421342016046853883" at="169,0,181,0" concept="9" trace="createDescriptorForNode#()Ljetbrains/mps/smodel/runtime/ConceptDescriptor;" />
+      <scope id="421342016046853883" at="71,38,72,29" />
+      <scope id="421342016046853883" at="169,62,179,22">
         <var name="b" id="421342016046853883" />
       </scope>
-      <scope id="421342016046853883" at="148,0,160,0" />
+      <scope id="421342016046853883" at="169,0,181,0" />
     </file>
   </root>
   <root nodeRef="r:d670596f-f26c-43d2-8e17-a7b3e68888bf(ROSML.structure)/421342016046853889">
     <file name="ConceptPresentationAspectImpl.java">
-      <node id="421342016046853889" at="23,0,24,0" concept="1" trace="props_Topico" />
-      <node id="421342016046853889" at="105,35,106,76" concept="3" />
-      <node id="421342016046853889" at="106,76,107,35" concept="0" />
-      <node id="421342016046853889" at="107,35,108,38" concept="0" />
-      <node id="421342016046853889" at="109,9,110,28" concept="4" />
-      <node id="421342016046853889" at="104,40,109,9" concept="2" />
-      <scope id="421342016046853889" at="105,35,108,38">
+      <node id="421342016046853889" at="25,0,26,0" concept="2" trace="props_Topic" />
+      <node id="421342016046853889" at="120,34,121,76" concept="5" />
+      <node id="421342016046853889" at="121,76,122,35" concept="1" />
+      <node id="421342016046853889" at="122,35,123,37" concept="1" />
+      <node id="421342016046853889" at="124,9,125,27" concept="6" />
+      <node id="421342016046853889" at="119,39,124,9" concept="3" />
+      <scope id="421342016046853889" at="120,34,123,37">
         <var name="cpb" id="421342016046853889" />
       </scope>
-      <scope id="421342016046853889" at="104,40,110,28" />
+      <scope id="421342016046853889" at="119,39,125,27" />
     </file>
     <file name="LanguageConceptSwitch.java">
-      <node id="421342016046853889" at="23,0,24,0" concept="6" trace="Topico" />
-      <node id="421342016046853889" at="37,47,38,44" concept="0" />
+      <node id="421342016046853889" at="25,0,26,0" concept="8" trace="Topic" />
+      <node id="421342016046853889" at="41,46,42,43" concept="1" />
     </file>
     <file name="StructureAspectDescriptor.java">
-      <node id="421342016046853889" at="27,0,28,0" concept="1" trace="myConceptTopico" />
-      <node id="421342016046853889" at="71,40,72,31" concept="4" />
-      <node id="421342016046853889" at="192,64,193,145" concept="3" />
-      <node id="421342016046853889" at="193,145,194,34" concept="0" />
-      <node id="421342016046853889" at="195,76,196,91" concept="0" />
-      <node id="421342016046853889" at="196,91,197,17" concept="0" />
-      <node id="2388874706831453135" at="197,17,198,170" concept="0" />
-      <node id="421342016046853889" at="198,170,199,22" concept="4" />
-      <node id="421342016046853889" at="192,0,201,0" concept="7" trace="createDescriptorForTopico#()Ljetbrains/mps/smodel/runtime/ConceptDescriptor;" />
-      <scope id="421342016046853889" at="71,40,72,31" />
-      <scope id="421342016046853889" at="192,64,199,22">
+      <node id="421342016046853889" at="32,0,33,0" concept="2" trace="myConceptTopic" />
+      <node id="421342016046853889" at="81,39,82,30" concept="6" />
+      <node id="421342016046853889" at="227,63,228,144" concept="5" />
+      <node id="421342016046853889" at="228,144,229,34" concept="1" />
+      <node id="421342016046853889" at="230,76,231,91" concept="1" />
+      <node id="421342016046853889" at="231,91,232,17" concept="1" />
+      <node id="2388874706831453135" at="232,17,233,171" concept="1" />
+      <node id="421342016046853889" at="233,171,234,22" concept="6" />
+      <node id="421342016046853889" at="227,0,236,0" concept="9" trace="createDescriptorForTopic#()Ljetbrains/mps/smodel/runtime/ConceptDescriptor;" />
+      <scope id="421342016046853889" at="81,39,82,30" />
+      <scope id="421342016046853889" at="227,63,234,22">
         <var name="b" id="421342016046853889" />
       </scope>
-      <scope id="421342016046853889" at="192,0,201,0" />
+      <scope id="421342016046853889" at="227,0,236,0" />
     </file>
   </root>
   <root nodeRef="r:d670596f-f26c-43d2-8e17-a7b3e68888bf(ROSML.structure)/421342016046866179">
     <file name="ConceptPresentationAspectImpl.java">
-      <node id="421342016046866179" at="13,0,14,0" concept="1" trace="props_ConexionDirecta" />
-      <node id="421342016046866179" at="38,44,39,76" concept="3" />
-      <node id="421342016046866179" at="39,76,40,35" concept="0" />
-      <node id="421342016046866179" at="40,35,41,47" concept="0" />
-      <node id="421342016046866179" at="42,9,43,37" concept="4" />
-      <node id="421342016046866179" at="37,49,42,9" concept="2" />
-      <scope id="421342016046866179" at="38,44,41,47">
+      <node id="421342016046866179" at="14,0,15,0" concept="2" trace="props_DirectConnection" />
+      <node id="421342016046866179" at="47,45,48,76" concept="5" />
+      <node id="421342016046866179" at="48,76,49,35" concept="1" />
+      <node id="421342016046866179" at="49,35,50,48" concept="1" />
+      <node id="421342016046866179" at="51,9,52,38" concept="6" />
+      <node id="421342016046866179" at="46,50,51,9" concept="3" />
+      <scope id="421342016046866179" at="47,45,50,48">
         <var name="cpb" id="421342016046866179" />
       </scope>
-      <scope id="421342016046866179" at="37,49,43,37" />
+      <scope id="421342016046866179" at="46,50,52,38" />
     </file>
     <file name="LanguageConceptSwitch.java">
-      <node id="421342016046866179" at="13,0,14,0" concept="6" trace="ConexionDirecta" />
-      <node id="421342016046866179" at="27,45,28,53" concept="0" />
+      <node id="421342016046866179" at="14,0,15,0" concept="8" trace="DirectConnection" />
+      <node id="421342016046866179" at="30,54,31,54" concept="1" />
     </file>
     <file name="StructureAspectDescriptor.java">
-      <node id="421342016046866179" at="17,0,18,0" concept="1" trace="myConceptConexionDirecta" />
-      <node id="421342016046866179" at="51,49,52,40" concept="4" />
-      <node id="421342016046866179" at="91,73,92,154" concept="3" />
-      <node id="421342016046866179" at="92,154,93,34" concept="0" />
-      <node id="421342016046866179" at="94,76,95,91" concept="0" />
-      <node id="421342016046866179" at="95,91,96,17" concept="0" />
-      <node id="5031074398568943479" at="96,17,97,114" concept="0" />
-      <node id="421342016046866180" at="97,114,98,164" concept="0" />
-      <node id="421342016046866183" at="98,164,99,166" concept="0" />
-      <node id="421342016046866179" at="99,166,100,22" concept="4" />
-      <node id="421342016046866179" at="91,0,102,0" concept="7" trace="createDescriptorForConexionDirecta#()Ljetbrains/mps/smodel/runtime/ConceptDescriptor;" />
-      <scope id="421342016046866179" at="51,49,52,40" />
-      <scope id="421342016046866179" at="91,73,100,22">
+      <node id="421342016046866179" at="21,0,22,0" concept="2" trace="myConceptDirectConnection" />
+      <node id="421342016046866179" at="59,50,60,41" concept="6" />
+      <node id="421342016046866179" at="115,74,116,155" concept="5" />
+      <node id="421342016046866179" at="116,155,117,34" concept="1" />
+      <node id="421342016046866179" at="118,76,119,91" concept="1" />
+      <node id="421342016046866179" at="119,91,120,17" concept="1" />
+      <node id="5031074398568943479" at="120,17,121,111" concept="1" />
+      <node id="421342016046866180" at="121,111,122,164" concept="1" />
+      <node id="421342016046866183" at="122,164,123,165" concept="1" />
+      <node id="421342016046866179" at="123,165,124,22" concept="6" />
+      <node id="421342016046866179" at="115,0,126,0" concept="9" trace="createDescriptorForDirectConnection#()Ljetbrains/mps/smodel/runtime/ConceptDescriptor;" />
+      <scope id="421342016046866179" at="59,50,60,41" />
+      <scope id="421342016046866179" at="115,74,124,22">
         <var name="b" id="421342016046866179" />
       </scope>
-      <scope id="421342016046866179" at="91,0,102,0" />
+      <scope id="421342016046866179" at="115,0,126,0" />
     </file>
   </root>
   <root nodeRef="r:d670596f-f26c-43d2-8e17-a7b3e68888bf(ROSML.structure)/5031074398568689361">
     <file name="ConceptPresentationAspectImpl.java">
-      <node id="5031074398568689361" at="16,0,17,0" concept="1" trace="props_IElementoRed" />
-      <node id="5031074398568689361" at="58,41,59,76" concept="3" />
-      <node id="5031074398568689361" at="59,76,60,44" concept="0" />
-      <node id="5031074398568689361" at="61,9,62,34" concept="4" />
-      <node id="5031074398568689361" at="57,46,61,9" concept="2" />
-      <scope id="5031074398568689361" at="58,41,60,44">
+      <node id="5031074398568689361" at="17,0,18,0" concept="2" trace="props_INetworkElement" />
+      <node id="5031074398568689361" at="66,44,67,76" concept="5" />
+      <node id="5031074398568689361" at="67,76,68,47" concept="1" />
+      <node id="5031074398568689361" at="69,9,70,37" concept="6" />
+      <node id="5031074398568689361" at="65,49,69,9" concept="3" />
+      <scope id="5031074398568689361" at="66,44,68,47">
         <var name="cpb" id="5031074398568689361" />
       </scope>
-      <scope id="5031074398568689361" at="57,46,62,34" />
+      <scope id="5031074398568689361" at="65,49,70,37" />
     </file>
     <file name="LanguageConceptSwitch.java">
-      <node id="5031074398568689361" at="16,0,17,0" concept="6" trace="IElementoRed" />
-      <node id="5031074398568689361" at="30,50,31,51" concept="0" />
+      <node id="5031074398568689361" at="17,0,18,0" concept="8" trace="INetworkElement" />
+      <node id="5031074398568689361" at="33,49,34,54" concept="1" />
     </file>
     <file name="StructureAspectDescriptor.java">
-      <node id="5031074398568689361" at="20,0,21,0" concept="1" trace="myConceptIElementoRed" />
-      <node id="5031074398568689361" at="57,46,58,37" concept="4" />
-      <node id="5031074398568689361" at="122,70,123,152" concept="3" />
-      <node id="5031074398568689361" at="123,152,124,19" concept="0" />
-      <node id="5031074398568689361" at="124,19,125,71" concept="0" />
-      <node id="5031074398568689361" at="125,71,126,92" concept="0" />
-      <node id="5031074398568689361" at="126,92,127,17" concept="0" />
-      <node id="5031074398568689361" at="127,17,128,22" concept="4" />
-      <node id="5031074398568689361" at="150,33,151,76" concept="0" />
-      <node id="5031074398568689361" at="183,75,184,76" concept="0" />
-      <node id="5031074398568689361" at="194,34,195,76" concept="0" />
-      <node id="5031074398568689361" at="122,0,130,0" concept="7" trace="createDescriptorForIElementoRed#()Ljetbrains/mps/smodel/runtime/ConceptDescriptor;" />
-      <scope id="5031074398568689361" at="57,46,58,37" />
-      <scope id="5031074398568689361" at="122,70,128,22">
+      <node id="5031074398568689361" at="24,0,25,0" concept="2" trace="myConceptINetworkElement" />
+      <node id="5031074398568689361" at="65,49,66,40" concept="6" />
+      <node id="5031074398568689361" at="144,73,145,155" concept="5" />
+      <node id="5031074398568689361" at="145,155,146,19" concept="1" />
+      <node id="5031074398568689361" at="146,19,147,71" concept="1" />
+      <node id="5031074398568689361" at="147,71,148,92" concept="1" />
+      <node id="5031074398568689361" at="148,92,149,17" concept="1" />
+      <node id="5031074398568689361" at="149,17,150,22" concept="6" />
+      <node id="5031074398568689361" at="171,33,172,76" concept="1" />
+      <node id="5031074398568689361" at="208,75,209,76" concept="1" />
+      <node id="5031074398568689361" at="229,34,230,76" concept="1" />
+      <node id="5031074398568689361" at="144,0,152,0" concept="9" trace="createDescriptorForINetworkElement#()Ljetbrains/mps/smodel/runtime/ConceptDescriptor;" />
+      <scope id="5031074398568689361" at="65,49,66,40" />
+      <scope id="5031074398568689361" at="144,73,150,22">
         <var name="b" id="5031074398568689361" />
       </scope>
-      <scope id="5031074398568689361" at="122,0,130,0" />
+      <scope id="5031074398568689361" at="144,0,152,0" />
     </file>
   </root>
   <root nodeRef="r:d670596f-f26c-43d2-8e17-a7b3e68888bf(ROSML.structure)/5910286443905990605">
     <file name="ConceptPresentationAspectImpl.java">
-      <node id="5910286443905990605" at="15,0,16,0" concept="1" trace="props_IConexiones" />
-      <node id="5910286443905990605" at="52,40,53,76" concept="3" />
-      <node id="5910286443905990605" at="53,76,54,43" concept="0" />
-      <node id="5910286443905990605" at="55,9,56,33" concept="4" />
-      <node id="5910286443905990605" at="51,45,55,9" concept="2" />
-      <scope id="5910286443905990605" at="52,40,54,43">
+      <node id="5910286443905990605" at="15,0,16,0" concept="2" trace="props_IConection" />
+      <node id="5910286443905990605" at="54,39,55,76" concept="5" />
+      <node id="5910286443905990605" at="55,76,56,42" concept="1" />
+      <node id="5910286443905990605" at="57,9,58,32" concept="6" />
+      <node id="5910286443905990605" at="53,44,57,9" concept="3" />
+      <scope id="5910286443905990605" at="54,39,56,42">
         <var name="cpb" id="5910286443905990605" />
       </scope>
-      <scope id="5910286443905990605" at="51,45,56,33" />
+      <scope id="5910286443905990605" at="53,44,58,32" />
     </file>
     <file name="LanguageConceptSwitch.java">
-      <node id="5910286443905990605" at="15,0,16,0" concept="6" trace="IConexiones" />
-      <node id="5910286443905990605" at="29,53,30,50" concept="0" />
+      <node id="5910286443905990605" at="15,0,16,0" concept="8" trace="IConection" />
+      <node id="5910286443905990605" at="31,54,32,49" concept="1" />
     </file>
     <file name="StructureAspectDescriptor.java">
-      <node id="5910286443905990605" at="19,0,20,0" concept="1" trace="myConceptIConexiones" />
-      <node id="5910286443905990605" at="55,45,56,36" concept="4" />
-      <node id="5910286443905990605" at="93,34,94,76" concept="0" />
-      <node id="5910286443905990605" at="104,34,105,76" concept="0" />
-      <node id="5910286443905990605" at="114,69,115,151" concept="3" />
-      <node id="5910286443905990605" at="115,151,116,19" concept="0" />
-      <node id="5910286443905990605" at="116,19,117,71" concept="0" />
-      <node id="5910286443905990605" at="117,71,118,92" concept="0" />
-      <node id="5910286443905990605" at="118,92,119,17" concept="0" />
-      <node id="5910286443905990605" at="119,17,120,22" concept="4" />
-      <node id="5910286443905990605" at="114,0,122,0" concept="7" trace="createDescriptorForIConexiones#()Ljetbrains/mps/smodel/runtime/ConceptDescriptor;" />
-      <scope id="5910286443905990605" at="55,45,56,36" />
-      <scope id="5910286443905990605" at="114,69,120,22">
+      <node id="5910286443905990605" at="22,0,23,0" concept="2" trace="myConceptIConection" />
+      <node id="5910286443905990605" at="61,44,62,35" concept="6" />
+      <node id="5910286443905990605" at="117,34,118,76" concept="1" />
+      <node id="5910286443905990605" at="126,68,127,150" concept="5" />
+      <node id="5910286443905990605" at="127,150,128,19" concept="1" />
+      <node id="5910286443905990605" at="128,19,129,71" concept="1" />
+      <node id="5910286443905990605" at="129,71,130,92" concept="1" />
+      <node id="5910286443905990605" at="130,92,131,17" concept="1" />
+      <node id="5910286443905990605" at="131,17,132,22" concept="6" />
+      <node id="5910286443905990605" at="183,34,184,76" concept="1" />
+      <node id="5910286443905990605" at="126,0,134,0" concept="9" trace="createDescriptorForIConection#()Ljetbrains/mps/smodel/runtime/ConceptDescriptor;" />
+      <scope id="5910286443905990605" at="61,44,62,35" />
+      <scope id="5910286443905990605" at="126,68,132,22">
         <var name="b" id="5910286443905990605" />
       </scope>
-      <scope id="5910286443905990605" at="114,0,122,0" />
+      <scope id="5910286443905990605" at="126,0,134,0" />
     </file>
   </root>
   <root nodeRef="r:d670596f-f26c-43d2-8e17-a7b3e68888bf(ROSML.structure)/5957737514409472537">
     <file name="ConceptPresentationAspectImpl.java">
-      <node id="5957737514409472537" at="14,0,15,0" concept="1" trace="props_ConexionPuerto" />
-      <node id="5957737514409472537" at="45,43,46,76" concept="3" />
-      <node id="5957737514409472537" at="46,76,47,35" concept="0" />
-      <node id="5957737514409472537" at="47,35,48,46" concept="0" />
-      <node id="5957737514409472537" at="49,9,50,36" concept="4" />
-      <node id="5957737514409472537" at="44,48,49,9" concept="2" />
-      <scope id="5957737514409472537" at="45,43,48,46">
+      <node id="5957737514409472537" at="21,0,22,0" concept="2" trace="props_PortConnection" />
+      <node id="5957737514409472537" at="92,43,93,76" concept="5" />
+      <node id="5957737514409472537" at="93,76,94,35" concept="1" />
+      <node id="5957737514409472537" at="94,35,95,46" concept="1" />
+      <node id="5957737514409472537" at="96,9,97,36" concept="6" />
+      <node id="5957737514409472537" at="91,48,96,9" concept="3" />
+      <scope id="5957737514409472537" at="92,43,95,46">
         <var name="cpb" id="5957737514409472537" />
       </scope>
-      <scope id="5957737514409472537" at="44,48,50,36" />
+      <scope id="5957737514409472537" at="91,48,97,36" />
     </file>
     <file name="LanguageConceptSwitch.java">
-      <node id="5957737514409472537" at="14,0,15,0" concept="6" trace="ConexionPuerto" />
-      <node id="5957737514409472537" at="28,53,29,53" concept="0" />
+      <node id="5957737514409472537" at="21,0,22,0" concept="8" trace="PortConnection" />
+      <node id="5957737514409472537" at="37,42,38,53" concept="1" />
     </file>
     <file name="StructureAspectDescriptor.java">
-      <node id="5957737514409472537" at="18,0,19,0" concept="1" trace="myConceptConexionPuerto" />
-      <node id="5957737514409472537" at="53,48,54,39" concept="4" />
-      <node id="5957737514409472537" at="102,72,103,154" concept="3" />
-      <node id="5957737514409472537" at="103,154,104,34" concept="0" />
-      <node id="5957737514409472537" at="105,76,106,92" concept="0" />
-      <node id="5957737514409472537" at="106,92,107,17" concept="0" />
-      <node id="5957737514409807383" at="107,17,108,114" concept="0" />
-      <node id="7522646080062418640" at="108,114,109,119" concept="0" />
-      <node id="5957737514409472540" at="109,119,110,166" concept="0" />
-      <node id="5957737514409472542" at="110,166,111,171" concept="0" />
-      <node id="5957737514409472537" at="111,171,112,22" concept="4" />
-      <node id="5957737514409472537" at="102,0,114,0" concept="7" trace="createDescriptorForConexionPuerto#()Ljetbrains/mps/smodel/runtime/ConceptDescriptor;" />
-      <scope id="5957737514409472537" at="53,48,54,39" />
-      <scope id="5957737514409472537" at="102,72,112,22">
+      <node id="5957737514409472537" at="28,0,29,0" concept="2" trace="myConceptPortConnection" />
+      <node id="5957737514409472537" at="73,48,74,39" concept="6" />
+      <node id="5957737514409472537" at="181,72,182,154" concept="5" />
+      <node id="5957737514409472537" at="182,154,183,34" concept="1" />
+      <node id="5957737514409472537" at="184,76,185,92" concept="1" />
+      <node id="5957737514409472537" at="185,92,186,17" concept="1" />
+      <node id="5957737514409807383" at="186,17,187,111" concept="1" />
+      <node id="7522646080062418640" at="187,111,188,115" concept="1" />
+      <node id="5957737514409472540" at="188,115,189,167" concept="1" />
+      <node id="5957737514409472542" at="189,167,190,170" concept="1" />
+      <node id="1791297253456513239" at="190,170,191,171" concept="1" />
+      <node id="5957737514409472537" at="191,171,192,22" concept="6" />
+      <node id="5957737514409472537" at="181,0,194,0" concept="9" trace="createDescriptorForPortConnection#()Ljetbrains/mps/smodel/runtime/ConceptDescriptor;" />
+      <scope id="5957737514409472537" at="73,48,74,39" />
+      <scope id="5957737514409472537" at="181,72,192,22">
         <var name="b" id="5957737514409472537" />
       </scope>
-      <scope id="5957737514409472537" at="102,0,114,0" />
+      <scope id="5957737514409472537" at="181,0,194,0" />
     </file>
   </root>
   <root nodeRef="r:d670596f-f26c-43d2-8e17-a7b3e68888bf(ROSML.structure)/5957737514409752030">
     <file name="ConceptPresentationAspectImpl.java">
-      <node id="5957737514409752030" at="17,0,18,0" concept="1" trace="props_IPuerto" />
-      <node id="5957737514409752030" at="64,36,65,76" concept="3" />
-      <node id="5957737514409752030" at="65,76,66,39" concept="0" />
-      <node id="5957737514409752030" at="67,9,68,29" concept="4" />
-      <node id="5957737514409752030" at="63,41,67,9" concept="2" />
-      <scope id="5957737514409752030" at="64,36,66,39">
+      <node id="5957737514409752030" at="18,0,19,0" concept="2" trace="props_IPort" />
+      <node id="5957737514409752030" at="72,34,73,76" concept="5" />
+      <node id="5957737514409752030" at="73,76,74,37" concept="1" />
+      <node id="5957737514409752030" at="75,9,76,27" concept="6" />
+      <node id="5957737514409752030" at="71,39,75,9" concept="3" />
+      <scope id="5957737514409752030" at="72,34,74,37">
         <var name="cpb" id="5957737514409752030" />
       </scope>
-      <scope id="5957737514409752030" at="63,41,68,29" />
+      <scope id="5957737514409752030" at="71,39,76,27" />
     </file>
     <file name="LanguageConceptSwitch.java">
-      <node id="5957737514409752030" at="17,0,18,0" concept="6" trace="IPuerto" />
-      <node id="5957737514409752030" at="31,51,32,46" concept="0" />
+      <node id="5957737514409752030" at="18,0,19,0" concept="8" trace="IPort" />
+      <node id="5957737514409752030" at="34,54,35,44" concept="1" />
     </file>
     <file name="StructureAspectDescriptor.java">
-      <node id="5957737514409752030" at="21,0,22,0" concept="1" trace="myConceptIPuerto" />
-      <node id="5957737514409752030" at="59,41,60,32" concept="4" />
-      <node id="5957737514409752030" at="85,34,86,76" concept="0" />
-      <node id="5957737514409752030" at="130,65,131,147" concept="3" />
-      <node id="5957737514409752030" at="131,147,132,19" concept="0" />
-      <node id="5957737514409752030" at="132,19,133,71" concept="0" />
-      <node id="5957737514409752030" at="133,71,134,92" concept="0" />
-      <node id="5957737514409752030" at="134,92,135,17" concept="0" />
-      <node id="2618700756498340012" at="135,17,136,171" concept="0" />
-      <node id="5957737514409752030" at="136,171,137,22" concept="4" />
-      <node id="5957737514409752030" at="172,34,173,76" concept="0" />
-      <node id="5957737514409752030" at="130,0,139,0" concept="7" trace="createDescriptorForIPuerto#()Ljetbrains/mps/smodel/runtime/ConceptDescriptor;" />
-      <scope id="5957737514409752030" at="59,41,60,32" />
-      <scope id="5957737514409752030" at="130,65,137,22">
+      <node id="5957737514409752030" at="25,0,26,0" concept="2" trace="myConceptIPort" />
+      <node id="5957737514409752030" at="67,39,68,30" concept="6" />
+      <node id="5957737514409752030" at="99,34,100,76" concept="1" />
+      <node id="5957737514409752030" at="152,63,153,145" concept="5" />
+      <node id="5957737514409752030" at="153,145,154,19" concept="1" />
+      <node id="5957737514409752030" at="154,19,155,71" concept="1" />
+      <node id="5957737514409752030" at="155,71,156,92" concept="1" />
+      <node id="5957737514409752030" at="156,92,157,17" concept="1" />
+      <node id="2618700756498340012" at="157,17,158,173" concept="1" />
+      <node id="5957737514409752030" at="158,173,159,22" concept="6" />
+      <node id="5957737514409752030" at="219,34,220,76" concept="1" />
+      <node id="5957737514409752030" at="152,0,161,0" concept="9" trace="createDescriptorForIPort#()Ljetbrains/mps/smodel/runtime/ConceptDescriptor;" />
+      <scope id="5957737514409752030" at="67,39,68,30" />
+      <scope id="5957737514409752030" at="152,63,159,22">
         <var name="b" id="5957737514409752030" />
       </scope>
-      <scope id="5957737514409752030" at="130,0,139,0" />
+      <scope id="5957737514409752030" at="152,0,161,0" />
     </file>
   </root>
   <root nodeRef="r:d670596f-f26c-43d2-8e17-a7b3e68888bf(ROSML.structure)/6890320178452338424">
     <file name="ConceptPresentationAspectImpl.java">
-      <node id="6890320178452338424" at="21,0,22,0" concept="1" trace="props_Servicio" />
-      <node id="6890320178452338424" at="91,37,92,76" concept="3" />
-      <node id="6890320178452338424" at="92,76,93,35" concept="0" />
-      <node id="6890320178452338424" at="93,35,94,40" concept="0" />
-      <node id="6890320178452338424" at="95,9,96,30" concept="4" />
-      <node id="6890320178452338424" at="90,42,95,9" concept="2" />
-      <scope id="6890320178452338424" at="91,37,94,40">
+      <node id="6890320178452338424" at="24,0,25,0" concept="2" trace="props_Service" />
+      <node id="6890320178452338424" at="113,36,114,76" concept="5" />
+      <node id="6890320178452338424" at="114,76,115,35" concept="1" />
+      <node id="6890320178452338424" at="115,35,116,39" concept="1" />
+      <node id="6890320178452338424" at="117,9,118,29" concept="6" />
+      <node id="6890320178452338424" at="112,41,117,9" concept="3" />
+      <scope id="6890320178452338424" at="113,36,116,39">
         <var name="cpb" id="6890320178452338424" />
       </scope>
-      <scope id="6890320178452338424" at="90,42,96,30" />
+      <scope id="6890320178452338424" at="112,41,118,29" />
     </file>
     <file name="LanguageConceptSwitch.java">
-      <node id="6890320178452338424" at="21,0,22,0" concept="6" trace="Servicio" />
-      <node id="6890320178452338424" at="35,46,36,47" concept="0" />
+      <node id="6890320178452338424" at="24,0,25,0" concept="8" trace="Service" />
+      <node id="6890320178452338424" at="40,45,41,46" concept="1" />
     </file>
     <file name="StructureAspectDescriptor.java">
-      <node id="6890320178452338424" at="25,0,26,0" concept="1" trace="myConceptServicio" />
-      <node id="6890320178452338424" at="67,42,68,33" concept="4" />
-      <node id="6890320178452338424" at="170,66,171,148" concept="3" />
-      <node id="6890320178452338424" at="171,148,172,34" concept="0" />
-      <node id="6890320178452338424" at="173,76,174,92" concept="0" />
-      <node id="6890320178452338424" at="174,92,175,17" concept="0" />
-      <node id="6890320178452338424" at="175,17,176,24" concept="0" />
-      <node id="6890320178452338424" at="176,24,177,22" concept="4" />
-      <node id="6890320178452338424" at="170,0,179,0" concept="7" trace="createDescriptorForServicio#()Ljetbrains/mps/smodel/runtime/ConceptDescriptor;" />
-      <scope id="6890320178452338424" at="67,42,68,33" />
-      <scope id="6890320178452338424" at="170,66,177,22">
+      <node id="6890320178452338424" at="31,0,32,0" concept="2" trace="myConceptService" />
+      <node id="6890320178452338424" at="79,41,80,32" concept="6" />
+      <node id="6890320178452338424" at="217,65,218,147" concept="5" />
+      <node id="6890320178452338424" at="218,147,219,34" concept="1" />
+      <node id="6890320178452338424" at="220,76,221,92" concept="1" />
+      <node id="6890320178452338424" at="221,92,222,17" concept="1" />
+      <node id="1791297253455355545" at="222,17,223,171" concept="1" />
+      <node id="6890320178452338424" at="223,171,224,24" concept="1" />
+      <node id="6890320178452338424" at="224,24,225,22" concept="6" />
+      <node id="6890320178452338424" at="217,0,227,0" concept="9" trace="createDescriptorForService#()Ljetbrains/mps/smodel/runtime/ConceptDescriptor;" />
+      <scope id="6890320178452338424" at="79,41,80,32" />
+      <scope id="6890320178452338424" at="217,65,225,22">
         <var name="b" id="6890320178452338424" />
       </scope>
-      <scope id="6890320178452338424" at="170,0,179,0" />
+      <scope id="6890320178452338424" at="217,0,227,0" />
     </file>
   </root>
   <root nodeRef="r:d670596f-f26c-43d2-8e17-a7b3e68888bf(ROSML.structure)/6890320178452563450">
     <file name="ConceptPresentationAspectImpl.java">
-      <node id="6890320178452563450" at="12,0,13,0" concept="1" trace="props_Accion" />
-      <node id="6890320178452563450" at="31,35,32,76" concept="3" />
-      <node id="6890320178452563450" at="32,76,33,35" concept="0" />
-      <node id="6890320178452563450" at="33,35,34,38" concept="0" />
-      <node id="6890320178452563450" at="35,9,36,28" concept="4" />
-      <node id="6890320178452563450" at="30,40,35,9" concept="2" />
-      <scope id="6890320178452563450" at="31,35,34,38">
+      <node id="6890320178452563450" at="12,0,13,0" concept="2" trace="props_Action" />
+      <node id="6890320178452563450" at="33,35,34,76" concept="5" />
+      <node id="6890320178452563450" at="34,76,35,35" concept="1" />
+      <node id="6890320178452563450" at="35,35,36,38" concept="1" />
+      <node id="6890320178452563450" at="37,9,38,28" concept="6" />
+      <node id="6890320178452563450" at="32,40,37,9" concept="3" />
+      <scope id="6890320178452563450" at="33,35,36,38">
         <var name="cpb" id="6890320178452563450" />
       </scope>
-      <scope id="6890320178452563450" at="30,40,36,28" />
+      <scope id="6890320178452563450" at="32,40,38,28" />
     </file>
     <file name="LanguageConceptSwitch.java">
-      <node id="6890320178452563450" at="12,0,13,0" concept="6" trace="Accion" />
-      <node id="6890320178452563450" at="26,116,27,45" concept="0" />
+      <node id="6890320178452563450" at="12,0,13,0" concept="8" trace="Action" />
+      <node id="6890320178452563450" at="28,116,29,45" concept="1" />
     </file>
     <file name="StructureAspectDescriptor.java">
-      <node id="6890320178452563450" at="16,0,17,0" concept="1" trace="myConceptAccion" />
-      <node id="6890320178452563450" at="49,40,50,31" concept="4" />
-      <node id="6890320178452563450" at="83,64,84,146" concept="3" />
-      <node id="6890320178452563450" at="84,146,85,34" concept="0" />
-      <node id="6890320178452563450" at="86,76,87,92" concept="0" />
-      <node id="6890320178452563450" at="87,92,88,17" concept="0" />
-      <node id="6890320178452563450" at="88,17,89,22" concept="4" />
-      <node id="6890320178452563450" at="83,0,91,0" concept="7" trace="createDescriptorForAccion#()Ljetbrains/mps/smodel/runtime/ConceptDescriptor;" />
-      <scope id="6890320178452563450" at="49,40,50,31" />
-      <scope id="6890320178452563450" at="83,64,89,22">
+      <node id="6890320178452563450" at="19,0,20,0" concept="2" trace="myConceptAction" />
+      <node id="6890320178452563450" at="55,40,56,31" concept="6" />
+      <node id="6890320178452563450" at="97,64,98,146" concept="5" />
+      <node id="6890320178452563450" at="98,146,99,34" concept="1" />
+      <node id="6890320178452563450" at="100,76,101,92" concept="1" />
+      <node id="6890320178452563450" at="101,92,102,17" concept="1" />
+      <node id="1791297253455355548" at="102,17,103,171" concept="1" />
+      <node id="6890320178452563450" at="103,171,104,22" concept="6" />
+      <node id="6890320178452563450" at="97,0,106,0" concept="9" trace="createDescriptorForAction#()Ljetbrains/mps/smodel/runtime/ConceptDescriptor;" />
+      <scope id="6890320178452563450" at="55,40,56,31" />
+      <scope id="6890320178452563450" at="97,64,104,22">
         <var name="b" id="6890320178452563450" />
       </scope>
-      <scope id="6890320178452563450" at="83,0,91,0" />
+      <scope id="6890320178452563450" at="97,0,106,0" />
     </file>
   </root>
 </debug-info>

@@ -116,7 +116,7 @@
     </language>
   </registry>
   <node concept="13h7C7" id="5Yvlr8xnW12">
-    <ref role="13h7C2" to="9g35:24AZeepAEJi" resolve="Servidor" />
+    <ref role="13h7C2" to="9g35:24AZeepAEJi" resolve="Server" />
     <node concept="13hLZK" id="5Yvlr8xnW13" role="13h7CW">
       <node concept="3clFbS" id="5Yvlr8xnW14" role="2VODD2" />
     </node>
@@ -129,7 +129,7 @@
             <node concept="2OqwBi" id="5aI8FgNoVnB" role="2Oq$k0">
               <node concept="13iPFW" id="5aI8FgNoVcz" role="2Oq$k0" />
               <node concept="3Tsc0h" id="5aI8FgNoVyt" role="2OqNvi">
-                <ref role="3TtcxE" to="9g35:5Yvlr8xmTrU" resolve="servicios" />
+                <ref role="3TtcxE" to="9g35:5Yvlr8xmTrU" resolve="services" />
               </node>
             </node>
             <node concept="1z4cxt" id="5aI8FgNp2hQ" role="2OqNvi">
@@ -168,14 +168,14 @@
         <node concept="17QB3L" id="5aI8FgNomOd" role="1tU5fm" />
       </node>
       <node concept="3Tqbb2" id="5aI8FgNoTlA" role="3clF45">
-        <ref role="ehGHo" to="9g35:5Yvlr8xmTrS" resolve="Servicio" />
+        <ref role="ehGHo" to="9g35:5Yvlr8xmTrS" resolve="Service" />
       </node>
     </node>
     <node concept="13i0hz" id="585zzjDKAoB" role="13h7CS">
       <property role="TrG5h" value="getAccion" />
       <node concept="3Tm1VV" id="585zzjDKAoC" role="1B3o_S" />
       <node concept="3Tqbb2" id="585zzjDKAsO" role="3clF45">
-        <ref role="ehGHo" to="9g35:5Yvlr8xnKnU" resolve="Accion" />
+        <ref role="ehGHo" to="9g35:5Yvlr8xnKnU" resolve="Action" />
       </node>
       <node concept="3clFbS" id="585zzjDKAoE" role="3clF47">
         <node concept="3cpWs6" id="585zzjDKAv4" role="3cqZAp">
@@ -183,7 +183,7 @@
             <node concept="2OqwBi" id="585zzjDKBBJ" role="2Oq$k0">
               <node concept="13iPFW" id="585zzjDKAvW" role="2Oq$k0" />
               <node concept="3Tsc0h" id="585zzjDKBE9" role="2OqNvi">
-                <ref role="3TtcxE" to="9g35:5Yvlr8xnKnV" resolve="acciones" />
+                <ref role="3TtcxE" to="9g35:5Yvlr8xnKnV" resolve="actions" />
               </node>
             </node>
             <node concept="1z4cxt" id="585zzjDKGQ0" role="2OqNvi">
@@ -233,7 +233,7 @@
               <node concept="2OqwBi" id="585zzjDLoKP" role="2Oq$k0">
                 <node concept="13iPFW" id="585zzjDLozR" role="2Oq$k0" />
                 <node concept="3Tsc0h" id="585zzjDLpfc" role="2OqNvi">
-                  <ref role="3TtcxE" to="9g35:5Yvlr8xnKnV" resolve="acciones" />
+                  <ref role="3TtcxE" to="9g35:5Yvlr8xnKnV" resolve="actions" />
                 </node>
               </node>
               <node concept="1z4cxt" id="585zzjDLucb" role="2OqNvi">
@@ -269,7 +269,7 @@
           <node concept="3clFbS" id="585zzjDLozt" role="3clFbx">
             <node concept="3cpWs6" id="585zzjDL_fF" role="3cqZAp">
               <node concept="Xl_RD" id="585zzjDL_Li" role="3cqZAk">
-                <property role="Xl_RC" value="accion" />
+                <property role="Xl_RC" value="action" />
               </node>
             </node>
           </node>
@@ -280,7 +280,7 @@
                 <node concept="2OqwBi" id="585zzjDLMB6" role="2Oq$k0">
                   <node concept="13iPFW" id="585zzjDLMeI" role="2Oq$k0" />
                   <node concept="3Tsc0h" id="585zzjDLMSA" role="2OqNvi">
-                    <ref role="3TtcxE" to="9g35:5Yvlr8xmTrU" resolve="servicios" />
+                    <ref role="3TtcxE" to="9g35:5Yvlr8xmTrU" resolve="services" />
                   </node>
                 </node>
                 <node concept="1z4cxt" id="585zzjDLRTp" role="2OqNvi">
@@ -316,7 +316,7 @@
             <node concept="3clFbS" id="585zzjDLMaX" role="3eOfB_">
               <node concept="3cpWs6" id="585zzjDLY6z" role="3cqZAp">
                 <node concept="Xl_RD" id="585zzjDLYwA" role="3cqZAk">
-                  <property role="Xl_RC" value="servicio" />
+                  <property role="Xl_RC" value="service" />
                 </node>
               </node>
             </node>
@@ -335,6 +335,12 @@
         <node concept="17QB3L" id="585zzjDKKAM" role="1tU5fm" />
       </node>
       <node concept="17QB3L" id="585zzjDL_HG" role="3clF45" />
+    </node>
+  </node>
+  <node concept="13h7C7" id="1zrXPLZq8zr">
+    <ref role="13h7C2" to="9g35:5aI8FgNpj8p" resolve="PortConnection" />
+    <node concept="13hLZK" id="1zrXPLZq8zs" role="13h7CW">
+      <node concept="3clFbS" id="1zrXPLZq8zt" role="2VODD2" />
     </node>
   </node>
 </model>

@@ -9,33 +9,37 @@ import org.jetbrains.mps.openapi.language.SAbstractConcept;
 
 public final class LanguageConceptSwitch {
   private final LanguageConceptIndex myIndex;
-  public static final int Accion = 0;
-  public static final int ConexionDirecta = 1;
-  public static final int ConexionPuerto = 2;
-  public static final int IConexiones = 3;
-  public static final int IElementoRed = 4;
-  public static final int IPuerto = 5;
-  public static final int Mensaje = 6;
-  public static final int Nodo = 7;
-  public static final int Proyecto = 8;
-  public static final int Servicio = 9;
-  public static final int Servidor = 10;
-  public static final int Topico = 11;
+  public static final int Action = 0;
+  public static final int CustomInterface = 1;
+  public static final int DirectConnection = 2;
+  public static final int IConection = 3;
+  public static final int IInterface = 4;
+  public static final int INetworkElement = 5;
+  public static final int IPort = 6;
+  public static final int Interface = 7;
+  public static final int Node = 8;
+  public static final int PortConnection = 9;
+  public static final int Project = 10;
+  public static final int Server = 11;
+  public static final int Service = 12;
+  public static final int Topic = 13;
 
   public LanguageConceptSwitch() {
     LanguageConceptIndexBuilder builder = new LanguageConceptIndexBuilder(0xf7db56d1b41e4c13L, 0x9756a014feb108beL);
-    builder.put(0x5f9f55b2215f05faL, Accion);
-    builder.put(0x5d8e854cb6b9f03L, ConexionDirecta);
-    builder.put(0x52ae22b433653219L, ConexionPuerto);
-    builder.put(0x52058e34e9d2bfcdL, IConexiones);
-    builder.put(0x45d1f7827d3faed1L, IElementoRed);
-    builder.put(0x52ae22b4336975deL, IPuerto);
-    builder.put(0x2126fce3999aa945L, Mensaje);
-    builder.put(0x5d8e854cb6b6efbL, Nodo);
-    builder.put(0x5d8e854cb6b6ef9L, Proyecto);
-    builder.put(0x5f9f55b2215b96f8L, Servicio);
-    builder.put(0x2126fce3999aabd2L, Servidor);
-    builder.put(0x5d8e854cb6b6f01L, Topico);
+    builder.put(0x5f9f55b2215f05faL, Action);
+    builder.put(0x18dbf75c7f56da88L, CustomInterface);
+    builder.put(0x5d8e854cb6b9f03L, DirectConnection);
+    builder.put(0x52058e34e9d2bfcdL, IConection);
+    builder.put(0x18dbf75c7f56da8dL, IInterface);
+    builder.put(0x45d1f7827d3faed1L, INetworkElement);
+    builder.put(0x52ae22b4336975deL, IPort);
+    builder.put(0x2126fce3999aa945L, Interface);
+    builder.put(0x5d8e854cb6b6efbL, Node);
+    builder.put(0x52ae22b433653219L, PortConnection);
+    builder.put(0x5d8e854cb6b6ef9L, Project);
+    builder.put(0x2126fce3999aabd2L, Server);
+    builder.put(0x5f9f55b2215b96f8L, Service);
+    builder.put(0x5d8e854cb6b6f01L, Topic);
     myIndex = builder.seal();
   }
 

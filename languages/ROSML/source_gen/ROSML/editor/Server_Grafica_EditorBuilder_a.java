@@ -36,11 +36,11 @@ import jetbrains.mps.smodel.adapter.structure.MetaAdapterFactory;
 import org.jetbrains.mps.openapi.language.SContainmentLink;
 import org.jetbrains.mps.openapi.language.SConcept;
 
-/*package*/ class Servidor_Grafica_EditorBuilder_a extends AbstractEditorBuilder {
+/*package*/ class Server_Grafica_EditorBuilder_a extends AbstractEditorBuilder {
   @NotNull
   private SNode myNode;
 
-  public Servidor_Grafica_EditorBuilder_a(@NotNull EditorContext context, @NotNull SNode node) {
+  public Server_Grafica_EditorBuilder_a(@NotNull EditorContext context, @NotNull SNode node) {
     super(context);
     myNode = node;
   }
@@ -62,7 +62,7 @@ import org.jetbrains.mps.openapi.language.SConcept;
     ContextVariables.withValue("thisNode", node, () -> {
       final ContextVariables _variablesContext = ContextVariables.getCurrent();
       final List<Port> ports = new ArrayList<Port>();
-      for (final SNode portObject : ListSequence.fromList(SLinkOperations.getChildren(((SNode) _variablesContext.getValue("thisNode")), LINKS.servicios$zPXp))) {
+      for (final SNode portObject : ListSequence.fromList(SLinkOperations.getChildren(((SNode) _variablesContext.getValue("thisNode")), LINKS.services$zPXp))) {
         ContextVariables.withParentAndValue(_variablesContext, "portObject", portObject, new Runnable() {
           public void run() {
             final ContextVariables _variablesContext = ContextVariables.getCurrent();
@@ -75,7 +75,7 @@ import org.jetbrains.mps.openapi.language.SConcept;
           }
         });
       }
-      for (final SNode portObject : ListSequence.fromList(SLinkOperations.getChildren(((SNode) _variablesContext.getValue("thisNode")), LINKS.acciones$vnCn))) {
+      for (final SNode portObject : ListSequence.fromList(SLinkOperations.getChildren(((SNode) _variablesContext.getValue("thisNode")), LINKS.actions$vnCn))) {
         ContextVariables.withParentAndValue(_variablesContext, "portObject", portObject, new Runnable() {
           public void run() {
             final ContextVariables _variablesContext = ContextVariables.getCurrent();
@@ -123,7 +123,7 @@ import org.jetbrains.mps.openapi.language.SConcept;
       };
 
       editorCell.value = new EditorCell_DiagramElement(editorContext, node, accessor);
-      editorCell.value.setCellId("DiagramNode_idx0ts_a");
+      editorCell.value.setCellId("DiagramNode_dlmao8_a");
       editorCell.value.setBig(true);
       setCellContext(editorCell.value);
 
@@ -162,8 +162,8 @@ import org.jetbrains.mps.openapi.language.SConcept;
   }
 
   private static final class LINKS {
-    /*package*/ static final SContainmentLink servicios$zPXp = MetaAdapterFactory.getContainmentLink(0xf7db56d1b41e4c13L, 0x9756a014feb108beL, 0x2126fce3999aabd2L, 0x5f9f55b2215b96faL, "servicios");
-    /*package*/ static final SContainmentLink acciones$vnCn = MetaAdapterFactory.getContainmentLink(0xf7db56d1b41e4c13L, 0x9756a014feb108beL, 0x2126fce3999aabd2L, 0x5f9f55b2215f05fbL, "acciones");
+    /*package*/ static final SContainmentLink services$zPXp = MetaAdapterFactory.getContainmentLink(0xf7db56d1b41e4c13L, 0x9756a014feb108beL, 0x2126fce3999aabd2L, 0x5f9f55b2215b96faL, "services");
+    /*package*/ static final SContainmentLink actions$vnCn = MetaAdapterFactory.getContainmentLink(0xf7db56d1b41e4c13L, 0x9756a014feb108beL, 0x2126fce3999aabd2L, 0x5f9f55b2215f05fbL, "actions");
   }
 
   private static final class CONCEPTS {

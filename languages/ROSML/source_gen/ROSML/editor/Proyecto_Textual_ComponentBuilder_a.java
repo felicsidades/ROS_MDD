@@ -108,20 +108,20 @@ import org.jetbrains.mps.openapi.language.SInterfaceConcept;
     return editorCell;
   }
   private EditorCell createRefNodeList_0() {
-    AbstractCellListHandler handler = new nodos_redListHandler_dc5rzg_d0(myNode, getEditorContext());
+    AbstractCellListHandler handler = new network_nodesListHandler_dc5rzg_d0(myNode, getEditorContext());
     EditorCell_Collection editorCell = handler.createCells(new CellLayout_Vertical(), false);
-    editorCell.setCellId("PT_refNodeList_nodos_red");
+    editorCell.setCellId("PT_refNodeList_network_nodes");
     Style style = new StyleImpl();
     style.set(StyleAttributes.SELECTABLE, false);
     editorCell.getStyle().putAll(style);
     editorCell.setSRole(handler.getElementSRole());
     return editorCell;
   }
-  private static class nodos_redListHandler_dc5rzg_d0 extends RefNodeListHandler {
+  private static class network_nodesListHandler_dc5rzg_d0 extends RefNodeListHandler {
     @NotNull
     private SNode myNode;
 
-    public nodos_redListHandler_dc5rzg_d0(SNode ownerNode, EditorContext context) {
+    public network_nodesListHandler_dc5rzg_d0(SNode ownerNode, EditorContext context) {
       super(context, false);
       myNode = ownerNode;
     }
@@ -131,10 +131,10 @@ import org.jetbrains.mps.openapi.language.SInterfaceConcept;
       return myNode;
     }
     public SContainmentLink getSLink() {
-      return LINKS.nodos_red$xOcS;
+      return LINKS.network_nodes$xOcS;
     }
     public SAbstractConcept getChildSConcept() {
-      return CONCEPTS.IElementoRed$S5;
+      return CONCEPTS.INetworkElement$S5;
     }
 
     public EditorCell createNodeCell(SNode elementNode) {
@@ -144,7 +144,7 @@ import org.jetbrains.mps.openapi.language.SInterfaceConcept;
     }
     public EditorCell createEmptyCell() {
       getCellFactory().pushCellContext();
-      getCellFactory().setNodeLocation(new SNodeLocation.FromParentAndLink(nodos_redListHandler_dc5rzg_d0.this.getNode(), LINKS.nodos_red$xOcS));
+      getCellFactory().setNodeLocation(new SNodeLocation.FromParentAndLink(network_nodesListHandler_dc5rzg_d0.this.getNode(), LINKS.network_nodes$xOcS));
       try {
         EditorCell emptyCell = null;
         emptyCell = super.createEmptyCell();
@@ -195,20 +195,20 @@ import org.jetbrains.mps.openapi.language.SInterfaceConcept;
     return editorCell;
   }
   private EditorCell createRefNodeList_1() {
-    AbstractCellListHandler handler = new conexionesListHandler_dc5rzg_f0(myNode, getEditorContext());
+    AbstractCellListHandler handler = new connectionsListHandler_dc5rzg_f0(myNode, getEditorContext());
     EditorCell_Collection editorCell = handler.createCells(new CellLayout_Vertical(), false);
-    editorCell.setCellId("PT_refNodeList_conexiones");
+    editorCell.setCellId("PT_refNodeList_connections");
     Style style = new StyleImpl();
     style.set(StyleAttributes.SELECTABLE, false);
     editorCell.getStyle().putAll(style);
     editorCell.setSRole(handler.getElementSRole());
     return editorCell;
   }
-  private static class conexionesListHandler_dc5rzg_f0 extends RefNodeListHandler {
+  private static class connectionsListHandler_dc5rzg_f0 extends RefNodeListHandler {
     @NotNull
     private SNode myNode;
 
-    public conexionesListHandler_dc5rzg_f0(SNode ownerNode, EditorContext context) {
+    public connectionsListHandler_dc5rzg_f0(SNode ownerNode, EditorContext context) {
       super(context, false);
       myNode = ownerNode;
     }
@@ -218,10 +218,10 @@ import org.jetbrains.mps.openapi.language.SInterfaceConcept;
       return myNode;
     }
     public SContainmentLink getSLink() {
-      return LINKS.conexiones$Xf$k;
+      return LINKS.connections$Xf$k;
     }
     public SAbstractConcept getChildSConcept() {
-      return CONCEPTS.IConexiones$hM;
+      return CONCEPTS.IConection$hM;
     }
 
     public EditorCell createNodeCell(SNode elementNode) {
@@ -231,7 +231,7 @@ import org.jetbrains.mps.openapi.language.SInterfaceConcept;
     }
     public EditorCell createEmptyCell() {
       getCellFactory().pushCellContext();
-      getCellFactory().setNodeLocation(new SNodeLocation.FromParentAndLink(conexionesListHandler_dc5rzg_f0.this.getNode(), LINKS.conexiones$Xf$k));
+      getCellFactory().setNodeLocation(new SNodeLocation.FromParentAndLink(connectionsListHandler_dc5rzg_f0.this.getNode(), LINKS.connections$Xf$k));
       try {
         EditorCell emptyCell = null;
         emptyCell = super.createEmptyCell();
@@ -278,12 +278,12 @@ import org.jetbrains.mps.openapi.language.SInterfaceConcept;
 
   private static final class CONCEPTS {
     /*package*/ static final SConcept PropertyAttribute$Gb = MetaAdapterFactory.getConcept(0xceab519525ea4f22L, 0x9b92103b95ca8c0cL, 0x2eb1ad060897da56L, "jetbrains.mps.lang.core.structure.PropertyAttribute");
-    /*package*/ static final SInterfaceConcept IElementoRed$S5 = MetaAdapterFactory.getInterfaceConcept(0xf7db56d1b41e4c13L, 0x9756a014feb108beL, 0x45d1f7827d3faed1L, "ROSML.structure.IElementoRed");
-    /*package*/ static final SInterfaceConcept IConexiones$hM = MetaAdapterFactory.getInterfaceConcept(0xf7db56d1b41e4c13L, 0x9756a014feb108beL, 0x52058e34e9d2bfcdL, "ROSML.structure.IConexiones");
+    /*package*/ static final SInterfaceConcept INetworkElement$S5 = MetaAdapterFactory.getInterfaceConcept(0xf7db56d1b41e4c13L, 0x9756a014feb108beL, 0x45d1f7827d3faed1L, "ROSML.structure.INetworkElement");
+    /*package*/ static final SInterfaceConcept IConection$hM = MetaAdapterFactory.getInterfaceConcept(0xf7db56d1b41e4c13L, 0x9756a014feb108beL, 0x52058e34e9d2bfcdL, "ROSML.structure.IConection");
   }
 
   private static final class LINKS {
-    /*package*/ static final SContainmentLink nodos_red$xOcS = MetaAdapterFactory.getContainmentLink(0xf7db56d1b41e4c13L, 0x9756a014feb108beL, 0x5d8e854cb6b6ef9L, 0x45d1f7827d32707fL, "nodos_red");
-    /*package*/ static final SContainmentLink conexiones$Xf$k = MetaAdapterFactory.getContainmentLink(0xf7db56d1b41e4c13L, 0x9756a014feb108beL, 0x5d8e854cb6b6ef9L, 0x45d1f7827d4196edL, "conexiones");
+    /*package*/ static final SContainmentLink network_nodes$xOcS = MetaAdapterFactory.getContainmentLink(0xf7db56d1b41e4c13L, 0x9756a014feb108beL, 0x5d8e854cb6b6ef9L, 0x45d1f7827d32707fL, "network_nodes");
+    /*package*/ static final SContainmentLink connections$Xf$k = MetaAdapterFactory.getContainmentLink(0xf7db56d1b41e4c13L, 0x9756a014feb108beL, 0x5d8e854cb6b6ef9L, 0x45d1f7827d4196edL, "connections");
   }
 }

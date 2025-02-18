@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<product version="3" modelHash="4fwh5m7lbmz5pedvrhojgz0qg3jr9zq">
-  <files names="ConexionDirecta_Grafica_Editor.java:ConexionDirecta_Grafica_EditorBuilder_a.java:ConexionPuerto_Editor.java:ConexionPuerto_EditorBuilder_a.java:EditorAspectDescriptorImpl.java:Nodo_Grafica_Editor.java:Nodo_Grafica_EditorBuilder_a.java:Nodo_Textual.java:Nodo_Textual_ComponentBuilder_a.java:Proyecto_Grafica_Editor.java:Proyecto_Grafica_EditorBuilder_a.java:Proyecto_Textual.java:Proyecto_Textual_ComponentBuilder_a.java:Servidor_Grafica_Editor.java:Servidor_Grafica_EditorBuilder_a.java:Servidor_Textual.java:Servidor_Textual_ComponentBuilder_a.java:Topico_Grafica_Editor.java:Topico_Grafica_EditorBuilder_a.java" />
+<product version="3" modelHash="-8ji97wzz9brjst8zppju7f433m4ucsd">
+  <files names="DirectConnection_Grafica_Editor.java:DirectConnection_Grafica_EditorBuilder_a.java:EditorAspectDescriptorImpl.java:Node_Grafica_Editor.java:Node_Grafica_EditorBuilder_a.java:Nodo_Textual.java:Nodo_Textual_ComponentBuilder_a.java:PortConnection_Editor.java:PortConnection_EditorBuilder_a.java:Project_Grafica_Editor.java:Project_Grafica_EditorBuilder_a.java:Proyecto_Textual.java:Proyecto_Textual_ComponentBuilder_a.java:Server_Grafica_Editor.java:Server_Grafica_EditorBuilder_a.java:Servidor_Textual.java:Servidor_Textual_ComponentBuilder_a.java:Topic_Grafica_Editor.java:Topic_Grafica_EditorBuilder_a.java:Topic_SubstituteMenu.java" />
 </product>
 
