@@ -182,12 +182,12 @@ import org.jetbrains.mps.openapi.language.SProperty;
                         SNode accion = Server__BehaviorDescriptor.getAccion_id585zzjDKAoB.invoke(toNode, toPort);
                         SLinkOperations.setTarget(accion, LINKS.connection$WFQD, conexion_puerto);
                         SPropertyOperations.assign(conexion_puerto, PROPS.label$AAcS, "srv request");
-                        SLinkOperations.setTarget(conexion_puerto, LINKS.message$3geB, SLinkOperations.getTarget(accion, LINKS.message$HUjr));
+                        SLinkOperations.setTarget(conexion_puerto, LINKS.message$3geB, SLinkOperations.getTarget(accion, LINKS.message$eqUd));
                       } else if (Server__BehaviorDescriptor.getTipo_id585zzjDKKmp.invoke(toNode, toPort) == "service") {
                         SNode servicio = Server__BehaviorDescriptor.getServicio_id5Yvlr8xnW3d.invoke(toNode, toPort);
                         SLinkOperations.setTarget(servicio, LINKS.connection$WFQD, conexion_puerto);
                         SPropertyOperations.assign(conexion_puerto, PROPS.label$AAcS, "act request");
-                        SLinkOperations.setTarget(conexion_puerto, LINKS.message$3geB, SLinkOperations.getTarget(servicio, LINKS.message$4KfR));
+                        SLinkOperations.setTarget(conexion_puerto, LINKS.message$3geB, SLinkOperations.getTarget(servicio, LINKS.message$_DkH));
                       }
                       ListSequence.fromList(SLinkOperations.getChildren(((SNode) _variablesContext.getValue("thisNode")), LINKS.connections$Xf$k)).addElement(conexion_puerto);
                     }
@@ -272,8 +272,8 @@ import org.jetbrains.mps.openapi.language.SProperty;
     /*package*/ static final SReferenceLink server$WQOH = MetaAdapterFactory.getReferenceLink(0xf7db56d1b41e4c13L, 0x9756a014feb108beL, 0x52ae22b433653219L, 0x52ae22b43365321eL, "server");
     /*package*/ static final SReferenceLink connection$WFQD = MetaAdapterFactory.getReferenceLink(0xf7db56d1b41e4c13L, 0x9756a014feb108beL, 0x52ae22b4336975deL, 0x24577e76ac2158acL, "connection");
     /*package*/ static final SReferenceLink message$3geB = MetaAdapterFactory.getReferenceLink(0xf7db56d1b41e4c13L, 0x9756a014feb108beL, 0x52ae22b433653219L, 0x18dbf75c7f6888d7L, "message");
-    /*package*/ static final SReferenceLink message$HUjr = MetaAdapterFactory.getReferenceLink(0xf7db56d1b41e4c13L, 0x9756a014feb108beL, 0x5f9f55b2215f05faL, 0x18dbf75c7f56de9cL, "message");
-    /*package*/ static final SReferenceLink message$4KfR = MetaAdapterFactory.getReferenceLink(0xf7db56d1b41e4c13L, 0x9756a014feb108beL, 0x5f9f55b2215b96f8L, 0x18dbf75c7f56de99L, "message");
+    /*package*/ static final SContainmentLink message$eqUd = MetaAdapterFactory.getContainmentLink(0xf7db56d1b41e4c13L, 0x9756a014feb108beL, 0x5f9f55b2215f05faL, 0x1a87a547ff4fbb1aL, "message");
+    /*package*/ static final SContainmentLink message$_DkH = MetaAdapterFactory.getContainmentLink(0xf7db56d1b41e4c13L, 0x9756a014feb108beL, 0x5f9f55b2215b96f8L, 0x1a87a547ff4948c3L, "message");
   }
 
   private static final class CONCEPTS {

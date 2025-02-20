@@ -337,11 +337,5 @@
       <node concept="17QB3L" id="585zzjDL_HG" role="3clF45" />
     </node>
   </node>
-  <node concept="13h7C7" id="1zrXPLZq8zr">
-    <ref role="13h7C2" to="9g35:5aI8FgNpj8p" resolve="PortConnection" />
-    <node concept="13hLZK" id="1zrXPLZq8zs" role="13h7CW">
-      <node concept="3clFbS" id="1zrXPLZq8zt" role="2VODD2" />
-    </node>
-  </node>
 </model>
 
