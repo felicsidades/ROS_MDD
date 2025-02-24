@@ -212,9 +212,6 @@
   <node concept="24kQdi" id="4nhXS9XcB21">
     <ref role="1XX52x" to="9g35:noU5jbqQVT" resolve="Project" />
     <node concept="27vDVx" id="4nhXS9XcB23" role="2wV5jI">
-      <node concept="1RuTs0" id="4nhXS9Xf8W4" role="1RuSHk">
-        <ref role="1RuSHD" to="9g35:4nhXS9XcB1Z" resolve="network_nodes" />
-      </node>
       <node concept="aDKH9" id="4nhXS9Xg32_" role="aCds2">
         <ref role="aDKIf" to="9g35:4nhXS9XcB1Z" resolve="network_nodes" />
       </node>
@@ -621,6 +618,9 @@
             </node>
           </node>
         </node>
+      </node>
+      <node concept="1RuTs0" id="3y0BqSLX3uG" role="1RuSHk">
+        <ref role="1RuSHD" to="9g35:4nhXS9XcB1Z" resolve="network_nodes" />
       </node>
     </node>
     <node concept="2aJ2om" id="5aI8FgNnCod" role="CpUAK">

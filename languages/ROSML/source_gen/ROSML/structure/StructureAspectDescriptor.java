@@ -228,7 +228,7 @@ public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
     b.version(3);
     b.aggregate("services", 0x5f9f55b2215b96faL).target(0xf7db56d1b41e4c13L, 0x9756a014feb108beL, 0x5f9f55b2215b96f8L).optional(true).ordered(true).multiple(true).origin("6890320178452338426").done();
     b.aggregate("actions", 0x5f9f55b2215f05fbL).target(0xf7db56d1b41e4c13L, 0x9756a014feb108beL, 0x5f9f55b2215f05faL).optional(true).ordered(true).multiple(true).origin("6890320178452563451").done();
-    b.alias("Servidor");
+    b.alias("Server");
     return b.create();
   }
   private static ConceptDescriptor createDescriptorForService() {
@@ -257,7 +257,7 @@ public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
     b.parent(0xf7db56d1b41e4c13L, 0x9756a014feb108beL, 0x45d1f7827d3faed1L);
     b.origin("r:d670596f-f26c-43d2-8e17-a7b3e68888bf(ROSML.structure)/421342016046853889");
     b.version(3);
-    b.associate("message", 0x2126fce3999aabcfL).target(0xf7db56d1b41e4c13L, 0x9756a014feb108beL, 0x18dbf75c7f56da8dL).optional(false).origin("2388874706831453135").done();
+    b.aggregate("message", 0x3cbb554aa9a4b2bcL).target(0xf7db56d1b41e4c13L, 0x9756a014feb108beL, 0x18dbf75c7f56da8dL).optional(false).ordered(true).multiple(false).origin("4376185242082652860").done();
     return b.create();
   }
 }

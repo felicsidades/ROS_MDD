@@ -118,14 +118,15 @@
     <property role="EcuMT" value="421342016046853889" />
     <property role="TrG5h" value="Topic" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
-    <node concept="1TJgyj" id="24AZeepAEJf" role="1TKVEi">
-      <property role="IQ2ns" value="2388874706831453135" />
+    <node concept="PrWs8" id="3y0BqSLYCZG" role="PzmwI">
+      <ref role="PrY4T" node="4nhXS9XfUVh" resolve="INetworkElement" />
+    </node>
+    <node concept="1TJgyj" id="3MVlkEDDbaW" role="1TKVEi">
+      <property role="IQ2ns" value="4376185242082652860" />
+      <property role="20lmBu" value="fLJjDmT/aggregation" />
       <property role="20kJfa" value="message" />
       <property role="20lbJX" value="fLJekj4/_1" />
       <ref role="20lvS9" node="1zrXPLZlHEd" resolve="IInterface" />
-    </node>
-    <node concept="PrWs8" id="4nhXS9Xg9z8" role="PzmwI">
-      <ref role="PrY4T" node="4nhXS9XfUVh" resolve="INetworkElement" />
     </node>
   </node>
   <node concept="1TIwiD" id="noU5jbqTW3">
@@ -162,7 +163,7 @@
   <node concept="1TIwiD" id="24AZeepAEJi">
     <property role="EcuMT" value="2388874706831453138" />
     <property role="TrG5h" value="Server" />
-    <property role="34LRSv" value="Servidor" />
+    <property role="34LRSv" value="Server" />
     <ref role="1TJDcQ" node="noU5jbqQVV" resolve="Node" />
     <node concept="1TJgyj" id="5Yvlr8xmTrU" role="1TKVEi">
       <property role="IQ2ns" value="6890320178452338426" />
