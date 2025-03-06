@@ -139,7 +139,7 @@
       <node id="1791297253455354483" at="156,113,157,183" concept="1" />
       <node id="1791297253455794286" at="157,183,158,110" concept="1" />
       <node id="1791297253455354509" at="158,110,159,22" concept="6" />
-      <node id="1791297253455354509" at="180,34,181,76" concept="1" />
+      <node id="1791297253455354509" at="180,33,181,76" concept="1" />
       <node id="1791297253455354509" at="246,34,247,76" concept="1" />
       <node id="1791297253455354509" at="151,0,161,0" concept="9" trace="createDescriptorForIInterface#()Ljetbrains/mps/smodel/runtime/ConceptDescriptor;" />
       <scope id="1791297253455354509" at="67,44,68,35" />
@@ -241,7 +241,7 @@
       <node id="2388874706831452485" at="27,0,28,0" concept="2" trace="myConceptInterface" />
       <node id="2388874706831452485" at="73,43,74,34" concept="6" />
       <node id="2388874706831452485" at="178,67,179,149" concept="5" />
-      <node id="2388874706831452485" at="179,149,180,34" concept="1" />
+      <node id="2388874706831452485" at="179,149,180,33" concept="1" />
       <node id="2388874706831452485" at="181,76,182,92" concept="1" />
       <node id="2388874706831452485" at="182,92,183,17" concept="1" />
       <node id="2388874706831452485" at="183,17,184,22" concept="6" />

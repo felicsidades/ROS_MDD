@@ -155,6 +155,7 @@
   <node concept="1TIwiD" id="24AZeepAE_5">
     <property role="EcuMT" value="2388874706831452485" />
     <property role="TrG5h" value="Interface" />
+    <property role="19KtqR" value="true" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" />
     <node concept="PrWs8" id="1zrXPLZlHEg" role="PzmwI">
       <ref role="PrY4T" node="1zrXPLZlHEd" resolve="IInterface" />

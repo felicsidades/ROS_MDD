@@ -177,7 +177,7 @@ public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
   }
   private static ConceptDescriptor createDescriptorForInterface() {
     ConceptDescriptorBuilder2 b = new ConceptDescriptorBuilder2("ROSML", "Interface", 0xf7db56d1b41e4c13L, 0x9756a014feb108beL, 0x2126fce3999aa945L);
-    b.class_(false, false, false);
+    b.class_(false, false, true);
     b.parent(0xf7db56d1b41e4c13L, 0x9756a014feb108beL, 0x18dbf75c7f56da8dL);
     b.origin("r:d670596f-f26c-43d2-8e17-a7b3e68888bf(ROSML.structure)/2388874706831452485");
     b.version(3);
