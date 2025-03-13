@@ -12,12 +12,13 @@ public class ConceptPresentationAspectImpl extends ConceptPresentationAspectBase
   private ConceptPresentation props_Action;
   private ConceptPresentation props_ActionInterface;
   private ConceptPresentation props_CustomInterface;
+  private ConceptPresentation props_DataInterface;
   private ConceptPresentation props_DirectConnection;
   private ConceptPresentation props_IConection;
   private ConceptPresentation props_IInterface;
   private ConceptPresentation props_INetworkElement;
   private ConceptPresentation props_IPort;
-  private ConceptPresentation props_Interface;
+  private ConceptPresentation props_NativeInterface;
   private ConceptPresentation props_Node;
   private ConceptPresentation props_PortConnection;
   private ConceptPresentation props_Project;
@@ -52,10 +53,17 @@ public class ConceptPresentationAspectImpl extends ConceptPresentationAspectBase
           props_CustomInterface = cpb.create();
         }
         return props_CustomInterface;
+      case LanguageConceptSwitch.DataInterface:
+        if (props_DataInterface == null) {
+          ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
+          cpb.rawPresentation("DataInterface");
+          props_DataInterface = cpb.create();
+        }
+        return props_DataInterface;
       case LanguageConceptSwitch.DirectConnection:
         if (props_DirectConnection == null) {
           ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
-          cpb.presentationByName();
+          cpb.rawPresentation("DirectConnection");
           props_DirectConnection = cpb.create();
         }
         return props_DirectConnection;
@@ -83,13 +91,13 @@ public class ConceptPresentationAspectImpl extends ConceptPresentationAspectBase
           props_IPort = cpb.create();
         }
         return props_IPort;
-      case LanguageConceptSwitch.Interface:
-        if (props_Interface == null) {
+      case LanguageConceptSwitch.NativeInterface:
+        if (props_NativeInterface == null) {
           ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
-          cpb.rawPresentation("Interface");
-          props_Interface = cpb.create();
+          cpb.rawPresentation("NativeInterface");
+          props_NativeInterface = cpb.create();
         }
-        return props_Interface;
+        return props_NativeInterface;
       case LanguageConceptSwitch.Node:
         if (props_Node == null) {
           ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
@@ -100,7 +108,7 @@ public class ConceptPresentationAspectImpl extends ConceptPresentationAspectBase
       case LanguageConceptSwitch.PortConnection:
         if (props_PortConnection == null) {
           ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
-          cpb.presentationByName();
+          cpb.rawPresentation("PortConnection");
           props_PortConnection = cpb.create();
         }
         return props_PortConnection;

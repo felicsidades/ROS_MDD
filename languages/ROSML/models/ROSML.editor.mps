@@ -4,6 +4,7 @@
   <languages>
     <use id="18bc6592-03a6-4e29-a83a-7ff23bde13ba" name="jetbrains.mps.lang.editor" version="14" />
     <use id="fa13cc63-c476-4d46-9c96-d53670abe7bc" name="de.itemis.mps.editor.diagram" version="0" />
+    <use id="8ca79d43-eb45-4791-bdd4-0d6130ff895b" name="de.itemis.mps.editor.diagram.layout" version="0" />
   </languages>
   <imports>
     <import index="9g35" ref="r:d670596f-f26c-43d2-8e17-a7b3e68888bf(ROSML.structure)" implicit="true" />
@@ -217,6 +218,9 @@
       </node>
       <node concept="aDKH9" id="4nhXS9XgEX2" role="aCds2">
         <ref role="aDKIf" to="9g35:4nhXS9XgprH" resolve="connections" />
+      </node>
+      <node concept="aDKH9" id="7DurvPIqU5h" role="aCds2">
+        <ref role="aDKIf" to="9g35:7DurvPIqSLj" resolve="topics" />
       </node>
       <node concept="3mAFYk" id="4nhXS9Xgp0y" role="1xLlFP">
         <property role="3m_KjL" value="publisher" />
@@ -622,9 +626,12 @@
       <node concept="1RuTs0" id="3y0BqSLX3uG" role="1RuSHk">
         <ref role="1RuSHD" to="9g35:4nhXS9XcB1Z" resolve="network_nodes" />
       </node>
+      <node concept="1RuTs0" id="5yIRtOn0zet" role="1RuSHk">
+        <ref role="1RuSHD" to="9g35:7DurvPIqSLj" resolve="topics" />
+      </node>
     </node>
     <node concept="2aJ2om" id="5aI8FgNnCod" role="CpUAK">
-      <ref role="2$4xQ3" node="5aI8FgNnCnZ" resolve="graphical" />
+      <ref role="2$4xQ3" node="5aI8FgNnCnZ" resolve="Grafica" />
     </node>
   </node>
   <node concept="24kQdi" id="4nhXS9XcVnr">

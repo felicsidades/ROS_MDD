@@ -80,6 +80,9 @@ import org.jetbrains.mps.openapi.language.SProperty;
                 for (SNode e : ListSequence.fromList(SLinkOperations.getChildren(node, LINKS.connections$Xf$k))) {
                   elements.addAll(accessorFactory.fromSNode(e));
                 }
+                for (SNode e : ListSequence.fromList(SLinkOperations.getChildren(node, LINKS.topics$diq9))) {
+                  elements.addAll(accessorFactory.fromSNode(e));
+                }
                 return elements;
               }
               @Override
@@ -232,7 +235,7 @@ import org.jetbrains.mps.openapi.language.SProperty;
 
             ElkLayouter layouter;
 
-            IPaletteEntryProvider paletteEntryProvider = new CompositePaletteEntryProvider(new SubstituteInfoPaletteEntryProvider(new SubstituteInfoFactory(editorContext, node).forChildLink(node, SLinkOperations.findLinkDeclaration(LINKS.network_nodes$xOcS))));
+            IPaletteEntryProvider paletteEntryProvider = new CompositePaletteEntryProvider(new SubstituteInfoPaletteEntryProvider(new SubstituteInfoFactory(editorContext, node).forChildLink(node, SLinkOperations.findLinkDeclaration(LINKS.network_nodes$xOcS))), new SubstituteInfoPaletteEntryProvider(new SubstituteInfoFactory(editorContext, node).forChildLink(node, SLinkOperations.findLinkDeclaration(LINKS.topics$diq9))));
             model.setPaletteEntryProvider(paletteEntryProvider);
 
             if (DiagramCreationContext.isSubdiagram()) {
@@ -266,6 +269,7 @@ import org.jetbrains.mps.openapi.language.SProperty;
   private static final class LINKS {
     /*package*/ static final SContainmentLink network_nodes$xOcS = MetaAdapterFactory.getContainmentLink(0xf7db56d1b41e4c13L, 0x9756a014feb108beL, 0x5d8e854cb6b6ef9L, 0x45d1f7827d32707fL, "network_nodes");
     /*package*/ static final SContainmentLink connections$Xf$k = MetaAdapterFactory.getContainmentLink(0xf7db56d1b41e4c13L, 0x9756a014feb108beL, 0x5d8e854cb6b6ef9L, 0x45d1f7827d4196edL, "connections");
+    /*package*/ static final SContainmentLink topics$diq9 = MetaAdapterFactory.getContainmentLink(0xf7db56d1b41e4c13L, 0x9756a014feb108beL, 0x5d8e854cb6b6ef9L, 0x7a5e6dfd6e6b8c53L, "topics");
     /*package*/ static final SReferenceLink node$IXJD = MetaAdapterFactory.getReferenceLink(0xf7db56d1b41e4c13L, 0x9756a014feb108beL, 0x5d8e854cb6b9f03L, 0x5d8e854cb6b9f04L, "node");
     /*package*/ static final SReferenceLink topic$IYsG = MetaAdapterFactory.getReferenceLink(0xf7db56d1b41e4c13L, 0x9756a014feb108beL, 0x5d8e854cb6b9f03L, 0x5d8e854cb6b9f07L, "topic");
     /*package*/ static final SReferenceLink node$WQmF = MetaAdapterFactory.getReferenceLink(0xf7db56d1b41e4c13L, 0x9756a014feb108beL, 0x52ae22b433653219L, 0x52ae22b43365321cL, "node");
