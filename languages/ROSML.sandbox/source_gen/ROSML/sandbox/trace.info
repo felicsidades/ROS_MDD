@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<debug-info version="2">
+  <root nodeRef="r:cd63c113-8ad3-41d4-86ef-13a5c5de1b31(ROSML.sandbox)/5066082355246270824">
+    <file name="ROSMDD.xml">
+      <unit id="5066082355246270824" at="1,0,57,10" name="ROSML.sandbox.ROSMDD" />
+    </file>
+  </root>
+</debug-info>
+

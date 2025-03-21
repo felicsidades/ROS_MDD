@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectLibraryManager">
+    <option name="libraries">
+      <map>
+        <entry key="com.dslfoundry.plaintextgen">
+          <value>
+            <Library>
+              <option name="name" value="com.dslfoundry.plaintextgen" />
+              <option name="path" value="$PROJECT_DIR$/plugins/com.dslfoundry.plaintextgen/languages/com.dslfoundry.plaintextgen/com.dslfoundry.plaintextgen.jar" />
+            </Library>
+          </value>
+        </entry>
+        <entry key="de.itemis.mps.editor.diagram">
+          <value>
+            <Library>
+              <option name="name" value="de.itemis.mps.editor.diagram" />
+              <option name="path" value="$PROJECT_DIR$/plugins/de.itemis.mps.editor.diagram/lib/de.itemis.mps.editor.diagram.jar" />
+            </Library>
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+</project>

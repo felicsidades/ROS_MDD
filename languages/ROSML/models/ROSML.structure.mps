@@ -2,7 +2,6 @@
 <model ref="r:d670596f-f26c-43d2-8e17-a7b3e68888bf(ROSML.structure)">
   <persistence version="9" />
   <languages>
-    <use id="8ca79d43-eb45-4791-bdd4-0d6130ff895b" name="de.itemis.mps.editor.diagram.layout" version="0" />
     <devkit ref="78434eb8-b0e5-444b-850d-e7c4ad2da9ab(jetbrains.mps.devkit.aspect.structure)" />
   </languages>
   <imports>
@@ -394,7 +393,7 @@
   <node concept="1TIwiD" id="6p5kJdXgz1z">
     <property role="EcuMT" value="7369387570993705059" />
     <property role="TrG5h" value="NativeInterface" />
-    <ref role="1TJDcQ" to="tpck:gw2VY9q" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="PrWs8" id="6p5kJdXgz1$" role="PzmwI">
       <ref role="PrY4T" node="1zrXPLZlHEd" resolve="IInterface" />
     </node>

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<idea-plugin>
+  <id>de.itemis.mps.extensions.build</id>
+  <name>MPS Extensions Build Solution</name>
+  <description>The build solution of all MPS Extensions. It is necessary if you want to do command line builds of languages that use an MPS Extension.</description>
+  <version>2023.2.1</version>
+  <idea-version since-build="232.1" until-build="233.1" />
+  <vendor url="https://www.itemis.com/en/it-services/methods-and-tools/mps">itemis AG</vendor>
+  <depends>com.intellij.modules.platform</depends>
+  <depends>jetbrains.mps.build</depends>
+  <extensions defaultExtensionNs="com.intellij">
+    <mps.LanguageLibrary dir="/languages" />
+  </extensions>
+</idea-plugin>
