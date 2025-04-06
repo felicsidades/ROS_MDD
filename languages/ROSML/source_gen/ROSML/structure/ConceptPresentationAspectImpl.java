@@ -42,14 +42,14 @@ public class ConceptPresentationAspectImpl extends ConceptPresentationAspectBase
       case LanguageConceptSwitch.ActionInterface:
         if (props_ActionInterface == null) {
           ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
-          cpb.rawPresentation("ActionInterface");
+          cpb.presentationByName();
           props_ActionInterface = cpb.create();
         }
         return props_ActionInterface;
       case LanguageConceptSwitch.CustomInterface:
         if (props_CustomInterface == null) {
           ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
-          cpb.rawPresentation("CustomInterface");
+          cpb.presentationByName();
           props_CustomInterface = cpb.create();
         }
         return props_CustomInterface;
@@ -94,7 +94,7 @@ public class ConceptPresentationAspectImpl extends ConceptPresentationAspectBase
       case LanguageConceptSwitch.NativeInterface:
         if (props_NativeInterface == null) {
           ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
-          cpb.rawPresentation("NativeInterface");
+          cpb.presentationByName();
           props_NativeInterface = cpb.create();
         }
         return props_NativeInterface;
@@ -136,7 +136,7 @@ public class ConceptPresentationAspectImpl extends ConceptPresentationAspectBase
       case LanguageConceptSwitch.ServiceInterface:
         if (props_ServiceInterface == null) {
           ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
-          cpb.rawPresentation("ServiceInterface");
+          cpb.presentationByName();
           props_ServiceInterface = cpb.create();
         }
         return props_ServiceInterface;

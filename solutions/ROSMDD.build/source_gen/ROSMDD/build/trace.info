@@ -1,18 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <debug-info version="2">
-  <root nodeRef="r:2e60709b-10d9-44d9-99e9-ccf183b3ac35(ROSMDD.build)/2446230507323935268">
-    <file name="ROSMDD.xml">
-      <unit id="2446230507323935268" at="1,0,664,10" name="ROSMDD.build.ROSMDD" />
-    </file>
-  </root>
-  <root nodeRef="r:2e60709b-10d9-44d9-99e9-ccf183b3ac35(ROSMDD.build)/2446230507323935420">
-    <file name="ROSMDDDistribution.xml">
-      <unit id="2446230507323935420" at="1,0,246,10" name="ROSMDD.build.ROSMDDDistribution" />
-    </file>
-  </root>
-  <root nodeRef="r:2e60709b-10d9-44d9-99e9-ccf183b3ac35(ROSMDD.build)/2446230507323936085">
-    <file name="Info.plist.xml">
-      <unit id="2446230507323936085" at="1,0,183,8" name="ROSMDD.build.Info$plist" />
+  <root nodeRef="r:2e60709b-10d9-44d9-99e9-ccf183b3ac35(ROSMDD.build)/5495161832323732229">
+    <file name="ROSMDDbuildl.xml">
+      <unit id="5495161832323732229" at="1,0,717,10" name="ROSMDD.build.ROSMDDbuildl" />
     </file>
   </root>
 </debug-info>
