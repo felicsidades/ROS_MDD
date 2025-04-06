@@ -77,7 +77,7 @@ import org.jetbrains.mps.openapi.language.SProperty;
                 for (SNode e : ListSequence.fromList(SLinkOperations.getChildren(node, LINKS.network_nodes$xOcS))) {
                   elements.addAll(accessorFactory.fromSNode(e));
                 }
-                for (SNode e : ListSequence.fromList(SLinkOperations.getChildren(node, LINKS.connections$Xf$k))) {
+                for (SNode e : ListSequence.fromList(SLinkOperations.getChildren(node, LINKS.direct_connections$Xf$k))) {
                   elements.addAll(accessorFactory.fromSNode(e));
                 }
                 for (SNode e : ListSequence.fromList(SLinkOperations.getChildren(node, LINKS.topics$diq9))) {
@@ -104,7 +104,7 @@ import org.jetbrains.mps.openapi.language.SProperty;
                       SPropertyOperations.assign(conexion, PROPS.label$Kcok, "publisher");
                       SLinkOperations.setTarget(conexion, LINKS.node$IXJD, fromNode);
                       SLinkOperations.setTarget(conexion, LINKS.topic$IYsG, toNode);
-                      ListSequence.fromList(SLinkOperations.getChildren(((SNode) _variablesContext.getValue("thisNode")), LINKS.connections$Xf$k)).addElement(conexion);
+                      ListSequence.fromList(SLinkOperations.getChildren(((SNode) _variablesContext.getValue("thisNode")), LINKS.direct_connections$Xf$k)).addElement(conexion);
                     }
                   }
                   @Override
@@ -142,7 +142,7 @@ import org.jetbrains.mps.openapi.language.SProperty;
                       SPropertyOperations.assign(conexion, PROPS.label$Kcok, "subscriber");
                       SLinkOperations.setTarget(conexion, LINKS.node$IXJD, fromNode);
                       SLinkOperations.setTarget(conexion, LINKS.topic$IYsG, toNode);
-                      ListSequence.fromList(SLinkOperations.getChildren(((SNode) _variablesContext.getValue("thisNode")), LINKS.connections$Xf$k)).addElement(conexion);
+                      ListSequence.fromList(SLinkOperations.getChildren(((SNode) _variablesContext.getValue("thisNode")), LINKS.direct_connections$Xf$k)).addElement(conexion);
                     }
                   }
                   @Override
@@ -192,7 +192,6 @@ import org.jetbrains.mps.openapi.language.SProperty;
                         SPropertyOperations.assign(conexion_puerto, PROPS.label$AAcS, "act request");
                         SLinkOperations.setTarget(conexion_puerto, LINKS.message$3geB, SLinkOperations.getTarget(servicio, LINKS.message$_DkH));
                       }
-                      ListSequence.fromList(SLinkOperations.getChildren(((SNode) _variablesContext.getValue("thisNode")), LINKS.connections$Xf$k)).addElement(conexion_puerto);
                       ListSequence.fromList(SLinkOperations.getChildren(((SNode) _variablesContext.getValue("thisNode")), LINKS.port_connections$BohG)).addElement(conexion_puerto);
 
                     }
@@ -270,7 +269,7 @@ import org.jetbrains.mps.openapi.language.SProperty;
 
   private static final class LINKS {
     /*package*/ static final SContainmentLink network_nodes$xOcS = MetaAdapterFactory.getContainmentLink(0xf7db56d1b41e4c13L, 0x9756a014feb108beL, 0x5d8e854cb6b6ef9L, 0x45d1f7827d32707fL, "network_nodes");
-    /*package*/ static final SContainmentLink connections$Xf$k = MetaAdapterFactory.getContainmentLink(0xf7db56d1b41e4c13L, 0x9756a014feb108beL, 0x5d8e854cb6b6ef9L, 0x45d1f7827d4196edL, "connections");
+    /*package*/ static final SContainmentLink direct_connections$Xf$k = MetaAdapterFactory.getContainmentLink(0xf7db56d1b41e4c13L, 0x9756a014feb108beL, 0x5d8e854cb6b6ef9L, 0x45d1f7827d4196edL, "direct_connections");
     /*package*/ static final SContainmentLink topics$diq9 = MetaAdapterFactory.getContainmentLink(0xf7db56d1b41e4c13L, 0x9756a014feb108beL, 0x5d8e854cb6b6ef9L, 0x7a5e6dfd6e6b8c53L, "topics");
     /*package*/ static final SReferenceLink node$IXJD = MetaAdapterFactory.getReferenceLink(0xf7db56d1b41e4c13L, 0x9756a014feb108beL, 0x5d8e854cb6b9f03L, 0x5d8e854cb6b9f04L, "node");
     /*package*/ static final SReferenceLink topic$IYsG = MetaAdapterFactory.getReferenceLink(0xf7db56d1b41e4c13L, 0x9756a014feb108beL, 0x5d8e854cb6b9f03L, 0x5d8e854cb6b9f07L, "topic");

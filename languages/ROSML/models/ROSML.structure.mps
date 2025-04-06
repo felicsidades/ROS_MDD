@@ -77,8 +77,8 @@
       <property role="IQ2ns" value="5031074398568814317" />
       <property role="20lmBu" value="fLJjDmT/aggregation" />
       <property role="20lbJX" value="fLJekj5/_0__n" />
-      <property role="20kJfa" value="connections" />
-      <ref role="20lvS9" node="585zzjDOFZd" resolve="IConection" />
+      <property role="20kJfa" value="direct_connections" />
+      <ref role="20lvS9" node="noU5jbqTW3" resolve="DirectConnection" />
     </node>
     <node concept="1TJgyj" id="1Z4bsDQOlOB" role="1TKVEi">
       <property role="IQ2ns" value="2289004858211130663" />
@@ -161,9 +161,6 @@
       <property role="IQ2nx" value="5031074398568943479" />
       <property role="TrG5h" value="label" />
       <ref role="AX2Wp" to="tpck:fKAOsGN" resolve="string" />
-    </node>
-    <node concept="PrWs8" id="585zzjDOFZg" role="PzmwI">
-      <ref role="PrY4T" node="585zzjDOFZd" resolve="IConection" />
     </node>
   </node>
   <node concept="1TIwiD" id="24AZeepAE_5">
@@ -269,9 +266,6 @@
       <property role="IQ2nx" value="7522646080062418640" />
       <property role="TrG5h" value="port_name" />
       <ref role="AX2Wp" to="tpck:fKAOsGN" resolve="string" />
-    </node>
-    <node concept="PrWs8" id="585zzjDOFZi" role="PzmwI">
-      <ref role="PrY4T" node="585zzjDOFZd" resolve="IConection" />
     </node>
   </node>
   <node concept="PlHQZ" id="5aI8FgNqnnu">

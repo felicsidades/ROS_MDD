@@ -143,7 +143,6 @@ public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
   private static ConceptDescriptor createDescriptorForDirectConnection() {
     ConceptDescriptorBuilder2 b = new ConceptDescriptorBuilder2("ROSML", "DirectConnection", 0xf7db56d1b41e4c13L, 0x9756a014feb108beL, 0x5d8e854cb6b9f03L);
     b.class_(false, false, false);
-    b.parent(0xf7db56d1b41e4c13L, 0x9756a014feb108beL, 0x52058e34e9d2bfcdL);
     b.origin("r:d670596f-f26c-43d2-8e17-a7b3e68888bf(ROSML.structure)/421342016046866179");
     b.version(3);
     b.property("label", 0x45d1f7827d438f77L).type(PrimitiveTypeId.STRING).origin("5031074398568943479").done();
@@ -210,7 +209,6 @@ public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
   private static ConceptDescriptor createDescriptorForPortConnection() {
     ConceptDescriptorBuilder2 b = new ConceptDescriptorBuilder2("ROSML", "PortConnection", 0xf7db56d1b41e4c13L, 0x9756a014feb108beL, 0x52ae22b433653219L);
     b.class_(false, false, false);
-    b.parent(0xf7db56d1b41e4c13L, 0x9756a014feb108beL, 0x52058e34e9d2bfcdL);
     b.origin("r:d670596f-f26c-43d2-8e17-a7b3e68888bf(ROSML.structure)/5957737514409472537");
     b.version(3);
     b.property("label", 0x52ae22b4336a4e17L).type(PrimitiveTypeId.STRING).origin("5957737514409807383").done();
@@ -228,7 +226,7 @@ public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
     b.version(3);
     b.aggregate("network_nodes", 0x45d1f7827d32707fL).target(0xf7db56d1b41e4c13L, 0x9756a014feb108beL, 0x45d1f7827d3faed1L).optional(true).ordered(true).multiple(true).origin("5031074398567821439").done();
     b.aggregate("topics", 0x7a5e6dfd6e6b8c53L).target(0xf7db56d1b41e4c13L, 0x9756a014feb108beL, 0x5d8e854cb6b6f01L).optional(true).ordered(true).multiple(true).origin("8817606055684705363").done();
-    b.aggregate("connections", 0x45d1f7827d4196edL).target(0xf7db56d1b41e4c13L, 0x9756a014feb108beL, 0x52058e34e9d2bfcdL).optional(true).ordered(true).multiple(true).origin("5031074398568814317").done();
+    b.aggregate("direct_connections", 0x45d1f7827d4196edL).target(0xf7db56d1b41e4c13L, 0x9756a014feb108beL, 0x5d8e854cb6b9f03L).optional(true).ordered(true).multiple(true).origin("5031074398568814317").done();
     b.aggregate("port_connections", 0x1fc42dca76d15d27L).target(0xf7db56d1b41e4c13L, 0x9756a014feb108beL, 0x52ae22b433653219L).optional(true).ordered(true).multiple(true).origin("2289004858211130663").done();
     return b.create();
   }
