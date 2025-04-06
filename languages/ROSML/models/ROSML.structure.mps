@@ -80,6 +80,13 @@
       <property role="20kJfa" value="connections" />
       <ref role="20lvS9" node="585zzjDOFZd" resolve="IConection" />
     </node>
+    <node concept="1TJgyj" id="1Z4bsDQOlOB" role="1TKVEi">
+      <property role="IQ2ns" value="2289004858211130663" />
+      <property role="20lmBu" value="fLJjDmT/aggregation" />
+      <property role="20kJfa" value="port_connections" />
+      <property role="20lbJX" value="fLJekj5/_0__n" />
+      <ref role="20lvS9" node="5aI8FgNpj8p" resolve="PortConnection" />
+    </node>
     <node concept="PrWs8" id="3J18Qb3PaY5" role="PzmwI">
       <ref role="PrY4T" to="tpck:h0TrEE$" resolve="INamedConcept" />
     </node>

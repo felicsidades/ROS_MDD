@@ -229,7 +229,7 @@ public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
     b.aggregate("network_nodes", 0x45d1f7827d32707fL).target(0xf7db56d1b41e4c13L, 0x9756a014feb108beL, 0x45d1f7827d3faed1L).optional(true).ordered(true).multiple(true).origin("5031074398567821439").done();
     b.aggregate("topics", 0x7a5e6dfd6e6b8c53L).target(0xf7db56d1b41e4c13L, 0x9756a014feb108beL, 0x5d8e854cb6b6f01L).optional(true).ordered(true).multiple(true).origin("8817606055684705363").done();
     b.aggregate("connections", 0x45d1f7827d4196edL).target(0xf7db56d1b41e4c13L, 0x9756a014feb108beL, 0x52058e34e9d2bfcdL).optional(true).ordered(true).multiple(true).origin("5031074398568814317").done();
-    b.aggregate("custom_messages", 0x1fc42dca76bf338dL).target(0xf7db56d1b41e4c13L, 0x9756a014feb108beL, 0x18dbf75c7f56da8dL).optional(true).ordered(true).multiple(true).origin("2289004858209940365").done();
+    b.aggregate("port_connections", 0x1fc42dca76d15d27L).target(0xf7db56d1b41e4c13L, 0x9756a014feb108beL, 0x52ae22b433653219L).optional(true).ordered(true).multiple(true).origin("2289004858211130663").done();
     return b.create();
   }
   private static ConceptDescriptor createDescriptorForServer() {

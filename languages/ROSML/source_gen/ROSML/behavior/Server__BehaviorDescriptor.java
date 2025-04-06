@@ -16,8 +16,6 @@ import org.jetbrains.annotations.NotNull;
 import jetbrains.mps.internal.collections.runtime.ListSequence;
 import jetbrains.mps.lang.smodel.generator.smodelAdapter.SLinkOperations;
 import jetbrains.mps.lang.smodel.generator.smodelAdapter.SPropertyOperations;
-import jetbrains.mps.internal.collections.runtime.Sequence;
-import java.util.Collections;
 import jetbrains.mps.core.aspects.behaviour.api.SConstructor;
 import org.jetbrains.annotations.Nullable;
 import jetbrains.mps.core.aspects.behaviour.api.BHMethodNotFoundException;
@@ -30,9 +28,8 @@ public final class Server__BehaviorDescriptor extends BaseBHDescriptor {
   public static final SMethod<SNode> getServicio_id5Yvlr8xnW3d = new SMethodBuilder<SNode>(new SJavaCompoundTypeImpl((Class<SNode>) ((Class) Object.class))).name("getServicio").modifiers(0, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(6890320178452611277L).languageId(0x9756a014feb108beL, 0xf7db56d1b41e4c13L).build2(SMethodBuilder.createJavaParameter(String.class, ""));
   public static final SMethod<SNode> getAccion_id585zzjDKAoB = new SMethodBuilder<SNode>(new SJavaCompoundTypeImpl((Class<SNode>) ((Class) Object.class))).name("getAccion").modifiers(0, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(5910286443904919079L).languageId(0x9756a014feb108beL, 0xf7db56d1b41e4c13L).build2(SMethodBuilder.createJavaParameter(String.class, ""));
   public static final SMethod<String> getTipo_id585zzjDKKmp = new SMethodBuilder<String>(new SJavaCompoundTypeImpl(String.class)).name("getTipo").modifiers(0, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(5910286443904959897L).languageId(0x9756a014feb108beL, 0xf7db56d1b41e4c13L).build2(SMethodBuilder.createJavaParameter(String.class, ""));
-  public static final SMethod<Iterable<String>> getMessagesNames_id1Z4bsDQK1a3 = new SMethodBuilder<Iterable<String>>(new SJavaCompoundTypeImpl((Class<Iterable<String>>) ((Class) Object.class))).name("getMessagesNames").modifiers(0, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(2289004858209997443L).languageId(0x9756a014feb108beL, 0xf7db56d1b41e4c13L).build2();
 
-  private static final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(getServicio_id5Yvlr8xnW3d, getAccion_id585zzjDKAoB, getTipo_id585zzjDKKmp, getMessagesNames_id1Z4bsDQK1a3);
+  private static final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(getServicio_id5Yvlr8xnW3d, getAccion_id585zzjDKAoB, getTipo_id585zzjDKKmp);
 
   private static void ___init___(@NotNull SNode __thisNode__) {
   }
@@ -50,12 +47,6 @@ public final class Server__BehaviorDescriptor extends BaseBHDescriptor {
       return "service";
     } else {
       return null;
-    }
-  }
-  /*package*/ static Iterable<String> getMessagesNames_id1Z4bsDQK1a3(@NotNull SNode __thisNode__) {
-    Iterable<String> mensajes = Sequence.fromIterable(Collections.<String>emptyList());
-    for (SNode node : ListSequence.fromList(SLinkOperations.getChildren(__thisNode__, LINKS.services$zPXp))) {
-      String nombre = node.<!TextGen not found for 'jetbrains.mps.baseLanguage.structure.AbstractOperation'!>;
     }
   }
 
@@ -80,8 +71,6 @@ public final class Server__BehaviorDescriptor extends BaseBHDescriptor {
         return (T) ((SNode) getAccion_id585zzjDKAoB(node, (String) parameters[0]));
       case 2:
         return (T) ((String) getTipo_id585zzjDKKmp(node, (String) parameters[0]));
-      case 3:
-        return (T) ((Iterable<String>) getMessagesNames_id1Z4bsDQK1a3(node));
       default:
         throw new BHMethodNotFoundException(this, method);
     }

@@ -193,6 +193,8 @@ import org.jetbrains.mps.openapi.language.SProperty;
                         SLinkOperations.setTarget(conexion_puerto, LINKS.message$3geB, SLinkOperations.getTarget(servicio, LINKS.message$_DkH));
                       }
                       ListSequence.fromList(SLinkOperations.getChildren(((SNode) _variablesContext.getValue("thisNode")), LINKS.connections$Xf$k)).addElement(conexion_puerto);
+                      ListSequence.fromList(SLinkOperations.getChildren(((SNode) _variablesContext.getValue("thisNode")), LINKS.port_connections$BohG)).addElement(conexion_puerto);
+
                     }
                   }
                   @Override
@@ -278,6 +280,7 @@ import org.jetbrains.mps.openapi.language.SProperty;
     /*package*/ static final SReferenceLink message$3geB = MetaAdapterFactory.getReferenceLink(0xf7db56d1b41e4c13L, 0x9756a014feb108beL, 0x52ae22b433653219L, 0x18dbf75c7f6888d7L, "message");
     /*package*/ static final SContainmentLink message$eqUd = MetaAdapterFactory.getContainmentLink(0xf7db56d1b41e4c13L, 0x9756a014feb108beL, 0x5f9f55b2215f05faL, 0x1a87a547ff4fbb1aL, "message");
     /*package*/ static final SContainmentLink message$_DkH = MetaAdapterFactory.getContainmentLink(0xf7db56d1b41e4c13L, 0x9756a014feb108beL, 0x5f9f55b2215b96f8L, 0x1a87a547ff4948c3L, "message");
+    /*package*/ static final SContainmentLink port_connections$BohG = MetaAdapterFactory.getContainmentLink(0xf7db56d1b41e4c13L, 0x9756a014feb108beL, 0x5d8e854cb6b6ef9L, 0x1fc42dca76d15d27L, "port_connections");
   }
 
   private static final class CONCEPTS {
