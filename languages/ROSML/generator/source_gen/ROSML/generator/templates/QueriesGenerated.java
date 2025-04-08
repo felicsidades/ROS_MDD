@@ -42,7 +42,7 @@ public class QueriesGenerated extends QueryProviderBase {
     return SPropertyOperations.getString(SLinkOperations.getTarget(SLinkOperations.getTarget(_context.getNode(), LINKS.topic$IYsG), LINKS.message$uMau), PROPS.package$uL2X);
   }
   public static Object propertyMacro_GetValue_1_3(final PropertyMacroContext _context) {
-    return SPropertyOperations.getString(SLinkOperations.getTarget(SLinkOperations.getTarget(_context.getNode(), LINKS.topic$IYsG), LINKS.message$uMau), PROPS.datatype$9rA5);
+    return SPropertyOperations.getString(SLinkOperations.getTarget(SLinkOperations.getTarget(_context.getNode(), LINKS.topic$IYsG), LINKS.message$uMau), PROPS.interface_name$9rA5);
   }
   public static Object propertyMacro_GetValue_1_4(final PropertyMacroContext _context) {
     return SPropertyOperations.getString(SLinkOperations.getTarget(_context.getNode(), LINKS.topic$IYsG), PROPS.name$MnvL);
@@ -60,7 +60,7 @@ public class QueriesGenerated extends QueryProviderBase {
     return SPropertyOperations.getString(SLinkOperations.getTarget(SLinkOperations.getTarget(_context.getNode(), LINKS.topic$IYsG), LINKS.message$uMau), PROPS.package$uL2X);
   }
   public static Object propertyMacro_GetValue_1_9(final PropertyMacroContext _context) {
-    return SPropertyOperations.getString(SLinkOperations.getTarget(SLinkOperations.getTarget(_context.getNode(), LINKS.topic$IYsG), LINKS.message$uMau), PROPS.datatype$9rA5);
+    return SPropertyOperations.getString(SLinkOperations.getTarget(SLinkOperations.getTarget(_context.getNode(), LINKS.topic$IYsG), LINKS.message$uMau), PROPS.interface_name$9rA5);
   }
   public static Object propertyMacro_GetValue_1_10(final PropertyMacroContext _context) {
     return SPropertyOperations.getString(SLinkOperations.getTarget(_context.getNode(), LINKS.topic$IYsG), PROPS.name$MnvL);
@@ -75,7 +75,7 @@ public class QueriesGenerated extends QueryProviderBase {
     return SPropertyOperations.getString(SLinkOperations.getTarget(_context.getNode(), LINKS.message$3geB), PROPS.package$uL2X);
   }
   public static Object propertyMacro_GetValue_1_14(final PropertyMacroContext _context) {
-    return SPropertyOperations.getString(SLinkOperations.getTarget(_context.getNode(), LINKS.message$3geB), PROPS.datatype$9rA5);
+    return SPropertyOperations.getString(SLinkOperations.getTarget(_context.getNode(), LINKS.message$3geB), PROPS.interface_name$9rA5);
   }
   public static Object propertyMacro_GetValue_1_15(final PropertyMacroContext _context) {
     return SPropertyOperations.getString(_context.getNode(), PROPS.port_name$u3X4);
@@ -87,7 +87,7 @@ public class QueriesGenerated extends QueryProviderBase {
     return SPropertyOperations.getString(SLinkOperations.getTarget(_context.getNode(), LINKS.message$3geB), PROPS.package$uL2X);
   }
   public static Object propertyMacro_GetValue_1_18(final PropertyMacroContext _context) {
-    return SPropertyOperations.getString(SLinkOperations.getTarget(_context.getNode(), LINKS.message$3geB), PROPS.datatype$9rA5);
+    return SPropertyOperations.getString(SLinkOperations.getTarget(_context.getNode(), LINKS.message$3geB), PROPS.interface_name$9rA5);
   }
   public static Object propertyMacro_GetValue_1_19(final PropertyMacroContext _context) {
     return SPropertyOperations.getString(_context.getNode(), PROPS.port_name$u3X4);
@@ -99,7 +99,7 @@ public class QueriesGenerated extends QueryProviderBase {
     return SPropertyOperations.getString(SLinkOperations.getTarget(SLinkOperations.getTarget(_context.getNode(), LINKS.topic$IYsG), LINKS.message$uMau), PROPS.package$uL2X);
   }
   public static Object propertyMacro_GetValue_1_22(final PropertyMacroContext _context) {
-    return SPropertyOperations.getString(SLinkOperations.getTarget(SLinkOperations.getTarget(_context.getNode(), LINKS.topic$IYsG), LINKS.message$uMau), PROPS.datatype$9rA5);
+    return SPropertyOperations.getString(SLinkOperations.getTarget(SLinkOperations.getTarget(_context.getNode(), LINKS.topic$IYsG), LINKS.message$uMau), PROPS.interface_name$9rA5);
   }
   public static Object propertyMacro_GetValue_1_23(final PropertyMacroContext _context) {
     return "\"" + SPropertyOperations.getString(SLinkOperations.getTarget(_context.getNode(), LINKS.topic$IYsG), PROPS.name$MnvL) + "\"";
@@ -114,7 +114,7 @@ public class QueriesGenerated extends QueryProviderBase {
     return SPropertyOperations.getString(SLinkOperations.getTarget(SLinkOperations.getTarget(_context.getNode(), LINKS.topic$IYsG), LINKS.message$uMau), PROPS.package$uL2X);
   }
   public static Object propertyMacro_GetValue_1_27(final PropertyMacroContext _context) {
-    return SPropertyOperations.getString(SLinkOperations.getTarget(SLinkOperations.getTarget(_context.getNode(), LINKS.topic$IYsG), LINKS.message$uMau), PROPS.datatype$9rA5);
+    return SPropertyOperations.getString(SLinkOperations.getTarget(SLinkOperations.getTarget(_context.getNode(), LINKS.topic$IYsG), LINKS.message$uMau), PROPS.interface_name$9rA5);
   }
   public static Object propertyMacro_GetValue_1_28(final PropertyMacroContext _context) {
     return SPropertyOperations.getString(_context.getNode(), PROPS.port_name$u3X4) + "call_service_";
@@ -123,10 +123,10 @@ public class QueriesGenerated extends QueryProviderBase {
     return SPropertyOperations.getString(SLinkOperations.getTarget(_context.getNode(), LINKS.message$3geB), PROPS.package$uL2X);
   }
   public static Object propertyMacro_GetValue_1_30(final PropertyMacroContext _context) {
-    return SPropertyOperations.getString(SLinkOperations.getTarget(_context.getNode(), LINKS.message$3geB), PROPS.datatype$9rA5);
+    return SPropertyOperations.getString(SLinkOperations.getTarget(_context.getNode(), LINKS.message$3geB), PROPS.interface_name$9rA5);
   }
   public static Object propertyMacro_GetValue_1_31(final PropertyMacroContext _context) {
-    if (SPropertyOperations.getString(SLinkOperations.getTarget(_context.getNode(), LINKS.message$3geB), PROPS.datatype$9rA5).equalsIgnoreCase("string")) {
+    if (SPropertyOperations.getString(SLinkOperations.getTarget(_context.getNode(), LINKS.message$3geB), PROPS.interface_name$9rA5).equalsIgnoreCase("string")) {
       return SPropertyOperations.getString(_context.getNode(), PROPS.port_name$u3X4);
     } else {
       return "1";
@@ -148,13 +148,13 @@ public class QueriesGenerated extends QueryProviderBase {
     return SPropertyOperations.getString(SLinkOperations.getTarget(_context.getNode(), LINKS.message$3geB), PROPS.package$uL2X);
   }
   public static Object propertyMacro_GetValue_1_37(final PropertyMacroContext _context) {
-    return SPropertyOperations.getString(SLinkOperations.getTarget(_context.getNode(), LINKS.message$3geB), PROPS.datatype$9rA5);
+    return SPropertyOperations.getString(SLinkOperations.getTarget(_context.getNode(), LINKS.message$3geB), PROPS.interface_name$9rA5);
   }
   public static Object propertyMacro_GetValue_1_38(final PropertyMacroContext _context) {
     return SPropertyOperations.getString(SLinkOperations.getTarget(_context.getNode(), LINKS.message$3geB), PROPS.package$uL2X);
   }
   public static Object propertyMacro_GetValue_1_39(final PropertyMacroContext _context) {
-    return SPropertyOperations.getString(SLinkOperations.getTarget(_context.getNode(), LINKS.message$3geB), PROPS.datatype$9rA5);
+    return SPropertyOperations.getString(SLinkOperations.getTarget(_context.getNode(), LINKS.message$3geB), PROPS.interface_name$9rA5);
   }
   public static Object propertyMacro_GetValue_1_40(final PropertyMacroContext _context) {
     return SPropertyOperations.getString(_context.getNode(), PROPS.port_name$u3X4) + "ActionGoalResponse";
@@ -172,7 +172,7 @@ public class QueriesGenerated extends QueryProviderBase {
     return SPropertyOperations.getString(SLinkOperations.getTarget(_context.getNode(), LINKS.message$3geB), PROPS.package$uL2X);
   }
   public static Object propertyMacro_GetValue_1_45(final PropertyMacroContext _context) {
-    return SPropertyOperations.getString(SLinkOperations.getTarget(_context.getNode(), LINKS.message$3geB), PROPS.datatype$9rA5);
+    return SPropertyOperations.getString(SLinkOperations.getTarget(_context.getNode(), LINKS.message$3geB), PROPS.interface_name$9rA5);
   }
   public static Object propertyMacro_GetValue_1_46(final PropertyMacroContext _context) {
     return SPropertyOperations.getString(_context.getNode(), PROPS.port_name$u3X4) + "ActionFeedback";
@@ -181,13 +181,13 @@ public class QueriesGenerated extends QueryProviderBase {
     return SPropertyOperations.getString(SLinkOperations.getTarget(_context.getNode(), LINKS.message$3geB), PROPS.package$uL2X);
   }
   public static Object propertyMacro_GetValue_1_48(final PropertyMacroContext _context) {
-    return SPropertyOperations.getString(SLinkOperations.getTarget(_context.getNode(), LINKS.message$3geB), PROPS.datatype$9rA5);
+    return SPropertyOperations.getString(SLinkOperations.getTarget(_context.getNode(), LINKS.message$3geB), PROPS.interface_name$9rA5);
   }
   public static Object propertyMacro_GetValue_1_49(final PropertyMacroContext _context) {
     return SPropertyOperations.getString(SLinkOperations.getTarget(_context.getNode(), LINKS.message$3geB), PROPS.package$uL2X);
   }
   public static Object propertyMacro_GetValue_1_50(final PropertyMacroContext _context) {
-    return SPropertyOperations.getString(SLinkOperations.getTarget(_context.getNode(), LINKS.message$3geB), PROPS.datatype$9rA5);
+    return SPropertyOperations.getString(SLinkOperations.getTarget(_context.getNode(), LINKS.message$3geB), PROPS.interface_name$9rA5);
   }
   public static Object propertyMacro_GetValue_1_51(final PropertyMacroContext _context) {
     return SPropertyOperations.getString(_context.getNode(), PROPS.port_name$u3X4) + "ActionResult";
@@ -196,7 +196,7 @@ public class QueriesGenerated extends QueryProviderBase {
     return SPropertyOperations.getString(SLinkOperations.getTarget(_context.getNode(), LINKS.message$3geB), PROPS.package$uL2X);
   }
   public static Object propertyMacro_GetValue_1_53(final PropertyMacroContext _context) {
-    return SPropertyOperations.getString(SLinkOperations.getTarget(_context.getNode(), LINKS.message$3geB), PROPS.datatype$9rA5);
+    return SPropertyOperations.getString(SLinkOperations.getTarget(_context.getNode(), LINKS.message$3geB), PROPS.interface_name$9rA5);
   }
   public static Object propertyMacro_GetValue_1_54(final PropertyMacroContext _context) {
     return SPropertyOperations.getString(SLinkOperations.getTarget(_context.getNode(), LINKS.topic$IYsG), PROPS.name$MnvL) + "_timer_";
@@ -205,7 +205,7 @@ public class QueriesGenerated extends QueryProviderBase {
     return SPropertyOperations.getString(SLinkOperations.getTarget(SLinkOperations.getTarget(_context.getNode(), LINKS.topic$IYsG), LINKS.message$uMau), PROPS.package$uL2X);
   }
   public static Object propertyMacro_GetValue_1_56(final PropertyMacroContext _context) {
-    return SPropertyOperations.getString(SLinkOperations.getTarget(SLinkOperations.getTarget(_context.getNode(), LINKS.topic$IYsG), LINKS.message$uMau), PROPS.datatype$9rA5);
+    return SPropertyOperations.getString(SLinkOperations.getTarget(SLinkOperations.getTarget(_context.getNode(), LINKS.topic$IYsG), LINKS.message$uMau), PROPS.interface_name$9rA5);
   }
   public static Object propertyMacro_GetValue_1_57(final PropertyMacroContext _context) {
     return "publisher_" + SPropertyOperations.getString(SLinkOperations.getTarget(_context.getNode(), LINKS.topic$IYsG), PROPS.name$MnvL) + "_";
@@ -214,7 +214,7 @@ public class QueriesGenerated extends QueryProviderBase {
     return SPropertyOperations.getString(SLinkOperations.getTarget(SLinkOperations.getTarget(_context.getNode(), LINKS.topic$IYsG), LINKS.message$uMau), PROPS.package$uL2X);
   }
   public static Object propertyMacro_GetValue_1_59(final PropertyMacroContext _context) {
-    return SPropertyOperations.getString(SLinkOperations.getTarget(SLinkOperations.getTarget(_context.getNode(), LINKS.topic$IYsG), LINKS.message$uMau), PROPS.datatype$9rA5);
+    return SPropertyOperations.getString(SLinkOperations.getTarget(SLinkOperations.getTarget(_context.getNode(), LINKS.topic$IYsG), LINKS.message$uMau), PROPS.interface_name$9rA5);
   }
   public static Object propertyMacro_GetValue_1_60(final PropertyMacroContext _context) {
     return "subscription_" + SPropertyOperations.getString(SLinkOperations.getTarget(_context.getNode(), LINKS.topic$IYsG), PROPS.name$MnvL) + "_";
@@ -223,7 +223,7 @@ public class QueriesGenerated extends QueryProviderBase {
     return SPropertyOperations.getString(SLinkOperations.getTarget(_context.getNode(), LINKS.message$3geB), PROPS.package$uL2X);
   }
   public static Object propertyMacro_GetValue_1_62(final PropertyMacroContext _context) {
-    return SPropertyOperations.getString(SLinkOperations.getTarget(_context.getNode(), LINKS.message$3geB), PROPS.datatype$9rA5);
+    return SPropertyOperations.getString(SLinkOperations.getTarget(_context.getNode(), LINKS.message$3geB), PROPS.interface_name$9rA5);
   }
   public static Object propertyMacro_GetValue_1_63(final PropertyMacroContext _context) {
     return SPropertyOperations.getString(_context.getNode(), PROPS.port_name$u3X4) + "_service_client_";
@@ -232,7 +232,7 @@ public class QueriesGenerated extends QueryProviderBase {
     return SPropertyOperations.getString(SLinkOperations.getTarget(_context.getNode(), LINKS.message$3geB), PROPS.package$uL2X);
   }
   public static Object propertyMacro_GetValue_1_65(final PropertyMacroContext _context) {
-    return SPropertyOperations.getString(SLinkOperations.getTarget(_context.getNode(), LINKS.message$3geB), PROPS.datatype$9rA5);
+    return SPropertyOperations.getString(SLinkOperations.getTarget(_context.getNode(), LINKS.message$3geB), PROPS.interface_name$9rA5);
   }
   public static Object propertyMacro_GetValue_1_66(final PropertyMacroContext _context) {
     return SPropertyOperations.getString(_context.getNode(), PROPS.port_name$u3X4) + "action_client_";
@@ -294,7 +294,7 @@ public class QueriesGenerated extends QueryProviderBase {
     return SPropertyOperations.getString(SLinkOperations.getTarget(SLinkOperations.getTarget(_context.getNode(), LINKS.topic$IYsG), LINKS.message$uMau), PROPS.package$uL2X);
   }
   public static Object propertyMacro_GetValue_4_3(final PropertyMacroContext _context) {
-    return SPropertyOperations.getString(SLinkOperations.getTarget(SLinkOperations.getTarget(_context.getNode(), LINKS.topic$IYsG), LINKS.message$uMau), PROPS.datatype$9rA5);
+    return SPropertyOperations.getString(SLinkOperations.getTarget(SLinkOperations.getTarget(_context.getNode(), LINKS.topic$IYsG), LINKS.message$uMau), PROPS.interface_name$9rA5);
   }
   public static Object propertyMacro_GetValue_4_4(final PropertyMacroContext _context) {
     return SPropertyOperations.getString(SLinkOperations.getTarget(_context.getNode(), LINKS.topic$IYsG), PROPS.name$MnvL);
@@ -312,7 +312,7 @@ public class QueriesGenerated extends QueryProviderBase {
     return SPropertyOperations.getString(SLinkOperations.getTarget(SLinkOperations.getTarget(_context.getNode(), LINKS.topic$IYsG), LINKS.message$uMau), PROPS.package$uL2X);
   }
   public static Object propertyMacro_GetValue_4_9(final PropertyMacroContext _context) {
-    return SPropertyOperations.getString(SLinkOperations.getTarget(SLinkOperations.getTarget(_context.getNode(), LINKS.topic$IYsG), LINKS.message$uMau), PROPS.datatype$9rA5);
+    return SPropertyOperations.getString(SLinkOperations.getTarget(SLinkOperations.getTarget(_context.getNode(), LINKS.topic$IYsG), LINKS.message$uMau), PROPS.interface_name$9rA5);
   }
   public static Object propertyMacro_GetValue_4_10(final PropertyMacroContext _context) {
     return SPropertyOperations.getString(SLinkOperations.getTarget(_context.getNode(), LINKS.topic$IYsG), PROPS.name$MnvL);
@@ -327,7 +327,7 @@ public class QueriesGenerated extends QueryProviderBase {
     return SPropertyOperations.getString(SLinkOperations.getTarget(_context.getNode(), LINKS.message$3geB), PROPS.package$uL2X);
   }
   public static Object propertyMacro_GetValue_4_14(final PropertyMacroContext _context) {
-    return SPropertyOperations.getString(SLinkOperations.getTarget(_context.getNode(), LINKS.message$3geB), PROPS.datatype$9rA5);
+    return SPropertyOperations.getString(SLinkOperations.getTarget(_context.getNode(), LINKS.message$3geB), PROPS.interface_name$9rA5);
   }
   public static Object propertyMacro_GetValue_4_15(final PropertyMacroContext _context) {
     return SPropertyOperations.getString(_context.getNode(), PROPS.port_name$u3X4);
@@ -339,7 +339,7 @@ public class QueriesGenerated extends QueryProviderBase {
     return SPropertyOperations.getString(SLinkOperations.getTarget(_context.getNode(), LINKS.message$3geB), PROPS.package$uL2X);
   }
   public static Object propertyMacro_GetValue_4_18(final PropertyMacroContext _context) {
-    return SPropertyOperations.getString(SLinkOperations.getTarget(_context.getNode(), LINKS.message$3geB), PROPS.datatype$9rA5);
+    return SPropertyOperations.getString(SLinkOperations.getTarget(_context.getNode(), LINKS.message$3geB), PROPS.interface_name$9rA5);
   }
   public static Object propertyMacro_GetValue_4_19(final PropertyMacroContext _context) {
     return SPropertyOperations.getString(_context.getNode(), PROPS.port_name$u3X4);
@@ -351,7 +351,7 @@ public class QueriesGenerated extends QueryProviderBase {
     return SPropertyOperations.getString(SLinkOperations.getTarget(_context.getNode(), LINKS.message$_DkH), PROPS.package$uL2X);
   }
   public static Object propertyMacro_GetValue_4_22(final PropertyMacroContext _context) {
-    return SPropertyOperations.getString(SLinkOperations.getTarget(_context.getNode(), LINKS.message$_DkH), PROPS.datatype$9rA5);
+    return SPropertyOperations.getString(SLinkOperations.getTarget(_context.getNode(), LINKS.message$_DkH), PROPS.interface_name$9rA5);
   }
   public static Object propertyMacro_GetValue_4_23(final PropertyMacroContext _context) {
     return SPropertyOperations.getString(_context.getNode(), PROPS.name$MnvL);
@@ -366,7 +366,7 @@ public class QueriesGenerated extends QueryProviderBase {
     return SPropertyOperations.getString(SLinkOperations.getTarget(SLinkOperations.getTarget(_context.getNode(), LINKS.topic$IYsG), LINKS.message$uMau), PROPS.package$uL2X);
   }
   public static Object propertyMacro_GetValue_4_27(final PropertyMacroContext _context) {
-    return SPropertyOperations.getString(SLinkOperations.getTarget(SLinkOperations.getTarget(_context.getNode(), LINKS.topic$IYsG), LINKS.message$uMau), PROPS.datatype$9rA5);
+    return SPropertyOperations.getString(SLinkOperations.getTarget(SLinkOperations.getTarget(_context.getNode(), LINKS.topic$IYsG), LINKS.message$uMau), PROPS.interface_name$9rA5);
   }
   public static Object propertyMacro_GetValue_4_28(final PropertyMacroContext _context) {
     return "publisher_" + SPropertyOperations.getString(SLinkOperations.getTarget(_context.getNode(), LINKS.topic$IYsG), PROPS.name$MnvL);
@@ -378,7 +378,7 @@ public class QueriesGenerated extends QueryProviderBase {
     return SPropertyOperations.getString(SLinkOperations.getTarget(SLinkOperations.getTarget(_context.getNode(), LINKS.topic$IYsG), LINKS.message$uMau), PROPS.package$uL2X);
   }
   public static Object propertyMacro_GetValue_4_31(final PropertyMacroContext _context) {
-    return SPropertyOperations.getString(SLinkOperations.getTarget(SLinkOperations.getTarget(_context.getNode(), LINKS.topic$IYsG), LINKS.message$uMau), PROPS.datatype$9rA5);
+    return SPropertyOperations.getString(SLinkOperations.getTarget(SLinkOperations.getTarget(_context.getNode(), LINKS.topic$IYsG), LINKS.message$uMau), PROPS.interface_name$9rA5);
   }
   public static Object propertyMacro_GetValue_4_32(final PropertyMacroContext _context) {
     return SPropertyOperations.getString(_context.getNode(), PROPS.port_name$u3X4) + "callService";
@@ -387,7 +387,7 @@ public class QueriesGenerated extends QueryProviderBase {
     return SPropertyOperations.getString(SLinkOperations.getTarget(_context.getNode(), LINKS.message$3geB), PROPS.package$uL2X);
   }
   public static Object propertyMacro_GetValue_4_34(final PropertyMacroContext _context) {
-    return SPropertyOperations.getString(SLinkOperations.getTarget(_context.getNode(), LINKS.message$3geB), PROPS.datatype$9rA5);
+    return SPropertyOperations.getString(SLinkOperations.getTarget(_context.getNode(), LINKS.message$3geB), PROPS.interface_name$9rA5);
   }
   public static Object propertyMacro_GetValue_4_35(final PropertyMacroContext _context) {
     return SPropertyOperations.getString(_context.getNode(), PROPS.port_name$u3X4) + "_service_client_";
@@ -405,10 +405,10 @@ public class QueriesGenerated extends QueryProviderBase {
     return SPropertyOperations.getString(SLinkOperations.getTarget(_context.getNode(), LINKS.message$3geB), PROPS.package$uL2X);
   }
   public static Object propertyMacro_GetValue_4_40(final PropertyMacroContext _context) {
-    return SPropertyOperations.getString(SLinkOperations.getTarget(_context.getNode(), LINKS.message$3geB), PROPS.datatype$9rA5);
+    return SPropertyOperations.getString(SLinkOperations.getTarget(_context.getNode(), LINKS.message$3geB), PROPS.interface_name$9rA5);
   }
   public static Object propertyMacro_GetValue_4_41(final PropertyMacroContext _context) {
-    if (SPropertyOperations.getString(SLinkOperations.getTarget(_context.getNode(), LINKS.message$3geB), PROPS.datatype$9rA5).equalsIgnoreCase("string")) {
+    if (SPropertyOperations.getString(SLinkOperations.getTarget(_context.getNode(), LINKS.message$3geB), PROPS.interface_name$9rA5).equalsIgnoreCase("string")) {
       return SPropertyOperations.getString(_context.getNode(), PROPS.port_name$u3X4);
     } else {
       return "1";
@@ -418,7 +418,7 @@ public class QueriesGenerated extends QueryProviderBase {
     return SPropertyOperations.getString(SLinkOperations.getTarget(_context.getNode(), LINKS.message$3geB), PROPS.package$uL2X);
   }
   public static Object propertyMacro_GetValue_4_43(final PropertyMacroContext _context) {
-    return SPropertyOperations.getString(SLinkOperations.getTarget(_context.getNode(), LINKS.message$3geB), PROPS.datatype$9rA5);
+    return SPropertyOperations.getString(SLinkOperations.getTarget(_context.getNode(), LINKS.message$3geB), PROPS.interface_name$9rA5);
   }
   public static Object propertyMacro_GetValue_4_44(final PropertyMacroContext _context) {
     return SPropertyOperations.getString(_context.getNode(), PROPS.port_name$u3X4) + "ActionGoalResponse";
@@ -436,7 +436,7 @@ public class QueriesGenerated extends QueryProviderBase {
     return SPropertyOperations.getString(SLinkOperations.getTarget(_context.getNode(), LINKS.message$3geB), PROPS.package$uL2X);
   }
   public static Object propertyMacro_GetValue_4_49(final PropertyMacroContext _context) {
-    return SPropertyOperations.getString(SLinkOperations.getTarget(_context.getNode(), LINKS.message$3geB), PROPS.datatype$9rA5);
+    return SPropertyOperations.getString(SLinkOperations.getTarget(_context.getNode(), LINKS.message$3geB), PROPS.interface_name$9rA5);
   }
   public static Object propertyMacro_GetValue_4_50(final PropertyMacroContext _context) {
     return SPropertyOperations.getString(_context.getNode(), PROPS.port_name$u3X4) + "ActionFeedback";
@@ -445,13 +445,13 @@ public class QueriesGenerated extends QueryProviderBase {
     return SPropertyOperations.getString(SLinkOperations.getTarget(_context.getNode(), LINKS.message$3geB), PROPS.package$uL2X);
   }
   public static Object propertyMacro_GetValue_4_52(final PropertyMacroContext _context) {
-    return SPropertyOperations.getString(SLinkOperations.getTarget(_context.getNode(), LINKS.message$3geB), PROPS.datatype$9rA5);
+    return SPropertyOperations.getString(SLinkOperations.getTarget(_context.getNode(), LINKS.message$3geB), PROPS.interface_name$9rA5);
   }
   public static Object propertyMacro_GetValue_4_53(final PropertyMacroContext _context) {
     return SPropertyOperations.getString(SLinkOperations.getTarget(_context.getNode(), LINKS.message$3geB), PROPS.package$uL2X);
   }
   public static Object propertyMacro_GetValue_4_54(final PropertyMacroContext _context) {
-    return SPropertyOperations.getString(SLinkOperations.getTarget(_context.getNode(), LINKS.message$3geB), PROPS.datatype$9rA5);
+    return SPropertyOperations.getString(SLinkOperations.getTarget(_context.getNode(), LINKS.message$3geB), PROPS.interface_name$9rA5);
   }
   public static Object propertyMacro_GetValue_4_55(final PropertyMacroContext _context) {
     return SPropertyOperations.getString(_context.getNode(), PROPS.port_name$u3X4) + "ActionResult";
@@ -460,7 +460,7 @@ public class QueriesGenerated extends QueryProviderBase {
     return SPropertyOperations.getString(SLinkOperations.getTarget(_context.getNode(), LINKS.message$3geB), PROPS.package$uL2X);
   }
   public static Object propertyMacro_GetValue_4_57(final PropertyMacroContext _context) {
-    return SPropertyOperations.getString(SLinkOperations.getTarget(_context.getNode(), LINKS.message$3geB), PROPS.datatype$9rA5);
+    return SPropertyOperations.getString(SLinkOperations.getTarget(_context.getNode(), LINKS.message$3geB), PROPS.interface_name$9rA5);
   }
   public static Object propertyMacro_GetValue_4_58(final PropertyMacroContext _context) {
     return SPropertyOperations.getString(_context.getNode(), PROPS.port_name$u3X4) + "service_callback_";
@@ -469,13 +469,13 @@ public class QueriesGenerated extends QueryProviderBase {
     return SPropertyOperations.getString(SLinkOperations.getTarget(_context.getNode(), LINKS.message$3geB), PROPS.package$uL2X);
   }
   public static Object propertyMacro_GetValue_4_60(final PropertyMacroContext _context) {
-    return SPropertyOperations.getString(SLinkOperations.getTarget(_context.getNode(), LINKS.message$3geB), PROPS.datatype$9rA5);
+    return SPropertyOperations.getString(SLinkOperations.getTarget(_context.getNode(), LINKS.message$3geB), PROPS.interface_name$9rA5);
   }
   public static Object propertyMacro_GetValue_4_61(final PropertyMacroContext _context) {
     return SPropertyOperations.getString(SLinkOperations.getTarget(_context.getNode(), LINKS.message$3geB), PROPS.package$uL2X);
   }
   public static Object propertyMacro_GetValue_4_62(final PropertyMacroContext _context) {
-    return SPropertyOperations.getString(SLinkOperations.getTarget(_context.getNode(), LINKS.message$3geB), PROPS.datatype$9rA5);
+    return SPropertyOperations.getString(SLinkOperations.getTarget(_context.getNode(), LINKS.message$3geB), PROPS.interface_name$9rA5);
   }
   public static Object propertyMacro_GetValue_4_63(final PropertyMacroContext _context) {
     return SPropertyOperations.getString(_context.getNode(), PROPS.name$MnvL) + "HandleGoal";
@@ -484,7 +484,7 @@ public class QueriesGenerated extends QueryProviderBase {
     return SPropertyOperations.getString(SLinkOperations.getTarget(_context.getNode(), LINKS.message$eqUd), PROPS.package$uL2X);
   }
   public static Object propertyMacro_GetValue_4_65(final PropertyMacroContext _context) {
-    return SPropertyOperations.getString(SLinkOperations.getTarget(_context.getNode(), LINKS.message$eqUd), PROPS.datatype$9rA5);
+    return SPropertyOperations.getString(SLinkOperations.getTarget(_context.getNode(), LINKS.message$eqUd), PROPS.interface_name$9rA5);
   }
   public static Object propertyMacro_GetValue_4_66(final PropertyMacroContext _context) {
     return SPropertyOperations.getString(_context.getNode(), PROPS.name$MnvL) + "HandleCancel";
@@ -493,7 +493,7 @@ public class QueriesGenerated extends QueryProviderBase {
     return SPropertyOperations.getString(SLinkOperations.getTarget(_context.getNode(), LINKS.message$eqUd), PROPS.package$uL2X);
   }
   public static Object propertyMacro_GetValue_4_68(final PropertyMacroContext _context) {
-    return SPropertyOperations.getString(SLinkOperations.getTarget(_context.getNode(), LINKS.message$eqUd), PROPS.datatype$9rA5);
+    return SPropertyOperations.getString(SLinkOperations.getTarget(_context.getNode(), LINKS.message$eqUd), PROPS.interface_name$9rA5);
   }
   public static Object propertyMacro_GetValue_4_69(final PropertyMacroContext _context) {
     return SPropertyOperations.getString(_context.getNode(), PROPS.name$MnvL) + "HandleAccepted";
@@ -502,13 +502,13 @@ public class QueriesGenerated extends QueryProviderBase {
     return SPropertyOperations.getString(SLinkOperations.getTarget(_context.getNode(), LINKS.message$eqUd), PROPS.package$uL2X);
   }
   public static Object propertyMacro_GetValue_4_71(final PropertyMacroContext _context) {
-    return SPropertyOperations.getString(SLinkOperations.getTarget(_context.getNode(), LINKS.message$eqUd), PROPS.datatype$9rA5);
+    return SPropertyOperations.getString(SLinkOperations.getTarget(_context.getNode(), LINKS.message$eqUd), PROPS.interface_name$9rA5);
   }
   public static Object propertyMacro_GetValue_4_72(final PropertyMacroContext _context) {
     return SPropertyOperations.getString(SLinkOperations.getTarget(_context.getNode(), LINKS.message$eqUd), PROPS.package$uL2X);
   }
   public static Object propertyMacro_GetValue_4_73(final PropertyMacroContext _context) {
-    return SPropertyOperations.getString(SLinkOperations.getTarget(_context.getNode(), LINKS.message$eqUd), PROPS.datatype$9rA5);
+    return SPropertyOperations.getString(SLinkOperations.getTarget(_context.getNode(), LINKS.message$eqUd), PROPS.interface_name$9rA5);
   }
   public static Object propertyMacro_GetValue_4_74(final PropertyMacroContext _context) {
     return SPropertyOperations.getString(SLinkOperations.getTarget(_context.getNode(), LINKS.topic$IYsG), PROPS.name$MnvL) + "_timer_";
@@ -517,7 +517,7 @@ public class QueriesGenerated extends QueryProviderBase {
     return SPropertyOperations.getString(SLinkOperations.getTarget(SLinkOperations.getTarget(_context.getNode(), LINKS.topic$IYsG), LINKS.message$uMau), PROPS.package$uL2X);
   }
   public static Object propertyMacro_GetValue_4_76(final PropertyMacroContext _context) {
-    return SPropertyOperations.getString(SLinkOperations.getTarget(SLinkOperations.getTarget(_context.getNode(), LINKS.topic$IYsG), LINKS.message$uMau), PROPS.datatype$9rA5);
+    return SPropertyOperations.getString(SLinkOperations.getTarget(SLinkOperations.getTarget(_context.getNode(), LINKS.topic$IYsG), LINKS.message$uMau), PROPS.interface_name$9rA5);
   }
   public static Object propertyMacro_GetValue_4_77(final PropertyMacroContext _context) {
     return "publisher_" + SPropertyOperations.getString(SLinkOperations.getTarget(_context.getNode(), LINKS.topic$IYsG), PROPS.name$MnvL) + "_";
@@ -526,7 +526,7 @@ public class QueriesGenerated extends QueryProviderBase {
     return SPropertyOperations.getString(SLinkOperations.getTarget(SLinkOperations.getTarget(_context.getNode(), LINKS.topic$IYsG), LINKS.message$uMau), PROPS.package$uL2X);
   }
   public static Object propertyMacro_GetValue_4_79(final PropertyMacroContext _context) {
-    return SPropertyOperations.getString(SLinkOperations.getTarget(SLinkOperations.getTarget(_context.getNode(), LINKS.topic$IYsG), LINKS.message$uMau), PROPS.datatype$9rA5);
+    return SPropertyOperations.getString(SLinkOperations.getTarget(SLinkOperations.getTarget(_context.getNode(), LINKS.topic$IYsG), LINKS.message$uMau), PROPS.interface_name$9rA5);
   }
   public static Object propertyMacro_GetValue_4_80(final PropertyMacroContext _context) {
     return "subscription_" + SPropertyOperations.getString(SLinkOperations.getTarget(_context.getNode(), LINKS.topic$IYsG), PROPS.name$MnvL) + "_";
@@ -535,7 +535,7 @@ public class QueriesGenerated extends QueryProviderBase {
     return SPropertyOperations.getString(SLinkOperations.getTarget(_context.getNode(), LINKS.message$3geB), PROPS.package$uL2X);
   }
   public static Object propertyMacro_GetValue_4_82(final PropertyMacroContext _context) {
-    return SPropertyOperations.getString(SLinkOperations.getTarget(_context.getNode(), LINKS.message$3geB), PROPS.datatype$9rA5);
+    return SPropertyOperations.getString(SLinkOperations.getTarget(_context.getNode(), LINKS.message$3geB), PROPS.interface_name$9rA5);
   }
   public static Object propertyMacro_GetValue_4_83(final PropertyMacroContext _context) {
     return SPropertyOperations.getString(_context.getNode(), PROPS.port_name$u3X4) + "_service_client_";
@@ -544,7 +544,7 @@ public class QueriesGenerated extends QueryProviderBase {
     return SPropertyOperations.getString(SLinkOperations.getTarget(_context.getNode(), LINKS.message$3geB), PROPS.package$uL2X);
   }
   public static Object propertyMacro_GetValue_4_85(final PropertyMacroContext _context) {
-    return SPropertyOperations.getString(SLinkOperations.getTarget(_context.getNode(), LINKS.message$3geB), PROPS.datatype$9rA5);
+    return SPropertyOperations.getString(SLinkOperations.getTarget(_context.getNode(), LINKS.message$3geB), PROPS.interface_name$9rA5);
   }
   public static Object propertyMacro_GetValue_4_86(final PropertyMacroContext _context) {
     return SPropertyOperations.getString(_context.getNode(), PROPS.port_name$u3X4) + "action_client_";
@@ -553,7 +553,7 @@ public class QueriesGenerated extends QueryProviderBase {
     return SPropertyOperations.getString(SLinkOperations.getTarget(_context.getNode(), LINKS.message$eqUd), PROPS.package$uL2X);
   }
   public static Object propertyMacro_GetValue_4_88(final PropertyMacroContext _context) {
-    return SPropertyOperations.getString(SLinkOperations.getTarget(_context.getNode(), LINKS.message$eqUd), PROPS.datatype$9rA5);
+    return SPropertyOperations.getString(SLinkOperations.getTarget(_context.getNode(), LINKS.message$eqUd), PROPS.interface_name$9rA5);
   }
   public static Object propertyMacro_GetValue_4_89(final PropertyMacroContext _context) {
     return SPropertyOperations.getString(_context.getNode(), PROPS.name$MnvL) + "action_server_";
@@ -1389,7 +1389,7 @@ public class QueriesGenerated extends QueryProviderBase {
   private static final class PROPS {
     /*package*/ static final SProperty name$MnvL = MetaAdapterFactory.getProperty(0xceab519525ea4f22L, 0x9b92103b95ca8c0cL, 0x110396eaaa4L, 0x110396ec041L, "name");
     /*package*/ static final SProperty package$uL2X = MetaAdapterFactory.getProperty(0xf7db56d1b41e4c13L, 0x9756a014feb108beL, 0x18dbf75c7f56da8dL, 0x62bb50d8231fb7ecL, "package");
-    /*package*/ static final SProperty datatype$9rA5 = MetaAdapterFactory.getProperty(0xf7db56d1b41e4c13L, 0x9756a014feb108beL, 0x18dbf75c7f56da8dL, 0x18dbf75c7f5d906eL, "datatype");
+    /*package*/ static final SProperty interface_name$9rA5 = MetaAdapterFactory.getProperty(0xf7db56d1b41e4c13L, 0x9756a014feb108beL, 0x18dbf75c7f56da8dL, 0x18dbf75c7f5d906eL, "interface_name");
     /*package*/ static final SProperty port_name$u3X4 = MetaAdapterFactory.getProperty(0xf7db56d1b41e4c13L, 0x9756a014feb108beL, 0x52ae22b433653219L, 0x6865cec0cd1aeed0L, "port_name");
     /*package*/ static final SProperty message_type$93N4 = MetaAdapterFactory.getProperty(0xf7db56d1b41e4c13L, 0x9756a014feb108beL, 0x18dbf75c7f56da8dL, 0x18dbf75c7f56da73L, "message_type");
   }

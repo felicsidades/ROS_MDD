@@ -187,12 +187,12 @@ import org.jetbrains.mps.openapi.language.SProperty;
                       if (Server__BehaviorDescriptor.getTipo_id585zzjDKKmp.invoke(toNode, toPort) == "action") {
                         SNode accion = Server__BehaviorDescriptor.getAccion_id585zzjDKAoB.invoke(toNode, toPort);
                         SLinkOperations.setTarget(accion, LINKS.connection$WFQD, conexion_puerto);
-                        SPropertyOperations.assign(conexion_puerto, PROPS.label$AAcS, "srv request");
+                        SPropertyOperations.assign(conexion_puerto, PROPS.label$AAcS, "act request");
                         SLinkOperations.setTarget(conexion_puerto, LINKS.message$3geB, SLinkOperations.getTarget(accion, LINKS.message$eqUd));
                       } else if (Server__BehaviorDescriptor.getTipo_id585zzjDKKmp.invoke(toNode, toPort) == "service") {
                         SNode servicio = Server__BehaviorDescriptor.getServicio_id5Yvlr8xnW3d.invoke(toNode, toPort);
                         SLinkOperations.setTarget(servicio, LINKS.connection$WFQD, conexion_puerto);
-                        SPropertyOperations.assign(conexion_puerto, PROPS.label$AAcS, "act request");
+                        SPropertyOperations.assign(conexion_puerto, PROPS.label$AAcS, "srv request");
                         SLinkOperations.setTarget(conexion_puerto, LINKS.message$3geB, SLinkOperations.getTarget(servicio, LINKS.message$_DkH));
                       }
                       ListSequence.fromList(SLinkOperations.getChildren(((SNode) _variablesContext.getValue("thisNode")), LINKS.port_connections$BohG)).addElement(conexion_puerto);
