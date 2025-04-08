@@ -218,6 +218,9 @@
       <node concept="aDKH9" id="4nhXS9XgEX2" role="aCds2">
         <ref role="aDKIf" to="9g35:4nhXS9XgprH" resolve="direct_connections" />
       </node>
+      <node concept="aDKH9" id="6B4EhaKAiIe" role="aCds2">
+        <ref role="aDKIf" to="9g35:1Z4bsDQOlOB" resolve="port_connections" />
+      </node>
       <node concept="aDKH9" id="7DurvPIqU5h" role="aCds2">
         <ref role="aDKIf" to="9g35:7DurvPIqSLj" resolve="topics" />
       </node>

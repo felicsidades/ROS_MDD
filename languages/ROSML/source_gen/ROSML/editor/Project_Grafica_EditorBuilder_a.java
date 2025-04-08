@@ -80,6 +80,9 @@ import org.jetbrains.mps.openapi.language.SProperty;
                 for (SNode e : ListSequence.fromList(SLinkOperations.getChildren(node, LINKS.direct_connections$Xf$k))) {
                   elements.addAll(accessorFactory.fromSNode(e));
                 }
+                for (SNode e : ListSequence.fromList(SLinkOperations.getChildren(node, LINKS.port_connections$BohG))) {
+                  elements.addAll(accessorFactory.fromSNode(e));
+                }
                 for (SNode e : ListSequence.fromList(SLinkOperations.getChildren(node, LINKS.topics$diq9))) {
                   elements.addAll(accessorFactory.fromSNode(e));
                 }
@@ -270,6 +273,7 @@ import org.jetbrains.mps.openapi.language.SProperty;
   private static final class LINKS {
     /*package*/ static final SContainmentLink network_nodes$xOcS = MetaAdapterFactory.getContainmentLink(0xf7db56d1b41e4c13L, 0x9756a014feb108beL, 0x5d8e854cb6b6ef9L, 0x45d1f7827d32707fL, "network_nodes");
     /*package*/ static final SContainmentLink direct_connections$Xf$k = MetaAdapterFactory.getContainmentLink(0xf7db56d1b41e4c13L, 0x9756a014feb108beL, 0x5d8e854cb6b6ef9L, 0x45d1f7827d4196edL, "direct_connections");
+    /*package*/ static final SContainmentLink port_connections$BohG = MetaAdapterFactory.getContainmentLink(0xf7db56d1b41e4c13L, 0x9756a014feb108beL, 0x5d8e854cb6b6ef9L, 0x1fc42dca76d15d27L, "port_connections");
     /*package*/ static final SContainmentLink topics$diq9 = MetaAdapterFactory.getContainmentLink(0xf7db56d1b41e4c13L, 0x9756a014feb108beL, 0x5d8e854cb6b6ef9L, 0x7a5e6dfd6e6b8c53L, "topics");
     /*package*/ static final SReferenceLink node$IXJD = MetaAdapterFactory.getReferenceLink(0xf7db56d1b41e4c13L, 0x9756a014feb108beL, 0x5d8e854cb6b9f03L, 0x5d8e854cb6b9f04L, "node");
     /*package*/ static final SReferenceLink topic$IYsG = MetaAdapterFactory.getReferenceLink(0xf7db56d1b41e4c13L, 0x9756a014feb108beL, 0x5d8e854cb6b9f03L, 0x5d8e854cb6b9f07L, "topic");
@@ -279,7 +283,6 @@ import org.jetbrains.mps.openapi.language.SProperty;
     /*package*/ static final SReferenceLink message$3geB = MetaAdapterFactory.getReferenceLink(0xf7db56d1b41e4c13L, 0x9756a014feb108beL, 0x52ae22b433653219L, 0x18dbf75c7f6888d7L, "message");
     /*package*/ static final SContainmentLink message$eqUd = MetaAdapterFactory.getContainmentLink(0xf7db56d1b41e4c13L, 0x9756a014feb108beL, 0x5f9f55b2215f05faL, 0x1a87a547ff4fbb1aL, "message");
     /*package*/ static final SContainmentLink message$_DkH = MetaAdapterFactory.getContainmentLink(0xf7db56d1b41e4c13L, 0x9756a014feb108beL, 0x5f9f55b2215b96f8L, 0x1a87a547ff4948c3L, "message");
-    /*package*/ static final SContainmentLink port_connections$BohG = MetaAdapterFactory.getContainmentLink(0xf7db56d1b41e4c13L, 0x9756a014feb108beL, 0x5d8e854cb6b6ef9L, 0x1fc42dca76d15d27L, "port_connections");
   }
 
   private static final class CONCEPTS {

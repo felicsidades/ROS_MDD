@@ -10,6 +10,7 @@
     <import index="9g35" ref="r:d670596f-f26c-43d2-8e17-a7b3e68888bf(ROSML.structure)" />
     <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" implicit="true" />
     <import index="wyt6" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.lang(JDK/)" implicit="true" />
+    <import index="33ny" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.util(JDK/)" implicit="true" />
   </imports>
   <registry>
     <language id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage">
@@ -58,6 +59,7 @@
         <child id="1081773367580" name="leftExpression" index="3uHU7B" />
       </concept>
       <concept id="1073239437375" name="jetbrains.mps.baseLanguage.structure.NotEqualsExpression" flags="nn" index="3y3z36" />
+      <concept id="1080120340718" name="jetbrains.mps.baseLanguage.structure.AndExpression" flags="nn" index="1Wc70l" />
     </language>
     <language id="b401a680-8325-4110-8fd3-84331ff25bef" name="jetbrains.mps.lang.generator">
       <concept id="1095416546421" name="jetbrains.mps.lang.generator.structure.MappingConfiguration" flags="ig" index="bUwia">
@@ -109,9 +111,17 @@
       <concept id="1138411891628" name="jetbrains.mps.lang.smodel.structure.SNodeOperation" flags="nn" index="eCIE_">
         <child id="1144104376918" name="parameter" index="1xVPHs" />
       </concept>
+      <concept id="7453996997717780434" name="jetbrains.mps.lang.smodel.structure.Node_GetSConceptOperation" flags="nn" index="2yIwOk" />
       <concept id="1171407110247" name="jetbrains.mps.lang.smodel.structure.Node_GetAncestorOperation" flags="nn" index="2Xjw5R" />
+      <concept id="1171500988903" name="jetbrains.mps.lang.smodel.structure.Node_GetChildrenOperation" flags="nn" index="32TBzR" />
+      <concept id="2644386474300074836" name="jetbrains.mps.lang.smodel.structure.ConceptIdRefExpression" flags="nn" index="35c_gC">
+        <reference id="2644386474300074837" name="conceptDeclaration" index="35c_gD" />
+      </concept>
       <concept id="1144101972840" name="jetbrains.mps.lang.smodel.structure.OperationParm_Concept" flags="ng" index="1xMEDy">
         <child id="1207343664468" name="conceptArgument" index="ri$Ld" />
+      </concept>
+      <concept id="1172326502327" name="jetbrains.mps.lang.smodel.structure.Concept_IsExactlyOperation" flags="nn" index="3O6GUB">
+        <child id="1206733650006" name="conceptArgument" index="3QVz_e" />
       </concept>
       <concept id="1138056022639" name="jetbrains.mps.lang.smodel.structure.SPropertyAccess" flags="nn" index="3TrcHB">
         <reference id="1138056395725" name="property" index="3TsBF5" />
@@ -3517,141 +3527,195 @@
   <node concept="356sEV" id="xuK2hhGg_w">
     <property role="TrG5h" value="Package" />
     <property role="3Le9LX" value=".xml" />
-    <node concept="356WMU" id="xuK2hhGg_$" role="356KY_">
-      <node concept="356sEK" id="xuK2hhGg__" role="383Ya9">
-        <node concept="356sEF" id="xuK2hhGg_A" role="356sEH">
+    <node concept="356WMU" id="6B4EhaKALz_" role="356KY_">
+      <node concept="356sEK" id="6B4EhaKALzA" role="383Ya9">
+        <node concept="356sEF" id="6B4EhaKALzB" role="356sEH">
           <property role="TrG5h" value="&lt;?xml version=&quot;1.0&quot;?&gt;" />
         </node>
-        <node concept="2EixSi" id="xuK2hhGg_C" role="2EinRH" />
+        <node concept="2EixSi" id="6B4EhaKALzD" role="2EinRH" />
       </node>
-      <node concept="356sEK" id="xuK2hhGg_D" role="383Ya9">
-        <node concept="356sEF" id="xuK2hhGg_E" role="356sEH">
-          <property role="TrG5h" value="&lt;?xml-model" />
+      <node concept="356sEK" id="6B4EhaKALzE" role="383Ya9">
+        <node concept="356sEF" id="6B4EhaKALzF" role="356sEH">
+          <property role="TrG5h" value="&lt;?xml-model href=&quot;http://download.ros.org/schema/package_format3.xsd&quot; schematypens=&quot;http://www.w3.org/2001/XMLSchema&quot;?&gt;" />
         </node>
-        <node concept="2EixSi" id="xuK2hhGg_G" role="2EinRH" />
+        <node concept="2EixSi" id="6B4EhaKALzH" role="2EinRH" />
       </node>
-      <node concept="356sEQ" id="xuK2hhGg_L" role="383Ya9">
-        <property role="333NGx" value="   " />
-        <node concept="356sEK" id="xuK2hhGg_H" role="383Ya9">
-          <node concept="356sEF" id="xuK2hhGg_I" role="356sEH">
-            <property role="TrG5h" value="href=&quot;http://download.ros.org/schema/package_format3.xsd&quot;" />
-          </node>
-          <node concept="2EixSi" id="xuK2hhGg_K" role="2EinRH" />
-        </node>
-        <node concept="356sEK" id="xuK2hhGg_M" role="383Ya9">
-          <node concept="356sEF" id="xuK2hhGg_N" role="356sEH">
-            <property role="TrG5h" value="schematypens=&quot;http://www.w3.org/2001/XMLSchema&quot;?&gt;" />
-          </node>
-          <node concept="2EixSi" id="xuK2hhGg_P" role="2EinRH" />
-        </node>
-      </node>
-      <node concept="356sEK" id="xuK2hhGg_Q" role="383Ya9">
-        <node concept="356sEF" id="xuK2hhGg_R" role="356sEH">
+      <node concept="356sEK" id="6B4EhaKALzI" role="383Ya9">
+        <node concept="356sEF" id="6B4EhaKALzJ" role="356sEH">
           <property role="TrG5h" value="&lt;package format=&quot;3&quot;&gt;" />
         </node>
-        <node concept="2EixSi" id="xuK2hhGg_T" role="2EinRH" />
+        <node concept="2EixSi" id="6B4EhaKALzL" role="2EinRH" />
       </node>
-      <node concept="356sEQ" id="xuK2hhGg_Y" role="383Ya9">
-        <property role="333NGx" value=" " />
-        <node concept="356sEK" id="xuK2hhGg_U" role="383Ya9">
-          <node concept="356sEF" id="xuK2hhGg_V" role="356sEH">
-            <property role="TrG5h" value="&lt;name&gt;my_package&lt;/name&gt;" />
+      <node concept="356sEQ" id="6B4EhaKALzQ" role="383Ya9">
+        <property role="333NGx" value="  " />
+        <node concept="356sEK" id="6B4EhaKALzM" role="383Ya9">
+          <node concept="356sEF" id="6B4EhaKALzN" role="356sEH">
+            <property role="TrG5h" value="&lt;name&gt;mi_paquete_avanzado&lt;/name&gt;" />
           </node>
-          <node concept="2EixSi" id="xuK2hhGg_X" role="2EinRH" />
+          <node concept="2EixSi" id="6B4EhaKALzP" role="2EinRH" />
         </node>
-        <node concept="356sEK" id="xuK2hhGg_Z" role="383Ya9">
-          <node concept="356sEF" id="xuK2hhGgA0" role="356sEH">
+        <node concept="356sEK" id="6B4EhaKALzR" role="383Ya9">
+          <node concept="356sEF" id="6B4EhaKALzS" role="356sEH">
             <property role="TrG5h" value="&lt;version&gt;0.0.0&lt;/version&gt;" />
           </node>
-          <node concept="2EixSi" id="xuK2hhGgA2" role="2EinRH" />
+          <node concept="2EixSi" id="6B4EhaKALzU" role="2EinRH" />
         </node>
-        <node concept="356sEK" id="xuK2hhGgA3" role="383Ya9">
-          <node concept="356sEF" id="xuK2hhGgA4" role="356sEH">
-            <property role="TrG5h" value="&lt;description&gt;TODO: Package description&lt;/description&gt;" />
+        <node concept="356sEK" id="6B4EhaKALzV" role="383Ya9">
+          <node concept="356sEF" id="6B4EhaKALzW" role="356sEH">
+            <property role="TrG5h" value="&lt;description&gt;Paquete con mensajes, servicios y acciones personalizados&lt;/description&gt;" />
           </node>
-          <node concept="2EixSi" id="xuK2hhGgA6" role="2EinRH" />
+          <node concept="2EixSi" id="6B4EhaKALzY" role="2EinRH" />
         </node>
-        <node concept="356sEK" id="xuK2hhGgA7" role="383Ya9">
-          <node concept="356sEF" id="xuK2hhGgA8" role="356sEH">
-            <property role="TrG5h" value="&lt;maintainer email=&quot;user@todo.todo&quot;&gt;user&lt;/maintainer&gt;" />
+        <node concept="356sEK" id="6B4EhaKALzZ" role="383Ya9">
+          <node concept="356sEF" id="6B4EhaKAL$0" role="356sEH">
+            <property role="TrG5h" value="&lt;maintainer email=&quot;tu@email.com&quot;&gt;Tu Nombre&lt;/maintainer&gt;" />
           </node>
-          <node concept="2EixSi" id="xuK2hhGgAa" role="2EinRH" />
+          <node concept="2EixSi" id="6B4EhaKAL$2" role="2EinRH" />
         </node>
-        <node concept="356sEK" id="xuK2hhGgAb" role="383Ya9">
-          <node concept="356sEF" id="xuK2hhGgAc" role="356sEH">
-            <property role="TrG5h" value="&lt;license&gt;TODO: License declaration&lt;/license&gt;" />
+        <node concept="356sEK" id="6B4EhaKAL$3" role="383Ya9">
+          <node concept="356sEF" id="6B4EhaKAL$4" role="356sEH">
+            <property role="TrG5h" value="&lt;license&gt;Apache License 2.0&lt;/license&gt;" />
           </node>
-          <node concept="2EixSi" id="xuK2hhGgAe" role="2EinRH" />
+          <node concept="2EixSi" id="6B4EhaKAL$6" role="2EinRH" />
         </node>
-        <node concept="356sEK" id="xuK2hhGgAf" role="383Ya9">
-          <node concept="2EixSi" id="xuK2hhGgAi" role="2EinRH" />
+        <node concept="356sEK" id="6B4EhaKAL$7" role="383Ya9">
+          <node concept="2EixSi" id="6B4EhaKAL$a" role="2EinRH" />
         </node>
-        <node concept="356sEK" id="xuK2hhGgAj" role="383Ya9">
-          <node concept="356sEF" id="xuK2hhGgAk" role="356sEH">
+        <node concept="356sEK" id="6B4EhaKAL$b" role="383Ya9">
+          <node concept="356sEF" id="6B4EhaKAL$c" role="356sEH">
+            <property role="TrG5h" value="&lt;!-- Dependencias de COMPILACIÓN --&gt;" />
+          </node>
+          <node concept="2EixSi" id="6B4EhaKAL$e" role="2EinRH" />
+        </node>
+        <node concept="356sEK" id="6B4EhaKAL$f" role="383Ya9">
+          <node concept="356sEF" id="6B4EhaKAL$g" role="356sEH">
             <property role="TrG5h" value="&lt;buildtool_depend&gt;ament_cmake&lt;/buildtool_depend&gt;" />
           </node>
-          <node concept="2EixSi" id="xuK2hhGgAm" role="2EinRH" />
+          <node concept="2EixSi" id="6B4EhaKAL$i" role="2EinRH" />
         </node>
-        <node concept="356sEK" id="xuK2hhGgAn" role="383Ya9">
-          <node concept="2EixSi" id="xuK2hhGgAq" role="2EinRH" />
+        <node concept="356sEK" id="6B4EhaKAL$j" role="383Ya9">
+          <node concept="356sEF" id="6B4EhaKAL$k" role="356sEH">
+            <property role="TrG5h" value="&lt;buildtool_depend&gt;rosidl_default_generators&lt;/buildtool_depend&gt;" />
+          </node>
+          <node concept="2EixSi" id="6B4EhaKAL$m" role="2EinRH" />
         </node>
-        <node concept="356sEK" id="7DurvPIonkX" role="383Ya9">
-          <node concept="356sEF" id="7DurvPIonkY" role="356sEH">
+        <node concept="356sEK" id="6B4EhaKAL$n" role="383Ya9">
+          <node concept="2EixSi" id="6B4EhaKAL$q" role="2EinRH" />
+        </node>
+        <node concept="356sEK" id="6B4EhaKAL$r" role="383Ya9">
+          <node concept="356sEF" id="6B4EhaKAL$s" role="356sEH">
+            <property role="TrG5h" value="&lt;!-- Dependencias de EJECUCIÓN --&gt;" />
+          </node>
+          <node concept="2EixSi" id="6B4EhaKAL$u" role="2EinRH" />
+        </node>
+        <node concept="356sEK" id="6B4EhaKAL$v" role="383Ya9">
+          <node concept="356sEF" id="6B4EhaKAL$w" role="356sEH">
+            <property role="TrG5h" value="&lt;exec_depend&gt;rosidl_default_runtime&lt;/exec_depend&gt;" />
+          </node>
+          <node concept="2EixSi" id="6B4EhaKAL$y" role="2EinRH" />
+        </node>
+        <node concept="356sEK" id="6B4EhaKAL$z" role="383Ya9">
+          <node concept="356sEF" id="6B4EhaKAL$$" role="356sEH">
+            <property role="TrG5h" value="&lt;exec_depend&gt;rclcpp&lt;/exec_depend&gt;" />
+          </node>
+          <node concept="2EixSi" id="6B4EhaKAL$A" role="2EinRH" />
+        </node>
+        <node concept="356sEK" id="6B4EhaKAL$B" role="383Ya9">
+          <node concept="356sEF" id="6B4EhaKAL$C" role="356sEH">
+            <property role="TrG5h" value="&lt;exec_depend&gt;std_msgs&lt;/exec_depend&gt;" />
+          </node>
+          <node concept="2EixSi" id="6B4EhaKAL$E" role="2EinRH" />
+        </node>
+        <node concept="356sEK" id="6B4EhaKAL$F" role="383Ya9">
+          <node concept="356sEF" id="6B4EhaKAL$G" role="356sEH">
+            <property role="TrG5h" value="&lt;exec_depend&gt;action_msgs&lt;/exec_depend&gt;" />
+          </node>
+          <node concept="2EixSi" id="6B4EhaKAL$I" role="2EinRH" />
+        </node>
+        <node concept="356sEK" id="6B4EhaKAL$J" role="383Ya9">
+          <node concept="356sEF" id="6B4EhaKAL$K" role="356sEH">
+            <property role="TrG5h" value="&lt;exec_depend&gt;rclcpp_action&lt;/exec_depend&gt;" />
+          </node>
+          <node concept="2EixSi" id="6B4EhaKAL$M" role="2EinRH" />
+        </node>
+        <node concept="356sEK" id="6B4EhaKAL$N" role="383Ya9">
+          <node concept="2EixSi" id="6B4EhaKAL$Q" role="2EinRH" />
+        </node>
+        <node concept="356sEK" id="6B4EhaKAL$R" role="383Ya9">
+          <node concept="356sEF" id="6B4EhaKAL$S" role="356sEH">
+            <property role="TrG5h" value="&lt;!-- Dependencias para USUARIOS del paquete --&gt;" />
+          </node>
+          <node concept="2EixSi" id="6B4EhaKAL$U" role="2EinRH" />
+        </node>
+        <node concept="356sEK" id="6B4EhaKAL$V" role="383Ya9">
+          <node concept="356sEF" id="6B4EhaKAL$W" role="356sEH">
             <property role="TrG5h" value="&lt;depend&gt;rclcpp&lt;/depend&gt;" />
           </node>
-          <node concept="2EixSi" id="7DurvPIonkZ" role="2EinRH" />
+          <node concept="2EixSi" id="6B4EhaKAL$Y" role="2EinRH" />
         </node>
-        <node concept="356sEK" id="7DurvPIonlF" role="383Ya9">
-          <node concept="356sEF" id="7DurvPIonlG" role="356sEH">
+        <node concept="356sEK" id="6B4EhaKAL$Z" role="383Ya9">
+          <node concept="356sEF" id="6B4EhaKAL_0" role="356sEH">
             <property role="TrG5h" value="&lt;depend&gt;std_msgs&lt;/depend&gt;" />
           </node>
-          <node concept="2EixSi" id="7DurvPIonlH" role="2EinRH" />
+          <node concept="2EixSi" id="6B4EhaKAL_2" role="2EinRH" />
         </node>
-        <node concept="356sEK" id="7DurvPIonms" role="383Ya9">
-          <node concept="2EixSi" id="7DurvPIonmu" role="2EinRH" />
-        </node>
-        <node concept="356sEK" id="xuK2hhGgAr" role="383Ya9">
-          <node concept="356sEF" id="xuK2hhGgAs" role="356sEH">
-            <property role="TrG5h" value="&lt;test_depend&gt;ament_lint_auto&lt;/test_depend&gt;" />
+        <node concept="356sEK" id="6B4EhaKAL_3" role="383Ya9">
+          <node concept="356sEF" id="6B4EhaKAL_4" role="356sEH">
+            <property role="TrG5h" value="&lt;depend&gt;action_msgs&lt;/depend&gt;" />
           </node>
-          <node concept="2EixSi" id="xuK2hhGgAu" role="2EinRH" />
+          <node concept="2EixSi" id="6B4EhaKAL_6" role="2EinRH" />
         </node>
-        <node concept="356sEK" id="xuK2hhGgAv" role="383Ya9">
-          <node concept="356sEF" id="xuK2hhGgAw" role="356sEH">
-            <property role="TrG5h" value="&lt;test_depend&gt;ament_lint_common&lt;/test_depend&gt;" />
+        <node concept="356sEK" id="6B4EhaKAL_7" role="383Ya9">
+          <node concept="356sEF" id="6B4EhaKAL_8" role="356sEH">
+            <property role="TrG5h" value="&lt;depend&gt;rosidl_default_runtime&lt;/depend&gt;" />
           </node>
-          <node concept="2EixSi" id="xuK2hhGgAy" role="2EinRH" />
+          <node concept="2EixSi" id="6B4EhaKAL_a" role="2EinRH" />
         </node>
-        <node concept="356sEK" id="xuK2hhGgAz" role="383Ya9">
-          <node concept="2EixSi" id="xuK2hhGgAA" role="2EinRH" />
+        <node concept="356sEK" id="6B4EhaKAL_b" role="383Ya9">
+          <node concept="2EixSi" id="6B4EhaKAL_e" role="2EinRH" />
         </node>
-        <node concept="356sEK" id="xuK2hhGgAB" role="383Ya9">
-          <node concept="356sEF" id="xuK2hhGgAC" role="356sEH">
+        <node concept="356sEK" id="6B4EhaKAL_f" role="383Ya9">
+          <node concept="356sEF" id="6B4EhaKAL_g" role="356sEH">
+            <property role="TrG5h" value="&lt;!-- Indicar que contiene interfaces personalizadas --&gt;" />
+          </node>
+          <node concept="2EixSi" id="6B4EhaKAL_i" role="2EinRH" />
+        </node>
+        <node concept="356sEK" id="6B4EhaKAL_j" role="383Ya9">
+          <node concept="356sEF" id="6B4EhaKAL_k" role="356sEH">
+            <property role="TrG5h" value="&lt;member_of_group&gt;rosidl_interface_packages&lt;/member_of_group&gt;" />
+          </node>
+          <node concept="2EixSi" id="6B4EhaKAL_m" role="2EinRH" />
+        </node>
+        <node concept="356sEK" id="6B4EhaKAL_n" role="383Ya9">
+          <node concept="2EixSi" id="6B4EhaKAL_q" role="2EinRH" />
+        </node>
+        <node concept="356sEK" id="6B4EhaKAL_r" role="383Ya9">
+          <node concept="356sEF" id="6B4EhaKAL_s" role="356sEH">
             <property role="TrG5h" value="&lt;export&gt;" />
           </node>
-          <node concept="2EixSi" id="xuK2hhGgAE" role="2EinRH" />
+          <node concept="2EixSi" id="6B4EhaKAL_u" role="2EinRH" />
         </node>
-        <node concept="356sEQ" id="xuK2hhGgAJ" role="383Ya9">
+        <node concept="356sEQ" id="6B4EhaKAL_z" role="383Ya9">
           <property role="333NGx" value="  " />
-          <node concept="356sEK" id="xuK2hhGgAF" role="383Ya9">
-            <node concept="356sEF" id="xuK2hhGgAG" role="356sEH">
+          <node concept="356sEK" id="6B4EhaKAL_v" role="383Ya9">
+            <node concept="356sEF" id="6B4EhaKAL_w" role="356sEH">
               <property role="TrG5h" value="&lt;build_type&gt;ament_cmake&lt;/build_type&gt;" />
             </node>
-            <node concept="2EixSi" id="xuK2hhGgAI" role="2EinRH" />
+            <node concept="2EixSi" id="6B4EhaKAL_y" role="2EinRH" />
           </node>
         </node>
-        <node concept="356sEK" id="xuK2hhGgAK" role="383Ya9">
-          <node concept="356sEF" id="xuK2hhGgAL" role="356sEH">
+        <node concept="356sEK" id="6B4EhaKAL_$" role="383Ya9">
+          <node concept="356sEF" id="6B4EhaKAL__" role="356sEH">
             <property role="TrG5h" value="&lt;/export&gt;" />
           </node>
-          <node concept="2EixSi" id="xuK2hhGgAN" role="2EinRH" />
+          <node concept="2EixSi" id="6B4EhaKAL_B" role="2EinRH" />
         </node>
       </node>
-      <node concept="356sEK" id="xuK2hhGgAO" role="383Ya9">
-        <node concept="356sEF" id="xuK2hhGgAP" role="356sEH">
+      <node concept="356sEK" id="6B4EhaKAL_C" role="383Ya9">
+        <node concept="356sEF" id="6B4EhaKAL_D" role="356sEH">
           <property role="TrG5h" value="&lt;/package&gt;" />
         </node>
-        <node concept="2EixSi" id="xuK2hhGgAR" role="2EinRH" />
+        <node concept="2EixSi" id="6B4EhaKAL_F" role="2EinRH" />
       </node>
     </node>
     <node concept="n94m4" id="xuK2hhGg_y" role="lGtFl">
@@ -4021,6 +4085,18 @@
         </node>
         <node concept="2EixSi" id="1Z4bsDQLOAa" role="2EinRH" />
       </node>
+      <node concept="356sEK" id="6B4EhaKzZrQ" role="383Ya9">
+        <node concept="356sEF" id="6B4EhaKzZrR" role="356sEH">
+          <property role="TrG5h" value="DEPENDENCIES std_msgs" />
+        </node>
+        <node concept="2EixSi" id="6B4EhaKzZrS" role="2EinRH" />
+      </node>
+      <node concept="356sEK" id="6B4EhaK$2gT" role="383Ya9">
+        <node concept="356sEF" id="6B4EhaK$2gU" role="356sEH">
+          <property role="TrG5h" value=")" />
+        </node>
+        <node concept="2EixSi" id="6B4EhaK$2gV" role="2EinRH" />
+      </node>
       <node concept="356sEK" id="1Z4bsDQI_rh" role="383Ya9">
         <node concept="2EixSi" id="1Z4bsDQI_rj" role="2EinRH" />
       </node>
@@ -4104,10 +4180,80 @@
               </node>
             </node>
           </node>
-          <node concept="356sEF" id="7DurvPIrF2v" role="356sEH">
-            <property role="TrG5h" value=" rclcpp std_msgs)" />
-          </node>
           <node concept="2EixSi" id="7DurvPIontj" role="2EinRH" />
+        </node>
+        <node concept="356sEK" id="6B4EhaK$8kC" role="383Ya9">
+          <node concept="356sEF" id="6B4EhaK$8kD" role="356sEH">
+            <property role="TrG5h" value="&quot;rclcpp&quot;" />
+          </node>
+          <node concept="2EixSi" id="6B4EhaK$8kE" role="2EinRH" />
+        </node>
+        <node concept="356sEK" id="6B4EhaK$8My" role="383Ya9">
+          <node concept="356sEF" id="6B4EhaK$8Mz" role="356sEH">
+            <property role="TrG5h" value="&quot;std_msgs&quot;" />
+          </node>
+          <node concept="2EixSi" id="6B4EhaK$8M$" role="2EinRH" />
+        </node>
+        <node concept="356sEK" id="6B4EhaK$9uE" role="383Ya9">
+          <node concept="356sEF" id="6B4EhaK$9uF" role="356sEH">
+            <property role="TrG5h" value="&quot;rosidl_default_runtime&quot;" />
+          </node>
+          <node concept="2EixSi" id="6B4EhaK$9uG" role="2EinRH" />
+        </node>
+        <node concept="356sEK" id="6B4EhaK$9WF" role="383Ya9">
+          <node concept="356sEF" id="6B4EhaK$9WG" role="356sEH">
+            <property role="TrG5h" value="&quot;rclcpp_action&quot;" />
+            <node concept="17Uvod" id="6B4EhaK$bbf" role="lGtFl">
+              <property role="2qtEX9" value="name" />
+              <property role="P4ACc" value="ceab5195-25ea-4f22-9b92-103b95ca8c0c/1169194658468/1169194664001" />
+              <node concept="3zFVjK" id="6B4EhaK$bbg" role="3zH0cK">
+                <node concept="3clFbS" id="6B4EhaK$bbh" role="2VODD2">
+                  <node concept="3clFbJ" id="6B4EhaK$Rf7" role="3cqZAp">
+                    <node concept="3clFbS" id="6B4EhaK$Rf9" role="3clFbx">
+                      <node concept="3cpWs6" id="6B4EhaK$TRe" role="3cqZAp">
+                        <node concept="Xl_RD" id="6B4EhaK$U50" role="3cqZAk">
+                          <property role="Xl_RC" value="rclcpp_action" />
+                        </node>
+                      </node>
+                    </node>
+                    <node concept="9aQIb" id="6B4EhaK$RfO" role="9aQIa">
+                      <node concept="3clFbS" id="6B4EhaK$RfP" role="9aQI4">
+                        <node concept="3cpWs6" id="6B4EhaK$SrP" role="3cqZAp">
+                          <node concept="10Nm6u" id="6B4EhaK$VKU" role="3cqZAk" />
+                        </node>
+                      </node>
+                    </node>
+                    <node concept="1Wc70l" id="6B4EhaK$Blg" role="3clFbw">
+                      <node concept="2OqwBi" id="6B4EhaK$IeH" role="3uHU7w">
+                        <node concept="2OqwBi" id="6B4EhaK$CJO" role="2Oq$k0">
+                          <node concept="30H73N" id="6B4EhaK$Ccq" role="2Oq$k0" />
+                          <node concept="32TBzR" id="6B4EhaK$FrI" role="2OqNvi" />
+                        </node>
+                        <node concept="liA8E" id="6B4EhaK$JZf" role="2OqNvi">
+                          <ref role="37wK5l" to="33ny:~List.contains(java.lang.Object)" resolve="contains" />
+                          <node concept="35c_gC" id="6B4EhaK$KZb" role="37wK5m">
+                            <ref role="35c_gD" to="9g35:5Yvlr8xnKnU" resolve="Action" />
+                          </node>
+                        </node>
+                      </node>
+                      <node concept="2OqwBi" id="6B4EhaK$sRn" role="3uHU7B">
+                        <node concept="2OqwBi" id="6B4EhaK$c$c" role="2Oq$k0">
+                          <node concept="30H73N" id="6B4EhaK$c5P" role="2Oq$k0" />
+                          <node concept="2yIwOk" id="6B4EhaK$s0H" role="2OqNvi" />
+                        </node>
+                        <node concept="3O6GUB" id="6B4EhaK$uun" role="2OqNvi">
+                          <node concept="chp4Y" id="6B4EhaK$v3w" role="3QVz_e">
+                            <ref role="cht4Q" to="9g35:24AZeepAEJi" resolve="Server" />
+                          </node>
+                        </node>
+                      </node>
+                    </node>
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+          <node concept="2EixSi" id="6B4EhaK$9WH" role="2EinRH" />
         </node>
         <node concept="356sEK" id="xuK2hhGymt" role="383Ya9">
           <node concept="2EixSi" id="xuK2hhGymw" role="2EinRH" />
@@ -4193,6 +4339,51 @@
       <node concept="356sEK" id="xuK2hhGynG" role="383Ya9">
         <node concept="2EixSi" id="xuK2hhGynJ" role="2EinRH" />
       </node>
+      <node concept="356sEK" id="6B4EhaK_JB1" role="383Ya9">
+        <node concept="356sEF" id="6B4EhaK_JB2" role="356sEH">
+          <property role="TrG5h" value="install(" />
+        </node>
+        <node concept="2EixSi" id="6B4EhaK_JB3" role="2EinRH" />
+      </node>
+      <node concept="356sEK" id="6B4EhaK_MSP" role="383Ya9">
+        <node concept="356sEF" id="6B4EhaK_MSQ" role="356sEH">
+          <property role="TrG5h" value="DIRECTORY" />
+        </node>
+        <node concept="2EixSi" id="6B4EhaK_MSR" role="2EinRH" />
+      </node>
+      <node concept="356sEK" id="6B4EhaK_Op9" role="383Ya9">
+        <node concept="356sEF" id="6B4EhaK_Opa" role="356sEH">
+          <property role="TrG5h" value="msg/" />
+        </node>
+        <node concept="2EixSi" id="6B4EhaK_Opb" role="2EinRH" />
+      </node>
+      <node concept="356sEK" id="6B4EhaK_RF3" role="383Ya9">
+        <node concept="356sEF" id="6B4EhaK_RF4" role="356sEH">
+          <property role="TrG5h" value="srv/" />
+        </node>
+        <node concept="2EixSi" id="6B4EhaK_RF5" role="2EinRH" />
+      </node>
+      <node concept="356sEK" id="6B4EhaK_UCW" role="383Ya9">
+        <node concept="356sEF" id="6B4EhaK_UCX" role="356sEH">
+          <property role="TrG5h" value="action/" />
+        </node>
+        <node concept="2EixSi" id="6B4EhaK_UCY" role="2EinRH" />
+      </node>
+      <node concept="356sEK" id="6B4EhaK_Wt0" role="383Ya9">
+        <node concept="356sEF" id="6B4EhaK_Wt1" role="356sEH">
+          <property role="TrG5h" value="DESTINATION share/${PROJECT_NAME}" />
+        </node>
+        <node concept="2EixSi" id="6B4EhaK_Wt2" role="2EinRH" />
+      </node>
+      <node concept="356sEK" id="6B4EhaK_ZJ3" role="383Ya9">
+        <node concept="356sEF" id="6B4EhaK_ZJ4" role="356sEH">
+          <property role="TrG5h" value=")" />
+        </node>
+        <node concept="2EixSi" id="6B4EhaK_ZJ5" role="2EinRH" />
+      </node>
+      <node concept="356sEK" id="6B4EhaKA319" role="383Ya9">
+        <node concept="2EixSi" id="6B4EhaKA31b" role="2EinRH" />
+      </node>
       <node concept="356sEK" id="xuK2hhGynK" role="383Ya9">
         <node concept="356sEF" id="xuK2hhGynL" role="356sEH">
           <property role="TrG5h" value="# Exportar dependencias" />
@@ -4201,12 +4392,42 @@
       </node>
       <node concept="356sEK" id="xuK2hhGynO" role="383Ya9">
         <node concept="356sEF" id="xuK2hhGynP" role="356sEH">
-          <property role="TrG5h" value="ament_export_dependencies(rclcpp std_msgs)" />
+          <property role="TrG5h" value="ament_export_dependencies( std_msgs)" />
         </node>
         <node concept="2EixSi" id="xuK2hhGynR" role="2EinRH" />
       </node>
+      <node concept="356sEK" id="6B4EhaKA4xJ" role="383Ya9">
+        <node concept="356sEF" id="6B4EhaKA4xK" role="356sEH">
+          <property role="TrG5h" value="&quot;rclcpp&quot;" />
+        </node>
+        <node concept="2EixSi" id="6B4EhaKA4xL" role="2EinRH" />
+      </node>
+      <node concept="356sEK" id="6B4EhaKA7NU" role="383Ya9">
+        <node concept="356sEF" id="6B4EhaKA7NV" role="356sEH">
+          <property role="TrG5h" value="&quot;rosidl_default_runtime&quot;" />
+        </node>
+        <node concept="2EixSi" id="6B4EhaKA7NW" role="2EinRH" />
+      </node>
+      <node concept="356sEK" id="6B4EhaKA9k_" role="383Ya9">
+        <node concept="356sEF" id="6B4EhaKA9kA" role="356sEH">
+          <property role="TrG5h" value="&quot;rclcpp_action&quot;" />
+        </node>
+        <node concept="2EixSi" id="6B4EhaKA9kB" role="2EinRH" />
+      </node>
+      <node concept="356sEK" id="6B4EhaKAaPj" role="383Ya9">
+        <node concept="356sEF" id="6B4EhaKAaPk" role="356sEH">
+          <property role="TrG5h" value="&quot;action_msgs&quot; " />
+        </node>
+        <node concept="2EixSi" id="6B4EhaKAaPl" role="2EinRH" />
+      </node>
       <node concept="356sEK" id="xuK2hhGynS" role="383Ya9">
+        <node concept="356sEF" id="6B4EhaKAe7B" role="356sEH">
+          <property role="TrG5h" value=")" />
+        </node>
         <node concept="2EixSi" id="xuK2hhGynV" role="2EinRH" />
+      </node>
+      <node concept="356sEK" id="6B4EhaKAe7D" role="383Ya9">
+        <node concept="2EixSi" id="6B4EhaKAe7F" role="2EinRH" />
       </node>
       <node concept="356sEK" id="xuK2hhGynW" role="383Ya9">
         <node concept="356sEF" id="xuK2hhGynX" role="356sEH">
