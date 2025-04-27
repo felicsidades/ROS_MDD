@@ -166,7 +166,6 @@ public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
     b.property("import", 0x769b7b9b565d8afbL).type(PrimitiveTypeId.BOOLEAN).origin("8546560624964766459").done();
     b.property("package", 0x62bb50d8231fb7ecL).type(PrimitiveTypeId.STRING).origin("7114368925594269676").done();
     b.property("message_type", 0x18dbf75c7f56da73L).type(MetaIdFactory.dataTypeId(0xf7db56d1b41e4c13L, 0x9756a014feb108beL, 0x18dbf75c7f56da76L)).origin("1791297253455354483").done();
-    b.property("interface_name", 0x18dbf75c7f5d906eL).type(PrimitiveTypeId.STRING).origin("1791297253455794286").done();
     return b.create();
   }
   private static ConceptDescriptor createDescriptorForINetworkElement() {

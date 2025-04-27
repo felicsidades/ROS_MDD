@@ -13,7 +13,7 @@
   <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1164991038168:jetbrains.mps.baseLanguage.structure.ThrowStatement" />
   <root>
     <file name="BehaviorAspectDescriptor.java">
-      <unit at="14,0,32,0" name="ROSML.behavior.BehaviorAspectDescriptor" />
+      <unit at="14,0,35,0" name="ROSML.behavior.BehaviorAspectDescriptor" />
     </file>
   </root>
   <root nodeRef="r:831cec7d-a566-4367-b1be-61e082dc8f78(ROSML.behavior)/6890320178452611138">
@@ -119,6 +119,78 @@
       <unit id="6890320178452611138" at="108,0,111,0" name="ROSML.behavior.Server__BehaviorDescriptor$PROPS" />
       <unit id="6890320178452611138" at="103,0,107,0" name="ROSML.behavior.Server__BehaviorDescriptor$LINKS" />
       <unit id="6890320178452611138" at="25,0,112,0" name="ROSML.behavior.Server__BehaviorDescriptor" />
+    </file>
+  </root>
+  <root nodeRef="r:831cec7d-a566-4367-b1be-61e082dc8f78(ROSML.behavior)/8546560624965275786">
+    <file name="IInterface__BehaviorDescriptor.java">
+      <node id="8546560624965275786" at="22,0,23,0" concept="7" trace="CONCEPT" />
+      <node id="8546560624965275786" at="25,0,26,0" concept="7" trace="BH_METHODS" />
+      <node id="8546560624965281576" at="28,77,29,197" concept="2" />
+      <node id="8546560624965275786" at="38,114,39,21" concept="2" />
+      <node id="8546560624965275786" at="43,114,44,49" concept="5" />
+      <node id="8546560624965275786" at="45,26,46,56" concept="10" />
+      <node id="8546560624965275786" at="49,14,50,58" concept="10" />
+      <node id="8546560624965275786" at="55,128,56,49" concept="5" />
+      <node id="8546560624965275786" at="57,26,58,56" concept="10" />
+      <node id="8546560624965275786" at="61,14,62,58" concept="10" />
+      <node id="8546560624965275786" at="68,48,69,22" concept="6" />
+      <node id="8546560624965275786" at="74,40,75,19" concept="6" />
+      <node id="8546560624965275786" at="79,0,80,0" concept="7" trace="import$N7ax" />
+      <node id="8546560624965275786" at="80,0,81,0" concept="7" trace="package$uL2X" />
+      <node id="8546560624965275786" at="81,0,82,0" concept="7" trace="name$MnvL" />
+      <node id="8546560624965275786" at="85,0,86,0" concept="7" trace="Project$hZ" />
+      <node id="8546560624965275786" at="34,0,36,0" concept="1" trace="IInterface__BehaviorDescriptor#()V" />
+      <node id="8546560624965275805" at="27,63,30,5" concept="3" />
+      <node id="8546560624965275786" at="44,49,47,5" concept="3" />
+      <node id="8546560624965275786" at="56,49,59,5" concept="3" />
+      <node id="8546560624965275786" at="37,0,41,0" concept="4" trace="initNode#(Lorg/jetbrains/mps/openapi/model/SNode;Ljetbrains/mps/core/aspects/behaviour/api/SConstructor;[Ljava/lang/Object;)V" />
+      <node id="8546560624965275786" at="47,5,51,5" concept="9" />
+      <node id="8546560624965275786" at="59,5,63,5" concept="9" />
+      <node id="8546560624965275786" at="27,0,32,0" concept="8" trace="___init___#(Lorg/jetbrains/mps/openapi/model/SNode;)V" />
+      <node id="8546560624965275786" at="66,0,71,0" concept="4" trace="getDeclaredMethods#()Ljava/util/List;" />
+      <node id="8546560624965275786" at="72,0,77,0" concept="4" trace="getConcept#()Lorg/jetbrains/mps/openapi/language/SAbstractConcept;" />
+      <node id="8546560624965275786" at="42,0,53,0" concept="4" trace="invokeSpecial0#(Lorg/jetbrains/mps/openapi/model/SNode;Ljetbrains/mps/core/aspects/behaviour/api/SMethod;[Ljava/lang/Object;)null" />
+      <node id="8546560624965275786" at="54,0,65,0" concept="4" trace="invokeSpecial0#(Lorg/jetbrains/mps/openapi/language/SAbstractConcept;Ljetbrains/mps/core/aspects/behaviour/api/SMethod;[Ljava/lang/Object;)null" />
+      <scope id="8546560624965275786" at="34,48,34,48" />
+      <scope id="8546560624965275807" at="28,77,29,197" />
+      <scope id="8546560624965275786" at="38,114,39,21" />
+      <scope id="8546560624965275786" at="45,26,46,56" />
+      <scope id="8546560624965275786" at="49,14,50,58" />
+      <scope id="8546560624965275786" at="57,26,58,56" />
+      <scope id="8546560624965275786" at="61,14,62,58" />
+      <scope id="8546560624965275786" at="68,48,69,22" />
+      <scope id="8546560624965275786" at="74,40,75,19" />
+      <scope id="8546560624965275786" at="34,0,36,0" />
+      <scope id="8546560624965275786" at="27,63,30,5" />
+      <scope id="8546560624965275786" at="37,0,41,0">
+        <var name="constructor" id="8546560624965275786" />
+        <var name="node" id="8546560624965275786" />
+        <var name="parameters" id="8546560624965275786" />
+      </scope>
+      <scope id="8546560624965275786" at="27,0,32,0">
+        <var name="__thisNode__" id="8546560624965275786" />
+      </scope>
+      <scope id="8546560624965275786" at="66,0,71,0" />
+      <scope id="8546560624965275786" at="72,0,77,0" />
+      <scope id="8546560624965275786" at="43,114,51,5">
+        <var name="methodIndex" id="8546560624965275786" />
+      </scope>
+      <scope id="8546560624965275786" at="55,128,63,5">
+        <var name="methodIndex" id="8546560624965275786" />
+      </scope>
+      <scope id="8546560624965275786" at="42,0,53,0">
+        <var name="method" id="8546560624965275786" />
+        <var name="node" id="8546560624965275786" />
+        <var name="parameters" id="8546560624965275786" />
+      </scope>
+      <scope id="8546560624965275786" at="54,0,65,0">
+        <var name="concept" id="8546560624965275786" />
+        <var name="method" id="8546560624965275786" />
+        <var name="parameters" id="8546560624965275786" />
+      </scope>
+      <unit id="8546560624965275786" at="84,0,87,0" name="ROSML.behavior.IInterface__BehaviorDescriptor$CONCEPTS" />
+      <unit id="8546560624965275786" at="78,0,83,0" name="ROSML.behavior.IInterface__BehaviorDescriptor$PROPS" />
+      <unit id="8546560624965275786" at="21,0,88,0" name="ROSML.behavior.IInterface__BehaviorDescriptor" />
     </file>
   </root>
 </debug-info>

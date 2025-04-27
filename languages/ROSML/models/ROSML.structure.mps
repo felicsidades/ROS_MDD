@@ -342,12 +342,7 @@
       <property role="TrG5h" value="message_type" />
       <ref role="AX2Wp" node="1zrXPLZlHDQ" resolve="EInterfaces" />
     </node>
-    <node concept="1TJgyi" id="1zrXPLZnp1I" role="1TKVEl">
-      <property role="IQ2nx" value="1791297253455794286" />
-      <property role="TrG5h" value="interface_name" />
-      <ref role="AX2Wp" to="tpck:fKAOsGN" resolve="string" />
-    </node>
-    <node concept="PrWs8" id="1ZeHXDNKpB9" role="PrDN$">
+    <node concept="PrWs8" id="7_GWxP4ryU" role="PrDN$">
       <ref role="PrY4T" to="tpck:h0TrEE$" resolve="INamedConcept" />
     </node>
   </node>
