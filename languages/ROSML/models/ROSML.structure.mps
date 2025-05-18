@@ -87,6 +87,13 @@
       <property role="20lbJX" value="fLJekj5/_0__n" />
       <ref role="20lvS9" node="5aI8FgNpj8p" resolve="PortConnection" />
     </node>
+    <node concept="1TJgyj" id="2gd5S_iHSj" role="1TKVEi">
+      <property role="IQ2ns" value="40589975603568147" />
+      <property role="20lmBu" value="fLJjDmT/aggregation" />
+      <property role="20lbJX" value="fLJekj5/_0__n" />
+      <property role="20kJfa" value="package_imports" />
+      <ref role="20lvS9" node="2gd5S_hLln" resolve="Dependency" />
+    </node>
     <node concept="PrWs8" id="3J18Qb3PaY5" role="PzmwI">
       <ref role="PrY4T" to="tpck:h0TrEE$" resolve="INamedConcept" />
     </node>
@@ -123,6 +130,13 @@
       <property role="20kJfa" value="service_requests" />
       <property role="20lbJX" value="fLJekj5/_0__n" />
       <ref role="20lvS9" node="5aI8FgNpj8p" resolve="PortConnection" />
+    </node>
+    <node concept="1TJgyj" id="2gd5S_hLlE" role="1TKVEi">
+      <property role="IQ2ns" value="40589975603320170" />
+      <property role="20lmBu" value="fLJjDmT/aggregation" />
+      <property role="20lbJX" value="fLJekj5/_0__n" />
+      <property role="20kJfa" value="package_dependencies" />
+      <ref role="20lvS9" node="2gd5S_hLln" resolve="Dependency" />
     </node>
     <node concept="PrWs8" id="4nhXS9XfUVm" role="PzmwI">
       <ref role="PrY4T" node="4nhXS9XfUVh" resolve="INetworkElement" />
@@ -202,6 +216,13 @@
     <property role="TrG5h" value="INetworkElement" />
     <node concept="PrWs8" id="4nhXS9XfUVk" role="PrDN$">
       <ref role="PrY4T" to="tpck:h0TrEE$" resolve="INamedConcept" />
+    </node>
+    <node concept="1TJgyj" id="2gd5S_hLlq" role="1TKVEi">
+      <property role="IQ2ns" value="40589975603320154" />
+      <property role="20lmBu" value="fLJjDmT/aggregation" />
+      <property role="20kJfa" value="dependencies" />
+      <property role="20lbJX" value="fLJekj5/_0__n" />
+      <ref role="20lvS9" node="2gd5S_hLln" resolve="Dependency" />
     </node>
   </node>
   <node concept="1TIwiD" id="5Yvlr8xmTrS">
@@ -412,6 +433,16 @@
       <property role="20kJfa" value="NativeDatatype" />
       <property role="20lbJX" value="fLJekj4/_1" />
       <ref role="20lvS9" node="24AZeepAE_5" resolve="DataInterface" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="2gd5S_hLln">
+    <property role="EcuMT" value="40589975603320151" />
+    <property role="TrG5h" value="Dependency" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" />
+    <node concept="1TJgyi" id="2gd5S_hLlt" role="1TKVEl">
+      <property role="IQ2nx" value="40589975603320157" />
+      <property role="TrG5h" value="package" />
+      <ref role="AX2Wp" to="tpck:fKAOsGN" resolve="string" />
     </node>
   </node>
 </model>

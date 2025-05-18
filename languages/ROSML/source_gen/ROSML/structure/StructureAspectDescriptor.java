@@ -20,6 +20,7 @@ public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
   /*package*/ final ConceptDescriptor myConceptActionInterface = createDescriptorForActionInterface();
   /*package*/ final ConceptDescriptor myConceptCustomInterface = createDescriptorForCustomInterface();
   /*package*/ final ConceptDescriptor myConceptDataInterface = createDescriptorForDataInterface();
+  /*package*/ final ConceptDescriptor myConceptDependency = createDescriptorForDependency();
   /*package*/ final ConceptDescriptor myConceptDirectConnection = createDescriptorForDirectConnection();
   /*package*/ final ConceptDescriptor myConceptIConection = createDescriptorForIConection();
   /*package*/ final ConceptDescriptor myConceptIInterface = createDescriptorForIInterface();
@@ -48,7 +49,7 @@ public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
 
   @Override
   public Collection<ConceptDescriptor> getDescriptors() {
-    return Arrays.asList(myConceptAction, myConceptActionInterface, myConceptCustomInterface, myConceptDataInterface, myConceptDirectConnection, myConceptIConection, myConceptIInterface, myConceptINetworkElement, myConceptIPort, myConceptNativeInterface, myConceptNode, myConceptPortConnection, myConceptProject, myConceptServer, myConceptService, myConceptServiceInterface, myConceptTopic);
+    return Arrays.asList(myConceptAction, myConceptActionInterface, myConceptCustomInterface, myConceptDataInterface, myConceptDependency, myConceptDirectConnection, myConceptIConection, myConceptIInterface, myConceptINetworkElement, myConceptIPort, myConceptNativeInterface, myConceptNode, myConceptPortConnection, myConceptProject, myConceptServer, myConceptService, myConceptServiceInterface, myConceptTopic);
   }
 
   @Override
@@ -63,6 +64,8 @@ public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
         return myConceptCustomInterface;
       case LanguageConceptSwitch.DataInterface:
         return myConceptDataInterface;
+      case LanguageConceptSwitch.Dependency:
+        return myConceptDependency;
       case LanguageConceptSwitch.DirectConnection:
         return myConceptDirectConnection;
       case LanguageConceptSwitch.IConection:
@@ -140,6 +143,14 @@ public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
     b.property("datatype", 0x58aedddd170cb483L).type(PrimitiveTypeId.STRING).origin("6390288862929532035").done();
     return b.create();
   }
+  private static ConceptDescriptor createDescriptorForDependency() {
+    ConceptDescriptorBuilder2 b = new ConceptDescriptorBuilder2("ROSML", "Dependency", 0xf7db56d1b41e4c13L, 0x9756a014feb108beL, 0x90345e25471557L);
+    b.class_(false, false, false);
+    b.origin("r:d670596f-f26c-43d2-8e17-a7b3e68888bf(ROSML.structure)/40589975603320151");
+    b.version(3);
+    b.property("package", 0x90345e2547155dL).type(PrimitiveTypeId.STRING).origin("40589975603320157").done();
+    return b.create();
+  }
   private static ConceptDescriptor createDescriptorForDirectConnection() {
     ConceptDescriptorBuilder2 b = new ConceptDescriptorBuilder2("ROSML", "DirectConnection", 0xf7db56d1b41e4c13L, 0x9756a014feb108beL, 0x5d8e854cb6b9f03L);
     b.class_(false, false, false);
@@ -174,6 +185,7 @@ public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
     b.parent(0xceab519525ea4f22L, 0x9b92103b95ca8c0cL, 0x110396eaaa4L);
     b.origin("r:d670596f-f26c-43d2-8e17-a7b3e68888bf(ROSML.structure)/5031074398568689361");
     b.version(3);
+    b.aggregate("dependencies", 0x90345e2547155aL).target(0xf7db56d1b41e4c13L, 0x9756a014feb108beL, 0x90345e25471557L).optional(true).ordered(true).multiple(true).origin("40589975603320154").done();
     return b.create();
   }
   private static ConceptDescriptor createDescriptorForIPort() {
@@ -204,6 +216,7 @@ public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
     b.aggregate("subscriptions", 0x5d8e854cb6ba44dL).target(0xf7db56d1b41e4c13L, 0x9756a014feb108beL, 0x5d8e854cb6b9f03L).optional(true).ordered(true).multiple(true).origin("421342016046867533").done();
     b.aggregate("action_requests", 0x573384c7f1e1d928L).target(0xf7db56d1b41e4c13L, 0x9756a014feb108beL, 0x52ae22b433653219L).optional(true).ordered(true).multiple(true).origin("6283511899403442472").done();
     b.aggregate("service_requests", 0x573384c7f1e1d92cL).target(0xf7db56d1b41e4c13L, 0x9756a014feb108beL, 0x52ae22b433653219L).optional(true).ordered(true).multiple(true).origin("6283511899403442476").done();
+    b.aggregate("package_dependencies", 0x90345e2547156aL).target(0xf7db56d1b41e4c13L, 0x9756a014feb108beL, 0x90345e25471557L).optional(true).ordered(true).multiple(true).origin("40589975603320170").done();
     return b.create();
   }
   private static ConceptDescriptor createDescriptorForPortConnection() {
@@ -228,6 +241,7 @@ public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
     b.aggregate("topics", 0x7a5e6dfd6e6b8c53L).target(0xf7db56d1b41e4c13L, 0x9756a014feb108beL, 0x5d8e854cb6b6f01L).optional(true).ordered(true).multiple(true).origin("8817606055684705363").done();
     b.aggregate("direct_connections", 0x45d1f7827d4196edL).target(0xf7db56d1b41e4c13L, 0x9756a014feb108beL, 0x5d8e854cb6b9f03L).optional(true).ordered(true).multiple(true).origin("5031074398568814317").done();
     b.aggregate("port_connections", 0x1fc42dca76d15d27L).target(0xf7db56d1b41e4c13L, 0x9756a014feb108beL, 0x52ae22b433653219L).optional(true).ordered(true).multiple(true).origin("2289004858211130663").done();
+    b.aggregate("package_imports", 0x90345e254ade13L).target(0xf7db56d1b41e4c13L, 0x9756a014feb108beL, 0x90345e25471557L).optional(true).ordered(true).multiple(true).origin("40589975603568147").done();
     return b.create();
   }
   private static ConceptDescriptor createDescriptorForServer() {

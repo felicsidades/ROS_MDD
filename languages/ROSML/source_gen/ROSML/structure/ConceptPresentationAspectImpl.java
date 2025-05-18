@@ -13,6 +13,7 @@ public class ConceptPresentationAspectImpl extends ConceptPresentationAspectBase
   private ConceptPresentation props_ActionInterface;
   private ConceptPresentation props_CustomInterface;
   private ConceptPresentation props_DataInterface;
+  private ConceptPresentation props_Dependency;
   private ConceptPresentation props_DirectConnection;
   private ConceptPresentation props_IConection;
   private ConceptPresentation props_IInterface;
@@ -60,6 +61,13 @@ public class ConceptPresentationAspectImpl extends ConceptPresentationAspectBase
           props_DataInterface = cpb.create();
         }
         return props_DataInterface;
+      case LanguageConceptSwitch.Dependency:
+        if (props_Dependency == null) {
+          ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
+          cpb.rawPresentation("Dependency");
+          props_Dependency = cpb.create();
+        }
+        return props_Dependency;
       case LanguageConceptSwitch.DirectConnection:
         if (props_DirectConnection == null) {
           ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
