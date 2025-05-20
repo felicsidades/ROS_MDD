@@ -22,7 +22,7 @@
   <property name="mps.idea.platform.build.number" value="${import.ROSMDD.mps.idea.platform.build.number}" />
   <property name="mps.mps.build.counter" value="${import.ROSMDD.mps.mps.build.counter}" />
   
-  <target name="assemble" depends="classes, declare-mps-tasks, fetchDependencies">
+  <target name="assemble" depends="fetchDependencies">
     <mkdir dir="${build.layout}" />
     <mkdir dir="${build.tmp}/default/ROSMDD-_dl__lbrace_build.number_rbrace_.tar.gz" />
     <mkdir dir="${build.tmp}/default/ROSMDD-_dl__lbrace_build.number_rbrace_.tar.gz/bin" />
@@ -226,20 +226,4 @@
     <delete dir="${build.tmp}" />
     <delete dir="${build.layout}" />
   </target>
-  
-  <target name="compileJava" />
-  
-  <target name="processResources" />
-  
-  <target name="classes" depends="compileJava, processResources" />
-  
-  <target name="test" depends="classes" />
-  
-  <target name="check" depends="test" />
-  
-  <target name="generate" depends="declare-mps-tasks" />
-  
-  <target name="declare-mps-tasks" />
-  
-  <target name="makeDependents" />
 </project>
