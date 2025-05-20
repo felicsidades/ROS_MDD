@@ -6,7 +6,6 @@
   <property name="mps_home" location="${basedir}/../../../../Program Files/JetBrains/MPS 2023.2/" />
   <property name="version" value="1.0" />
   <property name="artifacts.ROSMDD" location="${build.dir}/artifacts/ROSMDD" />
-  <property name="artifacts.de.itemis.mps.extensions" location="${mps_home}/plugins" />
   <property file="${artifacts.ROSMDD}/build.properties" prefix="import.ROSMDD" />
   <property name="ROSMDD.date" value="${import.ROSMDD.ROSMDD.date}" />
   <property name="ROSMDD.build.number" value="${import.ROSMDD.ROSMDD.build.number}" />
@@ -28,20 +27,20 @@
     <mkdir dir="${build.tmp}/default/ROSMDD-_dl__lbrace_build.number_rbrace_.tar.gz" />
     <mkdir dir="${build.tmp}/default/ROSMDD-_dl__lbrace_build.number_rbrace_.tar.gz/bin" />
     <copy todir="${build.tmp}/default/ROSMDD-_dl__lbrace_build.number_rbrace_.tar.gz/bin">
-      <fileset file="${basedir}/solutions/ROSMDD.build/source_gen/ROSMDD/build/rosmdd.vmoptions" />
+      <fileset file="${basedir}/solutions/ROSMDD.build0/source_gen/ROSMDD/build/rosmdd.vmoptions" />
       <filterchain>
         <fixcrlf eol="lf" eof="remove" />
       </filterchain>
     </copy>
     <copy todir="${build.tmp}/default/ROSMDD-_dl__lbrace_build.number_rbrace_.tar.gz/bin">
-      <fileset file="${basedir}/solutions/ROSMDD.build/source_gen/ROSMDD/build/rosmdd64.vmoptions" />
+      <fileset file="${basedir}/solutions/ROSMDD.build0/source_gen/ROSMDD/build/rosmdd64.vmoptions" />
       <filterchain>
         <fixcrlf eol="lf" eof="remove" />
       </filterchain>
     </copy>
     <mkdir dir="${build.tmp}/default/ROSMDD-_dl__lbrace_build.number_rbrace_.tar.gz_f755" />
     <copy todir="${build.tmp}/default/ROSMDD-_dl__lbrace_build.number_rbrace_.tar.gz_f755">
-      <fileset file="${basedir}/solutions/ROSMDD.build/source_gen/ROSMDD/build/rosmdd.sh" />
+      <fileset file="${basedir}/solutions/ROSMDD.build0/source_gen/ROSMDD/build/rosmdd.sh" />
       <filterchain>
         <fixcrlf eol="lf" eof="remove" />
       </filterchain>
@@ -57,14 +56,14 @@
     <mkdir dir="${build.tmp}/default/ROSMDD-_dl__lbrace_build.number_rbrace_.win.zip" />
     <mkdir dir="${build.tmp}/default/ROSMDD-_dl__lbrace_build.number_rbrace_.win.zip/bin" />
     <copy todir="${build.tmp}/default/ROSMDD-_dl__lbrace_build.number_rbrace_.win.zip/bin">
-      <fileset file="${basedir}/solutions/ROSMDD.build/source_gen/ROSMDD/build/rosmdd.vmoptions" />
+      <fileset file="${basedir}/solutions/ROSMDD.build0/source_gen/ROSMDD/build/rosmdd.vmoptions" />
       <filterchain>
         <fixcrlf eol="crlf" />
       </filterchain>
       <globmapper from="*" to="rosmdd.exe.vmoptions" />
     </copy>
     <copy todir="${build.tmp}/default/ROSMDD-_dl__lbrace_build.number_rbrace_.win.zip/bin">
-      <fileset file="${basedir}/solutions/ROSMDD.build/source_gen/ROSMDD/build/rosmdd64.vmoptions" />
+      <fileset file="${basedir}/solutions/ROSMDD.build0/source_gen/ROSMDD/build/rosmdd64.vmoptions" />
       <filterchain>
         <fixcrlf eol="crlf" />
       </filterchain>
@@ -72,7 +71,7 @@
     </copy>
     <mkdir dir="${build.tmp}/default/ROSMDD-_dl__lbrace_build.number_rbrace_.win.zip_f755" />
     <copy todir="${build.tmp}/default/ROSMDD-_dl__lbrace_build.number_rbrace_.win.zip_f755">
-      <fileset file="${basedir}/solutions/ROSMDD.build/source_gen/ROSMDD/build/rosmdd.bat" />
+      <fileset file="${basedir}/solutions/ROSMDD.build0/source_gen/ROSMDD/build/rosmdd.bat" />
       <filterchain>
         <fixcrlf eol="crlf" />
       </filterchain>
@@ -105,7 +104,7 @@
       <globmapper from="*" to="rosmdd" />
     </copy>
     <copy todir="${build.tmp}/default/ROSMDD-_dl__lbrace_build.number_rbrace_.macos.zip/ROSMDD ${version}.app/Contents">
-      <fileset file="${basedir}/solutions/ROSMDD.build/source_gen/ROSMDD/build/Info.plist.xml" />
+      <fileset file="${basedir}/solutions/ROSMDD.build0/source_gen/ROSMDD/build/Info.plist.xml" />
       <filterchain>
         <tokenfilter>
           <replaceregex pattern="\$version\$" replace="${version}" flags="" />
@@ -129,7 +128,7 @@
       </filterchain>
     </copy>
     <copy todir="${build.tmp}/default/ROSMDD-_dl__lbrace_build.number_rbrace_.macos.zip/ROSMDD ${version}.app/Contents/bin">
-      <fileset file="${basedir}/solutions/ROSMDD.build/source_gen/ROSMDD/build/rosmdd64.vmoptions" />
+      <fileset file="${basedir}/solutions/ROSMDD.build0/source_gen/ROSMDD/build/rosmdd64.vmoptions" />
       <filterchain>
         <fixcrlf eol="lf" eof="remove" />
       </filterchain>
@@ -163,7 +162,7 @@
       <globmapper from="*" to="rosmdd" />
     </copy>
     <copy todir="${build.tmp}/default/ROSMDD-_dl__lbrace_build.number_rbrace_-macos-aarch64.zip/ROSMDD ${version}.app/Contents">
-      <fileset file="${basedir}/solutions/ROSMDD.build/source_gen/ROSMDD/build/Info.plist.xml" />
+      <fileset file="${basedir}/solutions/ROSMDD.build0/source_gen/ROSMDD/build/Info.plist.xml" />
       <filterchain>
         <tokenfilter>
           <replaceregex pattern="\$version\$" replace="${version}" flags="" />
@@ -187,7 +186,7 @@
       </filterchain>
     </copy>
     <copy todir="${build.tmp}/default/ROSMDD-_dl__lbrace_build.number_rbrace_-macos-aarch64.zip/ROSMDD ${version}.app/Contents/bin">
-      <fileset file="${basedir}/solutions/ROSMDD.build/source_gen/ROSMDD/build/rosmdd64.vmoptions" />
+      <fileset file="${basedir}/solutions/ROSMDD.build0/source_gen/ROSMDD/build/rosmdd64.vmoptions" />
       <filterchain>
         <fixcrlf eol="lf" eof="remove" />
       </filterchain>

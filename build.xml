@@ -324,6 +324,42 @@
       <zipfileset dir="${build.tmp}/customProcessors/copyModels/languages-ROSML-models" prefix="module/models" />
       <zipfileset dir="${build.tmp}/customProcessors/copyModels/languages-ROSML-generator-templates" prefix="module/generator/templates" />
     </jar>
+    <mkdir dir="${build.tmp}/default/ROSML.sandbox.jar" />
+    <mkdir dir="${build.tmp}/default/ROSML.sandbox.jar/META-INF" />
+    <echoxml file="${build.tmp}/default/ROSML.sandbox.jar/META-INF/module.xml">
+      <module namespace="ROSML.sandbox" type="solution" uuid="fd7a1f7d-daa3-4dff-9331-6559879bfa7b">
+        <dependencies>
+          <module ref="990507d3-3527-4c54-bfe9-0ca3c9c6247a(com.dslfoundry.plaintextgen)" kind="cl" />
+          <module ref="fa13cc63-c476-4d46-9c96-d53670abe7bc(de.itemis.mps.editor.diagram)" kind="cl" />
+          <module ref="f1fb7b1c-ce0d-423c-9369-4a661d600029(de.itemis.mps.extensions.build)" kind="cl" />
+          <module ref="422c2909-59d6-41a9-b318-40e6256b250f(jetbrains.mps.ide.build)" kind="cl" />
+        </dependencies>
+        <uses>
+          <language id="l:f7db56d1-b41e-4c13-9756-a014feb108be:ROSML" />
+          <language id="l:798100da-4f0a-421a-b991-71f8c50ce5d2:jetbrains.mps.build" />
+          <language id="l:0cf935df-4699-4e9c-a132-fa109541cba3:jetbrains.mps.build.mps" />
+          <language id="l:d5033cee-f632-44b6-b308-89d4fbde34ff:jetbrains.mps.build.startup" />
+        </uses>
+        <sources jar="ROSML.sandbox-src.jar" descriptor="ROSML.sandbox.msd" />
+      </module>
+    </echoxml>
+    <jar destfile="${build.layout}/plugins/ROSMDD/languages/ROSMDD/ROSML.sandbox.jar" duplicate="preserve">
+      <fileset dir="${basedir}/languages/ROSML.sandbox/source_gen" includes="**/trace.info, **/exports, **/*.mps, **/checkpoints" />
+      <fileset dir="${build.tmp}/default/ROSML.sandbox.jar" />
+    </jar>
+    <copyModels todir="${build.tmp}/customProcessors/copyModels/languages-ROSML.sandbox-models">
+      <fileset dir="${basedir}/languages/ROSML.sandbox/models" includes="**/*.mps, **/*.mpsr, **/.model" />
+    </copyModels>
+    <jar destfile="${build.layout}/plugins/ROSMDD/languages/ROSMDD/ROSML.sandbox-src.jar" duplicate="preserve">
+      <fileset dir="${basedir}/languages/ROSML.sandbox/source_gen">
+        <exclude name="**/trace.info" />
+        <exclude name="**/exports" />
+        <exclude name="**/checkpoints" />
+        <exclude name="**/*.mps" />
+      </fileset>
+      <zipfileset file="${basedir}/languages/ROSML.sandbox/ROSML.sandbox.msd" prefix="module" />
+      <zipfileset dir="${build.tmp}/customProcessors/copyModels/languages-ROSML.sandbox-models" prefix="module/models" />
+    </jar>
     <echo file="${build.layout}/build.number">build.number=${build.number}${line.separator}date=${date}${line.separator}version=1.0</echo>
     <echo file="${build.layout}/build.properties">ROSMDD.date=${date}${line.separator}ROSMDD.build.number=${build.number}${line.separator}mpsBootstrapCore.version.major=${mpsBootstrapCore.version.major}${line.separator}mpsBootstrapCore.version.minor=${mpsBootstrapCore.version.minor}${line.separator}mpsBootstrapCore.version.bugfixNr=${mpsBootstrapCore.version.bugfixNr}${line.separator}mpsBootstrapCore.version.eap=${mpsBootstrapCore.version.eap}${line.separator}mpsBootstrapCore.version=${mpsBootstrapCore.version}${line.separator}de.itemis.mps.extensions.versionNumber=${de.itemis.mps.extensions.versionNumber}${line.separator}mps.build.number=${mps.build.number}${line.separator}mps.date=${mps.date}${line.separator}mps.build.vcs.number=${mps.build.vcs.number}${line.separator}mps.teamcity.buildConfName=${mps.teamcity.buildConfName}${line.separator}mps.idea.platform.build.number=${mps.idea.platform.build.number}${line.separator}mps.mps.build.counter=${mps.mps.build.counter}</echo>
   </target>
@@ -358,6 +394,7 @@
       <plugin path="${artifacts.de.itemis.mps.extensions}/de.itemis.mps.celllayout" />
       <plugin path="${artifacts.de.itemis.mps.extensions}/de.itemis.mps.editor.diagram" />
       <plugin path="${artifacts.de.itemis.mps.extensions}/de.itemis.mps.editor.widgets" />
+      <plugin path="${artifacts.de.itemis.mps.extensions}/de.itemis.mps.extensions.build" />
       <plugin path="${artifacts.de.itemis.mps.extensions}/de.q60.mps.collections.libs" />
       <plugin path="${artifacts.de.itemis.mps.extensions}/de.slisson.mps.conditionalEditor" />
       <plugin path="${artifacts.de.itemis.mps.extensions}/de.slisson.mps.hacks" />
@@ -487,12 +524,17 @@
       <library file="${artifacts.mpsStandalone}/languages/tools/jetbrains.mps.tool.common.jar" />
       <library file="${artifacts.mpsStandalone}/languages/util/jetbrains.mps.java.stub.jar" />
       <library file="${artifacts.mpsStandalone}/languages/util/jetbrains.mps.kernel.jar" />
+      <library file="${artifacts.mpsStandalone}/languages/util/jetbrains.mps.lang.makeup.jar" />
       <library file="${artifacts.mpsStandalone}/languages/util/jetbrains.mps.persistence.jar" />
       <library file="${artifacts.mpsStandalone}/languages/util/jetbrains.mps.project.jar" />
       <library file="${artifacts.mpsStandalone}/languages/util/jetbrains.mps.refactoring.jar" />
       <library file="${artifacts.mpsStandalone}/languages/util/jetbrains.mps.runtime.jar" />
+      <library file="${artifacts.mpsStandalone}/languages/xml/jetbrains.mps.core.xml.jar" />
       <chunk>
         <module file="${basedir}/languages/ROSML/ROSML.mpl" />
+      </chunk>
+      <chunk>
+        <module file="${basedir}/languages/ROSML.sandbox/ROSML.sandbox.msd" />
       </chunk>
       <jvmargs>
         <arg value="-ea" />
@@ -638,6 +680,7 @@
   <target name="cleanSources">
     <delete dir="${basedir}/languages/ROSML/source_gen" />
     <delete dir="${basedir}/languages/ROSML/generator/source_gen" />
+    <delete dir="${basedir}/languages/ROSML.sandbox/source_gen" />
   </target>
   
   <target name="collect-tips-mps-tips">
