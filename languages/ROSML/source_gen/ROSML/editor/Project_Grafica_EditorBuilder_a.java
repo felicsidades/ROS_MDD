@@ -13,6 +13,13 @@ import de.itemis.mps.editor.diagram.runtime.EditorUtil;
 import de.itemis.mps.editor.diagram.runtime.jgraph.DiagramCreationContext;
 import de.itemis.mps.editor.diagram.runtime.DiagramContext;
 import de.itemis.mps.editor.diagram.runtime.ContextVariables;
+import de.itemis.mps.editor.diagram.runtime.model.DiagramModel;
+import de.itemis.mps.editor.diagram.runtime.jgraph.ElkLayouter;
+import de.itemis.mps.editor.diagram.runtime.jgraph.LayeredLayouter;
+import org.eclipse.elk.core.options.Direction;
+import jetbrains.mps.baseLanguage.closures.runtime._FunctionTypes;
+import jetbrains.mps.openapi.editor.style.Style;
+import jetbrains.mps.editor.runtime.style.StyleImpl;
 import de.itemis.mps.editor.diagram.runtime.model.IDiagramAccessor;
 import de.itemis.mps.editor.diagram.runtime.model.AbstractDiagramAccessor;
 import java.util.List;
@@ -30,14 +37,22 @@ import jetbrains.mps.lang.smodel.generator.smodelAdapter.SConceptOperations;
 import jetbrains.mps.smodel.adapter.structure.MetaAdapterFactory;
 import jetbrains.mps.lang.smodel.generator.smodelAdapter.SPropertyOperations;
 import ROSML.behavior.Server__BehaviorDescriptor;
-import de.itemis.mps.editor.diagram.runtime.model.DiagramModel;
-import de.itemis.mps.editor.diagram.runtime.jgraph.ElkLayouter;
+import com.mxgraph.swing.mxGraphComponent;
+import java.awt.Color;
+import de.itemis.mps.editor.diagram.runtime.jgraph.MyGraphComponent;
 import de.itemis.mps.editor.diagram.runtime.model.IPaletteEntryProvider;
 import de.itemis.mps.editor.diagram.runtime.model.CompositePaletteEntryProvider;
 import de.itemis.mps.editor.diagram.runtime.model.SubstituteInfoPaletteEntryProvider;
 import de.itemis.mps.editor.diagram.runtime.substitute.SubstituteInfoFactory;
 import de.itemis.mps.editor.diagram.runtime.jgraph.SubDiagramECell;
 import de.itemis.mps.editor.diagram.runtime.jgraph.RootDiagramECell;
+import javax.swing.JButton;
+import java.awt.event.ActionListener;
+import java.awt.event.ActionEvent;
+import jetbrains.mps.project.Project;
+import jetbrains.mps.ide.project.ProjectHelper;
+import de.itemis.mps.editor.diagram.runtime.jgraph.DiagramActionsUtil;
+import jetbrains.mps.nodeEditor.cells.EditorCell_Component;
 import de.itemis.mps.editor.diagram.runtime.jgraph.RootDCell;
 import org.jetbrains.mps.openapi.language.SContainmentLink;
 import org.jetbrains.mps.openapi.language.SReferenceLink;
@@ -65,12 +80,23 @@ import org.jetbrains.mps.openapi.language.SProperty;
 
   private EditorCell createDiagram_0(final EditorContext editorContext, final SNode node) {
     final Wrappers._T<BaseDiagramECell> editorCell = new Wrappers._T<BaseDiagramECell>(null);
+    final Wrappers._T<EditorCell> alternativeCell = new Wrappers._T<EditorCell>(null);
 
     EditorUtil.noCaching(editorContext, () -> {
       DiagramCreationContext.createDiagram(() -> {
         DiagramContext.withContext(node, () -> editorCell.value, () -> {
           ContextVariables.withValue("thisNode", node, () -> {
             final ContextVariables _variablesContext = ContextVariables.getCurrent();
+            DiagramModel model = DiagramModel.getModel(editorContext, node, "5031074398567821443");
+            final ElkLayouter layouter = new LayeredLayouter(Direction.RIGHT);
+            layouter.toggleConnectBoxesWithoutDummyPort(false);
+            ((_FunctionTypes._void_P0_E0) () -> {
+              // the closure is necessary so that we can declare the style variable again in the current scope
+              Style style = new StyleImpl();
+              layouter.setParentsStyle(style);
+            }).invoke();
+
+
             IDiagramAccessor accessor = new AbstractDiagramAccessor(node) {
               public List<? extends IDiagramElementAccessor> getElements(IAccessorFactory accessorFactory) {
                 final List<IDiagramElementAccessor> elements = new ArrayList<IDiagramElementAccessor>();
@@ -227,17 +253,123 @@ import org.jetbrains.mps.openapi.language.SProperty;
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
               @Override
-              public boolean runAutoLayout() {
+              public boolean runAutoLayoutOnInit() {
                 boolean autoLayoutFlag = false;
                 return autoLayoutFlag;
               }
 
+              @Override
+              public boolean runAutoLayoutOnChange() {
+                boolean autoLayoutFlag = false;
+                return autoLayoutFlag;
+              }
+
+              @Override
+              public boolean fitToSizeOnInit() {
+                boolean fitToSize = false;
+                return fitToSize;
+              }
+
+              @Override
+              public boolean disableNodeEditing() {
+                boolean disableEditing = false;
+                return disableEditing;
+              }
+
+              @Override
+              public boolean syncWithModelOnlyOnOpening() {
+                boolean flag = false;
+                return flag;
+              }
+
+              @Override
+              public boolean allowElementsToBeBelowRequiredSize() {
+                boolean flag = false;
+                return flag;
+              }
+
+              @Override
+              public boolean showGrid() {
+                boolean flag = false;
+                return flag;
+              }
+
+              @Override
+              public int getGridSize() {
+                int size = 10;
+                return size;
+              }
+
+
+              @Override
+              public int getGridStyle() {
+                try {
+                  return mxGraphComponent.class.getDeclaredField("GRID_STYLE_DOT").getInt(null);
+                } catch (Exception ex) {
+                  return 0;
+                }
+              }
+
+              @Override
+              public Color getGridColor() {
+                Color color = null;
+                return color;
+              }
+
+              @Override
+              public boolean useGridSnapping() {
+                boolean flag = false;
+                return flag;
+              }
+
+
+              @Override
+              public double getArrowKeyMoveAmount() {
+                double amount = MyGraphComponent.DEFAULT_ARROW_KEY_MOVE_AMOUNT;
+                return amount;
+              }
+
+              @Override
+              public double getArrowKeyMoveAmountSlow() {
+                double amount = MyGraphComponent.DEFAULT_ARROW_KEY_MOVE_AMOUNT_SLOW;
+                return amount;
+              }
+
+              @Override
+              public double getPanAmount() {
+                double amount = MyGraphComponent.DEFAULT_PAN_AMOUNT;
+                return amount;
+              }
+
+              @Override
+              public double getPanAmountSlow() {
+                double amount = MyGraphComponent.DEFAULT_PAN_AMOUNT_SLOW;
+                return amount;
+              }
+
+              @Override
+              public double getMinimumScale() {
+                double scale = MyGraphComponent.DEFAULT_MINIMUM_SCALE;
+                return scale;
+              }
             };
 
-            DiagramModel model = DiagramModel.getModel(editorContext, node, "5031074398567821443", accessor);
-
-            ElkLayouter layouter;
+            model.setDiagramAccessor(accessor);
 
             IPaletteEntryProvider paletteEntryProvider = new CompositePaletteEntryProvider(new SubstituteInfoPaletteEntryProvider(new SubstituteInfoFactory(editorContext, node).forChildLink(node, SLinkOperations.findLinkDeclaration(LINKS.network_nodes$xOcS))), new SubstituteInfoPaletteEntryProvider(new SubstituteInfoFactory(editorContext, node).forChildLink(node, SLinkOperations.findLinkDeclaration(LINKS.topics$diq9))));
             model.setPaletteEntryProvider(paletteEntryProvider);
@@ -246,15 +378,43 @@ import org.jetbrains.mps.openapi.language.SProperty;
               editorCell.value = new SubDiagramECell(editorContext, node, model);
             } else {
               editorCell.value = new RootDiagramECell(editorContext, node, model);
-              ((RootDiagramECell) editorCell.value).runAutoLayouterOnInit(node, accessor.runAutoLayout());
+              RootDiagramECell rootCell = (RootDiagramECell) editorCell.value;
+              if (rootCell.showInViewer()) {
+                JButton openedInViewer = new JButton("open diagram in editor");
+                openedInViewer.setOpaque(false);
+                openedInViewer.addActionListener(new ActionListener() {
+                  @Override
+                  public void actionPerformed(ActionEvent e) {
+                    Project mpsProject = ProjectHelper.getProject(editorContext.getRepository());
+                    if (mpsProject == null) {
+                      return;
+                    }
+                    com.intellij.openapi.project.Project ideaProject = ProjectHelper.toIdeaProject(mpsProject);
+                    if (ideaProject == null) {
+                      return;
+                    }
+
+                    DiagramActionsUtil.updateViewer(ideaProject, rootCell, editorContext.getEditorComponent());
+                  }
+                });
+                alternativeCell.value = new EditorCell_Component(editorContext, node, openedInViewer);
+                return;
+              }
+              rootCell.runAutoLayouterOnInit(node, accessor.runAutoLayoutOnInit());
+              rootCell.fitToSizeOnInit(node, accessor.fitToSizeOnInit());
+              if (accessor.disableNodeEditing()) {
+                rootCell.getGraph().getGraphComponent().getCellEditor().setDisabled(true);
+              }
             }
             editorCell.value.setCellId("Diagram_myewd9_a");
             editorCell.value.setBig(true);
             setCellContext(editorCell.value);
+
             if (editorCell.value.getContextGraph() != null) {
               Object defaultParent = editorCell.value.getContextGraph().getDefaultParent();
               if (defaultParent instanceof RootDCell) {
-                ((RootDCell) defaultParent).resetButtonConfig();
+                RootDCell rootDCell = ((RootDCell) defaultParent);
+                rootDCell.resetButtonConfig();
               }
             }
           });
@@ -263,7 +423,9 @@ import org.jetbrains.mps.openapi.language.SProperty;
     });
 
 
-
+    if (alternativeCell.value != null) {
+      return alternativeCell.value;
+    }
     return editorCell.value;
   }
   private EditorCell createDiagram_1() {
