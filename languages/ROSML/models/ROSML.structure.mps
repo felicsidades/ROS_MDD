@@ -438,7 +438,7 @@
   <node concept="1TIwiD" id="2gd5S_hLln">
     <property role="EcuMT" value="40589975603320151" />
     <property role="TrG5h" value="Dependency" />
-    <ref role="1TJDcQ" to="tpck:gw2VY9q" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="1TJgyi" id="2gd5S_hLlt" role="1TKVEl">
       <property role="IQ2nx" value="40589975603320157" />
       <property role="TrG5h" value="package" />
