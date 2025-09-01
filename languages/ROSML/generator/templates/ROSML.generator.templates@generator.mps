@@ -17,6 +17,7 @@
       <concept id="1082485599095" name="jetbrains.mps.baseLanguage.structure.BlockStatement" flags="nn" index="9aQIb">
         <child id="1082485599096" name="statements" index="9aQI4" />
       </concept>
+      <concept id="4836112446988635817" name="jetbrains.mps.baseLanguage.structure.UndefinedType" flags="in" index="2jxLKc" />
       <concept id="1202948039474" name="jetbrains.mps.baseLanguage.structure.InstanceMethodCallOperation" flags="nn" index="liA8E" />
       <concept id="1154032098014" name="jetbrains.mps.baseLanguage.structure.AbstractLoopStatement" flags="nn" index="2LF5Ji">
         <child id="1154032183016" name="body" index="2LFqv$" />
@@ -34,6 +35,7 @@
       <concept id="1070475926800" name="jetbrains.mps.baseLanguage.structure.StringLiteral" flags="nn" index="Xl_RD">
         <property id="1070475926801" name="value" index="Xl_RC" />
       </concept>
+      <concept id="1070534058343" name="jetbrains.mps.baseLanguage.structure.NullLiteral" flags="nn" index="10Nm6u" />
       <concept id="1068431474542" name="jetbrains.mps.baseLanguage.structure.VariableDeclaration" flags="ng" index="33uBYm">
         <child id="1068431790190" name="initializer" index="33vP2m" />
       </concept>
@@ -43,6 +45,7 @@
       <concept id="4972933694980447171" name="jetbrains.mps.baseLanguage.structure.BaseVariableDeclaration" flags="ng" index="19Szcq">
         <child id="5680397130376446158" name="type" index="1tU5fm" />
       </concept>
+      <concept id="1068580123152" name="jetbrains.mps.baseLanguage.structure.EqualsExpression" flags="nn" index="3clFbC" />
       <concept id="1068580123155" name="jetbrains.mps.baseLanguage.structure.ExpressionStatement" flags="nn" index="3clFbF">
         <child id="1068580123156" name="expression" index="3clFbG" />
       </concept>
@@ -101,6 +104,13 @@
       <concept id="1167951910403" name="jetbrains.mps.lang.generator.structure.SourceSubstituteMacro_SourceNodesQuery" flags="in" index="3JmXsc" />
       <concept id="1118786554307" name="jetbrains.mps.lang.generator.structure.LoopMacro" flags="ln" index="1WS0z7">
         <child id="1167952069335" name="sourceNodesQuery" index="3Jn$fo" />
+      </concept>
+    </language>
+    <language id="fd392034-7849-419d-9071-12563d152375" name="jetbrains.mps.baseLanguage.closures">
+      <concept id="2524418899405758586" name="jetbrains.mps.baseLanguage.closures.structure.InferredClosureParameterDeclaration" flags="ig" index="gl6BB" />
+      <concept id="1199569711397" name="jetbrains.mps.baseLanguage.closures.structure.ClosureLiteral" flags="nn" index="1bVj0M">
+        <child id="1199569906740" name="parameter" index="1bW2Oz" />
+        <child id="1199569916463" name="body" index="1bW5cS" />
       </concept>
     </language>
     <language id="990507d3-3527-4c54-bfe9-0ca3c9c6247a" name="com.dslfoundry.plaintextgen">
@@ -164,6 +174,9 @@
       </concept>
     </language>
     <language id="83888646-71ce-4f1c-9c53-c54016f6ad4f" name="jetbrains.mps.baseLanguage.collections">
+      <concept id="1204796164442" name="jetbrains.mps.baseLanguage.collections.structure.InternalSequenceOperation" flags="nn" index="23sCx2">
+        <child id="1204796294226" name="closure" index="23t8la" />
+      </concept>
       <concept id="540871147943773365" name="jetbrains.mps.baseLanguage.collections.structure.SingleArgumentSequenceOperation" flags="nn" index="25WWJ4">
         <child id="540871147943773366" name="argument" index="25WWJ7" />
       </concept>
@@ -186,6 +199,7 @@
       </concept>
       <concept id="1160600644654" name="jetbrains.mps.baseLanguage.collections.structure.ListCreatorWithInit" flags="nn" index="Tc6Ow" />
       <concept id="1160612413312" name="jetbrains.mps.baseLanguage.collections.structure.AddElementOperation" flags="nn" index="TSZUe" />
+      <concept id="1225727723840" name="jetbrains.mps.baseLanguage.collections.structure.FindFirstOperation" flags="nn" index="1z4cxt" />
       <concept id="1172254888721" name="jetbrains.mps.baseLanguage.collections.structure.ContainsOperation" flags="nn" index="3JPx81" />
     </language>
   </registry>
@@ -3718,7 +3732,7 @@
       </node>
       <node concept="356sEK" id="3NoB7EgmOYB" role="383Ya9">
         <node concept="356sEF" id="3NoB7EgmOYC" role="356sEH">
-          <property role="TrG5h" value="# --- 1. Configuración básica ---" />
+          <property role="TrG5h" value="# --- 1. Basic Configuration ---" />
         </node>
         <node concept="2EixSi" id="3NoB7EgmOYE" role="2EinRH" />
       </node>
@@ -3737,6 +3751,68 @@
       <node concept="356sEK" id="3NoB7EgmOYR" role="383Ya9">
         <node concept="356sEF" id="3NoB7EgmOYS" role="356sEH">
           <property role="TrG5h" value="find_package(rclcpp_action REQUIRED)" />
+          <node concept="17Uvod" id="2TeA7ZJmXIA" role="lGtFl">
+            <property role="2qtEX9" value="name" />
+            <property role="P4ACc" value="ceab5195-25ea-4f22-9b92-103b95ca8c0c/1169194658468/1169194664001" />
+            <node concept="3zFVjK" id="2TeA7ZJmXIB" role="3zH0cK">
+              <node concept="3clFbS" id="2TeA7ZJmXIC" role="2VODD2">
+                <node concept="3clFbJ" id="2TeA7ZJmXOS" role="3cqZAp">
+                  <node concept="3clFbS" id="2TeA7ZJmXOU" role="3clFbx">
+                    <node concept="3cpWs6" id="2TeA7ZJocjC" role="3cqZAp">
+                      <node concept="Xl_RD" id="2TeA7ZJo8y$" role="3cqZAk">
+                        <property role="Xl_RC" value="find_package(rclcpp_action REQUIRED)" />
+                      </node>
+                    </node>
+                  </node>
+                  <node concept="3y3z36" id="2TeA7ZJo7V3" role="3clFbw">
+                    <node concept="10Nm6u" id="2TeA7ZJo8vn" role="3uHU7w" />
+                    <node concept="2OqwBi" id="2TeA7ZJnThL" role="3uHU7B">
+                      <node concept="2OqwBi" id="2TeA7ZJnQXr" role="2Oq$k0">
+                        <node concept="30H73N" id="2TeA7ZJnQGv" role="2Oq$k0" />
+                        <node concept="3Tsc0h" id="2TeA7ZJnR98" role="2OqNvi">
+                          <ref role="3TtcxE" to="9g35:1Z4bsDQOlOB" resolve="port_connections" />
+                        </node>
+                      </node>
+                      <node concept="1z4cxt" id="2TeA7ZJnYbn" role="2OqNvi">
+                        <node concept="1bVj0M" id="2TeA7ZJnYbp" role="23t8la">
+                          <node concept="3clFbS" id="2TeA7ZJnYbq" role="1bW5cS">
+                            <node concept="3clFbF" id="2TeA7ZJnYjS" role="3cqZAp">
+                              <node concept="3clFbC" id="2TeA7ZJo0UP" role="3clFbG">
+                                <node concept="Xl_RD" id="2TeA7ZJo1h3" role="3uHU7w">
+                                  <property role="Xl_RC" value="act request" />
+                                </node>
+                                <node concept="2OqwBi" id="2TeA7ZJnYxg" role="3uHU7B">
+                                  <node concept="37vLTw" id="2TeA7ZJnYjR" role="2Oq$k0">
+                                    <ref role="3cqZAo" node="2TeA7ZJnYbr" resolve="it" />
+                                  </node>
+                                  <node concept="3TrcHB" id="2TeA7ZJnYPk" role="2OqNvi">
+                                    <ref role="3TsBF5" to="9g35:5aI8FgNq$Sn" resolve="label" />
+                                  </node>
+                                </node>
+                              </node>
+                            </node>
+                          </node>
+                          <node concept="gl6BB" id="2TeA7ZJnYbr" role="1bW2Oz">
+                            <property role="TrG5h" value="it" />
+                            <node concept="2jxLKc" id="2TeA7ZJnYbs" role="1tU5fm" />
+                          </node>
+                        </node>
+                      </node>
+                    </node>
+                  </node>
+                  <node concept="9aQIb" id="2TeA7ZJo7vK" role="9aQIa">
+                    <node concept="3clFbS" id="2TeA7ZJo7vL" role="9aQI4">
+                      <node concept="3cpWs6" id="2TeA7ZJodzF" role="3cqZAp">
+                        <node concept="Xl_RD" id="2TeA7ZJoblL" role="3cqZAk">
+                          <property role="Xl_RC" value="" />
+                        </node>
+                      </node>
+                    </node>
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
         </node>
         <node concept="2EixSi" id="3NoB7EgmOYU" role="2EinRH" />
       </node>
@@ -3751,15 +3827,9 @@
       </node>
       <node concept="356sEK" id="3NoB7EgmOZ3" role="383Ya9">
         <node concept="356sEF" id="3NoB7EgmOZ4" role="356sEH">
-          <property role="TrG5h" value="# --- 2. Mensajes/Servicios/Acciones Custom ---" />
+          <property role="TrG5h" value="# --- 2. Custom Messages/Services/Actions ---" />
         </node>
         <node concept="2EixSi" id="3NoB7EgmOZ6" role="2EinRH" />
-      </node>
-      <node concept="356sEK" id="3NoB7EgmOZ7" role="383Ya9">
-        <node concept="356sEF" id="3NoB7EgmOZ8" role="356sEH">
-          <property role="TrG5h" value="# Generar interfaces PROPIAS (msg/, srv/, action/)" />
-        </node>
-        <node concept="2EixSi" id="3NoB7EgmOZa" role="2EinRH" />
       </node>
       <node concept="356sEK" id="3NoB7EgmOZb" role="383Ya9">
         <node concept="356sEF" id="3NoB7EgmOZc" role="356sEH">
@@ -4186,7 +4256,42 @@
           <property role="333NGx" value="  " />
           <node concept="356sEK" id="3NoB7EgmOZw" role="383Ya9">
             <node concept="356sEF" id="3NoB7EgmOZx" role="356sEH">
-              <property role="TrG5h" value="std_msgs" />
+              <property role="TrG5h" value="packageT" />
+              <node concept="1WS0z7" id="2TeA7ZJmMo8" role="lGtFl">
+                <node concept="3JmXsc" id="2TeA7ZJmMob" role="3Jn$fo">
+                  <node concept="3clFbS" id="2TeA7ZJmMoc" role="2VODD2">
+                    <node concept="3clFbF" id="2TeA7ZJmMoi" role="3cqZAp">
+                      <node concept="2OqwBi" id="2TeA7ZJmMod" role="3clFbG">
+                        <node concept="3Tsc0h" id="2TeA7ZJmMog" role="2OqNvi">
+                          <ref role="3TtcxE" to="9g35:2gd5S_iHSj" resolve="package_imports" />
+                        </node>
+                        <node concept="30H73N" id="2TeA7ZJmMoh" role="2Oq$k0" />
+                      </node>
+                    </node>
+                  </node>
+                </node>
+              </node>
+              <node concept="17Uvod" id="2TeA7ZJmME8" role="lGtFl">
+                <property role="2qtEX9" value="name" />
+                <property role="P4ACc" value="ceab5195-25ea-4f22-9b92-103b95ca8c0c/1169194658468/1169194664001" />
+                <node concept="3zFVjK" id="2TeA7ZJmME9" role="3zH0cK">
+                  <node concept="3clFbS" id="2TeA7ZJmMEa" role="2VODD2">
+                    <node concept="3clFbF" id="2TeA7ZJmNJj" role="3cqZAp">
+                      <node concept="2OqwBi" id="2TeA7ZJmTIe" role="3clFbG">
+                        <node concept="2OqwBi" id="2TeA7ZJmO0w" role="2Oq$k0">
+                          <node concept="30H73N" id="2TeA7ZJmNJi" role="2Oq$k0" />
+                          <node concept="3TrcHB" id="2TeA7ZJmSdT" role="2OqNvi">
+                            <ref role="3TsBF5" to="9g35:2gd5S_hLlt" resolve="package" />
+                          </node>
+                        </node>
+                        <node concept="liA8E" id="2TeA7ZJmUCy" role="2OqNvi">
+                          <ref role="37wK5l" to="wyt6:~String.toString()" resolve="toString" />
+                        </node>
+                      </node>
+                    </node>
+                  </node>
+                </node>
+              </node>
             </node>
             <node concept="2EixSi" id="3NoB7EgmOZz" role="2EinRH" />
           </node>
@@ -4206,19 +4311,13 @@
       </node>
       <node concept="356sEK" id="3NoB7EgmOZL" role="383Ya9">
         <node concept="356sEF" id="3NoB7EgmOZM" role="356sEH">
-          <property role="TrG5h" value="# --- 3. Dependencias Externas ---" />
+          <property role="TrG5h" value="# --- 3. External Dependencies ---" />
         </node>
         <node concept="2EixSi" id="3NoB7EgmOZO" role="2EinRH" />
       </node>
-      <node concept="356sEK" id="3NoB7EgmOZP" role="383Ya9">
-        <node concept="356sEF" id="3NoB7EgmOZQ" role="356sEH">
-          <property role="TrG5h" value="# Buscar paquetes externos que contengan mensajes/servicios/acciones" />
-        </node>
-        <node concept="2EixSi" id="3NoB7EgmOZS" role="2EinRH" />
-      </node>
       <node concept="356sEK" id="2gd5S_iNlL" role="383Ya9">
         <node concept="356sEF" id="2gd5S_iNlM" role="356sEH">
-          <property role="TrG5h" value="find_package(otro_paquete REQUIRED)" />
+          <property role="TrG5h" value="find_package(packageT REQUIRED)" />
           <node concept="1WS0z7" id="2gd5S_iOMc" role="lGtFl">
             <node concept="3JmXsc" id="2gd5S_iOMf" role="3Jn$fo">
               <node concept="3clFbS" id="2gd5S_iOMg" role="2VODD2">
@@ -4272,15 +4371,9 @@
       </node>
       <node concept="356sEK" id="3NoB7EgmP01" role="383Ya9">
         <node concept="356sEF" id="3NoB7EgmP02" role="356sEH">
-          <property role="TrG5h" value="# --- 4. Configuración de Nodos ---" />
+          <property role="TrG5h" value="# --- 4. Node Configuration ---" />
         </node>
         <node concept="2EixSi" id="3NoB7EgmP04" role="2EinRH" />
-      </node>
-      <node concept="356sEK" id="3NoB7EgmP05" role="383Ya9">
-        <node concept="356sEF" id="3NoB7EgmP06" role="356sEH">
-          <property role="TrG5h" value="# Definir todos los ejecutables (nodos, servidores, clientes)" />
-        </node>
-        <node concept="2EixSi" id="3NoB7EgmP08" role="2EinRH" />
       </node>
       <node concept="356sEK" id="709yv3QAlgV" role="383Ya9">
         <node concept="356sEF" id="709yv3QAlgW" role="356sEH">
@@ -4364,15 +4457,9 @@
       </node>
       <node concept="356sEK" id="3NoB7EgmP0t" role="383Ya9">
         <node concept="356sEF" id="3NoB7EgmP0u" role="356sEH">
-          <property role="TrG5h" value="# --- 5. Dependencias por Ejecutable ---" />
+          <property role="TrG5h" value="# --- 5. Executable Dependencies ---" />
         </node>
         <node concept="2EixSi" id="3NoB7EgmP0w" role="2EinRH" />
-      </node>
-      <node concept="356sEK" id="3NoB7EgmP0x" role="383Ya9">
-        <node concept="356sEF" id="3NoB7EgmP0y" role="356sEH">
-          <property role="TrG5h" value="# Nodo base (solo rclcpp)" />
-        </node>
-        <node concept="2EixSi" id="3NoB7EgmP0$" role="2EinRH" />
       </node>
       <node concept="356WMU" id="709yv3QADFw" role="383Ya9">
         <node concept="356sEK" id="3NoB7EgmP0_" role="383Ya9">
@@ -4524,15 +4611,9 @@
       </node>
       <node concept="356sEK" id="3NoB7EgmP2d" role="383Ya9">
         <node concept="356sEF" id="3NoB7EgmP2e" role="356sEH">
-          <property role="TrG5h" value="# --- 6. Instalación ---" />
+          <property role="TrG5h" value="# --- 6. Installation ---" />
         </node>
         <node concept="2EixSi" id="3NoB7EgmP2g" role="2EinRH" />
-      </node>
-      <node concept="356sEK" id="3NoB7EgmP2h" role="383Ya9">
-        <node concept="356sEF" id="3NoB7EgmP2i" role="356sEH">
-          <property role="TrG5h" value="# Instalar ejecutables" />
-        </node>
-        <node concept="2EixSi" id="3NoB7EgmP2k" role="2EinRH" />
       </node>
       <node concept="356sEK" id="3NoB7EgmP2l" role="383Ya9">
         <node concept="356sEF" id="3NoB7EgmP2m" role="356sEH">
@@ -4582,7 +4663,7 @@
       </node>
       <node concept="356sEK" id="3NoB7EgmP2Q" role="383Ya9">
         <node concept="356sEF" id="3NoB7EgmP2R" role="356sEH">
-          <property role="TrG5h" value="# Instalar includes para herencia (opcional)" />
+          <property role="TrG5h" value="# Install include directory (optional, if you have headers)" />
         </node>
         <node concept="2EixSi" id="3NoB7EgmP2T" role="2EinRH" />
       </node>
@@ -4612,7 +4693,7 @@
       </node>
       <node concept="356sEK" id="3NoB7EgmP3b" role="383Ya9">
         <node concept="356sEF" id="3NoB7EgmP3c" role="356sEH">
-          <property role="TrG5h" value="# --- 7. Exportar dependencias ---" />
+          <property role="TrG5h" value="# --- 7. Export Dependencies ---" />
         </node>
         <node concept="2EixSi" id="3NoB7EgmP3e" role="2EinRH" />
       </node>
