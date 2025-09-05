@@ -16,7 +16,11 @@ import java.util.ArrayList;
 import jetbrains.mps.internal.collections.runtime.ListSequence;
 import jetbrains.mps.lang.smodel.generator.smodelAdapter.SLinkOperations;
 import jetbrains.mps.lang.smodel.generator.smodelAdapter.SPropertyOperations;
-import de.itemis.mps.editor.diagram.runtime.model.IBoxAccessor;
+import jetbrains.mps.openapi.editor.style.Style;
+import jetbrains.mps.editor.runtime.style.StyleImpl;
+import de.itemis.mps.editor.diagram.runtime.jgraph.MyGraph;
+import de.itemis.mps.editor.diagram.runtime.jgraph.DiagramCreationContext;
+import de.itemis.mps.editor.diagram.runtime.jgraph.ElkLayouter;
 import de.itemis.mps.editor.diagram.runtime.model.SNodeBoxAccessor;
 import de.itemis.mps.editor.diagram.runtime.model.IDiagramElementAccessor;
 import de.itemis.mps.editor.diagram.runtime.model.IAccessorFactory;
@@ -70,6 +74,12 @@ import org.jetbrains.mps.openapi.language.SConcept;
               Port port = new Port(SPropertyOperations.getString(((SNode) _variablesContext.getValue("portObject")), PROPS.name$MnvL));
               port.setRelativeX(1);
               port.setSNodeAndDummyCell(portObject, editorContext);
+              Style style = new StyleImpl();
+              MyGraph rootGraph = DiagramCreationContext.getRootGraph();
+              if (port.getBox() != null && rootGraph != null) {
+                ElkLayouter layouter = (ElkLayouter) rootGraph.getRootDiagramModel().getLayouter();
+                layouter.addPortsStyle(style, port.getBox().getAccessor().getId());
+              }
               ports.add(port);
             }
           }
@@ -82,6 +92,12 @@ import org.jetbrains.mps.openapi.language.SConcept;
             {
               Port port = new Port(SPropertyOperations.getString(((SNode) _variablesContext.getValue("portObject")), PROPS.name$MnvL));
               port.setSNodeAndDummyCell(portObject, editorContext);
+              Style style = new StyleImpl();
+              MyGraph rootGraph = DiagramCreationContext.getRootGraph();
+              if (port.getBox() != null && rootGraph != null) {
+                ElkLayouter layouter = (ElkLayouter) rootGraph.getRootDiagramModel().getLayouter();
+                layouter.addPortsStyle(style, port.getBox().getAccessor().getId());
+              }
               ports.add(port);
             }
           }
@@ -93,7 +109,7 @@ import org.jetbrains.mps.openapi.language.SConcept;
       contentCells.add(contentCell);
 
 
-      IBoxAccessor accessor = new SNodeBoxAccessor(node) {
+      SNodeBoxAccessor accessor = new SNodeBoxAccessor(node) {
         @NotNull
         public List<Port> getPorts() {
           return ports;
@@ -128,6 +144,11 @@ import org.jetbrains.mps.openapi.language.SConcept;
       setCellContext(editorCell.value);
 
       editorCell.value.addEditorCell(contentCell);
+      MyGraph rootGraph = DiagramCreationContext.getRootGraph();
+      if (rootGraph != null) {
+        ElkLayouter layouter = (ElkLayouter) rootGraph.getRootDiagramModel().getLayouter();
+        layouter.addNodesStyle(editorCell.value.getStyle(), accessor.getId());
+      }
     });
 
     return editorCell.value;

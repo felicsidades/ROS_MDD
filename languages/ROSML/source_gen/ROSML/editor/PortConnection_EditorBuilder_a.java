@@ -20,10 +20,14 @@ import jetbrains.mps.lang.smodel.generator.smodelAdapter.SPropertyOperations;
 import jetbrains.mps.baseLanguage.tuples.runtime.Tuples;
 import jetbrains.mps.baseLanguage.tuples.runtime.MultiTuple;
 import de.itemis.mps.editor.diagram.runtime.model.IConnectionEndpoint_Internal;
+import de.itemis.mps.editor.diagram.runtime.model.Box;
 import java.util.List;
 import de.itemis.mps.editor.diagram.runtime.model.IDiagramElementAccessor;
 import de.itemis.mps.editor.diagram.runtime.model.IAccessorFactory;
 import java.util.ArrayList;
+import de.itemis.mps.editor.diagram.runtime.jgraph.MyGraph;
+import de.itemis.mps.editor.diagram.runtime.jgraph.DiagramCreationContext;
+import de.itemis.mps.editor.diagram.runtime.jgraph.ElkLayouter;
 import org.jetbrains.mps.openapi.language.SProperty;
 import jetbrains.mps.openapi.editor.menus.transformation.SPropertyInfo;
 import jetbrains.mps.nodeEditor.cells.EditorCell_Property;
@@ -61,11 +65,11 @@ import org.jetbrains.mps.openapi.language.SConcept;
 
   private EditorCell createDiagramConnector_0(final EditorContext editorContext, final SNode node) {
 
-    final Wrappers._T<EditorCell_DiagramElement> editorCell = new Wrappers._T<EditorCell_DiagramElement>(null);
+    final Wrappers._T<EditorCell_DiagramElement> diagramCell = new Wrappers._T<EditorCell_DiagramElement>(null);
 
     ContextVariables.withValue("thisNode", node, () -> {
       final ContextVariables _variablesContext = ContextVariables.getCurrent();
-      SNodeEdgeAccessor accessor = new SNodeEdgeAccessor(node) {
+      SNodeEdgeAccessor accessor = new SNodeEdgeAccessor(node, null) {
         private EditorCell startRoleCell = DiagramUtil.getCellIfNotEmpty(null);
         private EditorCell endRoleCell = DiagramUtil.getCellIfNotEmpty(null);
         private IShape endShape = null;
@@ -98,15 +102,15 @@ import org.jetbrains.mps.openapi.language.SConcept;
 
         @Override
         public void writeFrom(IConnectionEndpoint_Internal endpoint) {
-          writeFrom(EndpointUtil.getSNode(endpoint), EndpointUtil.getPortName(endpoint));
+          writeFrom(EndpointUtil.getSNode(endpoint), EndpointUtil.getBox(endpoint), EndpointUtil.getPortName(endpoint));
         }
-        public void writeFrom(final SNode targetNode, final String port) {
+        public void writeFrom(final SNode targetNode, Box targetDNode, final String port) {
         }
         @Override
         public void writeTo(IConnectionEndpoint_Internal endpoint) {
-          writeTo(EndpointUtil.getSNode(endpoint), EndpointUtil.getPortName(endpoint));
+          writeTo(EndpointUtil.getSNode(endpoint), EndpointUtil.getBox(endpoint), EndpointUtil.getPortName(endpoint));
         }
-        public void writeTo(final SNode targetNode, final String port) {
+        public void writeTo(final SNode targetNode, Box targetDNode, final String port) {
         }
 
         @Override
@@ -131,6 +135,7 @@ import org.jetbrains.mps.openapi.language.SConcept;
         public IShape getStartShape() {
           return startShape;
         }
+
         public List<? extends IDiagramElementAccessor> getElements(IAccessorFactory accessorFactory) {
           final List<IDiagramElementAccessor> elements = new ArrayList<IDiagramElementAccessor>();
           return elements;
@@ -141,25 +146,38 @@ import org.jetbrains.mps.openapi.language.SConcept;
 
       EditorCell label = DiagramUtil.getCellIfNotEmpty(new Inline_Builder_djuy7q_a0(editorContext, node).createCell());
 
+      EditorCell editorCell = label;
+      MyGraph rootGraph = DiagramCreationContext.getRootGraph();
+      if (editorCell != null && rootGraph != null) {
+        ElkLayouter layouter = (ElkLayouter) rootGraph.getRootDiagramModel().getLayouter();
+        layouter.addLabelsStyle(editorCell.getStyle(), accessor.getId());
+      }
+
       accessor.setLabelCell(label);
 
-      editorCell.value = new EditorCell_DiagramElement(editorContext, node, accessor);
-      editorCell.value.setCellId("DiagramConnector_djuy7q_a");
-      editorCell.value.setBig(true);
-      setCellContext(editorCell.value);
+      diagramCell.value = new EditorCell_DiagramElement(editorContext, node, accessor);
+      editorCell = diagramCell.value;
+      editorCell.setCellId("DiagramConnector_djuy7q_a");
+      editorCell.setBig(true);
+      setCellContext(editorCell);
+
+      if (rootGraph != null) {
+        ElkLayouter layouter = (ElkLayouter) rootGraph.getRootDiagramModel().getLayouter();
+        layouter.addEdgesStyle(diagramCell.value.getStyle(), accessor.getId());
+      }
 
       if (accessor.getLabelCell() != null) {
-        editorCell.value.addEditorCell(accessor.getLabelCell());
+        diagramCell.value.addEditorCell(accessor.getLabelCell());
       }
       if (accessor.getStartRoleCell() != null) {
-        editorCell.value.addEditorCell(accessor.getStartRoleCell());
+        diagramCell.value.addEditorCell(accessor.getStartRoleCell());
       }
       if (accessor.getEndRoleCell() != null) {
-        editorCell.value.addEditorCell(accessor.getEndRoleCell());
+        diagramCell.value.addEditorCell(accessor.getEndRoleCell());
       }
     });
 
-    return editorCell.value;
+    return diagramCell.value;
   }
   private EditorCell createDiagramConnector_1() {
     return createDiagramConnector_0(getEditorContext(), myNode);
