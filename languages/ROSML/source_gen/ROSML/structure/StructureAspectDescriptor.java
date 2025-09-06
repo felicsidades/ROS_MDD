@@ -27,7 +27,6 @@ public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
   /*package*/ final ConceptDescriptor myConceptIInterface = createDescriptorForIInterface();
   /*package*/ final ConceptDescriptor myConceptINetworkElement = createDescriptorForINetworkElement();
   /*package*/ final ConceptDescriptor myConceptIPort = createDescriptorForIPort();
-  /*package*/ final ConceptDescriptor myConceptNativeInterface = createDescriptorForNativeInterface();
   /*package*/ final ConceptDescriptor myConceptNode = createDescriptorForNode();
   /*package*/ final ConceptDescriptor myConceptPortConnection = createDescriptorForPortConnection();
   /*package*/ final ConceptDescriptor myConceptProject = createDescriptorForProject();
@@ -50,7 +49,7 @@ public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
 
   @Override
   public Collection<ConceptDescriptor> getDescriptors() {
-    return Arrays.asList(myConceptAction, myConceptActionInterface, myConceptCustomInterface, myConceptDataInterface, myConceptDependency, myConceptDirectConnection, myConceptHeader, myConceptIConection, myConceptIInterface, myConceptINetworkElement, myConceptIPort, myConceptNativeInterface, myConceptNode, myConceptPortConnection, myConceptProject, myConceptServer, myConceptService, myConceptServiceInterface, myConceptTopic);
+    return Arrays.asList(myConceptAction, myConceptActionInterface, myConceptCustomInterface, myConceptDataInterface, myConceptDependency, myConceptDirectConnection, myConceptHeader, myConceptIConection, myConceptIInterface, myConceptINetworkElement, myConceptIPort, myConceptNode, myConceptPortConnection, myConceptProject, myConceptServer, myConceptService, myConceptServiceInterface, myConceptTopic);
   }
 
   @Override
@@ -79,8 +78,6 @@ public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
         return myConceptINetworkElement;
       case LanguageConceptSwitch.IPort:
         return myConceptIPort;
-      case LanguageConceptSwitch.NativeInterface:
-        return myConceptNativeInterface;
       case LanguageConceptSwitch.Node:
         return myConceptNode;
       case LanguageConceptSwitch.PortConnection:
@@ -206,15 +203,6 @@ public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
     b.origin("r:d670596f-f26c-43d2-8e17-a7b3e68888bf(ROSML.structure)/5957737514409752030");
     b.version(3);
     b.associate("connection", 0x24577e76ac2158acL).target(0xf7db56d1b41e4c13L, 0x9756a014feb108beL, 0x52ae22b433653219L).optional(true).origin("2618700756498340012").done();
-    return b.create();
-  }
-  private static ConceptDescriptor createDescriptorForNativeInterface() {
-    ConceptDescriptorBuilder2 b = new ConceptDescriptorBuilder2("ROSML", "NativeInterface", 0xf7db56d1b41e4c13L, 0x9756a014feb108beL, 0x664552f37d423063L);
-    b.class_(false, false, false);
-    b.parent(0xf7db56d1b41e4c13L, 0x9756a014feb108beL, 0x18dbf75c7f56da8dL);
-    b.origin("r:d670596f-f26c-43d2-8e17-a7b3e68888bf(ROSML.structure)/7369387570993705059");
-    b.version(3);
-    b.aggregate("NativeDatatype", 0x664552f37d423066L).target(0xf7db56d1b41e4c13L, 0x9756a014feb108beL, 0x2126fce3999aa945L).optional(false).ordered(true).multiple(false).origin("7369387570993705062").done();
     return b.create();
   }
   private static ConceptDescriptor createDescriptorForNode() {

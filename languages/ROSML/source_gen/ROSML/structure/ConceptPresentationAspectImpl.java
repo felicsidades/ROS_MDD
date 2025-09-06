@@ -20,7 +20,6 @@ public class ConceptPresentationAspectImpl extends ConceptPresentationAspectBase
   private ConceptPresentation props_IInterface;
   private ConceptPresentation props_INetworkElement;
   private ConceptPresentation props_IPort;
-  private ConceptPresentation props_NativeInterface;
   private ConceptPresentation props_Node;
   private ConceptPresentation props_PortConnection;
   private ConceptPresentation props_Project;
@@ -107,13 +106,6 @@ public class ConceptPresentationAspectImpl extends ConceptPresentationAspectBase
           props_IPort = cpb.create();
         }
         return props_IPort;
-      case LanguageConceptSwitch.NativeInterface:
-        if (props_NativeInterface == null) {
-          ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
-          cpb.presentationByName();
-          props_NativeInterface = cpb.create();
-        }
-        return props_NativeInterface;
       case LanguageConceptSwitch.Node:
         if (props_Node == null) {
           ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();

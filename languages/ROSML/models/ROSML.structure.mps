@@ -415,21 +415,6 @@
       <ref role="20lvS9" node="24AZeepAE_5" resolve="DataInterface" />
     </node>
   </node>
-  <node concept="1TIwiD" id="6p5kJdXgz1z">
-    <property role="EcuMT" value="7369387570993705059" />
-    <property role="TrG5h" value="NativeInterface" />
-    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
-    <node concept="PrWs8" id="6p5kJdXgz1$" role="PzmwI">
-      <ref role="PrY4T" node="1zrXPLZlHEd" resolve="IInterface" />
-    </node>
-    <node concept="1TJgyj" id="6p5kJdXgz1A" role="1TKVEi">
-      <property role="IQ2ns" value="7369387570993705062" />
-      <property role="20lmBu" value="fLJjDmT/aggregation" />
-      <property role="20kJfa" value="NativeDatatype" />
-      <property role="20lbJX" value="fLJekj4/_1" />
-      <ref role="20lvS9" node="24AZeepAE_5" resolve="DataInterface" />
-    </node>
-  </node>
   <node concept="1TIwiD" id="2gd5S_hLln">
     <property role="EcuMT" value="40589975603320151" />
     <property role="TrG5h" value="Dependency" />
