@@ -22,7 +22,6 @@ public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
   /*package*/ final ConceptDescriptor myConceptDataInterface = createDescriptorForDataInterface();
   /*package*/ final ConceptDescriptor myConceptDependency = createDescriptorForDependency();
   /*package*/ final ConceptDescriptor myConceptDirectConnection = createDescriptorForDirectConnection();
-  /*package*/ final ConceptDescriptor myConceptHeader = createDescriptorForHeader();
   /*package*/ final ConceptDescriptor myConceptIConection = createDescriptorForIConection();
   /*package*/ final ConceptDescriptor myConceptIInterface = createDescriptorForIInterface();
   /*package*/ final ConceptDescriptor myConceptINetworkElement = createDescriptorForINetworkElement();
@@ -49,7 +48,7 @@ public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
 
   @Override
   public Collection<ConceptDescriptor> getDescriptors() {
-    return Arrays.asList(myConceptAction, myConceptActionInterface, myConceptCustomInterface, myConceptDataInterface, myConceptDependency, myConceptDirectConnection, myConceptHeader, myConceptIConection, myConceptIInterface, myConceptINetworkElement, myConceptIPort, myConceptNode, myConceptPortConnection, myConceptProject, myConceptServer, myConceptService, myConceptServiceInterface, myConceptTopic);
+    return Arrays.asList(myConceptAction, myConceptActionInterface, myConceptCustomInterface, myConceptDataInterface, myConceptDependency, myConceptDirectConnection, myConceptIConection, myConceptIInterface, myConceptINetworkElement, myConceptIPort, myConceptNode, myConceptPortConnection, myConceptProject, myConceptServer, myConceptService, myConceptServiceInterface, myConceptTopic);
   }
 
   @Override
@@ -68,8 +67,6 @@ public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
         return myConceptDependency;
       case LanguageConceptSwitch.DirectConnection:
         return myConceptDirectConnection;
-      case LanguageConceptSwitch.Header:
-        return myConceptHeader;
       case LanguageConceptSwitch.IConection:
         return myConceptIConection;
       case LanguageConceptSwitch.IInterface:
@@ -161,14 +158,6 @@ public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
     b.associate("topic", 0x5d8e854cb6b9f07L).target(0xf7db56d1b41e4c13L, 0x9756a014feb108beL, 0x5d8e854cb6b6f01L).optional(true).origin("421342016046866183").done();
     return b.create();
   }
-  private static ConceptDescriptor createDescriptorForHeader() {
-    ConceptDescriptorBuilder2 b = new ConceptDescriptorBuilder2("ROSML", "Header", 0xf7db56d1b41e4c13L, 0x9756a014feb108beL, 0x50ff84ad67394aa3L);
-    b.class_(false, false, false);
-    b.origin("r:d670596f-f26c-43d2-8e17-a7b3e68888bf(ROSML.structure)/5836529522391468707");
-    b.version(3);
-    b.property("declaration", 0x50ff84ad67394aa5L).type(PrimitiveTypeId.STRING).origin("5836529522391468709").done();
-    return b.create();
-  }
   private static ConceptDescriptor createDescriptorForIConection() {
     ConceptDescriptorBuilder2 b = new ConceptDescriptorBuilder2("ROSML", "IConection", 0xf7db56d1b41e4c13L, 0x9756a014feb108beL, 0x52058e34e9d2bfcdL);
     b.interface_();
@@ -215,7 +204,6 @@ public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
     b.aggregate("subscriptions", 0x5d8e854cb6ba44dL).target(0xf7db56d1b41e4c13L, 0x9756a014feb108beL, 0x5d8e854cb6b9f03L).optional(true).ordered(true).multiple(true).origin("421342016046867533").done();
     b.aggregate("action_requests", 0x573384c7f1e1d928L).target(0xf7db56d1b41e4c13L, 0x9756a014feb108beL, 0x52ae22b433653219L).optional(true).ordered(true).multiple(true).origin("6283511899403442472").done();
     b.aggregate("service_requests", 0x573384c7f1e1d92cL).target(0xf7db56d1b41e4c13L, 0x9756a014feb108beL, 0x52ae22b433653219L).optional(true).ordered(true).multiple(true).origin("6283511899403442476").done();
-    b.aggregate("headers", 0x50ff84ad673ac35bL).target(0xf7db56d1b41e4c13L, 0x9756a014feb108beL, 0x50ff84ad67394aa3L).optional(true).ordered(true).multiple(true).origin("5836529522391565147").done();
     return b.create();
   }
   private static ConceptDescriptor createDescriptorForPortConnection() {
