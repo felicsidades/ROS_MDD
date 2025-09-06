@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<product version="3" modelHash="-6tkn6860cu6641z0w2udb61hd3d1bes">
-  <files names="BehaviorAspectDescriptor.java:IInterface__BehaviorDescriptor.java:Server__BehaviorDescriptor.java" />
+<product version="3" modelHash="-d1lbc88hfdmoe3i4zr0tvfuzdrlf4fz">
+  <files names="BehaviorAspectDescriptor.java:DirectConnection__BehaviorDescriptor.java:IInterface__BehaviorDescriptor.java:Server__BehaviorDescriptor.java" />
 </product>
 

@@ -185,7 +185,7 @@ public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
     b.parent(0xceab519525ea4f22L, 0x9b92103b95ca8c0cL, 0x110396eaaa4L);
     b.origin("r:d670596f-f26c-43d2-8e17-a7b3e68888bf(ROSML.structure)/5031074398568689361");
     b.version(3);
-    b.aggregate("dependencies", 0x90345e2547155aL).target(0xf7db56d1b41e4c13L, 0x9756a014feb108beL, 0x90345e25471557L).optional(true).ordered(true).multiple(true).origin("40589975603320154").done();
+    b.aggregate("dependencies", 0x50ff84ad67116326L).target(0xf7db56d1b41e4c13L, 0x9756a014feb108beL, 0x90345e25471557L).optional(true).ordered(true).multiple(true).origin("5836529522388853542").done();
     return b.create();
   }
   private static ConceptDescriptor createDescriptorForIPort() {
@@ -216,7 +216,6 @@ public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
     b.aggregate("subscriptions", 0x5d8e854cb6ba44dL).target(0xf7db56d1b41e4c13L, 0x9756a014feb108beL, 0x5d8e854cb6b9f03L).optional(true).ordered(true).multiple(true).origin("421342016046867533").done();
     b.aggregate("action_requests", 0x573384c7f1e1d928L).target(0xf7db56d1b41e4c13L, 0x9756a014feb108beL, 0x52ae22b433653219L).optional(true).ordered(true).multiple(true).origin("6283511899403442472").done();
     b.aggregate("service_requests", 0x573384c7f1e1d92cL).target(0xf7db56d1b41e4c13L, 0x9756a014feb108beL, 0x52ae22b433653219L).optional(true).ordered(true).multiple(true).origin("6283511899403442476").done();
-    b.aggregate("package_dependencies", 0x90345e2547156aL).target(0xf7db56d1b41e4c13L, 0x9756a014feb108beL, 0x90345e25471557L).optional(true).ordered(true).multiple(true).origin("40589975603320170").done();
     return b.create();
   }
   private static ConceptDescriptor createDescriptorForPortConnection() {

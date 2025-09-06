@@ -131,13 +131,6 @@
       <property role="20lbJX" value="fLJekj5/_0__n" />
       <ref role="20lvS9" node="5aI8FgNpj8p" resolve="PortConnection" />
     </node>
-    <node concept="1TJgyj" id="2gd5S_hLlE" role="1TKVEi">
-      <property role="IQ2ns" value="40589975603320170" />
-      <property role="20lmBu" value="fLJjDmT/aggregation" />
-      <property role="20lbJX" value="fLJekj5/_0__n" />
-      <property role="20kJfa" value="package_dependencies" />
-      <ref role="20lvS9" node="2gd5S_hLln" resolve="Dependency" />
-    </node>
     <node concept="PrWs8" id="4nhXS9XfUVm" role="PzmwI">
       <ref role="PrY4T" node="4nhXS9XfUVh" resolve="INetworkElement" />
     </node>
@@ -217,8 +210,8 @@
     <node concept="PrWs8" id="4nhXS9XfUVk" role="PrDN$">
       <ref role="PrY4T" to="tpck:h0TrEE$" resolve="INamedConcept" />
     </node>
-    <node concept="1TJgyj" id="2gd5S_hLlq" role="1TKVEi">
-      <property role="IQ2ns" value="40589975603320154" />
+    <node concept="1TJgyj" id="53ZxaPB4mcA" role="1TKVEi">
+      <property role="IQ2ns" value="5836529522388853542" />
       <property role="20lmBu" value="fLJjDmT/aggregation" />
       <property role="20kJfa" value="dependencies" />
       <property role="20lbJX" value="fLJekj5/_0__n" />
