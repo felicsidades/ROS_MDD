@@ -131,6 +131,13 @@
       <property role="20lbJX" value="fLJekj5/_0__n" />
       <ref role="20lvS9" node="5aI8FgNpj8p" resolve="PortConnection" />
     </node>
+    <node concept="1TJgyj" id="53ZxaPBeGdr" role="1TKVEi">
+      <property role="IQ2ns" value="5836529522391565147" />
+      <property role="20lmBu" value="fLJjDmT/aggregation" />
+      <property role="20lbJX" value="fLJekj5/_0__n" />
+      <property role="20kJfa" value="headers" />
+      <ref role="20lvS9" node="53ZxaPBekEz" resolve="Header" />
+    </node>
     <node concept="PrWs8" id="4nhXS9XfUVm" role="PzmwI">
       <ref role="PrY4T" node="4nhXS9XfUVh" resolve="INetworkElement" />
     </node>
@@ -301,11 +308,6 @@
   <node concept="25R3W" id="1zrXPLZlHDQ">
     <property role="3F6X1D" value="1791297253455354486" />
     <property role="TrG5h" value="EInterfaces" />
-    <node concept="25R33" id="6X9o6_SbFqz" role="25R1y">
-      <property role="3tVfz5" value="8019046617614038691" />
-      <property role="TrG5h" value="native" />
-      <property role="1L1pqM" value="native" />
-    </node>
     <node concept="25R33" id="1zrXPLZlHDR" role="25R1y">
       <property role="3tVfz5" value="1791297253455354487" />
       <property role="TrG5h" value="msg" />
@@ -435,6 +437,16 @@
     <node concept="1TJgyi" id="2gd5S_hLlt" role="1TKVEl">
       <property role="IQ2nx" value="40589975603320157" />
       <property role="TrG5h" value="package" />
+      <ref role="AX2Wp" to="tpck:fKAOsGN" resolve="string" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="53ZxaPBekEz">
+    <property role="EcuMT" value="5836529522391468707" />
+    <property role="TrG5h" value="Header" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+    <node concept="1TJgyi" id="53ZxaPBekE_" role="1TKVEl">
+      <property role="IQ2nx" value="5836529522391468709" />
+      <property role="TrG5h" value="declaration" />
       <ref role="AX2Wp" to="tpck:fKAOsGN" resolve="string" />
     </node>
   </node>

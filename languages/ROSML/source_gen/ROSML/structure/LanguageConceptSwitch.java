@@ -15,18 +15,19 @@ public final class LanguageConceptSwitch {
   public static final int DataInterface = 3;
   public static final int Dependency = 4;
   public static final int DirectConnection = 5;
-  public static final int IConection = 6;
-  public static final int IInterface = 7;
-  public static final int INetworkElement = 8;
-  public static final int IPort = 9;
-  public static final int NativeInterface = 10;
-  public static final int Node = 11;
-  public static final int PortConnection = 12;
-  public static final int Project = 13;
-  public static final int Server = 14;
-  public static final int Service = 15;
-  public static final int ServiceInterface = 16;
-  public static final int Topic = 17;
+  public static final int Header = 6;
+  public static final int IConection = 7;
+  public static final int IInterface = 8;
+  public static final int INetworkElement = 9;
+  public static final int IPort = 10;
+  public static final int NativeInterface = 11;
+  public static final int Node = 12;
+  public static final int PortConnection = 13;
+  public static final int Project = 14;
+  public static final int Server = 15;
+  public static final int Service = 16;
+  public static final int ServiceInterface = 17;
+  public static final int Topic = 18;
 
   public LanguageConceptSwitch() {
     LanguageConceptIndexBuilder builder = new LanguageConceptIndexBuilder(0xf7db56d1b41e4c13L, 0x9756a014feb108beL);
@@ -36,6 +37,7 @@ public final class LanguageConceptSwitch {
     builder.put(0x2126fce3999aa945L, DataInterface);
     builder.put(0x90345e25471557L, Dependency);
     builder.put(0x5d8e854cb6b9f03L, DirectConnection);
+    builder.put(0x50ff84ad67394aa3L, Header);
     builder.put(0x52058e34e9d2bfcdL, IConection);
     builder.put(0x18dbf75c7f56da8dL, IInterface);
     builder.put(0x45d1f7827d3faed1L, INetworkElement);
