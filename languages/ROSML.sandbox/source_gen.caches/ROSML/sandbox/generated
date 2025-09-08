@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<product version="3" modelHash="l8emk9gpo7uz4x6ddfj7gwukj7371c">
-  <files dir="ROSML/sandbox/null" names="pr1.txt:pr1.xml" />
+<product version="3" modelHash="9yq6s7zmps06y8ud926l6m6qr953djv">
+  <files dir="ROSML/sandbox/pr1" names="CMakeLists.txt:package.xml" />
   <files dir="ROSML/sandbox/pr1/src" names="n1.cpp" />
 </product>
 
