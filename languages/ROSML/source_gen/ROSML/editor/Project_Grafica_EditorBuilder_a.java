@@ -133,7 +133,8 @@ import org.jetbrains.mps.openapi.language.SProperty;
                       SPropertyOperations.assign(conexion, PROPS.label$Kcok, "publisher");
                       SLinkOperations.setTarget(conexion, LINKS.node$IXJD, fromNode);
                       SLinkOperations.setTarget(conexion, LINKS.topic$IYsG, toNode);
-                      ListSequence.fromList(SLinkOperations.getChildren(((SNode) _variablesContext.getValue("thisNode")), LINKS.direct_connections$Xf$k)).addElement(conexion);
+                      ListSequence.fromList(SLinkOperations.getChildren(((SNode) _variablesContext.getValue("thisNode")), LINKS.direct_connections$Xf$k)).addElement(SNodeOperations.copyNode(conexion));
+                      ListSequence.fromList(SLinkOperations.getChildren(fromNode, LINKS.publications$MIbK)).addElement(conexion);
                     }
                   }
                   @Override
@@ -171,7 +172,8 @@ import org.jetbrains.mps.openapi.language.SProperty;
                       SPropertyOperations.assign(conexion, PROPS.label$Kcok, "subscriber");
                       SLinkOperations.setTarget(conexion, LINKS.node$IXJD, fromNode);
                       SLinkOperations.setTarget(conexion, LINKS.topic$IYsG, toNode);
-                      ListSequence.fromList(SLinkOperations.getChildren(((SNode) _variablesContext.getValue("thisNode")), LINKS.direct_connections$Xf$k)).addElement(conexion);
+                      ListSequence.fromList(SLinkOperations.getChildren(((SNode) _variablesContext.getValue("thisNode")), LINKS.direct_connections$Xf$k)).addElement(SNodeOperations.copyNode(conexion));
+                      ListSequence.fromList(SLinkOperations.getChildren(fromNode, LINKS.subscriptions$MIDM)).addElement(conexion);
                     }
                   }
                   @Override
@@ -215,14 +217,15 @@ import org.jetbrains.mps.openapi.language.SProperty;
                         SLinkOperations.setTarget(accion, LINKS.connection$WFQD, conexion_puerto);
                         SPropertyOperations.assign(conexion_puerto, PROPS.label$AAcS, "act request");
                         SLinkOperations.setTarget(conexion_puerto, LINKS.message$3geB, SLinkOperations.getTarget(accion, LINKS.message$eqUd));
+                        ListSequence.fromList(SLinkOperations.getChildren(fromNode, LINKS.action_requests$xkAl)).addElement(SNodeOperations.copyNode(conexion_puerto));
                       } else if (Server__BehaviorDescriptor.getTipo_id585zzjDKKmp.invoke(toNode, toPort) == "service") {
                         SNode servicio = Server__BehaviorDescriptor.getServicio_id5Yvlr8xnW3d.invoke(toNode, toPort);
                         SLinkOperations.setTarget(servicio, LINKS.connection$WFQD, conexion_puerto);
                         SPropertyOperations.assign(conexion_puerto, PROPS.label$AAcS, "srv request");
                         SLinkOperations.setTarget(conexion_puerto, LINKS.message$3geB, SLinkOperations.getTarget(servicio, LINKS.message$_DkH));
+                        ListSequence.fromList(SLinkOperations.getChildren(fromNode, LINKS.service_requests$xlyp)).addElement(SNodeOperations.copyNode(conexion_puerto));
                       }
                       ListSequence.fromList(SLinkOperations.getChildren(((SNode) _variablesContext.getValue("thisNode")), LINKS.port_connections$BohG)).addElement(conexion_puerto);
-
                     }
                   }
                   @Override
@@ -439,12 +442,16 @@ import org.jetbrains.mps.openapi.language.SProperty;
     /*package*/ static final SContainmentLink topics$diq9 = MetaAdapterFactory.getContainmentLink(0xf7db56d1b41e4c13L, 0x9756a014feb108beL, 0x5d8e854cb6b6ef9L, 0x7a5e6dfd6e6b8c53L, "topics");
     /*package*/ static final SReferenceLink node$IXJD = MetaAdapterFactory.getReferenceLink(0xf7db56d1b41e4c13L, 0x9756a014feb108beL, 0x5d8e854cb6b9f03L, 0x5d8e854cb6b9f04L, "node");
     /*package*/ static final SReferenceLink topic$IYsG = MetaAdapterFactory.getReferenceLink(0xf7db56d1b41e4c13L, 0x9756a014feb108beL, 0x5d8e854cb6b9f03L, 0x5d8e854cb6b9f07L, "topic");
+    /*package*/ static final SContainmentLink publications$MIbK = MetaAdapterFactory.getContainmentLink(0xf7db56d1b41e4c13L, 0x9756a014feb108beL, 0x5d8e854cb6b6efbL, 0x5d8e854cb6ba44bL, "publications");
+    /*package*/ static final SContainmentLink subscriptions$MIDM = MetaAdapterFactory.getContainmentLink(0xf7db56d1b41e4c13L, 0x9756a014feb108beL, 0x5d8e854cb6b6efbL, 0x5d8e854cb6ba44dL, "subscriptions");
     /*package*/ static final SReferenceLink node$WQmF = MetaAdapterFactory.getReferenceLink(0xf7db56d1b41e4c13L, 0x9756a014feb108beL, 0x52ae22b433653219L, 0x52ae22b43365321cL, "node");
     /*package*/ static final SReferenceLink server$WQOH = MetaAdapterFactory.getReferenceLink(0xf7db56d1b41e4c13L, 0x9756a014feb108beL, 0x52ae22b433653219L, 0x52ae22b43365321eL, "server");
     /*package*/ static final SReferenceLink connection$WFQD = MetaAdapterFactory.getReferenceLink(0xf7db56d1b41e4c13L, 0x9756a014feb108beL, 0x52ae22b4336975deL, 0x24577e76ac2158acL, "connection");
     /*package*/ static final SReferenceLink message$3geB = MetaAdapterFactory.getReferenceLink(0xf7db56d1b41e4c13L, 0x9756a014feb108beL, 0x52ae22b433653219L, 0x18dbf75c7f6888d7L, "message");
     /*package*/ static final SContainmentLink message$eqUd = MetaAdapterFactory.getContainmentLink(0xf7db56d1b41e4c13L, 0x9756a014feb108beL, 0x5f9f55b2215f05faL, 0x1a87a547ff4fbb1aL, "message");
+    /*package*/ static final SContainmentLink action_requests$xkAl = MetaAdapterFactory.getContainmentLink(0xf7db56d1b41e4c13L, 0x9756a014feb108beL, 0x5d8e854cb6b6efbL, 0x573384c7f1e1d928L, "action_requests");
     /*package*/ static final SContainmentLink message$_DkH = MetaAdapterFactory.getContainmentLink(0xf7db56d1b41e4c13L, 0x9756a014feb108beL, 0x5f9f55b2215b96f8L, 0x1a87a547ff4948c3L, "message");
+    /*package*/ static final SContainmentLink service_requests$xlyp = MetaAdapterFactory.getContainmentLink(0xf7db56d1b41e4c13L, 0x9756a014feb108beL, 0x5d8e854cb6b6efbL, 0x573384c7f1e1d92cL, "service_requests");
   }
 
   private static final class CONCEPTS {
