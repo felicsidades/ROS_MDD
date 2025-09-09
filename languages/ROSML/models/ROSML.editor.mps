@@ -969,5 +969,44 @@
       </node>
     </node>
   </node>
+  <node concept="24kQdi" id="3hvZw3I5d8j">
+    <ref role="1XX52x" to="9g35:1zrXPLZlHEd" resolve="IInterface" />
+    <node concept="3EZMnI" id="3hvZw3I5d8l" role="2wV5jI">
+      <node concept="3F0ifn" id="3hvZw3I5d8r" role="3EZMnx">
+        <property role="3F0ifm" value="Nombre mensaje:" />
+      </node>
+      <node concept="3F0A7n" id="3hvZw3I5d8u" role="3EZMnx">
+        <ref role="1NtTu8" to="tpck:h0TrG11" resolve="name" />
+        <node concept="ljvvj" id="3hvZw3I5d8x" role="3F10Kt">
+          <property role="VOm3f" value="true" />
+        </node>
+      </node>
+      <node concept="3F0ifn" id="3hvZw3I5d8z" role="3EZMnx">
+        <property role="3F0ifm" value="Import:" />
+      </node>
+      <node concept="3F0A7n" id="3hvZw3I5d8A" role="3EZMnx">
+        <ref role="1NtTu8" to="9g35:7qruTHmnoFV" resolve="import" />
+      </node>
+      <node concept="3F0ifn" id="3hvZw3I5d8L" role="3EZMnx">
+        <property role="3F0ifm" value="Message type:" />
+        <node concept="pVoyu" id="3hvZw3I5d8Q" role="3F10Kt">
+          <property role="VOm3f" value="true" />
+        </node>
+      </node>
+      <node concept="3F0A7n" id="3hvZw3I5d8O" role="3EZMnx">
+        <ref role="1NtTu8" to="9g35:1zrXPLZlHDN" resolve="message_type" />
+      </node>
+      <node concept="3F0ifn" id="3hvZw3I5d8W" role="3EZMnx">
+        <property role="3F0ifm" value="Package:" />
+        <node concept="pVoyu" id="3hvZw3I5d92" role="3F10Kt">
+          <property role="VOm3f" value="true" />
+        </node>
+      </node>
+      <node concept="3F0A7n" id="3hvZw3I5d8Z" role="3EZMnx">
+        <ref role="1NtTu8" to="9g35:6aVkdwz7VvG" resolve="package" />
+      </node>
+      <node concept="l2Vlx" id="3hvZw3I5d8o" role="2iSdaV" />
+    </node>
+  </node>
 </model>
 
