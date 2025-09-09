@@ -15,8 +15,8 @@ public class EnumerationDescriptor_EInterfaces extends EnumerationDescriptorBase
     super(0xf7db56d1b41e4c13L, 0x9756a014feb108beL, 0x18dbf75c7f56da76L, "EInterfaces", "r:d670596f-f26c-43d2-8e17-a7b3e68888bf(ROSML.structure)/1791297253455354486");
   }
 
-  private final EnumerationDescriptor.MemberDescriptor myMember_msg_0 = new EnumerationDescriptor.MemberDescriptor("msg", "message", 0x18dbf75c7f56da77L, "r:d670596f-f26c-43d2-8e17-a7b3e68888bf(ROSML.structure)/1791297253455354487");
-  private final EnumerationDescriptor.MemberDescriptor myMember_srv_0 = new EnumerationDescriptor.MemberDescriptor("srv", "service", 0x18dbf75c7f56da78L, "r:d670596f-f26c-43d2-8e17-a7b3e68888bf(ROSML.structure)/1791297253455354488");
+  private final EnumerationDescriptor.MemberDescriptor myMember_msg_0 = new EnumerationDescriptor.MemberDescriptor("msg", "msg", 0x18dbf75c7f56da77L, "r:d670596f-f26c-43d2-8e17-a7b3e68888bf(ROSML.structure)/1791297253455354487");
+  private final EnumerationDescriptor.MemberDescriptor myMember_srv_0 = new EnumerationDescriptor.MemberDescriptor("srv", "srv", 0x18dbf75c7f56da78L, "r:d670596f-f26c-43d2-8e17-a7b3e68888bf(ROSML.structure)/1791297253455354488");
   private final EnumerationDescriptor.MemberDescriptor myMember_action_0 = new EnumerationDescriptor.MemberDescriptor("action", "action", 0x18dbf75c7f56da7bL, "r:d670596f-f26c-43d2-8e17-a7b3e68888bf(ROSML.structure)/1791297253455354491");
 
   private final EnumerationLiteralsIndex myIndex = EnumerationLiteralsIndex.build(0xf7db56d1b41e4c13L, 0x9756a014feb108beL, 0x18dbf75c7f56da76L, 0x18dbf75c7f56da77L, 0x18dbf75c7f56da78L, 0x18dbf75c7f56da7bL);

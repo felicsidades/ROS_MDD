@@ -1543,7 +1543,7 @@
             <uo k="s:originTrace" v="n:1791297253455354486" />
           </node>
           <node concept="Xl_RD" id="8e" role="37wK5m">
-            <property role="Xl_RC" value="message" />
+            <property role="Xl_RC" value="msg" />
             <uo k="s:originTrace" v="n:1791297253455354486" />
           </node>
           <node concept="11gdke" id="8f" role="37wK5m">
@@ -1578,7 +1578,7 @@
             <uo k="s:originTrace" v="n:1791297253455354486" />
           </node>
           <node concept="Xl_RD" id="8m" role="37wK5m">
-            <property role="Xl_RC" value="service" />
+            <property role="Xl_RC" value="srv" />
             <uo k="s:originTrace" v="n:1791297253455354486" />
           </node>
           <node concept="11gdke" id="8n" role="37wK5m">

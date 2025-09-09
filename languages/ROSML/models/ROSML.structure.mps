@@ -304,12 +304,12 @@
     <node concept="25R33" id="1zrXPLZlHDR" role="25R1y">
       <property role="3tVfz5" value="1791297253455354487" />
       <property role="TrG5h" value="msg" />
-      <property role="1L1pqM" value="message" />
+      <property role="1L1pqM" value="msg" />
     </node>
     <node concept="25R33" id="1zrXPLZlHDS" role="25R1y">
       <property role="3tVfz5" value="1791297253455354488" />
       <property role="TrG5h" value="srv" />
-      <property role="1L1pqM" value="service" />
+      <property role="1L1pqM" value="srv" />
     </node>
     <node concept="25R33" id="1zrXPLZlHDV" role="25R1y">
       <property role="3tVfz5" value="1791297253455354491" />
