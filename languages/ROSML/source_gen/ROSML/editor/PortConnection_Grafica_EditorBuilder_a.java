@@ -44,11 +44,11 @@ import org.jetbrains.mps.openapi.language.SReferenceLink;
 import jetbrains.mps.smodel.adapter.structure.MetaAdapterFactory;
 import org.jetbrains.mps.openapi.language.SConcept;
 
-/*package*/ class PortConnection_EditorBuilder_a extends AbstractEditorBuilder {
+/*package*/ class PortConnection_Grafica_EditorBuilder_a extends AbstractEditorBuilder {
   @NotNull
   private SNode myNode;
 
-  public PortConnection_EditorBuilder_a(@NotNull EditorContext context, @NotNull SNode node) {
+  public PortConnection_Grafica_EditorBuilder_a(@NotNull EditorContext context, @NotNull SNode node) {
     super(context);
     myNode = node;
   }
@@ -83,19 +83,19 @@ import org.jetbrains.mps.openapi.language.SConcept;
           if (reverse) {
 
             {
-              Tuples._2<IConnectionEndpointReference, IConnectionEndpointReference> _tmp_e89v54_b0b0i0a0a1a2a3a8 = MultiTuple.<IConnectionEndpointReference,IConnectionEndpointReference>from(endpointTo, endpointFrom);
-              endpointFrom = _tmp_e89v54_b0b0i0a0a1a2a3a8._0();
-              endpointTo = _tmp_e89v54_b0b0i0a0a1a2a3a8._1();
+              Tuples._2<IConnectionEndpointReference, IConnectionEndpointReference> _tmp_s8cno4_b0b0i0a0a1a2a3a8 = MultiTuple.<IConnectionEndpointReference,IConnectionEndpointReference>from(endpointTo, endpointFrom);
+              endpointFrom = _tmp_s8cno4_b0b0i0a0a1a2a3a8._0();
+              endpointTo = _tmp_s8cno4_b0b0i0a0a1a2a3a8._1();
             }
             {
-              Tuples._2<EditorCell, EditorCell> _tmp_e89v54_c0b0i0a0a1a2a3a8 = MultiTuple.<EditorCell,EditorCell>from(endRoleCell, startRoleCell);
-              startRoleCell = _tmp_e89v54_c0b0i0a0a1a2a3a8._0();
-              endRoleCell = _tmp_e89v54_c0b0i0a0a1a2a3a8._1();
+              Tuples._2<EditorCell, EditorCell> _tmp_s8cno4_c0b0i0a0a1a2a3a8 = MultiTuple.<EditorCell,EditorCell>from(endRoleCell, startRoleCell);
+              startRoleCell = _tmp_s8cno4_c0b0i0a0a1a2a3a8._0();
+              endRoleCell = _tmp_s8cno4_c0b0i0a0a1a2a3a8._1();
             }
             {
-              Tuples._2<IShape, IShape> _tmp_e89v54_d0b0i0a0a1a2a3a8 = MultiTuple.<IShape,IShape>from(endShape, startShape);
-              startShape = _tmp_e89v54_d0b0i0a0a1a2a3a8._0();
-              endShape = _tmp_e89v54_d0b0i0a0a1a2a3a8._1();
+              Tuples._2<IShape, IShape> _tmp_s8cno4_d0b0i0a0a1a2a3a8 = MultiTuple.<IShape,IShape>from(endShape, startShape);
+              startShape = _tmp_s8cno4_d0b0i0a0a1a2a3a8._0();
+              endShape = _tmp_s8cno4_d0b0i0a0a1a2a3a8._1();
             }
           }
         }
@@ -144,7 +144,7 @@ import org.jetbrains.mps.openapi.language.SConcept;
 
       };
 
-      EditorCell label = DiagramUtil.getCellIfNotEmpty(new Inline_Builder_djuy7q_a0(editorContext, node).createCell());
+      EditorCell label = DiagramUtil.getCellIfNotEmpty(new Inline_Builder_xkzccq_a0(editorContext, node).createCell());
 
       EditorCell editorCell = label;
       MyGraph rootGraph = DiagramCreationContext.getRootGraph();
@@ -157,7 +157,7 @@ import org.jetbrains.mps.openapi.language.SConcept;
 
       diagramCell.value = new EditorCell_DiagramElement(editorContext, node, accessor);
       editorCell = diagramCell.value;
-      editorCell.setCellId("DiagramConnector_djuy7q_a");
+      editorCell.setCellId("DiagramConnector_xkzccq_a");
       editorCell.setBig(true);
       setCellContext(editorCell);
 
@@ -182,11 +182,11 @@ import org.jetbrains.mps.openapi.language.SConcept;
   private EditorCell createDiagramConnector_1() {
     return createDiagramConnector_0(getEditorContext(), myNode);
   }
-  /*package*/ static class Inline_Builder_djuy7q_a0 extends AbstractEditorBuilder {
+  /*package*/ static class Inline_Builder_xkzccq_a0 extends AbstractEditorBuilder {
     @NotNull
     private SNode myNode;
 
-    /*package*/ Inline_Builder_djuy7q_a0(@NotNull EditorContext context, @NotNull SNode node) {
+    /*package*/ Inline_Builder_xkzccq_a0(@NotNull EditorContext context, @NotNull SNode node) {
       super(context);
       myNode = node;
     }
