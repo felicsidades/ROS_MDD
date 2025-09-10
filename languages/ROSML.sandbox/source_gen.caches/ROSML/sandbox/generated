@@ -1,3 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<product version="3" modelHash="-b9r2zv9o9k0p9irnxsfn6glunocj7sc" />
+<product version="3" modelHash="-adl22bilnzjoo0eqokwme9gdn692nmt">
+  <files dir="ROSML/sandbox/proyecto" names="CMakeLists.txt:package.xml" />
+  <files dir="ROSML/sandbox/proyecto/src" names="nodo.cpp" />
+</product>
 

@@ -29,27 +29,27 @@ public class updateAllDependencies {
       public void execute_internal(EditorContext editorContext, SNode node) {
         for (final SNode dep : ListSequence.fromList(SLinkOperations.getChildren(node, LINKS.direct_connections$Xf$k))) {
           if (ListSequence.fromList(SLinkOperations.getChildren(node, LINKS.package_imports$I8CQ)).findFirst((it) -> SPropertyOperations.getString(it, PROPS.package$jRYp) == SPropertyOperations.getString(SLinkOperations.getTarget(SLinkOperations.getTarget(dep, LINKS.topic$IYsG), LINKS.message$uMau), PROPS.package$uL2X)) == null && SPropertyOperations.getBoolean(SLinkOperations.getTarget(SLinkOperations.getTarget(dep, LINKS.topic$IYsG), LINKS.message$uMau), PROPS.import$N7ax)) {
-            SNode dependency = SConceptOperations.createNewNode(MetaAdapterFactory.getConcept(0xf7db56d1b41e4c13L, 0x9756a014feb108beL, 0x90345e25471557L, "ROSML.structure.Dependency"));
-            SPropertyOperations.assign(dependency, PROPS.package$jRYp, SPropertyOperations.getString(SLinkOperations.getTarget(SLinkOperations.getTarget(dep, LINKS.topic$IYsG), LINKS.message$uMau), PROPS.package$uL2X));
-            ListSequence.fromList(SLinkOperations.getChildren(node, LINKS.package_imports$I8CQ)).addElement(dependency);
+            SNode dep1 = SConceptOperations.createNewNode(MetaAdapterFactory.getConcept(0xf7db56d1b41e4c13L, 0x9756a014feb108beL, 0x90345e25471557L, "ROSML.structure.Dependency"));
+            SPropertyOperations.assign(dep1, PROPS.package$jRYp, SPropertyOperations.getString(SLinkOperations.getTarget(SLinkOperations.getTarget(dep, LINKS.topic$IYsG), LINKS.message$uMau), PROPS.package$uL2X));
+            ListSequence.fromList(SLinkOperations.getChildren(node, LINKS.package_imports$I8CQ)).addElement(dep1);
           }
           if (ListSequence.fromList(SLinkOperations.getChildren(SLinkOperations.getTarget(dep, LINKS.node$IXJD), LINKS.dependencies$Dxgk)).findFirst((it) -> SPropertyOperations.getString(it, PROPS.package$jRYp) == SPropertyOperations.getString(SLinkOperations.getTarget(SLinkOperations.getTarget(dep, LINKS.topic$IYsG), LINKS.message$uMau), PROPS.package$uL2X)) == null && SPropertyOperations.getBoolean(SLinkOperations.getTarget(SLinkOperations.getTarget(dep, LINKS.topic$IYsG), LINKS.message$uMau), PROPS.import$N7ax)) {
-            SNode dependency = SConceptOperations.createNewNode(MetaAdapterFactory.getConcept(0xf7db56d1b41e4c13L, 0x9756a014feb108beL, 0x90345e25471557L, "ROSML.structure.Dependency"));
-            SPropertyOperations.assign(dependency, PROPS.package$jRYp, SPropertyOperations.getString(SLinkOperations.getTarget(SLinkOperations.getTarget(dep, LINKS.topic$IYsG), LINKS.message$uMau), PROPS.package$uL2X));
-            ListSequence.fromList(SLinkOperations.getChildren(SLinkOperations.getTarget(dep, LINKS.node$IXJD), LINKS.dependencies$Dxgk)).addElement(dependency);
+            SNode dep2 = SConceptOperations.createNewNode(MetaAdapterFactory.getConcept(0xf7db56d1b41e4c13L, 0x9756a014feb108beL, 0x90345e25471557L, "ROSML.structure.Dependency"));
+            SPropertyOperations.assign(dep2, PROPS.package$jRYp, SPropertyOperations.getString(SLinkOperations.getTarget(SLinkOperations.getTarget(dep, LINKS.topic$IYsG), LINKS.message$uMau), PROPS.package$uL2X));
+            ListSequence.fromList(SLinkOperations.getChildren(SLinkOperations.getTarget(dep, LINKS.node$IXJD), LINKS.dependencies$Dxgk)).addElement(dep2);
           }
 
         }
         for (final SNode dep : ListSequence.fromList(SLinkOperations.getChildren(node, LINKS.port_connections$BohG))) {
           if (ListSequence.fromList(SLinkOperations.getChildren(node, LINKS.package_imports$I8CQ)).findFirst((it) -> SPropertyOperations.getString(it, PROPS.package$jRYp) == SPropertyOperations.getString(SLinkOperations.getTarget(dep, LINKS.message$3geB), PROPS.package$uL2X)) == null && SPropertyOperations.getBoolean(SLinkOperations.getTarget(dep, LINKS.message$3geB), PROPS.import$N7ax)) {
-            SNode dependency = SConceptOperations.createNewNode(MetaAdapterFactory.getConcept(0xf7db56d1b41e4c13L, 0x9756a014feb108beL, 0x90345e25471557L, "ROSML.structure.Dependency"));
-            SPropertyOperations.assign(dependency, PROPS.package$jRYp, SPropertyOperations.getString(SLinkOperations.getTarget(dep, LINKS.message$3geB), PROPS.package$uL2X));
-            ListSequence.fromList(SLinkOperations.getChildren(SLinkOperations.getTarget(dep, LINKS.node$WQmF), LINKS.dependencies$Dxgk)).addElement(dependency);
+            SNode dep3 = SConceptOperations.createNewNode(MetaAdapterFactory.getConcept(0xf7db56d1b41e4c13L, 0x9756a014feb108beL, 0x90345e25471557L, "ROSML.structure.Dependency"));
+            SPropertyOperations.assign(dep3, PROPS.package$jRYp, SPropertyOperations.getString(SLinkOperations.getTarget(dep, LINKS.message$3geB), PROPS.package$uL2X));
+            ListSequence.fromList(SLinkOperations.getChildren(SLinkOperations.getTarget(dep, LINKS.node$WQmF), LINKS.dependencies$Dxgk)).addElement(dep3);
           }
           if (ListSequence.fromList(SLinkOperations.getChildren(SLinkOperations.getTarget(dep, LINKS.node$WQmF), LINKS.dependencies$Dxgk)).findFirst((it) -> SPropertyOperations.getString(it, PROPS.package$jRYp) == SPropertyOperations.getString(SLinkOperations.getTarget(dep, LINKS.message$3geB), PROPS.package$uL2X)) == null && SPropertyOperations.getBoolean(SLinkOperations.getTarget(dep, LINKS.message$3geB), PROPS.import$N7ax)) {
-            SNode dependency = SConceptOperations.createNewNode(MetaAdapterFactory.getConcept(0xf7db56d1b41e4c13L, 0x9756a014feb108beL, 0x90345e25471557L, "ROSML.structure.Dependency"));
-            SPropertyOperations.assign(dependency, PROPS.package$jRYp, SPropertyOperations.getString(SLinkOperations.getTarget(dep, LINKS.message$3geB), PROPS.package$uL2X));
-            ListSequence.fromList(SLinkOperations.getChildren(SLinkOperations.getTarget(dep, LINKS.node$WQmF), LINKS.dependencies$Dxgk)).addElement(dependency);
+            SNode dep4 = SConceptOperations.createNewNode(MetaAdapterFactory.getConcept(0xf7db56d1b41e4c13L, 0x9756a014feb108beL, 0x90345e25471557L, "ROSML.structure.Dependency"));
+            SPropertyOperations.assign(dep4, PROPS.package$jRYp, SPropertyOperations.getString(SLinkOperations.getTarget(dep, LINKS.message$3geB), PROPS.package$uL2X));
+            ListSequence.fromList(SLinkOperations.getChildren(SLinkOperations.getTarget(dep, LINKS.node$WQmF), LINKS.dependencies$Dxgk)).addElement(dep4);
           }
 
         }

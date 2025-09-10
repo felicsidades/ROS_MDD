@@ -23,18 +23,26 @@ public class EditorAspectDescriptorImpl extends EditorAspectDescriptorBase imple
     SAbstractConcept cncpt = ((SAbstractConcept) concept);
     switch (conceptIndex.index(cncpt)) {
       case 0:
-        return Collections.<ConceptEditor>singletonList(new CustomInterface_Editor());
+        return Collections.<ConceptEditor>singletonList(new ActionInterface_Editor());
       case 1:
-        return Collections.<ConceptEditor>singletonList(new DirectConnection_Grafica_Editor());
+        return Collections.<ConceptEditor>singletonList(new CustomInterface_Editor());
       case 2:
-        return Arrays.asList(new ConceptEditor[]{new Node_Editor(), new Node_Grafica_Editor()});
+        return Collections.<ConceptEditor>singletonList(new DataInterface_Editor());
       case 3:
-        return Collections.<ConceptEditor>singletonList(new PortConnection_Grafica_Editor());
+        return Collections.<ConceptEditor>singletonList(new Dependency_Editor());
       case 4:
-        return Arrays.asList(new ConceptEditor[]{new Project_Editor(), new Project_Grafica_Editor()});
+        return Arrays.asList(new ConceptEditor[]{new DirectConnection_Editor(), new DirectConnection_Grafica_Editor()});
       case 5:
-        return Collections.<ConceptEditor>singletonList(new Server_Grafica_Editor());
+        return Arrays.asList(new ConceptEditor[]{new Node_Editor(), new Node_Grafica_Editor()});
       case 6:
+        return Arrays.asList(new ConceptEditor[]{new PortConnection_Editor(), new PortConnection_Grafica_Editor()});
+      case 7:
+        return Arrays.asList(new ConceptEditor[]{new Project_Editor(), new Project_Grafica_Editor()});
+      case 8:
+        return Arrays.asList(new ConceptEditor[]{new Server_Editor(), new Server_Grafica_Editor()});
+      case 9:
+        return Collections.<ConceptEditor>singletonList(new ServiceInterface_Editor());
+      case 10:
         return Collections.<ConceptEditor>singletonList(new Topic_Grafica_Editor());
       default:
     }
@@ -46,5 +54,5 @@ public class EditorAspectDescriptorImpl extends EditorAspectDescriptorBase imple
   }
 
 
-  private static final ConceptSwitchIndex conceptIndex = new ConceptSwitchIndexBuilder().put(MetaIdFactory.conceptId(0xf7db56d1b41e4c13L, 0x9756a014feb108beL, 0x18dbf75c7f56da88L), MetaIdFactory.conceptId(0xf7db56d1b41e4c13L, 0x9756a014feb108beL, 0x5d8e854cb6b9f03L), MetaIdFactory.conceptId(0xf7db56d1b41e4c13L, 0x9756a014feb108beL, 0x5d8e854cb6b6efbL), MetaIdFactory.conceptId(0xf7db56d1b41e4c13L, 0x9756a014feb108beL, 0x52ae22b433653219L), MetaIdFactory.conceptId(0xf7db56d1b41e4c13L, 0x9756a014feb108beL, 0x5d8e854cb6b6ef9L), MetaIdFactory.conceptId(0xf7db56d1b41e4c13L, 0x9756a014feb108beL, 0x2126fce3999aabd2L), MetaIdFactory.conceptId(0xf7db56d1b41e4c13L, 0x9756a014feb108beL, 0x5d8e854cb6b6f01L)).seal();
+  private static final ConceptSwitchIndex conceptIndex = new ConceptSwitchIndexBuilder().put(MetaIdFactory.conceptId(0xf7db56d1b41e4c13L, 0x9756a014feb108beL, 0x1a87a547ff4c1418L), MetaIdFactory.conceptId(0xf7db56d1b41e4c13L, 0x9756a014feb108beL, 0x18dbf75c7f56da88L), MetaIdFactory.conceptId(0xf7db56d1b41e4c13L, 0x9756a014feb108beL, 0x2126fce3999aa945L), MetaIdFactory.conceptId(0xf7db56d1b41e4c13L, 0x9756a014feb108beL, 0x90345e25471557L), MetaIdFactory.conceptId(0xf7db56d1b41e4c13L, 0x9756a014feb108beL, 0x5d8e854cb6b9f03L), MetaIdFactory.conceptId(0xf7db56d1b41e4c13L, 0x9756a014feb108beL, 0x5d8e854cb6b6efbL), MetaIdFactory.conceptId(0xf7db56d1b41e4c13L, 0x9756a014feb108beL, 0x52ae22b433653219L), MetaIdFactory.conceptId(0xf7db56d1b41e4c13L, 0x9756a014feb108beL, 0x5d8e854cb6b6ef9L), MetaIdFactory.conceptId(0xf7db56d1b41e4c13L, 0x9756a014feb108beL, 0x2126fce3999aabd2L), MetaIdFactory.conceptId(0xf7db56d1b41e4c13L, 0x9756a014feb108beL, 0x1a87a547ff4948c6L), MetaIdFactory.conceptId(0xf7db56d1b41e4c13L, 0x9756a014feb108beL, 0x5d8e854cb6b6f01L)).seal();
 }
