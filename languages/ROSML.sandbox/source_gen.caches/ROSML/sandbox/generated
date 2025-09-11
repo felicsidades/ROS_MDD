@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<product version="3" modelHash="-adl22bilnzjoo0eqokwme9gdn692nmt">
+<product version="3" modelHash="-8g1fesndbzc6950a68vqntnyngt1d3l">
   <files dir="ROSML/sandbox/proyecto" names="CMakeLists.txt:package.xml" />
-  <files dir="ROSML/sandbox/proyecto/src" names="nodo.cpp" />
+  <files dir="ROSML/sandbox/proyecto/src" names="nodo.cpp:servidor.cpp" />
+  <files dir="ROSML/sandbox/proyecto/srv" names="String.srv" />
 </product>
 
