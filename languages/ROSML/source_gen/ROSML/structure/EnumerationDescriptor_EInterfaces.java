@@ -20,7 +20,7 @@ public class EnumerationDescriptor_EInterfaces extends EnumerationDescriptorBase
   private final EnumerationDescriptor.MemberDescriptor myMember_action_0 = new EnumerationDescriptor.MemberDescriptor("action", "action", 0x18dbf75c7f56da7bL, "r:d670596f-f26c-43d2-8e17-a7b3e68888bf(ROSML.structure)/1791297253455354491");
 
   private final EnumerationLiteralsIndex myIndex = EnumerationLiteralsIndex.build(0xf7db56d1b41e4c13L, 0x9756a014feb108beL, 0x18dbf75c7f56da76L, 0x18dbf75c7f56da77L, 0x18dbf75c7f56da78L, 0x18dbf75c7f56da7bL);
-  private final List<EnumerationDescriptor.MemberDescriptor> myMembers = new EnumerationDescriptorBase.MembersList0(myIndex, myMember_msg_0, myMember_srv_0, myMember_action_0);
+  private final List<EnumerationDescriptor.MemberDescriptor> myMembers = new EnumerationDescriptorBase.MembersList(myIndex, myMember_msg_0, myMember_srv_0, myMember_action_0);
 
   @Nullable
   @Override

@@ -1952,7 +1952,19 @@
     <ref role="1XX52x" to="9g35:5aI8FgNpj8p" resolve="PortConnection" />
     <node concept="3EZMnI" id="2845_1mMQFV" role="2wV5jI">
       <node concept="3F0ifn" id="2845_1mMQG1" role="3EZMnx">
-        <property role="3F0ifm" value="This node performs a" />
+        <property role="3F0ifm" value="Node" />
+      </node>
+      <node concept="1iCGBv" id="4J47WCJAcw_" role="3EZMnx">
+        <ref role="1NtTu8" to="9g35:5aI8FgNpj8s" resolve="node" />
+        <node concept="1sVBvm" id="4J47WCJAcwB" role="1sWHZn">
+          <node concept="3F0A7n" id="4J47WCJAcwF" role="2wV5jI">
+            <property role="1Intyy" value="true" />
+            <ref role="1NtTu8" to="tpck:h0TrG11" resolve="name" />
+          </node>
+        </node>
+      </node>
+      <node concept="3F0ifn" id="4J47WCJAcwI" role="3EZMnx">
+        <property role="3F0ifm" value="performs a" />
       </node>
       <node concept="3F0A7n" id="2845_1mMQG4" role="3EZMnx">
         <ref role="1NtTu8" to="9g35:5aI8FgNq$Sn" resolve="label" />
