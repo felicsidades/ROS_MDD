@@ -2266,29 +2266,7 @@
             </node>
             <node concept="356sEK" id="xuK2hhEiYI" role="383Ya9">
               <node concept="356sEF" id="xuK2hhEiYJ" role="356sEH">
-                <property role="TrG5h" value="goal.target = &quot;" />
-              </node>
-              <node concept="356sEF" id="5FMWRSoMG$c" role="356sEH">
-                <property role="TrG5h" value="actionT" />
-                <node concept="17Uvod" id="5FMWRSoMGGB" role="lGtFl">
-                  <property role="2qtEX9" value="name" />
-                  <property role="P4ACc" value="ceab5195-25ea-4f22-9b92-103b95ca8c0c/1169194658468/1169194664001" />
-                  <node concept="3zFVjK" id="5FMWRSoMGGC" role="3zH0cK">
-                    <node concept="3clFbS" id="5FMWRSoMGGD" role="2VODD2">
-                      <node concept="3clFbF" id="5FMWRSoMHuF" role="3cqZAp">
-                        <node concept="2OqwBi" id="5FMWRSoMHYt" role="3clFbG">
-                          <node concept="30H73N" id="5FMWRSoMHuE" role="2Oq$k0" />
-                          <node concept="3TrcHB" id="5FMWRSoMMPx" role="2OqNvi">
-                            <ref role="3TsBF5" to="9g35:6x_NG3d6IVg" resolve="port_name" />
-                          </node>
-                        </node>
-                      </node>
-                    </node>
-                  </node>
-                </node>
-              </node>
-              <node concept="356sEF" id="5FMWRSoMG$d" role="356sEH">
-                <property role="TrG5h" value="&quot; // Replace with your goal field" />
+                <property role="TrG5h" value="// TODO: Access and set the goal. " />
               </node>
               <node concept="2EixSi" id="xuK2hhEiYL" role="2EinRH" />
             </node>
@@ -2303,7 +2281,7 @@
             </node>
             <node concept="356sEK" id="xuK2hhEiYU" role="383Ya9">
               <node concept="356sEF" id="xuK2hhEiYV" role="356sEH">
-                <property role="TrG5h" value="auto send_goal_options = rclcpp_action::Client&lt;" />
+                <property role="TrG5h" value="auto goal_options = rclcpp_action::Client&lt;" />
               </node>
               <node concept="356sEF" id="1xC_59ip9d8" role="356sEH">
                 <property role="TrG5h" value="packageT::action::actionT" />
@@ -2354,32 +2332,50 @@
             </node>
             <node concept="356sEK" id="xuK2hhEiYY" role="383Ya9">
               <node concept="356sEF" id="xuK2hhEiYZ" role="356sEH">
-                <property role="TrG5h" value="send_goal_options.goal_response_callback =" />
+                <property role="TrG5h" value="goal_options.goal_response_callback =" />
               </node>
               <node concept="2EixSi" id="xuK2hhEiZ1" role="2EinRH" />
             </node>
-            <node concept="356sEQ" id="xuK2hhEiZ6" role="383Ya9">
-              <property role="333NGx" value="    " />
-              <node concept="356sEK" id="xuK2hhEiZ2" role="383Ya9">
-                <node concept="356sEF" id="xuK2hhEiZ3" role="356sEH">
-                  <property role="TrG5h" value="std::bind(&amp;TemplateNode::" />
+            <node concept="356WMU" id="1WhdBjvfj4u" role="383Ya9">
+              <node concept="356sEK" id="1WhdBjvfj4v" role="383Ya9">
+                <node concept="2EixSi" id="1WhdBjvfj4y" role="2EinRH" />
+                <node concept="356sEF" id="1WhdBjvfj4z" role="356sEH">
+                  <property role="TrG5h" value="        [this](std::shared_future&lt;rclcpp_action::ClientGoalHandle&lt;" />
                 </node>
-                <node concept="356sEF" id="1xC_59ipcVa" role="356sEH">
-                  <property role="TrG5h" value="TActionGoalResponse" />
-                  <node concept="17Uvod" id="1xC_59ipd4l" role="lGtFl">
+                <node concept="356sEF" id="1WhdBjvfsA0" role="356sEH">
+                  <property role="TrG5h" value="packageT::action::actionT" />
+                  <node concept="17Uvod" id="1WhdBjvfulQ" role="lGtFl">
                     <property role="2qtEX9" value="name" />
                     <property role="P4ACc" value="ceab5195-25ea-4f22-9b92-103b95ca8c0c/1169194658468/1169194664001" />
-                    <node concept="3zFVjK" id="1xC_59ipd4m" role="3zH0cK">
-                      <node concept="3clFbS" id="1xC_59ipd4n" role="2VODD2">
-                        <node concept="3clFbF" id="1xC_59ipdtE" role="3cqZAp">
-                          <node concept="3cpWs3" id="1xC_59iphs7" role="3clFbG">
-                            <node concept="Xl_RD" id="1xC_59iphy1" role="3uHU7w">
-                              <property role="Xl_RC" value="ActionGoalResponse" />
+                    <node concept="3zFVjK" id="1WhdBjvfulR" role="3zH0cK">
+                      <node concept="3clFbS" id="1WhdBjvfulS" role="2VODD2">
+                        <node concept="3clFbF" id="1WhdBjvfus8" role="3cqZAp">
+                          <node concept="3cpWs3" id="1WhdBjvfus9" role="3clFbG">
+                            <node concept="2OqwBi" id="1WhdBjvfusa" role="3uHU7w">
+                              <node concept="2OqwBi" id="1WhdBjvfusb" role="2Oq$k0">
+                                <node concept="30H73N" id="1WhdBjvfusc" role="2Oq$k0" />
+                                <node concept="3TrEf2" id="1WhdBjvfusd" role="2OqNvi">
+                                  <ref role="3Tt5mk" to="9g35:1zrXPLZq8zn" resolve="message" />
+                                </node>
+                              </node>
+                              <node concept="3TrcHB" id="1WhdBjvfuse" role="2OqNvi">
+                                <ref role="3TsBF5" to="tpck:h0TrG11" resolve="name" />
+                              </node>
                             </node>
-                            <node concept="2OqwBi" id="1xC_59ipdZA" role="3uHU7B">
-                              <node concept="30H73N" id="1xC_59ipdtD" role="2Oq$k0" />
-                              <node concept="3TrcHB" id="1xC_59ipfa1" role="2OqNvi">
-                                <ref role="3TsBF5" to="9g35:6x_NG3d6IVg" resolve="port_name" />
+                            <node concept="3cpWs3" id="1WhdBjvfusf" role="3uHU7B">
+                              <node concept="2OqwBi" id="1WhdBjvfusg" role="3uHU7B">
+                                <node concept="2OqwBi" id="1WhdBjvfush" role="2Oq$k0">
+                                  <node concept="30H73N" id="1WhdBjvfusi" role="2Oq$k0" />
+                                  <node concept="3TrEf2" id="1WhdBjvfusj" role="2OqNvi">
+                                    <ref role="3Tt5mk" to="9g35:1zrXPLZq8zn" resolve="message" />
+                                  </node>
+                                </node>
+                                <node concept="3TrcHB" id="1WhdBjvfusk" role="2OqNvi">
+                                  <ref role="3TsBF5" to="9g35:6aVkdwz7VvG" resolve="package" />
+                                </node>
+                              </node>
+                              <node concept="Xl_RD" id="1WhdBjvfusl" role="3uHU7w">
+                                <property role="Xl_RC" value="::action::" />
                               </node>
                             </node>
                           </node>
@@ -2388,40 +2384,101 @@
                     </node>
                   </node>
                 </node>
-                <node concept="356sEF" id="1xC_59ipcVb" role="356sEH">
-                  <property role="TrG5h" value=", this);" />
+                <node concept="356sEF" id="1WhdBjvfsA1" role="356sEH">
+                  <property role="TrG5h" value="&gt;::SharedPtr&gt; future) {" />
                 </node>
-                <node concept="2EixSi" id="xuK2hhEiZ5" role="2EinRH" />
+              </node>
+              <node concept="356sEK" id="1WhdBjvfj4_" role="383Ya9">
+                <node concept="2EixSi" id="1WhdBjvfj4C" role="2EinRH" />
+                <node concept="356sEF" id="1WhdBjvfj4D" role="356sEH">
+                  <property role="TrG5h" value="            auto goal_handle = future.get();" />
+                </node>
+              </node>
+              <node concept="356sEK" id="1WhdBjvfj4F" role="383Ya9">
+                <node concept="2EixSi" id="1WhdBjvfj4I" role="2EinRH" />
+                <node concept="356sEF" id="1WhdBjvfj4J" role="356sEH">
+                  <property role="TrG5h" value="            if (!goal_handle) {" />
+                </node>
+              </node>
+              <node concept="356sEK" id="1WhdBjvfj4L" role="383Ya9">
+                <node concept="2EixSi" id="1WhdBjvfj4O" role="2EinRH" />
+                <node concept="356sEF" id="1WhdBjvfj4P" role="356sEH">
+                  <property role="TrG5h" value="                RCLCPP_ERROR(this-&gt;get_logger(), &quot;Goal was rejected by server&quot;);" />
+                </node>
+              </node>
+              <node concept="356sEK" id="1WhdBjvfj4R" role="383Ya9">
+                <node concept="2EixSi" id="1WhdBjvfj4U" role="2EinRH" />
+                <node concept="356sEF" id="1WhdBjvfj4V" role="356sEH">
+                  <property role="TrG5h" value="            } else {" />
+                </node>
+              </node>
+              <node concept="356sEK" id="1WhdBjvfj4X" role="383Ya9">
+                <node concept="2EixSi" id="1WhdBjvfj50" role="2EinRH" />
+                <node concept="356sEF" id="1WhdBjvfj51" role="356sEH">
+                  <property role="TrG5h" value="                RCLCPP_INFO(this-&gt;get_logger(), &quot;Goal accepted by server&quot;);" />
+                </node>
+              </node>
+              <node concept="356sEK" id="1WhdBjvfj53" role="383Ya9">
+                <node concept="2EixSi" id="1WhdBjvfj56" role="2EinRH" />
+                <node concept="356sEF" id="1WhdBjvfj57" role="356sEH">
+                  <property role="TrG5h" value="            }" />
+                </node>
+              </node>
+              <node concept="356sEK" id="1WhdBjvfj59" role="383Ya9">
+                <node concept="2EixSi" id="1WhdBjvfj5c" role="2EinRH" />
+                <node concept="356sEF" id="1WhdBjvfj5d" role="356sEH">
+                  <property role="TrG5h" value="        };" />
+                </node>
               </node>
             </node>
             <node concept="356sEK" id="xuK2hhEiZ7" role="383Ya9">
               <node concept="356sEF" id="xuK2hhEiZ8" role="356sEH">
-                <property role="TrG5h" value="send_goal_options.feedback_callback =" />
+                <property role="TrG5h" value="goal_options.feedback_callback =" />
               </node>
               <node concept="2EixSi" id="xuK2hhEiZa" role="2EinRH" />
             </node>
-            <node concept="356sEQ" id="xuK2hhEiZf" role="383Ya9">
-              <property role="333NGx" value="    " />
-              <node concept="356sEK" id="xuK2hhEiZb" role="383Ya9">
-                <node concept="356sEF" id="xuK2hhEiZc" role="356sEH">
-                  <property role="TrG5h" value="std::bind(&amp;TemplateNode::" />
-                </node>
-                <node concept="356sEF" id="1xC_59ipiop" role="356sEH">
-                  <property role="TrG5h" value="TActionFeedback" />
-                  <node concept="17Uvod" id="1xC_59ipix$" role="lGtFl">
-                    <property role="2qtEX9" value="name" />
-                    <property role="P4ACc" value="ceab5195-25ea-4f22-9b92-103b95ca8c0c/1169194658468/1169194664001" />
-                    <node concept="3zFVjK" id="1xC_59ipix_" role="3zH0cK">
-                      <node concept="3clFbS" id="1xC_59ipixA" role="2VODD2">
-                        <node concept="3clFbF" id="1xC_59ipj40" role="3cqZAp">
-                          <node concept="3cpWs3" id="1xC_59ipj42" role="3clFbG">
-                            <node concept="Xl_RD" id="1xC_59ipj43" role="3uHU7w">
-                              <property role="Xl_RC" value="ActionFeedback" />
-                            </node>
-                            <node concept="2OqwBi" id="1xC_59ipj44" role="3uHU7B">
-                              <node concept="30H73N" id="1xC_59ipj45" role="2Oq$k0" />
-                              <node concept="3TrcHB" id="1xC_59ipj46" role="2OqNvi">
-                                <ref role="3TsBF5" to="9g35:6x_NG3d6IVg" resolve="port_name" />
+            <node concept="356sEK" id="1WhdBjvfEei" role="383Ya9">
+              <node concept="356WMU" id="1WhdBjvfWMP" role="356sEH">
+                <node concept="356sEK" id="1WhdBjvfWMQ" role="383Ya9">
+                  <node concept="2EixSi" id="1WhdBjvfWMR" role="2EinRH" />
+                  <node concept="356sEF" id="1WhdBjvfWMS" role="356sEH">
+                    <property role="TrG5h" value="        [this](rclcpp_action::ClientGoalHandle&lt;" />
+                  </node>
+                  <node concept="356sEF" id="1WhdBjvgyPZ" role="356sEH">
+                    <property role="TrG5h" value="packageT::action::actionT" />
+                    <node concept="17Uvod" id="1WhdBjvgzDn" role="lGtFl">
+                      <property role="2qtEX9" value="name" />
+                      <property role="P4ACc" value="ceab5195-25ea-4f22-9b92-103b95ca8c0c/1169194658468/1169194664001" />
+                      <node concept="3zFVjK" id="1WhdBjvgzDo" role="3zH0cK">
+                        <node concept="3clFbS" id="1WhdBjvgzDp" role="2VODD2">
+                          <node concept="3clFbF" id="1WhdBjvgzJD" role="3cqZAp">
+                            <node concept="3cpWs3" id="1WhdBjvgzJE" role="3clFbG">
+                              <node concept="2OqwBi" id="1WhdBjvgzJF" role="3uHU7w">
+                                <node concept="2OqwBi" id="1WhdBjvgzJG" role="2Oq$k0">
+                                  <node concept="30H73N" id="1WhdBjvgzJH" role="2Oq$k0" />
+                                  <node concept="3TrEf2" id="1WhdBjvgzJI" role="2OqNvi">
+                                    <ref role="3Tt5mk" to="9g35:1zrXPLZq8zn" resolve="message" />
+                                  </node>
+                                </node>
+                                <node concept="3TrcHB" id="1WhdBjvgzJJ" role="2OqNvi">
+                                  <ref role="3TsBF5" to="tpck:h0TrG11" resolve="name" />
+                                </node>
+                              </node>
+                              <node concept="3cpWs3" id="1WhdBjvgzJK" role="3uHU7B">
+                                <node concept="2OqwBi" id="1WhdBjvgzJL" role="3uHU7B">
+                                  <node concept="2OqwBi" id="1WhdBjvgzJM" role="2Oq$k0">
+                                    <node concept="30H73N" id="1WhdBjvgzJN" role="2Oq$k0" />
+                                    <node concept="3TrEf2" id="1WhdBjvgzJO" role="2OqNvi">
+                                      <ref role="3Tt5mk" to="9g35:1zrXPLZq8zn" resolve="message" />
+                                    </node>
+                                  </node>
+                                  <node concept="3TrcHB" id="1WhdBjvgzJP" role="2OqNvi">
+                                    <ref role="3TsBF5" to="9g35:6aVkdwz7VvG" resolve="package" />
+                                  </node>
+                                </node>
+                                <node concept="Xl_RD" id="1WhdBjvgzJQ" role="3uHU7w">
+                                  <property role="Xl_RC" value="::action::" />
+                                </node>
                               </node>
                             </node>
                           </node>
@@ -2429,58 +2486,189 @@
                       </node>
                     </node>
                   </node>
+                  <node concept="356sEF" id="1WhdBjvgyQ0" role="356sEH">
+                    <property role="TrG5h" value="&gt;::SharedPtr," />
+                  </node>
                 </node>
-                <node concept="356sEF" id="1xC_59ipioq" role="356sEH">
-                  <property role="TrG5h" value=", this);" />
+                <node concept="356sEK" id="1WhdBjvfWNc" role="383Ya9">
+                  <node concept="2EixSi" id="1WhdBjvfWNd" role="2EinRH" />
+                  <node concept="356sEF" id="1WhdBjvfWNe" role="356sEH">
+                    <property role="TrG5h" value="            const std::shared_ptr&lt;const packageT::action::actionT::Feedback&gt; feedback) {" />
+                  </node>
                 </node>
-                <node concept="2EixSi" id="xuK2hhEiZe" role="2EinRH" />
+                <node concept="356sEK" id="1WhdBjvfWNf" role="383Ya9">
+                  <node concept="2EixSi" id="1WhdBjvfWNg" role="2EinRH" />
+                  <node concept="356sEF" id="1WhdBjvfWNh" role="356sEH">
+                    <property role="TrG5h" value="            RCLCPP_INFO(this-&gt;get_logger(), &quot;Feedback received&quot;);" />
+                  </node>
+                </node>
+                <node concept="356sEK" id="1WhdBjvfWNu" role="383Ya9">
+                  <node concept="2EixSi" id="1WhdBjvfWNv" role="2EinRH" />
+                  <node concept="356sEF" id="1WhdBjvfWNw" role="356sEH">
+                    <property role="TrG5h" value="        };" />
+                  </node>
+                </node>
               </node>
+              <node concept="2EixSi" id="1WhdBjvfEek" role="2EinRH" />
             </node>
-            <node concept="356sEK" id="xuK2hhEiZg" role="383Ya9">
-              <node concept="356sEF" id="xuK2hhEiZh" role="356sEH">
-                <property role="TrG5h" value="send_goal_options.result_callback =" />
+            <node concept="356sEK" id="1WhdBjvgAkq" role="383Ya9">
+              <node concept="356sEF" id="1WhdBjvgAkr" role="356sEH">
+                <property role="TrG5h" value="options.result_callback =" />
               </node>
-              <node concept="2EixSi" id="xuK2hhEiZj" role="2EinRH" />
+              <node concept="2EixSi" id="1WhdBjvgAks" role="2EinRH" />
             </node>
-            <node concept="356sEQ" id="xuK2hhEiZo" role="383Ya9">
-              <property role="333NGx" value="    " />
-              <node concept="356sEK" id="xuK2hhEiZk" role="383Ya9">
-                <node concept="356sEF" id="xuK2hhEiZl" role="356sEH">
-                  <property role="TrG5h" value="std::bind(&amp;TemplateNode::" />
+            <node concept="356sEK" id="1WhdBjvgZuN" role="383Ya9">
+              <node concept="356WMU" id="1WhdBjvhiRs" role="356sEH">
+                <node concept="356sEK" id="1WhdBjvhloI" role="383Ya9">
+                  <node concept="356sEF" id="1WhdBjvhloJ" role="356sEH">
+                    <property role="TrG5h" value="        [this](const rclcpp_action::ClientGoalHandle&lt;packageT::action::actionT&gt;::WrappedResult &amp; result) {" />
+                  </node>
+                  <node concept="2EixSi" id="1WhdBjvhloK" role="2EinRH" />
                 </node>
-                <node concept="356sEF" id="1xC_59ipkSi" role="356sEH">
-                  <property role="TrG5h" value="TActionResult" />
-                  <node concept="17Uvod" id="1xC_59iplzq" role="lGtFl">
-                    <property role="2qtEX9" value="name" />
-                    <property role="P4ACc" value="ceab5195-25ea-4f22-9b92-103b95ca8c0c/1169194658468/1169194664001" />
-                    <node concept="3zFVjK" id="1xC_59iplzr" role="3zH0cK">
-                      <node concept="3clFbS" id="1xC_59iplzs" role="2VODD2">
-                        <node concept="3clFbF" id="1xC_59iplzV" role="3cqZAp">
-                          <node concept="3cpWs3" id="1xC_59iplzW" role="3clFbG">
-                            <node concept="Xl_RD" id="1xC_59iplzX" role="3uHU7w">
-                              <property role="Xl_RC" value="ActionResult" />
-                            </node>
-                            <node concept="2OqwBi" id="1xC_59iplzY" role="3uHU7B">
-                              <node concept="30H73N" id="1xC_59iplzZ" role="2Oq$k0" />
-                              <node concept="3TrcHB" id="1xC_59ipl$0" role="2OqNvi">
-                                <ref role="3TsBF5" to="9g35:6x_NG3d6IVg" resolve="port_name" />
-                              </node>
-                            </node>
-                          </node>
+                <node concept="356sEQ" id="1WhdBjvhiS5" role="383Ya9">
+                  <property role="333NGx" value="        " />
+                  <node concept="356sEK" id="1WhdBjvhiS6" role="383Ya9">
+                    <node concept="356sEF" id="1WhdBjvhiS7" role="356sEH">
+                      <property role="TrG5h" value="switch (result.code) {" />
+                    </node>
+                    <node concept="2EixSi" id="1WhdBjvhiS8" role="2EinRH" />
+                  </node>
+                  <node concept="356sEQ" id="1WhdBjvhiS9" role="383Ya9">
+                    <property role="333NGx" value="  " />
+                    <node concept="356sEK" id="1WhdBjvhiSa" role="383Ya9">
+                      <node concept="356sEF" id="1WhdBjvhiSb" role="356sEH">
+                        <property role="TrG5h" value="case rclcpp_action::ResultCode::SUCCEEDED:" />
+                      </node>
+                      <node concept="2EixSi" id="1WhdBjvhiSc" role="2EinRH" />
+                    </node>
+                    <node concept="356sEQ" id="1WhdBjvhiSd" role="383Ya9">
+                      <property role="333NGx" value="  " />
+                      <node concept="356sEK" id="1WhdBjvhiSe" role="383Ya9">
+                        <node concept="356sEF" id="1WhdBjvhiSf" role="356sEH">
+                          <property role="TrG5h" value="RCLCPP_INFO(this-&gt;get_logger(), &quot;Action succeeded!&quot;);" />
                         </node>
+                        <node concept="2EixSi" id="1WhdBjvhiSg" role="2EinRH" />
+                      </node>
+                      <node concept="356sEK" id="1WhdBjvhiSh" role="383Ya9">
+                        <node concept="356sEF" id="1WhdBjvhiSi" role="356sEH">
+                          <property role="TrG5h" value="break;" />
+                        </node>
+                        <node concept="2EixSi" id="1WhdBjvhiSj" role="2EinRH" />
+                      </node>
+                    </node>
+                    <node concept="356sEK" id="1WhdBjvhiSk" role="383Ya9">
+                      <node concept="356sEF" id="1WhdBjvhiSl" role="356sEH">
+                        <property role="TrG5h" value="case rclcpp_action::ResultCode::ABORTED:" />
+                      </node>
+                      <node concept="2EixSi" id="1WhdBjvhiSm" role="2EinRH" />
+                    </node>
+                    <node concept="356sEQ" id="1WhdBjvhiSn" role="383Ya9">
+                      <property role="333NGx" value="  " />
+                      <node concept="356sEK" id="1WhdBjvhiSo" role="383Ya9">
+                        <node concept="356sEF" id="1WhdBjvhiSp" role="356sEH">
+                          <property role="TrG5h" value="RCLCPP_ERROR(this-&gt;get_logger(), &quot;Action aborted.&quot;);" />
+                        </node>
+                        <node concept="2EixSi" id="1WhdBjvhiSq" role="2EinRH" />
+                      </node>
+                      <node concept="356sEK" id="1WhdBjvhiSr" role="383Ya9">
+                        <node concept="356sEF" id="1WhdBjvhiSs" role="356sEH">
+                          <property role="TrG5h" value="break;" />
+                        </node>
+                        <node concept="2EixSi" id="1WhdBjvhiSt" role="2EinRH" />
+                      </node>
+                    </node>
+                    <node concept="356sEK" id="1WhdBjvhiSu" role="383Ya9">
+                      <node concept="356sEF" id="1WhdBjvhiSv" role="356sEH">
+                        <property role="TrG5h" value="case rclcpp_action::ResultCode::CANCELED:" />
+                      </node>
+                      <node concept="2EixSi" id="1WhdBjvhiSw" role="2EinRH" />
+                    </node>
+                    <node concept="356sEQ" id="1WhdBjvhiSx" role="383Ya9">
+                      <property role="333NGx" value="  " />
+                      <node concept="356sEK" id="1WhdBjvhiSy" role="383Ya9">
+                        <node concept="356sEF" id="1WhdBjvhiSz" role="356sEH">
+                          <property role="TrG5h" value="RCLCPP_ERROR(this-&gt;get_logger(), &quot;Action canceled.&quot;);" />
+                        </node>
+                        <node concept="2EixSi" id="1WhdBjvhiS$" role="2EinRH" />
+                      </node>
+                      <node concept="356sEK" id="1WhdBjvhiS_" role="383Ya9">
+                        <node concept="356sEF" id="1WhdBjvhiSA" role="356sEH">
+                          <property role="TrG5h" value="break;" />
+                        </node>
+                        <node concept="2EixSi" id="1WhdBjvhiSB" role="2EinRH" />
+                      </node>
+                    </node>
+                    <node concept="356sEK" id="1WhdBjvhiSC" role="383Ya9">
+                      <node concept="356sEF" id="1WhdBjvhiSD" role="356sEH">
+                        <property role="TrG5h" value="default:" />
+                      </node>
+                      <node concept="2EixSi" id="1WhdBjvhiSE" role="2EinRH" />
+                    </node>
+                    <node concept="356sEQ" id="1WhdBjvhiSF" role="383Ya9">
+                      <property role="333NGx" value="  " />
+                      <node concept="356sEK" id="1WhdBjvhiSG" role="383Ya9">
+                        <node concept="356sEF" id="1WhdBjvhiSH" role="356sEH">
+                          <property role="TrG5h" value="RCLCPP_ERROR(this-&gt;get_logger(), &quot;Action failed.&quot;);" />
+                        </node>
+                        <node concept="2EixSi" id="1WhdBjvhiSI" role="2EinRH" />
+                      </node>
+                      <node concept="356sEK" id="1WhdBjvhiSJ" role="383Ya9">
+                        <node concept="356sEF" id="1WhdBjvhiSK" role="356sEH">
+                          <property role="TrG5h" value="break;" />
+                        </node>
+                        <node concept="2EixSi" id="1WhdBjvhiSL" role="2EinRH" />
                       </node>
                     </node>
                   </node>
+                  <node concept="356sEK" id="1WhdBjvhiSM" role="383Ya9">
+                    <node concept="356sEF" id="1WhdBjvhiSN" role="356sEH">
+                      <property role="TrG5h" value="}" />
+                    </node>
+                    <node concept="2EixSi" id="1WhdBjvhiSO" role="2EinRH" />
+                  </node>
+                  <node concept="356sEK" id="1WhdBjvhiSP" role="383Ya9">
+                    <node concept="356sEF" id="1WhdBjvhiSQ" role="356sEH">
+                      <property role="TrG5h" value="RCLCPP_INFO(this-&gt;get_logger(), &quot;Result&quot;);" />
+                    </node>
+                    <node concept="2EixSi" id="1WhdBjvhiSR" role="2EinRH" />
+                  </node>
                 </node>
-                <node concept="356sEF" id="1xC_59ipkSj" role="356sEH">
-                  <property role="TrG5h" value=", this);" />
+                <node concept="356sEK" id="1WhdBjvhiSS" role="383Ya9">
+                  <node concept="356sEF" id="1WhdBjvhiST" role="356sEH">
+                    <property role="TrG5h" value="}" />
+                  </node>
+                  <node concept="2EixSi" id="1WhdBjvhiSU" role="2EinRH" />
                 </node>
-                <node concept="2EixSi" id="xuK2hhEiZn" role="2EinRH" />
               </node>
+              <node concept="2EixSi" id="1WhdBjvgZuP" role="2EinRH" />
             </node>
             <node concept="356sEK" id="xuK2hhEiZp" role="383Ya9">
-              <node concept="356sEF" id="xuK2hhEiZq" role="356sEH">
-                <property role="TrG5h" value="action_client_-&gt;async_send_goal(goal, send_goal_options);" />
+              <node concept="356sEF" id="1WhdBjvhvRB" role="356sEH">
+                <property role="TrG5h" value="T_action_client_" />
+                <node concept="17Uvod" id="1WhdBjvhwEZ" role="lGtFl">
+                  <property role="2qtEX9" value="name" />
+                  <property role="P4ACc" value="ceab5195-25ea-4f22-9b92-103b95ca8c0c/1169194658468/1169194664001" />
+                  <node concept="3zFVjK" id="1WhdBjvhwF0" role="3zH0cK">
+                    <node concept="3clFbS" id="1WhdBjvhwF1" role="2VODD2">
+                      <node concept="3clFbF" id="1WhdBjvhx4L" role="3cqZAp">
+                        <node concept="3cpWs3" id="1WhdBjvhx4M" role="3clFbG">
+                          <node concept="Xl_RD" id="1WhdBjvhx4N" role="3uHU7w">
+                            <property role="Xl_RC" value="_action_client_" />
+                          </node>
+                          <node concept="2OqwBi" id="1WhdBjvhx4O" role="3uHU7B">
+                            <node concept="3TrcHB" id="1WhdBjvhx4P" role="2OqNvi">
+                              <ref role="3TsBF5" to="9g35:6x_NG3d6IVg" resolve="port_name" />
+                            </node>
+                            <node concept="30H73N" id="1WhdBjvhx4Q" role="2Oq$k0" />
+                          </node>
+                        </node>
+                      </node>
+                    </node>
+                  </node>
+                </node>
+              </node>
+              <node concept="356sEF" id="1WhdBjvhvRC" role="356sEH">
+                <property role="TrG5h" value="-&gt;async_send_goal(goal, goal_options);" />
               </node>
               <node concept="2EixSi" id="xuK2hhEiZs" role="2EinRH" />
             </node>
@@ -2491,12 +2679,6 @@
             </node>
             <node concept="2EixSi" id="xuK2hhEiZw" role="2EinRH" />
           </node>
-          <node concept="356sEK" id="1xC_59iqpvL" role="383Ya9">
-            <node concept="356sEF" id="1xC_59iqpvM" role="356sEH">
-              <property role="TrG5h" value=" " />
-            </node>
-            <node concept="2EixSi" id="1xC_59iqpvN" role="2EinRH" />
-          </node>
           <node concept="1WS0z7" id="1E7DkvZjF7q" role="lGtFl">
             <node concept="3JmXsc" id="1E7DkvZjF7t" role="3Jn$fo">
               <node concept="3clFbS" id="1E7DkvZjF7u" role="2VODD2">
@@ -2506,594 +2688,6 @@
                       <ref role="3TtcxE" to="9g35:5sNxcvLSt$C" resolve="action_requests" />
                     </node>
                     <node concept="30H73N" id="1E7DkvZjF7z" role="2Oq$k0" />
-                  </node>
-                </node>
-              </node>
-            </node>
-          </node>
-        </node>
-        <node concept="356sEK" id="xuK2hhEiZx" role="383Ya9">
-          <node concept="2EixSi" id="xuK2hhEiZ$" role="2EinRH" />
-        </node>
-        <node concept="356sEK" id="xuK2hhEiZ_" role="383Ya9">
-          <node concept="356sEF" id="xuK2hhEiZA" role="356sEH">
-            <property role="TrG5h" value="// Action goal response callback" />
-          </node>
-          <node concept="2EixSi" id="xuK2hhEiZC" role="2EinRH" />
-        </node>
-        <node concept="356WMU" id="1xC_59ipmAI" role="383Ya9">
-          <node concept="356sEK" id="xuK2hhEiZD" role="383Ya9">
-            <node concept="356sEF" id="xuK2hhEiZE" role="356sEH">
-              <property role="TrG5h" value="void " />
-            </node>
-            <node concept="356sEF" id="1xC_59iqcoM" role="356sEH">
-              <property role="TrG5h" value="TActionGoalResponse" />
-              <node concept="17Uvod" id="1xC_59iqcxX" role="lGtFl">
-                <property role="2qtEX9" value="name" />
-                <property role="P4ACc" value="ceab5195-25ea-4f22-9b92-103b95ca8c0c/1169194658468/1169194664001" />
-                <node concept="3zFVjK" id="1xC_59iqcxY" role="3zH0cK">
-                  <node concept="3clFbS" id="1xC_59iqcxZ" role="2VODD2">
-                    <node concept="3clFbF" id="1xC_59iqcOF" role="3cqZAp">
-                      <node concept="3cpWs3" id="1xC_59iqgN6" role="3clFbG">
-                        <node concept="Xl_RD" id="1xC_59iqhaN" role="3uHU7w">
-                          <property role="Xl_RC" value="ActionGoalResponse" />
-                        </node>
-                        <node concept="2OqwBi" id="1xC_59iqdmD" role="3uHU7B">
-                          <node concept="30H73N" id="1xC_59iqcOE" role="2Oq$k0" />
-                          <node concept="3TrcHB" id="1xC_59iqex0" role="2OqNvi">
-                            <ref role="3TsBF5" to="9g35:6x_NG3d6IVg" resolve="port_name" />
-                          </node>
-                        </node>
-                      </node>
-                    </node>
-                  </node>
-                </node>
-              </node>
-            </node>
-            <node concept="356sEF" id="1xC_59iqcoN" role="356sEH">
-              <property role="TrG5h" value="(" />
-            </node>
-            <node concept="2EixSi" id="xuK2hhEiZG" role="2EinRH" />
-          </node>
-          <node concept="356sEQ" id="xuK2hhEiZL" role="383Ya9">
-            <property role="333NGx" value="    " />
-            <node concept="356sEK" id="xuK2hhEiZH" role="383Ya9">
-              <node concept="356sEF" id="xuK2hhEiZI" role="356sEH">
-                <property role="TrG5h" value="const rclcpp_action::ClientGoalHandle&lt;" />
-              </node>
-              <node concept="356sEF" id="1xC_59iqivR" role="356sEH">
-                <property role="TrG5h" value="packageT::action::actionT" />
-                <node concept="17Uvod" id="1xC_59iqiMf" role="lGtFl">
-                  <property role="2qtEX9" value="name" />
-                  <property role="P4ACc" value="ceab5195-25ea-4f22-9b92-103b95ca8c0c/1169194658468/1169194664001" />
-                  <node concept="3zFVjK" id="1xC_59iqiMg" role="3zH0cK">
-                    <node concept="3clFbS" id="1xC_59iqiMh" role="2VODD2">
-                      <node concept="3clFbF" id="1xC_59iqiVR" role="3cqZAp">
-                        <node concept="3cpWs3" id="5FMWRSoMUJ9" role="3clFbG">
-                          <node concept="2OqwBi" id="5FMWRSoMZu8" role="3uHU7w">
-                            <node concept="2OqwBi" id="5FMWRSoMX1$" role="2Oq$k0">
-                              <node concept="30H73N" id="5FMWRSoMWgF" role="2Oq$k0" />
-                              <node concept="3TrEf2" id="5FMWRSoMYr1" role="2OqNvi">
-                                <ref role="3Tt5mk" to="9g35:1zrXPLZq8zn" resolve="message" />
-                              </node>
-                            </node>
-                            <node concept="3TrcHB" id="5FMWRSoN0uC" role="2OqNvi">
-                              <ref role="3TsBF5" to="tpck:h0TrG11" resolve="name" />
-                            </node>
-                          </node>
-                          <node concept="3cpWs3" id="5FMWRSoMRha" role="3uHU7B">
-                            <node concept="2OqwBi" id="1xC_59iqlNu" role="3uHU7B">
-                              <node concept="2OqwBi" id="1xC_59iqjtP" role="2Oq$k0">
-                                <node concept="30H73N" id="1xC_59iqiVQ" role="2Oq$k0" />
-                                <node concept="3TrEf2" id="1xC_59iqkCc" role="2OqNvi">
-                                  <ref role="3Tt5mk" to="9g35:1zrXPLZq8zn" resolve="message" />
-                                </node>
-                              </node>
-                              <node concept="3TrcHB" id="1xC_59iqmt0" role="2OqNvi">
-                                <ref role="3TsBF5" to="9g35:6aVkdwz7VvG" resolve="package" />
-                              </node>
-                            </node>
-                            <node concept="Xl_RD" id="5FMWRSoMREu" role="3uHU7w">
-                              <property role="Xl_RC" value="::action::" />
-                            </node>
-                          </node>
-                        </node>
-                      </node>
-                    </node>
-                  </node>
-                </node>
-              </node>
-              <node concept="356sEF" id="1xC_59iqiD3" role="356sEH">
-                <property role="TrG5h" value="&gt;::SharedPtr &amp;goal_handle)" />
-              </node>
-              <node concept="2EixSi" id="xuK2hhEiZK" role="2EinRH" />
-            </node>
-          </node>
-          <node concept="356sEK" id="xuK2hhEiZM" role="383Ya9">
-            <node concept="356sEF" id="xuK2hhEiZN" role="356sEH">
-              <property role="TrG5h" value="{" />
-            </node>
-            <node concept="2EixSi" id="xuK2hhEiZP" role="2EinRH" />
-          </node>
-          <node concept="356sEQ" id="xuK2hhEiZU" role="383Ya9">
-            <property role="333NGx" value="  " />
-            <node concept="356sEK" id="xuK2hhEiZQ" role="383Ya9">
-              <node concept="356sEF" id="xuK2hhEiZR" role="356sEH">
-                <property role="TrG5h" value="if (!goal_handle) {" />
-              </node>
-              <node concept="2EixSi" id="xuK2hhEiZT" role="2EinRH" />
-            </node>
-            <node concept="356sEQ" id="xuK2hhEiZZ" role="383Ya9">
-              <property role="333NGx" value="  " />
-              <node concept="356sEK" id="xuK2hhEiZV" role="383Ya9">
-                <node concept="356sEF" id="xuK2hhEiZW" role="356sEH">
-                  <property role="TrG5h" value="RCLCPP_ERROR(this-&gt;get_logger(), &quot;Goal was rejected by the server.&quot;);" />
-                </node>
-                <node concept="2EixSi" id="xuK2hhEiZY" role="2EinRH" />
-              </node>
-            </node>
-            <node concept="356sEK" id="xuK2hhEj00" role="383Ya9">
-              <node concept="356sEF" id="xuK2hhEj01" role="356sEH">
-                <property role="TrG5h" value="} else {" />
-              </node>
-              <node concept="2EixSi" id="xuK2hhEj03" role="2EinRH" />
-            </node>
-            <node concept="356sEQ" id="xuK2hhEj08" role="383Ya9">
-              <property role="333NGx" value="  " />
-              <node concept="356sEK" id="xuK2hhEj04" role="383Ya9">
-                <node concept="356sEF" id="xuK2hhEj05" role="356sEH">
-                  <property role="TrG5h" value="RCLCPP_INFO(this-&gt;get_logger(), &quot;Goal accepted by the server.&quot;);" />
-                </node>
-                <node concept="2EixSi" id="xuK2hhEj07" role="2EinRH" />
-              </node>
-            </node>
-            <node concept="356sEK" id="xuK2hhEj09" role="383Ya9">
-              <node concept="356sEF" id="xuK2hhEj0a" role="356sEH">
-                <property role="TrG5h" value="}" />
-              </node>
-              <node concept="2EixSi" id="xuK2hhEj0c" role="2EinRH" />
-            </node>
-          </node>
-          <node concept="356sEK" id="xuK2hhEj0d" role="383Ya9">
-            <node concept="356sEF" id="xuK2hhEj0e" role="356sEH">
-              <property role="TrG5h" value="}" />
-            </node>
-            <node concept="2EixSi" id="xuK2hhEj0g" role="2EinRH" />
-          </node>
-          <node concept="356sEK" id="1xC_59iqosc" role="383Ya9">
-            <node concept="356sEF" id="1xC_59iqpvE" role="356sEH">
-              <property role="TrG5h" value=" " />
-            </node>
-            <node concept="2EixSi" id="1xC_59iqose" role="2EinRH" />
-          </node>
-          <node concept="1WS0z7" id="1xC_59iqbvH" role="lGtFl">
-            <node concept="3JmXsc" id="1xC_59iqbvK" role="3Jn$fo">
-              <node concept="3clFbS" id="1xC_59iqbvL" role="2VODD2">
-                <node concept="3clFbF" id="1xC_59iqbvR" role="3cqZAp">
-                  <node concept="2OqwBi" id="1xC_59iqbvM" role="3clFbG">
-                    <node concept="3Tsc0h" id="1xC_59iqbvP" role="2OqNvi">
-                      <ref role="3TtcxE" to="9g35:5sNxcvLSt$C" resolve="action_requests" />
-                    </node>
-                    <node concept="30H73N" id="1xC_59iqbvQ" role="2Oq$k0" />
-                  </node>
-                </node>
-              </node>
-            </node>
-          </node>
-        </node>
-        <node concept="356sEK" id="xuK2hhEj0h" role="383Ya9">
-          <node concept="2EixSi" id="xuK2hhEj0k" role="2EinRH" />
-        </node>
-        <node concept="356sEK" id="xuK2hhEj0l" role="383Ya9">
-          <node concept="356sEF" id="xuK2hhEj0m" role="356sEH">
-            <property role="TrG5h" value="// Action feedback callback" />
-          </node>
-          <node concept="2EixSi" id="xuK2hhEj0o" role="2EinRH" />
-        </node>
-        <node concept="356WMU" id="1xC_59iqta_" role="383Ya9">
-          <node concept="356sEK" id="xuK2hhEj0p" role="383Ya9">
-            <node concept="356sEF" id="xuK2hhEj0q" role="356sEH">
-              <property role="TrG5h" value="void " />
-            </node>
-            <node concept="356sEF" id="1xC_59iqxbB" role="356sEH">
-              <property role="TrG5h" value="TActionFeedback" />
-              <node concept="17Uvod" id="1xC_59iqxQK" role="lGtFl">
-                <property role="2qtEX9" value="name" />
-                <property role="P4ACc" value="ceab5195-25ea-4f22-9b92-103b95ca8c0c/1169194658468/1169194664001" />
-                <node concept="3zFVjK" id="1xC_59iqxQN" role="3zH0cK">
-                  <node concept="3clFbS" id="1xC_59iqxQO" role="2VODD2">
-                    <node concept="3clFbF" id="1xC_59iqynN" role="3cqZAp">
-                      <node concept="3cpWs3" id="1xC_59iqynO" role="3clFbG">
-                        <node concept="Xl_RD" id="1xC_59iqynP" role="3uHU7w">
-                          <property role="Xl_RC" value="ActionFeedback" />
-                        </node>
-                        <node concept="2OqwBi" id="1xC_59iqynQ" role="3uHU7B">
-                          <node concept="30H73N" id="1xC_59iqynR" role="2Oq$k0" />
-                          <node concept="3TrcHB" id="1xC_59iqynS" role="2OqNvi">
-                            <ref role="3TsBF5" to="9g35:6x_NG3d6IVg" resolve="port_name" />
-                          </node>
-                        </node>
-                      </node>
-                    </node>
-                  </node>
-                </node>
-              </node>
-            </node>
-            <node concept="356sEF" id="1xC_59iqxbC" role="356sEH">
-              <property role="TrG5h" value="(" />
-            </node>
-            <node concept="2EixSi" id="xuK2hhEj0s" role="2EinRH" />
-          </node>
-          <node concept="356sEQ" id="xuK2hhEj0x" role="383Ya9">
-            <property role="333NGx" value="    " />
-            <node concept="356sEK" id="xuK2hhEj0t" role="383Ya9">
-              <node concept="356sEF" id="xuK2hhEj0u" role="356sEH">
-                <property role="TrG5h" value="rclcpp_action::ClientGoalHandle&lt;" />
-              </node>
-              <node concept="356sEF" id="1xC_59iq$8R" role="356sEH">
-                <property role="TrG5h" value="packageT::action::actionT" />
-                <node concept="17Uvod" id="1xC_59iq$QI" role="lGtFl">
-                  <property role="2qtEX9" value="name" />
-                  <property role="P4ACc" value="ceab5195-25ea-4f22-9b92-103b95ca8c0c/1169194658468/1169194664001" />
-                  <node concept="3zFVjK" id="1xC_59iq$QJ" role="3zH0cK">
-                    <node concept="3clFbS" id="1xC_59iq$QK" role="2VODD2">
-                      <node concept="3clFbF" id="1xC_59iq_Fl" role="3cqZAp">
-                        <node concept="3cpWs3" id="5FMWRSoNduA" role="3clFbG">
-                          <node concept="2OqwBi" id="5FMWRSoNiCp" role="3uHU7w">
-                            <node concept="2OqwBi" id="5FMWRSoNf9n" role="2Oq$k0">
-                              <node concept="30H73N" id="5FMWRSoNeot" role="2Oq$k0" />
-                              <node concept="3TrEf2" id="5FMWRSoNgQM" role="2OqNvi">
-                                <ref role="3Tt5mk" to="9g35:1zrXPLZq8zn" resolve="message" />
-                              </node>
-                            </node>
-                            <node concept="3TrcHB" id="5FMWRSoNj5F" role="2OqNvi">
-                              <ref role="3TsBF5" to="tpck:h0TrG11" resolve="name" />
-                            </node>
-                          </node>
-                          <node concept="3cpWs3" id="5FMWRSoN6S0" role="3uHU7B">
-                            <node concept="2OqwBi" id="1xC_59iqCsn" role="3uHU7B">
-                              <node concept="2OqwBi" id="1xC_59iqAdj" role="2Oq$k0">
-                                <node concept="30H73N" id="1xC_59iq_Fk" role="2Oq$k0" />
-                                <node concept="3TrEf2" id="1xC_59iqBnE" role="2OqNvi">
-                                  <ref role="3Tt5mk" to="9g35:1zrXPLZq8zn" resolve="message" />
-                                </node>
-                              </node>
-                              <node concept="3TrcHB" id="1xC_59iqCO6" role="2OqNvi">
-                                <ref role="3TsBF5" to="9g35:6aVkdwz7VvG" resolve="package" />
-                              </node>
-                            </node>
-                            <node concept="Xl_RD" id="5FMWRSoN7Dn" role="3uHU7w">
-                              <property role="Xl_RC" value="::action::" />
-                            </node>
-                          </node>
-                        </node>
-                      </node>
-                    </node>
-                  </node>
-                </node>
-              </node>
-              <node concept="356sEF" id="1xC_59iq$i3" role="356sEH">
-                <property role="TrG5h" value="&gt;::SharedPtr," />
-              </node>
-              <node concept="2EixSi" id="xuK2hhEj0w" role="2EinRH" />
-            </node>
-            <node concept="356sEK" id="xuK2hhEj0y" role="383Ya9">
-              <node concept="356sEF" id="xuK2hhEj0z" role="356sEH">
-                <property role="TrG5h" value="const std::shared_ptr&lt;const " />
-              </node>
-              <node concept="356sEF" id="1xC_59iq$rf" role="356sEH">
-                <property role="TrG5h" value="packageT::action::actionT" />
-                <node concept="17Uvod" id="1xC_59iqFIJ" role="lGtFl">
-                  <property role="2qtEX9" value="name" />
-                  <property role="P4ACc" value="ceab5195-25ea-4f22-9b92-103b95ca8c0c/1169194658468/1169194664001" />
-                  <node concept="3zFVjK" id="1xC_59iqFIK" role="3zH0cK">
-                    <node concept="3clFbS" id="1xC_59iqFIL" role="2VODD2">
-                      <node concept="3clFbF" id="1xC_59iqFJg" role="3cqZAp">
-                        <node concept="3cpWs3" id="5FMWRSoNsuo" role="3clFbG">
-                          <node concept="2OqwBi" id="5FMWRSoNx_0" role="3uHU7w">
-                            <node concept="2OqwBi" id="5FMWRSoNuPj" role="2Oq$k0">
-                              <node concept="30H73N" id="5FMWRSoNtOG" role="2Oq$k0" />
-                              <node concept="3TrEf2" id="5FMWRSoNwym" role="2OqNvi">
-                                <ref role="3Tt5mk" to="9g35:1zrXPLZq8zn" resolve="message" />
-                              </node>
-                            </node>
-                            <node concept="3TrcHB" id="5FMWRSoNy2i" role="2OqNvi">
-                              <ref role="3TsBF5" to="tpck:h0TrG11" resolve="name" />
-                            </node>
-                          </node>
-                          <node concept="3cpWs3" id="5FMWRSoNn5m" role="3uHU7B">
-                            <node concept="2OqwBi" id="1xC_59iqFJh" role="3uHU7B">
-                              <node concept="2OqwBi" id="1xC_59iqFJi" role="2Oq$k0">
-                                <node concept="30H73N" id="1xC_59iqFJj" role="2Oq$k0" />
-                                <node concept="3TrEf2" id="1xC_59iqFJk" role="2OqNvi">
-                                  <ref role="3Tt5mk" to="9g35:1zrXPLZq8zn" resolve="message" />
-                                </node>
-                              </node>
-                              <node concept="3TrcHB" id="1xC_59iqFJl" role="2OqNvi">
-                                <ref role="3TsBF5" to="9g35:6aVkdwz7VvG" resolve="package" />
-                              </node>
-                            </node>
-                            <node concept="Xl_RD" id="5FMWRSoNnMJ" role="3uHU7w">
-                              <property role="Xl_RC" value="::action::" />
-                            </node>
-                          </node>
-                        </node>
-                      </node>
-                    </node>
-                  </node>
-                </node>
-              </node>
-              <node concept="356sEF" id="1xC_59iq$$r" role="356sEH">
-                <property role="TrG5h" value="::Feedback&gt; feedback)" />
-              </node>
-              <node concept="2EixSi" id="xuK2hhEj0_" role="2EinRH" />
-            </node>
-          </node>
-          <node concept="356sEK" id="xuK2hhEj0A" role="383Ya9">
-            <node concept="356sEF" id="xuK2hhEj0B" role="356sEH">
-              <property role="TrG5h" value="{" />
-            </node>
-            <node concept="2EixSi" id="xuK2hhEj0D" role="2EinRH" />
-          </node>
-          <node concept="356sEQ" id="xuK2hhEj0I" role="383Ya9">
-            <property role="333NGx" value="  " />
-            <node concept="356sEK" id="xuK2hhEj0E" role="383Ya9">
-              <node concept="356sEF" id="xuK2hhEj0F" role="356sEH">
-                <property role="TrG5h" value="RCLCPP_INFO(this-&gt;get_logger(), &quot;Feedback&quot;));" />
-              </node>
-              <node concept="2EixSi" id="xuK2hhEj0H" role="2EinRH" />
-            </node>
-          </node>
-          <node concept="356sEK" id="xuK2hhEj0J" role="383Ya9">
-            <node concept="356sEF" id="xuK2hhEj0K" role="356sEH">
-              <property role="TrG5h" value="}" />
-            </node>
-            <node concept="2EixSi" id="xuK2hhEj0M" role="2EinRH" />
-          </node>
-          <node concept="356sEK" id="xuK2hhEj0N" role="383Ya9">
-            <node concept="2EixSi" id="xuK2hhEj0Q" role="2EinRH" />
-          </node>
-          <node concept="1WS0z7" id="1xC_59iqwFk" role="lGtFl">
-            <node concept="3JmXsc" id="1xC_59iqwFn" role="3Jn$fo">
-              <node concept="3clFbS" id="1xC_59iqwFo" role="2VODD2">
-                <node concept="3clFbF" id="1xC_59iqwFu" role="3cqZAp">
-                  <node concept="2OqwBi" id="1xC_59iqwFp" role="3clFbG">
-                    <node concept="3Tsc0h" id="1xC_59iqwFs" role="2OqNvi">
-                      <ref role="3TtcxE" to="9g35:5sNxcvLSt$C" resolve="action_requests" />
-                    </node>
-                    <node concept="30H73N" id="1xC_59iqwFt" role="2Oq$k0" />
-                  </node>
-                </node>
-              </node>
-            </node>
-          </node>
-        </node>
-        <node concept="356sEK" id="xuK2hhEj0R" role="383Ya9">
-          <node concept="356sEF" id="xuK2hhEj0S" role="356sEH">
-            <property role="TrG5h" value="// Action result callback" />
-          </node>
-          <node concept="2EixSi" id="xuK2hhEj0U" role="2EinRH" />
-        </node>
-        <node concept="356WMU" id="3OkCT$$f6tu" role="383Ya9">
-          <node concept="356sEK" id="xuK2hhEj0V" role="383Ya9">
-            <node concept="356sEF" id="xuK2hhEj0W" role="356sEH">
-              <property role="TrG5h" value="void " />
-            </node>
-            <node concept="356sEF" id="1cRLwqhYRlI" role="356sEH">
-              <property role="TrG5h" value="TActionResult" />
-              <node concept="17Uvod" id="1cRLwqhYSta" role="lGtFl">
-                <property role="2qtEX9" value="name" />
-                <property role="P4ACc" value="ceab5195-25ea-4f22-9b92-103b95ca8c0c/1169194658468/1169194664001" />
-                <node concept="3zFVjK" id="1cRLwqhYStb" role="3zH0cK">
-                  <node concept="3clFbS" id="1cRLwqhYStc" role="2VODD2">
-                    <node concept="3clFbF" id="1cRLwqhYSPI" role="3cqZAp">
-                      <node concept="3cpWs3" id="1cRLwqhYSPJ" role="3clFbG">
-                        <node concept="Xl_RD" id="1cRLwqhYSPK" role="3uHU7w">
-                          <property role="Xl_RC" value="ActionResult" />
-                        </node>
-                        <node concept="2OqwBi" id="1cRLwqhYSPL" role="3uHU7B">
-                          <node concept="30H73N" id="1cRLwqhYSPM" role="2Oq$k0" />
-                          <node concept="3TrcHB" id="1cRLwqhYSPN" role="2OqNvi">
-                            <ref role="3TsBF5" to="9g35:6x_NG3d6IVg" resolve="port_name" />
-                          </node>
-                        </node>
-                      </node>
-                    </node>
-                  </node>
-                </node>
-              </node>
-            </node>
-            <node concept="356sEF" id="1cRLwqhYRlJ" role="356sEH">
-              <property role="TrG5h" value="(" />
-            </node>
-            <node concept="2EixSi" id="xuK2hhEj0Y" role="2EinRH" />
-          </node>
-          <node concept="356sEQ" id="xuK2hhEj13" role="383Ya9">
-            <property role="333NGx" value="    " />
-            <node concept="356sEK" id="xuK2hhEj0Z" role="383Ya9">
-              <node concept="356sEF" id="xuK2hhEj10" role="356sEH">
-                <property role="TrG5h" value="const rclcpp_action::ClientGoalHandle&lt;" />
-              </node>
-              <node concept="356sEF" id="3OkCT$$fnrT" role="356sEH">
-                <property role="TrG5h" value="packageT::action::actionT" />
-                <node concept="17Uvod" id="3OkCT$$fnRo" role="lGtFl">
-                  <property role="2qtEX9" value="name" />
-                  <property role="P4ACc" value="ceab5195-25ea-4f22-9b92-103b95ca8c0c/1169194658468/1169194664001" />
-                  <node concept="3zFVjK" id="3OkCT$$fnRp" role="3zH0cK">
-                    <node concept="3clFbS" id="3OkCT$$fnRq" role="2VODD2">
-                      <node concept="3clFbF" id="1cRLwqhYzxA" role="3cqZAp">
-                        <node concept="3cpWs3" id="1cRLwqhYzxB" role="3clFbG">
-                          <node concept="2OqwBi" id="1cRLwqhYzxC" role="3uHU7w">
-                            <node concept="2OqwBi" id="1cRLwqhYzxD" role="2Oq$k0">
-                              <node concept="30H73N" id="1cRLwqhYzxE" role="2Oq$k0" />
-                              <node concept="3TrEf2" id="1cRLwqhYzxF" role="2OqNvi">
-                                <ref role="3Tt5mk" to="9g35:1zrXPLZq8zn" resolve="message" />
-                              </node>
-                            </node>
-                            <node concept="3TrcHB" id="1cRLwqhYzxG" role="2OqNvi">
-                              <ref role="3TsBF5" to="tpck:h0TrG11" resolve="name" />
-                            </node>
-                          </node>
-                          <node concept="3cpWs3" id="1cRLwqhYzxH" role="3uHU7B">
-                            <node concept="2OqwBi" id="1cRLwqhYzxI" role="3uHU7B">
-                              <node concept="2OqwBi" id="1cRLwqhYzxJ" role="2Oq$k0">
-                                <node concept="30H73N" id="1cRLwqhYzxK" role="2Oq$k0" />
-                                <node concept="3TrEf2" id="1cRLwqhYzxL" role="2OqNvi">
-                                  <ref role="3Tt5mk" to="9g35:1zrXPLZq8zn" resolve="message" />
-                                </node>
-                              </node>
-                              <node concept="3TrcHB" id="1cRLwqhYzxM" role="2OqNvi">
-                                <ref role="3TsBF5" to="9g35:6aVkdwz7VvG" resolve="package" />
-                              </node>
-                            </node>
-                            <node concept="Xl_RD" id="1cRLwqhYzxN" role="3uHU7w">
-                              <property role="Xl_RC" value="::action::" />
-                            </node>
-                          </node>
-                        </node>
-                      </node>
-                    </node>
-                  </node>
-                </node>
-              </node>
-              <node concept="356sEF" id="3OkCT$$fn_5" role="356sEH">
-                <property role="TrG5h" value="&gt;::WrappedResult &amp;result)" />
-              </node>
-              <node concept="2EixSi" id="xuK2hhEj12" role="2EinRH" />
-            </node>
-          </node>
-          <node concept="356sEK" id="xuK2hhEj14" role="383Ya9">
-            <node concept="356sEF" id="xuK2hhEj15" role="356sEH">
-              <property role="TrG5h" value="{" />
-            </node>
-            <node concept="2EixSi" id="xuK2hhEj17" role="2EinRH" />
-          </node>
-          <node concept="356sEQ" id="xuK2hhEj1c" role="383Ya9">
-            <property role="333NGx" value="  " />
-            <node concept="356sEK" id="xuK2hhEj18" role="383Ya9">
-              <node concept="356sEF" id="xuK2hhEj19" role="356sEH">
-                <property role="TrG5h" value="switch (result.code) {" />
-              </node>
-              <node concept="2EixSi" id="xuK2hhEj1b" role="2EinRH" />
-            </node>
-            <node concept="356sEQ" id="xuK2hhEj1h" role="383Ya9">
-              <property role="333NGx" value="  " />
-              <node concept="356sEK" id="xuK2hhEj1d" role="383Ya9">
-                <node concept="356sEF" id="xuK2hhEj1e" role="356sEH">
-                  <property role="TrG5h" value="case rclcpp_action::ResultCode::SUCCEEDED:" />
-                </node>
-                <node concept="2EixSi" id="xuK2hhEj1g" role="2EinRH" />
-              </node>
-              <node concept="356sEQ" id="xuK2hhEj1m" role="383Ya9">
-                <property role="333NGx" value="  " />
-                <node concept="356sEK" id="xuK2hhEj1i" role="383Ya9">
-                  <node concept="356sEF" id="xuK2hhEj1j" role="356sEH">
-                    <property role="TrG5h" value="RCLCPP_INFO(this-&gt;get_logger(), &quot;Action succeeded!&quot;);" />
-                  </node>
-                  <node concept="2EixSi" id="xuK2hhEj1l" role="2EinRH" />
-                </node>
-                <node concept="356sEK" id="xuK2hhEj1n" role="383Ya9">
-                  <node concept="356sEF" id="xuK2hhEj1o" role="356sEH">
-                    <property role="TrG5h" value="break;" />
-                  </node>
-                  <node concept="2EixSi" id="xuK2hhEj1q" role="2EinRH" />
-                </node>
-              </node>
-              <node concept="356sEK" id="xuK2hhEj1r" role="383Ya9">
-                <node concept="356sEF" id="xuK2hhEj1s" role="356sEH">
-                  <property role="TrG5h" value="case rclcpp_action::ResultCode::ABORTED:" />
-                </node>
-                <node concept="2EixSi" id="xuK2hhEj1u" role="2EinRH" />
-              </node>
-              <node concept="356sEQ" id="xuK2hhEj1z" role="383Ya9">
-                <property role="333NGx" value="  " />
-                <node concept="356sEK" id="xuK2hhEj1v" role="383Ya9">
-                  <node concept="356sEF" id="xuK2hhEj1w" role="356sEH">
-                    <property role="TrG5h" value="RCLCPP_ERROR(this-&gt;get_logger(), &quot;Action aborted.&quot;);" />
-                  </node>
-                  <node concept="2EixSi" id="xuK2hhEj1y" role="2EinRH" />
-                </node>
-                <node concept="356sEK" id="xuK2hhEj1$" role="383Ya9">
-                  <node concept="356sEF" id="xuK2hhEj1_" role="356sEH">
-                    <property role="TrG5h" value="break;" />
-                  </node>
-                  <node concept="2EixSi" id="xuK2hhEj1B" role="2EinRH" />
-                </node>
-              </node>
-              <node concept="356sEK" id="xuK2hhEj1C" role="383Ya9">
-                <node concept="356sEF" id="xuK2hhEj1D" role="356sEH">
-                  <property role="TrG5h" value="case rclcpp_action::ResultCode::CANCELED:" />
-                </node>
-                <node concept="2EixSi" id="xuK2hhEj1F" role="2EinRH" />
-              </node>
-              <node concept="356sEQ" id="xuK2hhEj1K" role="383Ya9">
-                <property role="333NGx" value="  " />
-                <node concept="356sEK" id="xuK2hhEj1G" role="383Ya9">
-                  <node concept="356sEF" id="xuK2hhEj1H" role="356sEH">
-                    <property role="TrG5h" value="RCLCPP_ERROR(this-&gt;get_logger(), &quot;Action canceled.&quot;);" />
-                  </node>
-                  <node concept="2EixSi" id="xuK2hhEj1J" role="2EinRH" />
-                </node>
-                <node concept="356sEK" id="xuK2hhEj1L" role="383Ya9">
-                  <node concept="356sEF" id="xuK2hhEj1M" role="356sEH">
-                    <property role="TrG5h" value="break;" />
-                  </node>
-                  <node concept="2EixSi" id="xuK2hhEj1O" role="2EinRH" />
-                </node>
-              </node>
-              <node concept="356sEK" id="xuK2hhEj1P" role="383Ya9">
-                <node concept="356sEF" id="xuK2hhEj1Q" role="356sEH">
-                  <property role="TrG5h" value="default:" />
-                </node>
-                <node concept="2EixSi" id="xuK2hhEj1S" role="2EinRH" />
-              </node>
-              <node concept="356sEQ" id="xuK2hhEj1X" role="383Ya9">
-                <property role="333NGx" value="  " />
-                <node concept="356sEK" id="xuK2hhEj1T" role="383Ya9">
-                  <node concept="356sEF" id="xuK2hhEj1U" role="356sEH">
-                    <property role="TrG5h" value="RCLCPP_ERROR(this-&gt;get_logger(), &quot;Action failed.&quot;);" />
-                  </node>
-                  <node concept="2EixSi" id="xuK2hhEj1W" role="2EinRH" />
-                </node>
-                <node concept="356sEK" id="xuK2hhEj1Y" role="383Ya9">
-                  <node concept="356sEF" id="xuK2hhEj1Z" role="356sEH">
-                    <property role="TrG5h" value="break;" />
-                  </node>
-                  <node concept="2EixSi" id="xuK2hhEj21" role="2EinRH" />
-                </node>
-              </node>
-            </node>
-            <node concept="356sEK" id="xuK2hhEj22" role="383Ya9">
-              <node concept="356sEF" id="xuK2hhEj23" role="356sEH">
-                <property role="TrG5h" value="}" />
-              </node>
-              <node concept="2EixSi" id="xuK2hhEj25" role="2EinRH" />
-            </node>
-            <node concept="356sEK" id="xuK2hhEj26" role="383Ya9">
-              <node concept="356sEF" id="xuK2hhEj27" role="356sEH">
-                <property role="TrG5h" value="RCLCPP_INFO(this-&gt;get_logger(), &quot;Result&quot;);" />
-              </node>
-              <node concept="2EixSi" id="xuK2hhEj29" role="2EinRH" />
-            </node>
-          </node>
-          <node concept="356sEK" id="xuK2hhEj2a" role="383Ya9">
-            <node concept="356sEF" id="xuK2hhEj2b" role="356sEH">
-              <property role="TrG5h" value="}" />
-            </node>
-            <node concept="2EixSi" id="xuK2hhEj2d" role="2EinRH" />
-          </node>
-          <node concept="356sEK" id="xuK2hhEj2e" role="383Ya9">
-            <node concept="2EixSi" id="xuK2hhEj2h" role="2EinRH" />
-          </node>
-          <node concept="1WS0z7" id="3OkCT$$fayZ" role="lGtFl">
-            <node concept="3JmXsc" id="3OkCT$$faz2" role="3Jn$fo">
-              <node concept="3clFbS" id="3OkCT$$faz3" role="2VODD2">
-                <node concept="3clFbF" id="3OkCT$$faz9" role="3cqZAp">
-                  <node concept="2OqwBi" id="3OkCT$$faz4" role="3clFbG">
-                    <node concept="3Tsc0h" id="3OkCT$$faz7" role="2OqNvi">
-                      <ref role="3TtcxE" to="9g35:5sNxcvLSt$C" resolve="action_requests" />
-                    </node>
-                    <node concept="30H73N" id="3OkCT$$faz8" role="2Oq$k0" />
                   </node>
                 </node>
               </node>
