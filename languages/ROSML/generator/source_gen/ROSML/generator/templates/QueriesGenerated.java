@@ -404,7 +404,7 @@ public class QueriesGenerated extends QueryProviderBase {
     return SPropertyOperations.getString(_context.getNode(), PROPS.port_name$u3X4) + "_action_client_";
   }
   public static Object propertyMacro_GetValue_4_62(final PropertyMacroContext _context) {
-    return SPropertyOperations.getString(SLinkOperations.getTarget(_context.getNode(), LINKS.message$eqUd), PROPS.package$uL2X) + "::srv::" + SPropertyOperations.getString(SLinkOperations.getTarget(_context.getNode(), LINKS.message$eqUd), PROPS.name$MnvL);
+    return SPropertyOperations.getString(SLinkOperations.getTarget(_context.getNode(), LINKS.message$_DkH), PROPS.package$uL2X) + "::srv::" + SPropertyOperations.getString(SLinkOperations.getTarget(_context.getNode(), LINKS.message$_DkH), PROPS.name$MnvL);
   }
   public static Object propertyMacro_GetValue_4_63(final PropertyMacroContext _context) {
     return SPropertyOperations.getString(_context.getNode(), PROPS.name$MnvL) + "_service_server_";
@@ -590,7 +590,7 @@ public class QueriesGenerated extends QueryProviderBase {
     return SLinkOperations.getChildren(_context.getNode(), LINKS.action_requests$xkAl);
   }
   public static Iterable<SNode> sourceNodesQuery_4_23(final SourceSubstituteMacroNodesContext _context) {
-    return SLinkOperations.getChildren(_context.getNode(), LINKS.actions$vnCn);
+    return SLinkOperations.getChildren(_context.getNode(), LINKS.services$zPXp);
   }
   public static Iterable<SNode> sourceNodesQuery_4_24(final SourceSubstituteMacroNodesContext _context) {
     return SLinkOperations.getChildren(_context.getNode(), LINKS.actions$vnCn);

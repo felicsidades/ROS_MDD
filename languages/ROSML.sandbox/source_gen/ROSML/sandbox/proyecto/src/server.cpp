@@ -41,7 +41,8 @@ private:
   //Action methods
 
   // Members
-
+  rclcpp::Service<proyecto::srv::Mensaje>::SharedPtr servicio1_service_server_;
+   
 
 };
 
