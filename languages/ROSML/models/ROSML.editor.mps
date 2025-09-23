@@ -1988,7 +1988,7 @@
     <ref role="1XX52x" to="9g35:24AZeepAE_5" resolve="DataInterface" />
     <node concept="3EZMnI" id="2845_1n61iU" role="2wV5jI">
       <node concept="3F0ifn" id="2845_1n61iY" role="3EZMnx">
-        <property role="3F0ifm" value="Data:" />
+        <property role="3F0ifm" value="string " />
       </node>
       <node concept="3F0A7n" id="2845_1n61j2" role="3EZMnx">
         <ref role="1NtTu8" to="9g35:5yIRtOn3bi3" resolve="datatype" />

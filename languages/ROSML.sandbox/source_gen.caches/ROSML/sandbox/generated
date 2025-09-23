@@ -1,6 +1,3 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<product version="3" modelHash="-6p09btx9o69k2x3jjwa3uaqk827jv3s">
-  <files dir="ROSML/sandbox/aaa" names="CMakeLists.txt:package.xml" />
-  <files dir="ROSML/sandbox/aaa/src" names="n.cpp" />
-</product>
+<product version="3" modelHash="-b9r2zv9o9k0p9irnxsfn6glunocj7sc" />
 

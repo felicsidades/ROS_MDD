@@ -5,6 +5,7 @@
       <modulePath path="$PROJECT_DIR$/languages/ROSML.sandbox/ROSML.sandbox.msd" folder="" />
       <modulePath path="$PROJECT_DIR$/languages/ROSML/ROSML.mpl" folder="" />
       <modulePath path="$PROJECT_DIR$/solutions/ROSMDD.build0/ROSMDD.build.msd" folder="" />
+      <modulePath path="$PROJECT_DIR$/solutions/ROSMDDPluginSolution/ROSMDDPluginSolution.msd" folder="" />
     </projectModules>
   </component>
 </project>
