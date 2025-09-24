@@ -2381,7 +2381,7 @@
               <node concept="356sEK" id="1WhdBjvfj4v" role="383Ya9">
                 <node concept="2EixSi" id="1WhdBjvfj4y" role="2EinRH" />
                 <node concept="356sEF" id="1WhdBjvfj4z" role="356sEH">
-                  <property role="TrG5h" value="        [this](std::shared_future&lt;rclcpp_action::ClientGoalHandle&lt;" />
+                  <property role="TrG5h" value="        [this](std::shared_ptr&lt;rclcpp_action::ClientGoalHandle&lt;" />
                 </node>
                 <node concept="356sEF" id="1WhdBjvfsA0" role="356sEH">
                   <property role="TrG5h" value="packageT::action::actionT" />
@@ -2444,13 +2444,7 @@
                   </node>
                 </node>
                 <node concept="356sEF" id="1WhdBjvfsA1" role="356sEH">
-                  <property role="TrG5h" value="&gt;::SharedPtr&gt; future) {" />
-                </node>
-              </node>
-              <node concept="356sEK" id="1WhdBjvfj4_" role="383Ya9">
-                <node concept="2EixSi" id="1WhdBjvfj4C" role="2EinRH" />
-                <node concept="356sEF" id="1WhdBjvfj4D" role="356sEH">
-                  <property role="TrG5h" value="            auto goal_handle = future.get();" />
+                  <property role="TrG5h" value="&gt;&gt; goal_handle) {" />
                 </node>
               </node>
               <node concept="356sEK" id="1WhdBjvfj4F" role="383Ya9">
@@ -2653,7 +2647,7 @@
             </node>
             <node concept="356sEK" id="1WhdBjvgAkq" role="383Ya9">
               <node concept="356sEF" id="1WhdBjvgAkr" role="356sEH">
-                <property role="TrG5h" value="options.result_callback =" />
+                <property role="TrG5h" value="goal_options.result_callback =" />
               </node>
               <node concept="2EixSi" id="1WhdBjvgAks" role="2EinRH" />
             </node>
@@ -2838,7 +2832,7 @@
                 </node>
                 <node concept="356sEK" id="1WhdBjvhiSS" role="383Ya9">
                   <node concept="356sEF" id="1WhdBjvhiST" role="356sEH">
-                    <property role="TrG5h" value="}" />
+                    <property role="TrG5h" value="};" />
                   </node>
                   <node concept="2EixSi" id="1WhdBjvhiSU" role="2EinRH" />
                 </node>
@@ -7652,7 +7646,7 @@
               <node concept="356sEK" id="1WhdBjvmL0c" role="383Ya9">
                 <node concept="2EixSi" id="1WhdBjvmL0d" role="2EinRH" />
                 <node concept="356sEF" id="1WhdBjvmL0e" role="356sEH">
-                  <property role="TrG5h" value="        [this](std::shared_future&lt;rclcpp_action::ClientGoalHandle&lt;" />
+                  <property role="TrG5h" value="        [this](std::shared_ptr&lt;rclcpp_action::ClientGoalHandle&lt;" />
                 </node>
                 <node concept="356sEF" id="1WhdBjvmL0f" role="356sEH">
                   <property role="TrG5h" value="packageT::action::actionT" />
@@ -7715,13 +7709,7 @@
                   </node>
                 </node>
                 <node concept="356sEF" id="1WhdBjvmL0x" role="356sEH">
-                  <property role="TrG5h" value="&gt;::SharedPtr&gt; future) {" />
-                </node>
-              </node>
-              <node concept="356sEK" id="1WhdBjvmL0y" role="383Ya9">
-                <node concept="2EixSi" id="1WhdBjvmL0z" role="2EinRH" />
-                <node concept="356sEF" id="1WhdBjvmL0$" role="356sEH">
-                  <property role="TrG5h" value="            auto goal_handle = future.get();" />
+                  <property role="TrG5h" value="&gt;&gt; goal_handle {" />
                 </node>
               </node>
               <node concept="356sEK" id="1WhdBjvmL0_" role="383Ya9">
@@ -7841,7 +7829,70 @@
                 <node concept="356sEK" id="1WhdBjvmL1i" role="383Ya9">
                   <node concept="2EixSi" id="1WhdBjvmL1j" role="2EinRH" />
                   <node concept="356sEF" id="1WhdBjvmL1k" role="356sEH">
-                    <property role="TrG5h" value="            const std::shared_ptr&lt;const packageT::action::actionT::Feedback&gt; feedback) {" />
+                    <property role="TrG5h" value="            const std::shared_ptr&lt;const " />
+                  </node>
+                  <node concept="356sEF" id="1h571jl3i9u" role="356sEH">
+                    <property role="TrG5h" value="packageT::action::actionT" />
+                    <node concept="17Uvod" id="1h571jl3ihW" role="lGtFl">
+                      <property role="2qtEX9" value="name" />
+                      <property role="P4ACc" value="ceab5195-25ea-4f22-9b92-103b95ca8c0c/1169194658468/1169194664001" />
+                      <node concept="3zFVjK" id="1h571jl3ihX" role="3zH0cK">
+                        <node concept="3clFbS" id="1h571jl3ihY" role="2VODD2">
+                          <node concept="3clFbF" id="1h571jl3jst" role="3cqZAp">
+                            <node concept="3cpWs3" id="1h571jl3jsv" role="3clFbG">
+                              <node concept="2OqwBi" id="1h571jl3jsw" role="3uHU7w">
+                                <node concept="2OqwBi" id="1h571jl3jsx" role="2Oq$k0">
+                                  <node concept="30H73N" id="1h571jl3jsy" role="2Oq$k0" />
+                                  <node concept="3TrEf2" id="1h571jl3jsz" role="2OqNvi">
+                                    <ref role="3Tt5mk" to="9g35:1zrXPLZq8zn" resolve="message" />
+                                  </node>
+                                </node>
+                                <node concept="3TrcHB" id="1h571jl3js$" role="2OqNvi">
+                                  <ref role="3TsBF5" to="tpck:h0TrG11" resolve="name" />
+                                </node>
+                              </node>
+                              <node concept="3cpWs3" id="1h571jl3js_" role="3uHU7B">
+                                <node concept="Xl_RD" id="1h571jl3jsA" role="3uHU7w">
+                                  <property role="Xl_RC" value="::" />
+                                </node>
+                                <node concept="3cpWs3" id="1h571jl3jsB" role="3uHU7B">
+                                  <node concept="3cpWs3" id="1h571jl3jsC" role="3uHU7B">
+                                    <node concept="2OqwBi" id="1h571jl3jsD" role="3uHU7B">
+                                      <node concept="2OqwBi" id="1h571jl3jsE" role="2Oq$k0">
+                                        <node concept="30H73N" id="1h571jl3jsF" role="2Oq$k0" />
+                                        <node concept="3TrEf2" id="1h571jl3jsG" role="2OqNvi">
+                                          <ref role="3Tt5mk" to="9g35:1zrXPLZq8zn" resolve="message" />
+                                        </node>
+                                      </node>
+                                      <node concept="3TrcHB" id="1h571jl3jsH" role="2OqNvi">
+                                        <ref role="3TsBF5" to="9g35:6aVkdwz7VvG" resolve="package" />
+                                      </node>
+                                    </node>
+                                    <node concept="Xl_RD" id="1h571jl3jsI" role="3uHU7w">
+                                      <property role="Xl_RC" value="::" />
+                                    </node>
+                                  </node>
+                                  <node concept="2OqwBi" id="1h571jl3jsJ" role="3uHU7w">
+                                    <node concept="2OqwBi" id="1h571jl3jsK" role="2Oq$k0">
+                                      <node concept="30H73N" id="1h571jl3jsL" role="2Oq$k0" />
+                                      <node concept="3TrEf2" id="1h571jl3jsM" role="2OqNvi">
+                                        <ref role="3Tt5mk" to="9g35:1zrXPLZq8zn" resolve="message" />
+                                      </node>
+                                    </node>
+                                    <node concept="3TrcHB" id="1h571jl3jsN" role="2OqNvi">
+                                      <ref role="3TsBF5" to="9g35:1zrXPLZlHDN" resolve="message_type" />
+                                    </node>
+                                  </node>
+                                </node>
+                              </node>
+                            </node>
+                          </node>
+                        </node>
+                      </node>
+                    </node>
+                  </node>
+                  <node concept="356sEF" id="1h571jl3i9v" role="356sEH">
+                    <property role="TrG5h" value="::Feedback&gt; feedback) {" />
                   </node>
                 </node>
                 <node concept="356sEK" id="1WhdBjvmL1l" role="383Ya9">
@@ -8046,7 +8097,7 @@
                 </node>
                 <node concept="356sEK" id="1WhdBjvmL2n" role="383Ya9">
                   <node concept="356sEF" id="1WhdBjvmL2o" role="356sEH">
-                    <property role="TrG5h" value="}" />
+                    <property role="TrG5h" value="};" />
                   </node>
                   <node concept="2EixSi" id="1WhdBjvmL2p" role="2EinRH" />
                 </node>
@@ -8148,6 +8199,12 @@
             </node>
             <node concept="2EixSi" id="2KrTzSRc0NI" role="2EinRH" />
           </node>
+          <node concept="356sEK" id="1h571jkOLJe" role="383Ya9">
+            <node concept="356sEF" id="1h571jkOLJf" role="356sEH">
+              <property role="TrG5h" value="const rclcpp_action::GoalUUID &amp; uuid," />
+            </node>
+            <node concept="2EixSi" id="1h571jkOLJg" role="2EinRH" />
+          </node>
           <node concept="356sEK" id="2KrTzSRccVG" role="383Ya9">
             <node concept="356sEF" id="2KrTzSRccVH" role="356sEH">
               <property role="TrG5h" value="std::shared_ptr&lt;const " />
@@ -8225,7 +8282,7 @@
           </node>
           <node concept="356sEK" id="2KrTzSRcuaH" role="383Ya9">
             <node concept="356sEF" id="2KrTzSRcuaI" role="356sEH">
-              <property role="TrG5h" value="RCLCPP_INFO(this-&gt;get_logger(), &quot;Recibed goal&quot;);" />
+              <property role="TrG5h" value="RCLCPP_INFO(this-&gt;get_logger(), &quot;Received goal&quot;);" />
             </node>
             <node concept="2EixSi" id="2KrTzSRcuaJ" role="2EinRH" />
           </node>
