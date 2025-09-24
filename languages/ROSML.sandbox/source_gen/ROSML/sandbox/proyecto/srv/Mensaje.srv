@@ -1,6 +1,0 @@
-#Place your request variables above the --- mark, one per line
-Datatype:a
-
----
-Datatype: b
-#Place your response variables below the --- mark, one per line

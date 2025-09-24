@@ -36,11 +36,17 @@
       <concept id="5944657839003601246" name="jetbrains.mps.lang.editor.structure.ConceptEditorHintDeclaration" flags="ig" index="2BsEeg">
         <property id="168363875802087287" name="showInUI" index="2gpH_U" />
       </concept>
+      <concept id="1186403694788" name="jetbrains.mps.lang.editor.structure.ColorStyleClassItem" flags="ln" index="VaVBg">
+        <property id="1186403713874" name="color" index="Vb096" />
+      </concept>
+      <concept id="1186404574412" name="jetbrains.mps.lang.editor.structure.BackgroundColorStyleClassItem" flags="ln" index="Veino" />
       <concept id="1186414536763" name="jetbrains.mps.lang.editor.structure.BooleanStyleSheetItem" flags="ln" index="VOi$J">
         <property id="1186414551515" name="flag" index="VOm3f" />
       </concept>
       <concept id="1186414928363" name="jetbrains.mps.lang.editor.structure.SelectableStyleSheetItem" flags="ln" index="VPM3Z" />
+      <concept id="1186414976055" name="jetbrains.mps.lang.editor.structure.DrawBorderStyleClassItem" flags="ln" index="VPXOz" />
       <concept id="1186414999511" name="jetbrains.mps.lang.editor.structure.UnderlinedStyleClassItem" flags="ln" index="VQ3r3" />
+      <concept id="1214406466686" name="jetbrains.mps.lang.editor.structure.TextBackgroundColorSelectedStyleClassItem" flags="ln" index="30h1P$" />
       <concept id="1139535219966" name="jetbrains.mps.lang.editor.structure.CellActionMapDeclaration" flags="ig" index="1h_SRR">
         <reference id="1139535219968" name="applicableConcept" index="1h_SK9" />
         <child id="1139535219969" name="item" index="1h_SK8" />
@@ -1045,9 +1051,18 @@
         <node concept="VPM3Z" id="2845_1lHUSn" role="3F10Kt" />
       </node>
       <node concept="3F0ifn" id="2845_1lPqqA" role="3EZMnx">
-        <property role="3F0ifm" value="UPDATE ALL PROJECT DEPENDENCIES" />
+        <property role="3F0ifm" value="CLICK UPDATE ALL PROJECT DEPENDENCIES" />
         <ref role="1ERwB7" node="2845_1m4y16" resolve="updateAllDependencies" />
         <node concept="pVoyu" id="2845_1lPqqC" role="3F10Kt">
+          <property role="VOm3f" value="true" />
+        </node>
+        <node concept="Veino" id="2kMWEzI31eT" role="3F10Kt">
+          <property role="Vb096" value="fLJRk5A/lightGray" />
+        </node>
+        <node concept="30h1P$" id="2kMWEzI31eW" role="3F10Kt">
+          <property role="Vb096" value="g1_qVrt/darkMagenta" />
+        </node>
+        <node concept="VPXOz" id="2kMWEzI6EQr" role="3F10Kt">
           <property role="VOm3f" value="true" />
         </node>
       </node>

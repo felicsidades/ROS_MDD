@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<product version="3" modelHash="1zclg93bgyx2je5860zbb7nrife2rgh">
-  <files dir="ROSML/sandbox/proyecto" names="CMakeLists.txt:package.xml" />
-  <files dir="ROSML/sandbox/proyecto/src" names="nodo.cpp:server.cpp" />
-  <files dir="ROSML/sandbox/proyecto/srv" names="Mensaje.srv" />
+<product version="3" modelHash="1mc0f6ffywnbbvxgy5mnc9egdp7umgh">
+  <files dir="ROSML/sandbox/pr" names="CMakeLists.txt:package.xml" />
+  <files dir="ROSML/sandbox/pr/action" names="Mensaje.action" />
+  <files dir="ROSML/sandbox/pr/src" names="n.cpp:s.cpp" />
 </product>
 

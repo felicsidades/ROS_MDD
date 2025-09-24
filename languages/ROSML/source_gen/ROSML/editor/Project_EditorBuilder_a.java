@@ -36,6 +36,7 @@ import jetbrains.mps.nodeEditor.cellMenu.SEmptyContainmentSubstituteInfo;
 import jetbrains.mps.nodeEditor.cellMenu.SChildSubstituteInfo;
 import jetbrains.mps.openapi.editor.cells.CellActionType;
 import jetbrains.mps.nodeEditor.cellActions.CellAction_DeleteNode;
+import jetbrains.mps.nodeEditor.MPSColors;
 import jetbrains.mps.smodel.adapter.structure.MetaAdapterFactory;
 import org.jetbrains.mps.openapi.language.SConcept;
 import org.jetbrains.mps.openapi.language.SInterfaceConcept;
@@ -546,10 +547,13 @@ import org.jetbrains.mps.openapi.language.SInterfaceConcept;
     }
   }
   private EditorCell createConstant_6() {
-    EditorCell_Constant editorCell = new EditorCell_Constant(getEditorContext(), myNode, "UPDATE ALL PROJECT DEPENDENCIES");
+    EditorCell_Constant editorCell = new EditorCell_Constant(getEditorContext(), myNode, "CLICK UPDATE ALL PROJECT DEPENDENCIES");
     editorCell.setCellId("Constant_o8np3d_m0");
     Style style = new StyleImpl();
     style.set(StyleAttributes.INDENT_LAYOUT_ON_NEW_LINE, true);
+    style.set(StyleAttributes.BACKGROUND_COLOR, getStyleRegistry().getSimpleColor(MPSColors.lightGray));
+    style.set(StyleAttributes.SELECTED_TEXT_BACKGROUND_COLOR, getStyleRegistry().getSimpleColor(MPSColors.DARK_MAGENTA));
+    style.set(StyleAttributes.DRAW_BORDER, true);
     editorCell.getStyle().putAll(style);
     updateAllDependencies.setCellActions(editorCell, myNode, getEditorContext());
     editorCell.setDefaultText("");

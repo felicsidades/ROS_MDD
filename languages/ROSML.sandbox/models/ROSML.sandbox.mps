@@ -12,14 +12,14 @@
         <property id="6390288862929532035" name="datatype" index="1fCA_u" />
       </concept>
       <concept id="2388874706831453138" name="ROSML.structure.Server" flags="ng" index="2SJ5sL">
-        <child id="6890320178452338426" name="services" index="1YLcd8" />
+        <child id="6890320178452563451" name="actions" index="1YK519" />
       </concept>
       <concept id="421342016046853881" name="ROSML.structure.Project" flags="ng" index="3eGSqH">
         <child id="5031074398567821439" name="network_nodes" index="SSSvX" />
         <child id="2289004858211130663" name="port_connections" index="1D5n3H" />
       </concept>
       <concept id="421342016046853883" name="ROSML.structure.Node" flags="ng" index="3eGSqJ">
-        <child id="6283511899403442476" name="service_requests" index="2AO_RF" />
+        <child id="6283511899403442472" name="action_requests" index="2AO_RJ" />
       </concept>
       <concept id="5957737514409752030" name="ROSML.structure.IPort" flags="ngI" index="1xLPtE">
         <reference id="2618700756498340012" name="connection" index="28tyrq" />
@@ -31,16 +31,17 @@
         <reference id="5957737514409472542" name="server" index="1xML2E" />
         <reference id="1791297253456513239" name="message" index="1BGRYb" />
       </concept>
-      <concept id="1911678295486318790" name="ROSML.structure.ServiceInterface" flags="ng" index="3_NIQ1">
-        <child id="1911678295486318791" name="request" index="3_NIQ0" />
-        <child id="1911678295486318793" name="response" index="3_NIQe" />
+      <concept id="1911678295486501912" name="ROSML.structure.ActionInterface" flags="ng" index="3_MV5v">
+        <child id="1758818735778536579" name="Feedback" index="1a2gzh" />
+        <child id="1911678295486741279" name="Goal" index="3_M1To" />
+        <child id="1911678295486741281" name="Result" index="3_M1TA" />
       </concept>
       <concept id="1791297253455354509" name="ROSML.structure.IInterface" flags="ngI" index="1BziRh">
         <property id="7114368925594269676" name="package" index="11DesO" />
         <property id="1791297253455354483" name="message_type" index="1BziOJ" />
       </concept>
-      <concept id="6890320178452338424" name="ROSML.structure.Service" flags="ng" index="1YLcda">
-        <child id="1911678295486318787" name="message" index="3_NIQ4" />
+      <concept id="6890320178452563450" name="ROSML.structure.Action" flags="ng" index="1YK518">
+        <child id="1911678295486741274" name="message" index="3_M1Tt" />
       </concept>
     </language>
     <language id="ceab5195-25ea-4f22-9b92-103b95ca8c0c" name="jetbrains.mps.lang.core">
@@ -83,50 +84,50 @@
       </concept>
     </language>
   </registry>
-  <node concept="3eGSqH" id="I_rA6AeFsM">
-    <property role="TrG5h" value="proyecto" />
-    <node concept="3eGSqJ" id="I_rA6AeFsN" role="SSSvX">
-      <property role="TrG5h" value="nodo" />
-      <node concept="1xML2H" id="I_rA6AeFsZ" role="2AO_RF">
-        <property role="2_vM0g" value="servicio1" />
-        <property role="1xL6Mz" value="srv request" />
-        <ref role="1xML2C" node="I_rA6AeFsN" resolve="nodo" />
-        <ref role="1xML2E" node="I_rA6AeFsR" resolve="server" />
-        <ref role="1BGRYb" node="I_rA6AeFsT" resolve="Mensaje" />
+  <node concept="3eGSqH" id="2kMWEzIdcNX">
+    <property role="TrG5h" value="pr" />
+    <node concept="3eGSqJ" id="2kMWEzIdcNY" role="SSSvX">
+      <property role="TrG5h" value="n" />
+      <node concept="1xML2H" id="2kMWEzIdcOb" role="2AO_RJ">
+        <property role="2_vM0g" value="act" />
+        <property role="1xL6Mz" value="act request" />
+        <ref role="1xML2C" node="2kMWEzIdcNY" resolve="n" />
+        <ref role="1xML2E" node="2kMWEzIdcO2" resolve="s" />
+        <ref role="1BGRYb" node="2kMWEzIdcO4" resolve="Mensaje" />
       </node>
     </node>
-    <node concept="37mRI7" id="I_rA6AeFsP" role="lGtFl">
-      <node concept="37mRIm" id="I_rA6AeFsQ" role="37mRID">
-        <property role="37mO49" value="839198271254214451" />
-        <node concept="gqqVs" id="I_rA6AeFsO" role="37mO4d">
-          <property role="gqqTZ" value="294.0" />
-          <property role="gqqTW" value="81.0" />
-          <property role="gqqTX" value="44.0" />
+    <node concept="37mRI7" id="2kMWEzIdcO0" role="lGtFl">
+      <node concept="37mRIm" id="2kMWEzIdcO1" role="37mRID">
+        <property role="37mO49" value="2680471535603731710" />
+        <node concept="gqqVs" id="2kMWEzIdcNZ" role="37mO4d">
+          <property role="gqqTZ" value="49.0" />
+          <property role="gqqTW" value="80.0" />
+          <property role="gqqTX" value="84.0" />
           <property role="gqqTy" value="33.0" />
           <property role="TgtnS" value="1.0;0.0;0.0;1.0;0.0;0.0" />
         </node>
       </node>
-      <node concept="37mRIm" id="I_rA6AeFsX" role="37mRID">
-        <property role="37mO49" value="839198271254214455" />
-        <node concept="gqqVs" id="I_rA6AeFsW" role="37mO4d">
-          <property role="gqqTZ" value="45.0" />
-          <property role="gqqTW" value="122.0" />
-          <property role="gqqTX" value="60.0" />
+      <node concept="37mRIm" id="2kMWEzIdcO9" role="37mRID">
+        <property role="37mO49" value="2680471535603731714" />
+        <node concept="gqqVs" id="2kMWEzIdcO8" role="37mO4d">
+          <property role="gqqTZ" value="325.0" />
+          <property role="gqqTW" value="65.0" />
+          <property role="gqqTX" value="80.0" />
           <property role="gqqTy" value="33.0" />
           <property role="TgtnS" value="1.0;0.0;0.0;1.0;0.0;0.0" />
         </node>
       </node>
-      <node concept="37mRIm" id="I_rA6AeFt1" role="37mRID">
-        <property role="37mO49" value="839198271254214462" />
-        <node concept="2VclpC" id="I_rA6AeFt0" role="37mO4d">
-          <node concept="3ul5H1" id="I_rA6AeFt2" role="3ul5Gx">
+      <node concept="37mRIm" id="2kMWEzIdcOd" role="37mRID">
+        <property role="37mO49" value="2680471535603731722" />
+        <node concept="2VclpC" id="2kMWEzIdcOc" role="37mO4d">
+          <node concept="3ul5H1" id="2kMWEzIdcOe" role="3ul5Gx">
             <property role="3ul5GH" value="label" />
-            <node concept="3wpmZ1" id="I_rA6AeFt3" role="3ul5Gz">
-              <node concept="2VclrF" id="I_rA6AeFt4" role="3wpmZR">
-                <property role="2Vclpx" value="133.5" />
-                <property role="2Vclpz" value="87.0" />
+            <node concept="3wpmZ1" id="2kMWEzIdcOf" role="3ul5Gz">
+              <node concept="2VclrF" id="2kMWEzIdcOg" role="3wpmZR">
+                <property role="2Vclpx" value="175.5" />
+                <property role="2Vclpz" value="51.5" />
               </node>
-              <node concept="2VclrF" id="I_rA6AeFt5" role="3wpmZP">
+              <node concept="2VclrF" id="2kMWEzIdcOh" role="3wpmZP">
                 <property role="2Vclpx" value="0.0" />
                 <property role="2Vclpz" value="0.0" />
               </node>
@@ -135,30 +136,33 @@
         </node>
       </node>
     </node>
-    <node concept="2SJ5sL" id="I_rA6AeFsR" role="SSSvX">
-      <property role="TrG5h" value="server" />
-      <node concept="1YLcda" id="I_rA6AeFsS" role="1YLcd8">
-        <property role="TrG5h" value="servicio1" />
-        <ref role="28tyrq" node="I_rA6AeFsY" />
-        <node concept="3_NIQ1" id="I_rA6AeFsT" role="3_NIQ4">
+    <node concept="2SJ5sL" id="2kMWEzIdcO2" role="SSSvX">
+      <property role="TrG5h" value="s" />
+      <node concept="1YK518" id="2kMWEzIdcO3" role="1YK519">
+        <property role="TrG5h" value="act" />
+        <ref role="28tyrq" node="2kMWEzIdcOa" />
+        <node concept="3_MV5v" id="2kMWEzIdcO4" role="3_M1Tt">
           <property role="TrG5h" value="Mensaje" />
-          <property role="1BziOJ" value="1zrXPLZlHDS/srv" />
-          <property role="11DesO" value="proyecto" />
-          <node concept="2SJ5mA" id="I_rA6AeFsU" role="3_NIQ0">
+          <property role="1BziOJ" value="1zrXPLZlHDV/action" />
+          <property role="11DesO" value="pr" />
+          <node concept="2SJ5mA" id="2kMWEzIdcO5" role="3_M1To">
+            <property role="1fCA_u" value="b" />
+          </node>
+          <node concept="2SJ5mA" id="2kMWEzIdcO6" role="1a2gzh">
             <property role="1fCA_u" value="a" />
           </node>
-          <node concept="2SJ5mA" id="I_rA6AeFsV" role="3_NIQe">
-            <property role="1fCA_u" value="b" />
+          <node concept="2SJ5mA" id="2kMWEzIdcO7" role="3_M1TA">
+            <property role="1fCA_u" value="c" />
           </node>
         </node>
       </node>
     </node>
-    <node concept="1xML2H" id="I_rA6AeFsY" role="1D5n3H">
-      <property role="2_vM0g" value="servicio1" />
-      <property role="1xL6Mz" value="srv request" />
-      <ref role="1xML2C" node="I_rA6AeFsN" resolve="nodo" />
-      <ref role="1xML2E" node="I_rA6AeFsR" resolve="server" />
-      <ref role="1BGRYb" node="I_rA6AeFsT" resolve="Mensaje" />
+    <node concept="1xML2H" id="2kMWEzIdcOa" role="1D5n3H">
+      <property role="2_vM0g" value="act" />
+      <property role="1xL6Mz" value="act request" />
+      <ref role="1xML2C" node="2kMWEzIdcNY" resolve="n" />
+      <ref role="1xML2E" node="2kMWEzIdcO2" resolve="s" />
+      <ref role="1BGRYb" node="2kMWEzIdcO4" resolve="Mensaje" />
     </node>
   </node>
 </model>

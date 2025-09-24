@@ -3445,7 +3445,7 @@
                     <node concept="3clFbF" id="3OkCT$$iazK" role="3cqZAp">
                       <node concept="3cpWs3" id="3OkCT$$iazL" role="3clFbG">
                         <node concept="Xl_RD" id="3OkCT$$iazM" role="3uHU7w">
-                          <property role="Xl_RC" value="action_client_" />
+                          <property role="Xl_RC" value="_action_client_" />
                         </node>
                         <node concept="2OqwBi" id="3OkCT$$iazN" role="3uHU7B">
                           <node concept="3TrcHB" id="3OkCT$$iazO" role="2OqNvi">
@@ -9568,7 +9568,7 @@
       </node>
       <node concept="356sEK" id="4SZCcxk9F82" role="383Ya9">
         <node concept="356sEF" id="4SZCcxk9F83" role="356sEH">
-          <property role="TrG5h" value="Datatype: data" />
+          <property role="TrG5h" value="string data" />
           <node concept="1WS0z7" id="4SZCcxk9F86" role="lGtFl">
             <node concept="3JmXsc" id="4SZCcxk9F89" role="3Jn$fo">
               <node concept="3clFbS" id="4SZCcxk9F8a" role="2VODD2">
@@ -9595,7 +9595,7 @@
                     </node>
                     <node concept="3cpWs3" id="4SZCcxk9Omt" role="3uHU7B">
                       <node concept="Xl_RD" id="4SZCcxk9NLb" role="3uHU7B">
-                        <property role="Xl_RC" value="Datatype:" />
+                        <property role="Xl_RC" value="string " />
                       </node>
                       <node concept="2OqwBi" id="4SZCcxk9P9k" role="3uHU7w">
                         <node concept="30H73N" id="4SZCcxk9OKp" role="2Oq$k0" />
@@ -9620,7 +9620,7 @@
       </node>
       <node concept="356sEK" id="4SZCcxk9UcL" role="383Ya9">
         <node concept="356sEF" id="4SZCcxk9UcM" role="356sEH">
-          <property role="TrG5h" value="Datatype: data" />
+          <property role="TrG5h" value="string data" />
           <node concept="1WS0z7" id="4SZCcxk9Um_" role="lGtFl">
             <node concept="3JmXsc" id="4SZCcxk9UmC" role="3Jn$fo">
               <node concept="3clFbS" id="4SZCcxk9UmD" role="2VODD2">
@@ -9649,7 +9649,7 @@
                       </node>
                     </node>
                     <node concept="Xl_RD" id="4SZCcxk9YAH" role="3uHU7B">
-                      <property role="Xl_RC" value="Datatype: " />
+                      <property role="Xl_RC" value="string " />
                     </node>
                   </node>
                 </node>
@@ -9720,7 +9720,7 @@
       </node>
       <node concept="356sEK" id="4SZCcxka2YA" role="383Ya9">
         <node concept="356sEF" id="4SZCcxka2YB" role="356sEH">
-          <property role="TrG5h" value="Datatype: data" />
+          <property role="TrG5h" value="string data" />
           <node concept="17Uvod" id="4SZCcxka3o9" role="lGtFl">
             <property role="2qtEX9" value="name" />
             <property role="P4ACc" value="ceab5195-25ea-4f22-9b92-103b95ca8c0c/1169194658468/1169194664001" />
@@ -9735,7 +9735,7 @@
                       </node>
                     </node>
                     <node concept="Xl_RD" id="4SZCcxka6O$" role="3uHU7B">
-                      <property role="Xl_RC" value="Datatype: " />
+                      <property role="Xl_RC" value="string " />
                     </node>
                   </node>
                 </node>
@@ -9773,7 +9773,7 @@
       </node>
       <node concept="356sEK" id="4SZCcxkabb4" role="383Ya9">
         <node concept="356sEF" id="4SZCcxkabb5" role="356sEH">
-          <property role="TrG5h" value="Datatype: data" />
+          <property role="TrG5h" value="string data" />
           <node concept="17Uvod" id="4SZCcxkabb6" role="lGtFl">
             <property role="2qtEX9" value="name" />
             <property role="P4ACc" value="ceab5195-25ea-4f22-9b92-103b95ca8c0c/1169194658468/1169194664001" />
@@ -9788,7 +9788,7 @@
                       </node>
                     </node>
                     <node concept="Xl_RD" id="4SZCcxkabbe" role="3uHU7B">
-                      <property role="Xl_RC" value="Datatype: " />
+                      <property role="Xl_RC" value="string " />
                     </node>
                   </node>
                 </node>
@@ -9826,7 +9826,7 @@
       </node>
       <node concept="356sEK" id="4SZCcxkabYY" role="383Ya9">
         <node concept="356sEF" id="4SZCcxkabYZ" role="356sEH">
-          <property role="TrG5h" value="Datatype: data" />
+          <property role="TrG5h" value="string data" />
           <node concept="17Uvod" id="4SZCcxkabZ0" role="lGtFl">
             <property role="2qtEX9" value="name" />
             <property role="P4ACc" value="ceab5195-25ea-4f22-9b92-103b95ca8c0c/1169194658468/1169194664001" />
@@ -9841,7 +9841,7 @@
                       </node>
                     </node>
                     <node concept="Xl_RD" id="4SZCcxkabZ8" role="3uHU7B">
-                      <property role="Xl_RC" value="Datatype: " />
+                      <property role="Xl_RC" value="string " />
                     </node>
                   </node>
                 </node>
@@ -9906,6 +9906,62 @@
           </node>
         </node>
       </node>
+    </node>
+  </node>
+  <node concept="356sEV" id="2kMWEzIjR_j">
+    <property role="TrG5h" value="Package/msg/CustomInterface" />
+    <property role="3Le9LX" value=".msg" />
+    <node concept="356WMU" id="2kMWEzIjR_k" role="356KY_">
+      <node concept="356sEK" id="2kMWEzIjSun" role="383Ya9">
+        <node concept="356sEF" id="2kMWEzIjSuo" role="356sEH">
+          <property role="TrG5h" value="#Place your request variables above the --- mark, one per line" />
+        </node>
+        <node concept="2EixSi" id="2kMWEzIjSup" role="2EinRH" />
+      </node>
+      <node concept="356sEK" id="2kMWEzIjVxR" role="383Ya9">
+        <node concept="356sEF" id="2kMWEzIjVxS" role="356sEH">
+          <property role="TrG5h" value="string data" />
+          <node concept="17Uvod" id="2kMWEzIjVSc" role="lGtFl">
+            <property role="2qtEX9" value="name" />
+            <property role="P4ACc" value="ceab5195-25ea-4f22-9b92-103b95ca8c0c/1169194658468/1169194664001" />
+            <node concept="3zFVjK" id="2kMWEzIjVSd" role="3zH0cK">
+              <node concept="3clFbS" id="2kMWEzIjVSe" role="2VODD2">
+                <node concept="3clFbF" id="2kMWEzIjWhZ" role="3cqZAp">
+                  <node concept="3cpWs3" id="2kMWEzIjZA2" role="3clFbG">
+                    <node concept="Xl_RD" id="2kMWEzIjZ5Z" role="3uHU7B">
+                      <property role="Xl_RC" value="string " />
+                    </node>
+                    <node concept="2OqwBi" id="2kMWEzIjWCD" role="3uHU7w">
+                      <node concept="30H73N" id="2kMWEzIjWhY" role="2Oq$k0" />
+                      <node concept="3TrcHB" id="2kMWEzIjXHC" role="2OqNvi">
+                        <ref role="3TsBF5" to="9g35:5yIRtOn3bi3" resolve="datatype" />
+                      </node>
+                    </node>
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="2EixSi" id="2kMWEzIjVxT" role="2EinRH" />
+        <node concept="1WS0z7" id="2kMWEzIjVFF" role="lGtFl">
+          <node concept="3JmXsc" id="2kMWEzIjVFI" role="3Jn$fo">
+            <node concept="3clFbS" id="2kMWEzIjVFJ" role="2VODD2">
+              <node concept="3clFbF" id="2kMWEzIjVFP" role="3cqZAp">
+                <node concept="2OqwBi" id="2kMWEzIjVFK" role="3clFbG">
+                  <node concept="3Tsc0h" id="2kMWEzIjVFN" role="2OqNvi">
+                    <ref role="3TtcxE" to="9g35:1zrXPLZlHE9" resolve="data" />
+                  </node>
+                  <node concept="30H73N" id="2kMWEzIjVFO" role="2Oq$k0" />
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="n94m4" id="2kMWEzIjR_l" role="lGtFl">
+      <ref role="n9lRv" to="9g35:1zrXPLZlHE8" resolve="CustomInterface" />
     </node>
   </node>
 </model>
