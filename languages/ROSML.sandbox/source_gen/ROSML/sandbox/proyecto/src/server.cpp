@@ -21,7 +21,7 @@ public:
     // Service server
     servicio1_service_server_ = this->create_service<proyecto::srv::Mensaje>(
     "servicio1",
-    std::bind(&TemplateServer::servicio1_service_callback_, this, std::placeholders::_1)
+    std::bind(&TemplateServer::servicio1_service_callback_, this, std::placeholders::_1, std::placeholders::_2)
     );
 
     // Action server
@@ -32,7 +32,13 @@ private:
 
   // Call a service
   //Service callback
-
+  void servicio1_service_callback_(
+  const std::shared_ptr<proyecto::srv::Mensaje::Request> request,
+  std::shared_ptr<proyecto::srv::Mensaje::Response> response)
+  {
+  // TODO: Modify the response: response= ""
+  RCLCPP_INFO(this->get_logger(), "Service contested");
+  }
   // Send an action goal
 
   //Action methods

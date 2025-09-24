@@ -245,7 +245,7 @@ public class QueriesGenerated extends QueryProviderBase {
     return "publisher_" + SPropertyOperations.getString(SLinkOperations.getTarget(_context.getNode(), LINKS.topic$IYsG), PROPS.name$MnvL) + "_";
   }
   public static Object propertyMacro_GetValue_4_9(final PropertyMacroContext _context) {
-    return SPropertyOperations.getString(SLinkOperations.getTarget(SLinkOperations.getTarget(_context.getNode(), LINKS.topic$IYsG), LINKS.message$uMau), PROPS.package$uL2X) + "::msg::" + SPropertyOperations.getString(SLinkOperations.getTarget(SLinkOperations.getTarget(_context.getNode(), LINKS.topic$IYsG), LINKS.message$uMau), PROPS.name$MnvL);
+    return SPropertyOperations.getString(SLinkOperations.getTarget(SLinkOperations.getTarget(_context.getNode(), LINKS.topic$IYsG), LINKS.message$uMau), PROPS.package$uL2X) + "::" + SPropertyOperations.getEnum(SLinkOperations.getTarget(SLinkOperations.getTarget(_context.getNode(), LINKS.topic$IYsG), LINKS.message$uMau), PROPS.message_type$93N4) + "::" + SPropertyOperations.getString(SLinkOperations.getTarget(SLinkOperations.getTarget(_context.getNode(), LINKS.topic$IYsG), LINKS.message$uMau), PROPS.name$MnvL);
   }
   public static Object propertyMacro_GetValue_4_10(final PropertyMacroContext _context) {
     return SPropertyOperations.getString(SLinkOperations.getTarget(_context.getNode(), LINKS.topic$IYsG), PROPS.name$MnvL);
@@ -260,7 +260,7 @@ public class QueriesGenerated extends QueryProviderBase {
     return "subscription_" + SPropertyOperations.getString(SLinkOperations.getTarget(_context.getNode(), LINKS.topic$IYsG), PROPS.name$MnvL) + "_";
   }
   public static Object propertyMacro_GetValue_4_14(final PropertyMacroContext _context) {
-    return SPropertyOperations.getString(SLinkOperations.getTarget(SLinkOperations.getTarget(_context.getNode(), LINKS.topic$IYsG), LINKS.message$uMau), PROPS.package$uL2X) + "::msg::" + SPropertyOperations.getString(SLinkOperations.getTarget(SLinkOperations.getTarget(_context.getNode(), LINKS.topic$IYsG), LINKS.message$uMau), PROPS.name$MnvL);
+    return SPropertyOperations.getString(SLinkOperations.getTarget(SLinkOperations.getTarget(_context.getNode(), LINKS.topic$IYsG), LINKS.message$uMau), PROPS.package$uL2X) + "::" + SPropertyOperations.getEnum(SLinkOperations.getTarget(SLinkOperations.getTarget(_context.getNode(), LINKS.topic$IYsG), LINKS.message$uMau), PROPS.message_type$93N4) + "::" + SPropertyOperations.getString(SLinkOperations.getTarget(SLinkOperations.getTarget(_context.getNode(), LINKS.topic$IYsG), LINKS.message$uMau), PROPS.name$MnvL);
   }
   public static Object propertyMacro_GetValue_4_15(final PropertyMacroContext _context) {
     return SPropertyOperations.getString(SLinkOperations.getTarget(_context.getNode(), LINKS.topic$IYsG), PROPS.name$MnvL);
@@ -272,7 +272,7 @@ public class QueriesGenerated extends QueryProviderBase {
     return SPropertyOperations.getString(_context.getNode(), PROPS.port_name$u3X4) + "_service_client_";
   }
   public static Object propertyMacro_GetValue_4_18(final PropertyMacroContext _context) {
-    return SPropertyOperations.getString(SLinkOperations.getTarget(_context.getNode(), LINKS.message$3geB), PROPS.package$uL2X) + "::srv::" + SPropertyOperations.getString(SLinkOperations.getTarget(_context.getNode(), LINKS.message$3geB), PROPS.name$MnvL);
+    return SPropertyOperations.getString(SLinkOperations.getTarget(_context.getNode(), LINKS.message$3geB), PROPS.package$uL2X) + "::" + SPropertyOperations.getEnum(SLinkOperations.getTarget(_context.getNode(), LINKS.message$3geB), PROPS.message_type$93N4) + "::" + SPropertyOperations.getString(SLinkOperations.getTarget(_context.getNode(), LINKS.message$3geB), PROPS.name$MnvL);
   }
   public static Object propertyMacro_GetValue_4_19(final PropertyMacroContext _context) {
     return SPropertyOperations.getString(_context.getNode(), PROPS.port_name$u3X4);
@@ -281,7 +281,7 @@ public class QueriesGenerated extends QueryProviderBase {
     return SPropertyOperations.getString(_context.getNode(), PROPS.port_name$u3X4) + "_action_client_";
   }
   public static Object propertyMacro_GetValue_4_21(final PropertyMacroContext _context) {
-    return SPropertyOperations.getString(SLinkOperations.getTarget(_context.getNode(), LINKS.message$3geB), PROPS.package$uL2X) + "::action::" + SPropertyOperations.getString(SLinkOperations.getTarget(_context.getNode(), LINKS.message$3geB), PROPS.name$MnvL);
+    return SPropertyOperations.getString(SLinkOperations.getTarget(_context.getNode(), LINKS.message$3geB), PROPS.package$uL2X) + "::" + SPropertyOperations.getEnum(SLinkOperations.getTarget(_context.getNode(), LINKS.message$3geB), PROPS.message_type$93N4) + "::" + SPropertyOperations.getString(SLinkOperations.getTarget(_context.getNode(), LINKS.message$3geB), PROPS.name$MnvL);
   }
   public static Object propertyMacro_GetValue_4_22(final PropertyMacroContext _context) {
     return SPropertyOperations.getString(_context.getNode(), PROPS.port_name$u3X4);
@@ -290,7 +290,7 @@ public class QueriesGenerated extends QueryProviderBase {
     return SPropertyOperations.getString(_context.getNode(), PROPS.name$MnvL) + "_service_server_";
   }
   public static Object propertyMacro_GetValue_4_24(final PropertyMacroContext _context) {
-    return SPropertyOperations.getString(SLinkOperations.getTarget(_context.getNode(), LINKS.message$_DkH), PROPS.package$uL2X) + "::srv::" + SPropertyOperations.getString(SLinkOperations.getTarget(_context.getNode(), LINKS.message$_DkH), PROPS.name$MnvL);
+    return SPropertyOperations.getString(SLinkOperations.getTarget(_context.getNode(), LINKS.message$_DkH), PROPS.package$uL2X) + "::" + SPropertyOperations.getEnum(SLinkOperations.getTarget(_context.getNode(), LINKS.message$_DkH), PROPS.message_type$93N4) + "::" + SPropertyOperations.getString(SLinkOperations.getTarget(_context.getNode(), LINKS.message$_DkH), PROPS.name$MnvL);
   }
   public static Object propertyMacro_GetValue_4_25(final PropertyMacroContext _context) {
     return SPropertyOperations.getString(_context.getNode(), PROPS.name$MnvL);
@@ -302,129 +302,141 @@ public class QueriesGenerated extends QueryProviderBase {
     return SPropertyOperations.getString(_context.getNode(), PROPS.name$MnvL) + "_action_server_";
   }
   public static Object propertyMacro_GetValue_4_28(final PropertyMacroContext _context) {
-    return SPropertyOperations.getString(SLinkOperations.getTarget(_context.getNode(), LINKS.message$eqUd), PROPS.package$uL2X) + "::action::" + SPropertyOperations.getString(SLinkOperations.getTarget(_context.getNode(), LINKS.message$eqUd), PROPS.name$MnvL);
+    return SPropertyOperations.getString(SLinkOperations.getTarget(_context.getNode(), LINKS.message$eqUd), PROPS.package$uL2X) + "::" + SPropertyOperations.getEnum(SLinkOperations.getTarget(_context.getNode(), LINKS.message$eqUd), PROPS.message_type$93N4) + "::" + SPropertyOperations.getString(SLinkOperations.getTarget(_context.getNode(), LINKS.message$eqUd), PROPS.name$MnvL);
   }
   public static Object propertyMacro_GetValue_4_29(final PropertyMacroContext _context) {
     return SPropertyOperations.getString(_context.getNode(), PROPS.name$MnvL);
   }
   public static Object propertyMacro_GetValue_4_30(final PropertyMacroContext _context) {
-    return SPropertyOperations.getString(SLinkOperations.getTarget(_context.getNode(), LINKS.topic$IYsG), PROPS.name$MnvL) + "_publish_function_";
-  }
-  public static Object propertyMacro_GetValue_4_31(final PropertyMacroContext _context) {
-    return SPropertyOperations.getString(SLinkOperations.getTarget(SLinkOperations.getTarget(_context.getNode(), LINKS.topic$IYsG), LINKS.message$uMau), PROPS.package$uL2X) + "::msg::" + SPropertyOperations.getString(SLinkOperations.getTarget(SLinkOperations.getTarget(_context.getNode(), LINKS.topic$IYsG), LINKS.message$uMau), PROPS.name$MnvL);
-  }
-  public static Object propertyMacro_GetValue_4_32(final PropertyMacroContext _context) {
-    return "publisher_" + SPropertyOperations.getString(SLinkOperations.getTarget(_context.getNode(), LINKS.topic$IYsG), PROPS.name$MnvL) + "_";
-  }
-  public static Object propertyMacro_GetValue_4_33(final PropertyMacroContext _context) {
-    return SPropertyOperations.getString(SLinkOperations.getTarget(_context.getNode(), LINKS.topic$IYsG), PROPS.name$MnvL) + "_subscribe_function_";
-  }
-  public static Object propertyMacro_GetValue_4_34(final PropertyMacroContext _context) {
-    return SPropertyOperations.getString(SLinkOperations.getTarget(SLinkOperations.getTarget(_context.getNode(), LINKS.topic$IYsG), LINKS.message$uMau), PROPS.package$uL2X) + "::msg::" + SPropertyOperations.getString(SLinkOperations.getTarget(SLinkOperations.getTarget(_context.getNode(), LINKS.topic$IYsG), LINKS.message$uMau), PROPS.name$MnvL);
-  }
-  public static Object propertyMacro_GetValue_4_35(final PropertyMacroContext _context) {
-    return SPropertyOperations.getString(_context.getNode(), PROPS.port_name$u3X4) + "_call_service_";
-  }
-  public static Object propertyMacro_GetValue_4_36(final PropertyMacroContext _context) {
-    return SPropertyOperations.getString(SLinkOperations.getTarget(_context.getNode(), LINKS.message$3geB), PROPS.package$uL2X) + "::srv::" + SPropertyOperations.getString(SLinkOperations.getTarget(_context.getNode(), LINKS.message$3geB), PROPS.name$MnvL);
-  }
-  public static Object propertyMacro_GetValue_4_37(final PropertyMacroContext _context) {
-    return SPropertyOperations.getString(_context.getNode(), PROPS.port_name$u3X4) + "_service_client_";
-  }
-  public static Object propertyMacro_GetValue_4_38(final PropertyMacroContext _context) {
-    return SPropertyOperations.getString(_context.getNode(), PROPS.port_name$u3X4) + "_service_client_";
-  }
-  public static Object propertyMacro_GetValue_4_39(final PropertyMacroContext _context) {
-    return SPropertyOperations.getString(_context.getNode(), PROPS.port_name$u3X4) + "_service_callback_";
-  }
-  public static Object propertyMacro_GetValue_4_40(final PropertyMacroContext _context) {
-    return SPropertyOperations.getString(SLinkOperations.getTarget(_context.getNode(), LINKS.message$3geB), PROPS.package$uL2X) + "::srv::" + SPropertyOperations.getString(SLinkOperations.getTarget(_context.getNode(), LINKS.message$3geB), PROPS.name$MnvL);
-  }
-  public static Object propertyMacro_GetValue_4_41(final PropertyMacroContext _context) {
-    return SPropertyOperations.getString(SLinkOperations.getTarget(_context.getNode(), LINKS.message$3geB), PROPS.package$uL2X) + "::srv::" + SPropertyOperations.getString(SLinkOperations.getTarget(_context.getNode(), LINKS.message$3geB), PROPS.name$MnvL);
-  }
-  public static Object propertyMacro_GetValue_4_42(final PropertyMacroContext _context) {
-    return SPropertyOperations.getString(_context.getNode(), PROPS.port_name$u3X4) + "SendActionGoal";
-  }
-  public static Object propertyMacro_GetValue_4_43(final PropertyMacroContext _context) {
-    return SPropertyOperations.getString(_context.getNode(), PROPS.port_name$u3X4) + "_action_client_";
-  }
-  public static Object propertyMacro_GetValue_4_44(final PropertyMacroContext _context) {
-    return SPropertyOperations.getString(SLinkOperations.getTarget(_context.getNode(), LINKS.message$3geB), PROPS.package$uL2X) + "::action::" + SPropertyOperations.getString(SLinkOperations.getTarget(_context.getNode(), LINKS.message$3geB), PROPS.name$MnvL);
-  }
-  public static Object propertyMacro_GetValue_4_45(final PropertyMacroContext _context) {
-    return SPropertyOperations.getString(SLinkOperations.getTarget(_context.getNode(), LINKS.message$3geB), PROPS.package$uL2X) + "::action::" + SPropertyOperations.getString(SLinkOperations.getTarget(_context.getNode(), LINKS.message$3geB), PROPS.name$MnvL);
-  }
-  public static Object propertyMacro_GetValue_4_46(final PropertyMacroContext _context) {
-    return SPropertyOperations.getString(SLinkOperations.getTarget(_context.getNode(), LINKS.message$3geB), PROPS.package$uL2X) + "::action::" + SPropertyOperations.getString(SLinkOperations.getTarget(_context.getNode(), LINKS.message$3geB), PROPS.name$MnvL);
-  }
-  public static Object propertyMacro_GetValue_4_47(final PropertyMacroContext _context) {
-    return SPropertyOperations.getString(SLinkOperations.getTarget(_context.getNode(), LINKS.message$3geB), PROPS.package$uL2X) + "::action::" + SPropertyOperations.getString(SLinkOperations.getTarget(_context.getNode(), LINKS.message$3geB), PROPS.name$MnvL);
-  }
-  public static Object propertyMacro_GetValue_4_48(final PropertyMacroContext _context) {
-    return SPropertyOperations.getString(_context.getNode(), PROPS.port_name$u3X4) + "_action_client_";
-  }
-  public static Object propertyMacro_GetValue_4_49(final PropertyMacroContext _context) {
     return SPropertyOperations.getString(_context.getNode(), PROPS.name$MnvL) + "HandleGoal";
   }
-  public static Object propertyMacro_GetValue_4_50(final PropertyMacroContext _context) {
-    return SPropertyOperations.getString(SLinkOperations.getTarget(_context.getNode(), LINKS.message$eqUd), PROPS.package$uL2X) + "::action::" + SPropertyOperations.getString(SLinkOperations.getTarget(_context.getNode(), LINKS.message$eqUd), PROPS.name$MnvL);
-  }
-  public static Object propertyMacro_GetValue_4_51(final PropertyMacroContext _context) {
+  public static Object propertyMacro_GetValue_4_31(final PropertyMacroContext _context) {
     return SPropertyOperations.getString(_context.getNode(), PROPS.name$MnvL) + "HandleCancel";
   }
-  public static Object propertyMacro_GetValue_4_52(final PropertyMacroContext _context) {
-    return SPropertyOperations.getString(SLinkOperations.getTarget(_context.getNode(), LINKS.message$eqUd), PROPS.package$uL2X) + "::action::" + SPropertyOperations.getString(SLinkOperations.getTarget(_context.getNode(), LINKS.message$eqUd), PROPS.name$MnvL);
-  }
-  public static Object propertyMacro_GetValue_4_53(final PropertyMacroContext _context) {
+  public static Object propertyMacro_GetValue_4_32(final PropertyMacroContext _context) {
     return SPropertyOperations.getString(_context.getNode(), PROPS.name$MnvL) + "HandleAccepted";
   }
-  public static Object propertyMacro_GetValue_4_54(final PropertyMacroContext _context) {
-    return SPropertyOperations.getString(SLinkOperations.getTarget(_context.getNode(), LINKS.message$eqUd), PROPS.package$uL2X) + "::action::" + SPropertyOperations.getString(SLinkOperations.getTarget(_context.getNode(), LINKS.message$eqUd), PROPS.name$MnvL);
+  public static Object propertyMacro_GetValue_4_33(final PropertyMacroContext _context) {
+    return SPropertyOperations.getString(SLinkOperations.getTarget(_context.getNode(), LINKS.topic$IYsG), PROPS.name$MnvL) + "_publish_function_";
   }
-  public static Object propertyMacro_GetValue_4_55(final PropertyMacroContext _context) {
-    return SPropertyOperations.getString(SLinkOperations.getTarget(_context.getNode(), LINKS.topic$IYsG), PROPS.name$MnvL) + "_timer_";
+  public static Object propertyMacro_GetValue_4_34(final PropertyMacroContext _context) {
+    return SPropertyOperations.getString(SLinkOperations.getTarget(SLinkOperations.getTarget(_context.getNode(), LINKS.topic$IYsG), LINKS.message$uMau), PROPS.package$uL2X) + "::" + SPropertyOperations.getEnum(SLinkOperations.getTarget(SLinkOperations.getTarget(_context.getNode(), LINKS.topic$IYsG), LINKS.message$uMau), PROPS.message_type$93N4) + "::" + SPropertyOperations.getString(SLinkOperations.getTarget(SLinkOperations.getTarget(_context.getNode(), LINKS.topic$IYsG), LINKS.message$uMau), PROPS.name$MnvL);
   }
-  public static Object propertyMacro_GetValue_4_56(final PropertyMacroContext _context) {
-    return SPropertyOperations.getString(SLinkOperations.getTarget(SLinkOperations.getTarget(_context.getNode(), LINKS.topic$IYsG), LINKS.message$uMau), PROPS.package$uL2X) + "::msg::" + SPropertyOperations.getString(SLinkOperations.getTarget(SLinkOperations.getTarget(_context.getNode(), LINKS.topic$IYsG), LINKS.message$uMau), PROPS.name$MnvL);
-  }
-  public static Object propertyMacro_GetValue_4_57(final PropertyMacroContext _context) {
+  public static Object propertyMacro_GetValue_4_35(final PropertyMacroContext _context) {
     return "publisher_" + SPropertyOperations.getString(SLinkOperations.getTarget(_context.getNode(), LINKS.topic$IYsG), PROPS.name$MnvL) + "_";
   }
-  public static Object propertyMacro_GetValue_4_58(final PropertyMacroContext _context) {
-    return SPropertyOperations.getString(SLinkOperations.getTarget(SLinkOperations.getTarget(_context.getNode(), LINKS.topic$IYsG), LINKS.message$uMau), PROPS.package$uL2X) + "::msg::" + SPropertyOperations.getString(SLinkOperations.getTarget(SLinkOperations.getTarget(_context.getNode(), LINKS.topic$IYsG), LINKS.message$uMau), PROPS.name$MnvL);
+  public static Object propertyMacro_GetValue_4_36(final PropertyMacroContext _context) {
+    return SPropertyOperations.getString(SLinkOperations.getTarget(_context.getNode(), LINKS.topic$IYsG), PROPS.name$MnvL) + "_subscribe_function_";
   }
-  public static Object propertyMacro_GetValue_4_59(final PropertyMacroContext _context) {
-    return "subscription_" + SPropertyOperations.getString(SLinkOperations.getTarget(_context.getNode(), LINKS.topic$IYsG), PROPS.name$MnvL) + "_";
+  public static Object propertyMacro_GetValue_4_37(final PropertyMacroContext _context) {
+    return SPropertyOperations.getString(SLinkOperations.getTarget(SLinkOperations.getTarget(_context.getNode(), LINKS.topic$IYsG), LINKS.message$uMau), PROPS.package$uL2X) + "::" + SPropertyOperations.getEnum(SLinkOperations.getTarget(SLinkOperations.getTarget(_context.getNode(), LINKS.topic$IYsG), LINKS.message$uMau), PROPS.message_type$93N4) + "::" + SPropertyOperations.getString(SLinkOperations.getTarget(SLinkOperations.getTarget(_context.getNode(), LINKS.topic$IYsG), LINKS.message$uMau), PROPS.name$MnvL);
   }
-  public static Object propertyMacro_GetValue_4_60(final PropertyMacroContext _context) {
-    return SPropertyOperations.getString(SLinkOperations.getTarget(_context.getNode(), LINKS.message$3geB), PROPS.package$uL2X) + "::srv::" + SPropertyOperations.getString(SLinkOperations.getTarget(_context.getNode(), LINKS.message$3geB), PROPS.name$MnvL);
+  public static Object propertyMacro_GetValue_4_38(final PropertyMacroContext _context) {
+    return SPropertyOperations.getString(_context.getNode(), PROPS.port_name$u3X4) + "_call_service_";
   }
-  public static Object propertyMacro_GetValue_4_61(final PropertyMacroContext _context) {
+  public static Object propertyMacro_GetValue_4_39(final PropertyMacroContext _context) {
+    return SPropertyOperations.getString(SLinkOperations.getTarget(_context.getNode(), LINKS.message$3geB), PROPS.package$uL2X) + "::" + SPropertyOperations.getEnum(SLinkOperations.getTarget(_context.getNode(), LINKS.message$3geB), PROPS.message_type$93N4) + "::" + SPropertyOperations.getString(SLinkOperations.getTarget(_context.getNode(), LINKS.message$3geB), PROPS.name$MnvL);
+  }
+  public static Object propertyMacro_GetValue_4_40(final PropertyMacroContext _context) {
     return SPropertyOperations.getString(_context.getNode(), PROPS.port_name$u3X4) + "_service_client_";
   }
-  public static Object propertyMacro_GetValue_4_62(final PropertyMacroContext _context) {
-    return SPropertyOperations.getString(SLinkOperations.getTarget(_context.getNode(), LINKS.message$3geB), PROPS.package$uL2X) + "::action::" + SPropertyOperations.getString(SLinkOperations.getTarget(_context.getNode(), LINKS.message$3geB), PROPS.name$MnvL);
+  public static Object propertyMacro_GetValue_4_41(final PropertyMacroContext _context) {
+    return SPropertyOperations.getString(_context.getNode(), PROPS.port_name$u3X4) + "_service_client_";
   }
-  public static Object propertyMacro_GetValue_4_63(final PropertyMacroContext _context) {
+  public static Object propertyMacro_GetValue_4_42(final PropertyMacroContext _context) {
+    return SPropertyOperations.getString(SLinkOperations.getTarget(_context.getNode(), LINKS.connection$WFQD), PROPS.port_name$u3X4) + "_service_callback_";
+  }
+  public static Object propertyMacro_GetValue_4_43(final PropertyMacroContext _context) {
+    return SPropertyOperations.getString(SLinkOperations.getTarget(_context.getNode(), LINKS.message$_DkH), PROPS.package$uL2X) + "::" + SPropertyOperations.getEnum(SLinkOperations.getTarget(_context.getNode(), LINKS.message$_DkH), PROPS.message_type$93N4) + "::" + SPropertyOperations.getString(SLinkOperations.getTarget(_context.getNode(), LINKS.message$_DkH), PROPS.name$MnvL);
+  }
+  public static Object propertyMacro_GetValue_4_44(final PropertyMacroContext _context) {
+    return SPropertyOperations.getString(SLinkOperations.getTarget(_context.getNode(), LINKS.message$_DkH), PROPS.package$uL2X) + "::" + SPropertyOperations.getEnum(SLinkOperations.getTarget(_context.getNode(), LINKS.message$_DkH), PROPS.message_type$93N4) + "::" + SPropertyOperations.getString(SLinkOperations.getTarget(_context.getNode(), LINKS.message$_DkH), PROPS.name$MnvL);
+  }
+  public static Object propertyMacro_GetValue_4_45(final PropertyMacroContext _context) {
+    return SPropertyOperations.getString(_context.getNode(), PROPS.port_name$u3X4) + "SendActionGoal";
+  }
+  public static Object propertyMacro_GetValue_4_46(final PropertyMacroContext _context) {
     return SPropertyOperations.getString(_context.getNode(), PROPS.port_name$u3X4) + "_action_client_";
   }
+  public static Object propertyMacro_GetValue_4_47(final PropertyMacroContext _context) {
+    return SPropertyOperations.getString(SLinkOperations.getTarget(_context.getNode(), LINKS.message$3geB), PROPS.package$uL2X) + "::" + SPropertyOperations.getEnum(SLinkOperations.getTarget(_context.getNode(), LINKS.message$3geB), PROPS.message_type$93N4) + "::" + SPropertyOperations.getString(SLinkOperations.getTarget(_context.getNode(), LINKS.message$3geB), PROPS.name$MnvL);
+  }
+  public static Object propertyMacro_GetValue_4_48(final PropertyMacroContext _context) {
+    return SPropertyOperations.getString(SLinkOperations.getTarget(_context.getNode(), LINKS.message$3geB), PROPS.package$uL2X) + "::" + SPropertyOperations.getEnum(SLinkOperations.getTarget(_context.getNode(), LINKS.message$3geB), PROPS.message_type$93N4) + "::" + SPropertyOperations.getString(SLinkOperations.getTarget(_context.getNode(), LINKS.message$3geB), PROPS.name$MnvL);
+  }
+  public static Object propertyMacro_GetValue_4_49(final PropertyMacroContext _context) {
+    return SPropertyOperations.getString(SLinkOperations.getTarget(_context.getNode(), LINKS.message$3geB), PROPS.package$uL2X) + "::" + SPropertyOperations.getEnum(SLinkOperations.getTarget(_context.getNode(), LINKS.message$3geB), PROPS.message_type$93N4) + "::" + SPropertyOperations.getString(SLinkOperations.getTarget(_context.getNode(), LINKS.message$3geB), PROPS.name$MnvL);
+  }
+  public static Object propertyMacro_GetValue_4_50(final PropertyMacroContext _context) {
+    return SPropertyOperations.getString(SLinkOperations.getTarget(_context.getNode(), LINKS.message$3geB), PROPS.package$uL2X) + "::" + SPropertyOperations.getEnum(SLinkOperations.getTarget(_context.getNode(), LINKS.message$3geB), PROPS.message_type$93N4) + "::" + SPropertyOperations.getString(SLinkOperations.getTarget(_context.getNode(), LINKS.message$3geB), PROPS.name$MnvL);
+  }
+  public static Object propertyMacro_GetValue_4_51(final PropertyMacroContext _context) {
+    return SPropertyOperations.getString(SLinkOperations.getTarget(_context.getNode(), LINKS.message$3geB), PROPS.package$uL2X) + "::" + SPropertyOperations.getEnum(SLinkOperations.getTarget(_context.getNode(), LINKS.message$3geB), PROPS.message_type$93N4) + "::" + SPropertyOperations.getString(SLinkOperations.getTarget(_context.getNode(), LINKS.message$3geB), PROPS.name$MnvL);
+  }
+  public static Object propertyMacro_GetValue_4_52(final PropertyMacroContext _context) {
+    return SPropertyOperations.getString(_context.getNode(), PROPS.port_name$u3X4) + "_action_client_";
+  }
+  public static Object propertyMacro_GetValue_4_53(final PropertyMacroContext _context) {
+    return SPropertyOperations.getString(_context.getNode(), PROPS.name$MnvL) + "HandleGoal";
+  }
+  public static Object propertyMacro_GetValue_4_54(final PropertyMacroContext _context) {
+    return SPropertyOperations.getString(SLinkOperations.getTarget(_context.getNode(), LINKS.message$eqUd), PROPS.package$uL2X) + "::" + SPropertyOperations.getEnum(SLinkOperations.getTarget(_context.getNode(), LINKS.message$eqUd), PROPS.message_type$93N4) + "::" + SPropertyOperations.getString(SLinkOperations.getTarget(_context.getNode(), LINKS.message$eqUd), PROPS.name$MnvL);
+  }
+  public static Object propertyMacro_GetValue_4_55(final PropertyMacroContext _context) {
+    return SPropertyOperations.getString(_context.getNode(), PROPS.name$MnvL) + "HandleCancel";
+  }
+  public static Object propertyMacro_GetValue_4_56(final PropertyMacroContext _context) {
+    return SPropertyOperations.getString(SLinkOperations.getTarget(_context.getNode(), LINKS.message$eqUd), PROPS.package$uL2X) + "::" + SPropertyOperations.getEnum(SLinkOperations.getTarget(_context.getNode(), LINKS.message$eqUd), PROPS.message_type$93N4) + "::" + SPropertyOperations.getString(SLinkOperations.getTarget(_context.getNode(), LINKS.message$eqUd), PROPS.name$MnvL);
+  }
+  public static Object propertyMacro_GetValue_4_57(final PropertyMacroContext _context) {
+    return SPropertyOperations.getString(_context.getNode(), PROPS.name$MnvL) + "HandleAccepted";
+  }
+  public static Object propertyMacro_GetValue_4_58(final PropertyMacroContext _context) {
+    return SPropertyOperations.getString(SLinkOperations.getTarget(_context.getNode(), LINKS.message$eqUd), PROPS.package$uL2X) + "::" + SPropertyOperations.getEnum(SLinkOperations.getTarget(_context.getNode(), LINKS.message$eqUd), PROPS.message_type$93N4) + "::" + SPropertyOperations.getString(SLinkOperations.getTarget(_context.getNode(), LINKS.message$eqUd), PROPS.name$MnvL);
+  }
+  public static Object propertyMacro_GetValue_4_59(final PropertyMacroContext _context) {
+    return SPropertyOperations.getString(SLinkOperations.getTarget(_context.getNode(), LINKS.topic$IYsG), PROPS.name$MnvL) + "_timer_";
+  }
+  public static Object propertyMacro_GetValue_4_60(final PropertyMacroContext _context) {
+    return SPropertyOperations.getString(SLinkOperations.getTarget(SLinkOperations.getTarget(_context.getNode(), LINKS.topic$IYsG), LINKS.message$uMau), PROPS.package$uL2X) + "::" + SPropertyOperations.getEnum(SLinkOperations.getTarget(SLinkOperations.getTarget(_context.getNode(), LINKS.topic$IYsG), LINKS.message$uMau), PROPS.message_type$93N4) + "::" + SPropertyOperations.getString(SLinkOperations.getTarget(SLinkOperations.getTarget(_context.getNode(), LINKS.topic$IYsG), LINKS.message$uMau), PROPS.name$MnvL);
+  }
+  public static Object propertyMacro_GetValue_4_61(final PropertyMacroContext _context) {
+    return "publisher_" + SPropertyOperations.getString(SLinkOperations.getTarget(_context.getNode(), LINKS.topic$IYsG), PROPS.name$MnvL) + "_";
+  }
+  public static Object propertyMacro_GetValue_4_62(final PropertyMacroContext _context) {
+    return SPropertyOperations.getString(SLinkOperations.getTarget(SLinkOperations.getTarget(_context.getNode(), LINKS.topic$IYsG), LINKS.message$uMau), PROPS.package$uL2X) + "::" + SPropertyOperations.getEnum(SLinkOperations.getTarget(SLinkOperations.getTarget(_context.getNode(), LINKS.topic$IYsG), LINKS.message$uMau), PROPS.message_type$93N4) + "::" + SPropertyOperations.getString(SLinkOperations.getTarget(SLinkOperations.getTarget(_context.getNode(), LINKS.topic$IYsG), LINKS.message$uMau), PROPS.name$MnvL);
+  }
+  public static Object propertyMacro_GetValue_4_63(final PropertyMacroContext _context) {
+    return "subscription_" + SPropertyOperations.getString(SLinkOperations.getTarget(_context.getNode(), LINKS.topic$IYsG), PROPS.name$MnvL) + "_";
+  }
   public static Object propertyMacro_GetValue_4_64(final PropertyMacroContext _context) {
-    return SPropertyOperations.getString(SLinkOperations.getTarget(_context.getNode(), LINKS.message$_DkH), PROPS.package$uL2X) + "::srv::" + SPropertyOperations.getString(SLinkOperations.getTarget(_context.getNode(), LINKS.message$_DkH), PROPS.name$MnvL);
+    return SPropertyOperations.getString(SLinkOperations.getTarget(_context.getNode(), LINKS.message$3geB), PROPS.package$uL2X) + "::" + SPropertyOperations.getEnum(SLinkOperations.getTarget(_context.getNode(), LINKS.message$3geB), PROPS.message_type$93N4) + "::" + SPropertyOperations.getString(SLinkOperations.getTarget(_context.getNode(), LINKS.message$3geB), PROPS.name$MnvL);
   }
   public static Object propertyMacro_GetValue_4_65(final PropertyMacroContext _context) {
-    return SPropertyOperations.getString(_context.getNode(), PROPS.name$MnvL) + "_service_server_";
+    return SPropertyOperations.getString(_context.getNode(), PROPS.port_name$u3X4) + "_service_client_";
   }
   public static Object propertyMacro_GetValue_4_66(final PropertyMacroContext _context) {
-    return SPropertyOperations.getString(SLinkOperations.getTarget(_context.getNode(), LINKS.message$eqUd), PROPS.package$uL2X) + "::action::" + SPropertyOperations.getString(SLinkOperations.getTarget(_context.getNode(), LINKS.message$eqUd), PROPS.name$MnvL);
+    return SPropertyOperations.getString(SLinkOperations.getTarget(_context.getNode(), LINKS.message$3geB), PROPS.package$uL2X) + "::" + SPropertyOperations.getEnum(SLinkOperations.getTarget(_context.getNode(), LINKS.message$3geB), PROPS.message_type$93N4) + "::" + SPropertyOperations.getString(SLinkOperations.getTarget(_context.getNode(), LINKS.message$3geB), PROPS.name$MnvL);
   }
   public static Object propertyMacro_GetValue_4_67(final PropertyMacroContext _context) {
-    return SPropertyOperations.getString(_context.getNode(), PROPS.name$MnvL) + "_action_server_";
+    return SPropertyOperations.getString(_context.getNode(), PROPS.port_name$u3X4) + "_action_client_";
   }
   public static Object propertyMacro_GetValue_4_68(final PropertyMacroContext _context) {
-    return SPropertyOperations.getString(_context.getNode(), PROPS.name$MnvL);
+    return SPropertyOperations.getString(SLinkOperations.getTarget(_context.getNode(), LINKS.message$_DkH), PROPS.package$uL2X) + "::" + SPropertyOperations.getEnum(SLinkOperations.getTarget(_context.getNode(), LINKS.message$_DkH), PROPS.message_type$93N4) + "::" + SPropertyOperations.getString(SLinkOperations.getTarget(_context.getNode(), LINKS.message$_DkH), PROPS.name$MnvL);
   }
   public static Object propertyMacro_GetValue_4_69(final PropertyMacroContext _context) {
+    return SPropertyOperations.getString(_context.getNode(), PROPS.name$MnvL) + "_service_server_";
+  }
+  public static Object propertyMacro_GetValue_4_70(final PropertyMacroContext _context) {
+    return SPropertyOperations.getString(SLinkOperations.getTarget(_context.getNode(), LINKS.message$eqUd), PROPS.package$uL2X) + "::" + SPropertyOperations.getEnum(SLinkOperations.getTarget(_context.getNode(), LINKS.message$eqUd), PROPS.message_type$93N4) + "::" + SPropertyOperations.getString(SLinkOperations.getTarget(_context.getNode(), LINKS.message$eqUd), PROPS.name$MnvL);
+  }
+  public static Object propertyMacro_GetValue_4_71(final PropertyMacroContext _context) {
+    return SPropertyOperations.getString(_context.getNode(), PROPS.name$MnvL) + "_action_server_";
+  }
+  public static Object propertyMacro_GetValue_4_72(final PropertyMacroContext _context) {
+    return SPropertyOperations.getString(_context.getNode(), PROPS.name$MnvL);
+  }
+  public static Object propertyMacro_GetValue_4_73(final PropertyMacroContext _context) {
     return SPropertyOperations.getString(SNodeOperations.getNodeAncestor(_context.getNode(), CONCEPTS.Project$hZ, false, false), PROPS.name$MnvL) + "/src/" + SPropertyOperations.getString(_context.getNode(), PROPS.name$MnvL);
   }
   public static Object propertyMacro_GetValue_5_0(final PropertyMacroContext _context) {
@@ -572,7 +584,7 @@ public class QueriesGenerated extends QueryProviderBase {
     return SLinkOperations.getChildren(_context.getNode(), LINKS.service_requests$xlyp);
   }
   public static Iterable<SNode> sourceNodesQuery_4_15(final SourceSubstituteMacroNodesContext _context) {
-    return SLinkOperations.getChildren(_context.getNode(), LINKS.service_requests$xlyp);
+    return SLinkOperations.getChildren(_context.getNode(), LINKS.services$zPXp);
   }
   public static Iterable<SNode> sourceNodesQuery_4_16(final SourceSubstituteMacroNodesContext _context) {
     return SLinkOperations.getChildren(_context.getNode(), LINKS.action_requests$xkAl);
@@ -914,6 +926,9 @@ public class QueriesGenerated extends QueryProviderBase {
     pvqMethods.put("5991240145061733593", new PVQ(i++, MetaAdapterFactory.getProperty(0xceab519525ea4f22L, 0x9b92103b95ca8c0cL, 0x110396eaaa4L, 0x110396ec041L, "name"), "T_action_server_"));
     pvqMethods.put("5991240145061810921", new PVQ(i++, MetaAdapterFactory.getProperty(0xceab519525ea4f22L, 0x9b92103b95ca8c0cL, 0x110396eaaa4L, 0x110396ec041L, "name"), "packageT::action::ActionT"));
     pvqMethods.put("5991240145061925055", new PVQ(i++, MetaAdapterFactory.getProperty(0xceab519525ea4f22L, 0x9b92103b95ca8c0cL, 0x110396eaaa4L, 0x110396ec041L, "name"), "actionT"));
+    pvqMethods.put("2680471535596471178", new PVQ(i++, MetaAdapterFactory.getProperty(0xceab519525ea4f22L, 0x9b92103b95ca8c0cL, 0x110396eaaa4L, 0x110396ec041L, "name"), "THandleGoal"));
+    pvqMethods.put("2680471535596481556", new PVQ(i++, MetaAdapterFactory.getProperty(0xceab519525ea4f22L, 0x9b92103b95ca8c0cL, 0x110396eaaa4L, 0x110396ec041L, "name"), "THandleCancel"));
+    pvqMethods.put("2680471535596489068", new PVQ(i++, MetaAdapterFactory.getProperty(0xceab519525ea4f22L, 0x9b92103b95ca8c0cL, 0x110396eaaa4L, 0x110396ec041L, "name"), "THandleAccepted"));
     pvqMethods.put("2238630365371125369", new PVQ(i++, MetaAdapterFactory.getProperty(0xceab519525ea4f22L, 0x9b92103b95ca8c0cL, 0x110396eaaa4L, 0x110396ec041L, "name"), "T_publish_function_"));
     pvqMethods.put("2238630365371125389", new PVQ(i++, MetaAdapterFactory.getProperty(0xceab519525ea4f22L, 0x9b92103b95ca8c0cL, 0x110396eaaa4L, 0x110396ec041L, "name"), "packageT::msg::messageT"));
     pvqMethods.put("2238630365371125417", new PVQ(i++, MetaAdapterFactory.getProperty(0xceab519525ea4f22L, 0x9b92103b95ca8c0cL, 0x110396eaaa4L, 0x110396ec041L, "name"), "publisher_T_"));
@@ -932,6 +947,7 @@ public class QueriesGenerated extends QueryProviderBase {
     pvqMethods.put("2238630365371240437", new PVQ(i++, MetaAdapterFactory.getProperty(0xceab519525ea4f22L, 0x9b92103b95ca8c0cL, 0x110396eaaa4L, 0x110396ec041L, "name"), "packageT::action::actionT"));
     pvqMethods.put("2238630365371240464", new PVQ(i++, MetaAdapterFactory.getProperty(0xceab519525ea4f22L, 0x9b92103b95ca8c0cL, 0x110396eaaa4L, 0x110396ec041L, "name"), "packageT::action::actionT"));
     pvqMethods.put("2238630365371240512", new PVQ(i++, MetaAdapterFactory.getProperty(0xceab519525ea4f22L, 0x9b92103b95ca8c0cL, 0x110396eaaa4L, 0x110396ec041L, "name"), "packageT::action::actionT"));
+    pvqMethods.put("2680471535597759481", new PVQ(i++, MetaAdapterFactory.getProperty(0xceab519525ea4f22L, 0x9b92103b95ca8c0cL, 0x110396eaaa4L, 0x110396ec041L, "name"), "packageT::action::actionT"));
     pvqMethods.put("2238630365371240605", new PVQ(i++, MetaAdapterFactory.getProperty(0xceab519525ea4f22L, 0x9b92103b95ca8c0cL, 0x110396eaaa4L, 0x110396ec041L, "name"), "T_action_client_"));
     pvqMethods.put("3178387116928594634", new PVQ(i++, MetaAdapterFactory.getProperty(0xceab519525ea4f22L, 0x9b92103b95ca8c0cL, 0x110396eaaa4L, 0x110396ec041L, "name"), "THandleGoal"));
     pvqMethods.put("3178387116928625830", new PVQ(i++, MetaAdapterFactory.getProperty(0xceab519525ea4f22L, 0x9b92103b95ca8c0cL, 0x110396eaaa4L, 0x110396ec041L, "name"), "packageT::action::actionT"));
@@ -1242,18 +1258,26 @@ public class QueriesGenerated extends QueryProviderBase {
         case 131:
           return QueriesGenerated.propertyMacro_GetValue_4_69(ctx);
         case 132:
-          return QueriesGenerated.propertyMacro_GetValue_5_0(ctx);
+          return QueriesGenerated.propertyMacro_GetValue_4_70(ctx);
         case 133:
-          return QueriesGenerated.propertyMacro_GetValue_5_1(ctx);
+          return QueriesGenerated.propertyMacro_GetValue_4_71(ctx);
         case 134:
-          return QueriesGenerated.propertyMacro_GetValue_5_2(ctx);
+          return QueriesGenerated.propertyMacro_GetValue_4_72(ctx);
         case 135:
-          return QueriesGenerated.propertyMacro_GetValue_6_0(ctx);
+          return QueriesGenerated.propertyMacro_GetValue_4_73(ctx);
         case 136:
-          return QueriesGenerated.propertyMacro_GetValue_6_1(ctx);
+          return QueriesGenerated.propertyMacro_GetValue_5_0(ctx);
         case 137:
-          return QueriesGenerated.propertyMacro_GetValue_6_2(ctx);
+          return QueriesGenerated.propertyMacro_GetValue_5_1(ctx);
         case 138:
+          return QueriesGenerated.propertyMacro_GetValue_5_2(ctx);
+        case 139:
+          return QueriesGenerated.propertyMacro_GetValue_6_0(ctx);
+        case 140:
+          return QueriesGenerated.propertyMacro_GetValue_6_1(ctx);
+        case 141:
+          return QueriesGenerated.propertyMacro_GetValue_6_2(ctx);
+        case 142:
           return QueriesGenerated.propertyMacro_GetValue_6_3(ctx);
         default:
           throw new GenerationFailureException(String.format("Inconsistent QueriesGenerated: there's no method for query %s (key: #%d)", ctx.getTemplateReference(), methodKey));
@@ -1267,6 +1291,7 @@ public class QueriesGenerated extends QueryProviderBase {
     /*package*/ static final SReferenceLink message$3geB = MetaAdapterFactory.getReferenceLink(0xf7db56d1b41e4c13L, 0x9756a014feb108beL, 0x52ae22b433653219L, 0x18dbf75c7f6888d7L, "message");
     /*package*/ static final SContainmentLink message$_DkH = MetaAdapterFactory.getContainmentLink(0xf7db56d1b41e4c13L, 0x9756a014feb108beL, 0x5f9f55b2215b96f8L, 0x1a87a547ff4948c3L, "message");
     /*package*/ static final SContainmentLink message$eqUd = MetaAdapterFactory.getContainmentLink(0xf7db56d1b41e4c13L, 0x9756a014feb108beL, 0x5f9f55b2215f05faL, 0x1a87a547ff4fbb1aL, "message");
+    /*package*/ static final SReferenceLink connection$WFQD = MetaAdapterFactory.getReferenceLink(0xf7db56d1b41e4c13L, 0x9756a014feb108beL, 0x52ae22b4336975deL, 0x24577e76ac2158acL, "connection");
     /*package*/ static final SContainmentLink publications$MIbK = MetaAdapterFactory.getContainmentLink(0xf7db56d1b41e4c13L, 0x9756a014feb108beL, 0x5d8e854cb6b6efbL, 0x5d8e854cb6ba44bL, "publications");
     /*package*/ static final SContainmentLink subscriptions$MIDM = MetaAdapterFactory.getContainmentLink(0xf7db56d1b41e4c13L, 0x9756a014feb108beL, 0x5d8e854cb6b6efbL, 0x5d8e854cb6ba44dL, "subscriptions");
     /*package*/ static final SContainmentLink service_requests$xlyp = MetaAdapterFactory.getContainmentLink(0xf7db56d1b41e4c13L, 0x9756a014feb108beL, 0x5d8e854cb6b6efbL, 0x573384c7f1e1d92cL, "service_requests");
